@@ -34,13 +34,12 @@
             background-color: white;
         }
         
-        #pathway-image {
-            position: absolute;
-            top: 0;
-            left: 0;
+        #diagram {
             width: 100%;
             height: 100%;
-            object-fit: contain;
+            min-width: 2000px;
+            min-height: 2000px;
+            background-color: white;
         }
         
         #controls {
@@ -75,6 +74,7 @@
             border-radius: 4px;
             font-family: monospace;
             font-size: 13px;
+            white-space: pre-wrap;
         }
         
         #zoom-controls {
@@ -101,37 +101,40 @@
             justify-content: center;
         }
         
-        .pathway-node {
-            position: absolute;
-            border: 2px solid transparent;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s;
+        /* Custom Mermaid styles */
+        .mermaid .node rect {
+            stroke-width: 2px;
         }
-        
-        .pathway-node:hover {
-            border-color: #3498db;
-            box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+        .mermaid .node.source rect {
+            fill: #ffcccc;
+            stroke: #cc0000;
         }
-        
-        .pathway-node.source {
-            background-color: rgba(255, 204, 204, 0.7);
-            border-color: #cc0000;
+        .mermaid .node.sink rect {
+            fill: #ccffcc;
+            stroke: #00cc00;
         }
-        
-        .pathway-node.sink {
-            background-color: rgba(204, 255, 204, 0.7);
-            border-color: #00cc00;
+        .mermaid .node.sanitizer rect {
+            fill: #ccccff;
+            stroke: #0000cc;
         }
-        
-        .pathway-node.sanitizer {
-            background-color: rgba(204, 204, 255, 0.7);
-            border-color: #0000cc;
+        .mermaid .node.normal rect {
+            fill: #eeeeee;
+            stroke: #888;
         }
-        
-        .pathway-node.sensitive {
-            border-color: red !important;
-            border-style: dashed !important;
+        .mermaid .node.suspicious rect {
+            stroke: red !important;
+            stroke-width: 2px !important;
+            stroke-dasharray: 5 !important;
+        }
+        .mermaid .edgeLabel {
+            background: white;
+            padding: 0 3px;
+            font-size: 12px;
+        }
+        .mermaid .cluster rect {
+            fill: rgba(200, 200, 255, 0.2);
+            stroke: rgba(0, 0, 255, 0.3);
+            stroke-width: 1px;
         }
         
         #loading {
@@ -148,29 +151,23 @@
             font-size: 18px;
         }
         
-        #pathway-selector {
-            padding: 8px;
+        .suspicious-item {
+            background: #ffebee;
+            padding: 10px;
+            margin-bottom: 8px;
             border-radius: 4px;
-            border: 1px solid #ddd;
-            width: 100%;
+            border-left: 4px solid #f44336;
         }
     </style>
 </head>
 <body>
     <div id="header">
         <h1>KEGG Pathway Visualizer</h1>
-        <div>
-            <select id="pathway-selector">
-                <option value="map01100">Metabolic pathways</option>
-                <option value="map01200">Carbon metabolism</option>
-                <option value="map01230">Biosynthesis of amino acids</option>
-            </select>
-        </div>
     </div>
     
     <div id="main-container">
         <div id="pathway-container">
-            <img id="pathway-image" src="" alt="KEGG Pathway">
+            <div id="diagram" class="mermaid"></div>
             
             <div id="zoom-controls">
                 <button id="zoom-in">+</button>
@@ -183,29 +180,26 @@
             <div class="control-section">
                 <h3>Display Options</h3>
                 <label class="checkbox-label">
-                    <input type="checkbox" id="show-sources" checked> Show Sources
+                    <input type="checkbox" id="toggleSanitizers" checked> Show Sanitizers
                 </label>
                 <label class="checkbox-label">
-                    <input type="checkbox" id="show-sinks" checked> Show Sinks
+                    <input type="checkbox" id="toggleSuspicious" checked> Highlight Sensitive Flows
                 </label>
                 <label class="checkbox-label">
-                    <input type="checkbox" id="show-sanitizers" checked> Show Sanitizers
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="highlight-sensitive" checked> Highlight Sensitive Nodes
+                    <input type="checkbox" id="toggleNormalNodes" checked> Show Normal Nodes
                 </label>
             </div>
             
             <div class="control-section">
                 <h3>Node Information</h3>
                 <div id="node-info">
-                    Click on any node to see details
+                    Click on any node or edge to see details
                 </div>
             </div>
             
             <div class="control-section">
                 <h3>Detected Issues</h3>
-                <div id="issues-list">
+                <div id="suspiciousList">
                     <!-- Will be populated dynamically -->
                 </div>
             </div>
@@ -215,135 +209,254 @@
     <div id="loading">Loading pathway data...</div>
 
 <script>
-    // Configuration
-    const CONFIG = {
-        pathwayBaseUrl: 'https://www.kegg.jp/kegg-bin/show_pathway?',
-        nodeDataUrl: 'pathway_nodes.json',
-        edgeDataUrl: 'pathway_edges.json',
-        sensitiveNodesUrl: 'sensitive_nodes.json'
-    };
-    
-    // Global variables
-    let pathwayData = {
-        nodes: [],
-        edges: [],
-        sensitiveNodes: []
-    };
-    let panzoomInstance = null;
-    let currentPathway = 'map01100';
-    
-    // Initialize the application
-    document.addEventListener('DOMContentLoaded', async () => {
-        try {
-            // Load initial pathway
-            await loadPathway(currentPathway);
-            
-            // Setup event listeners
-            setupEventListeners();
-            
-            // Hide loading indicator
-            document.getElementById('loading').style.display = 'none';
-        } catch (error) {
-            console.error('Initialization error:', error);
-            document.getElementById('loading').textContent = 'Error loading pathway data';
-        }
+    // Initialize Mermaid with custom configuration
+    mermaid.initialize({
+        startOnLoad: false,
+        theme: 'default',
+        securityLevel: 'loose',
+        maxTextSize: 1000000,
+        flowchart: {
+            useMaxWidth: false,
+            htmlLabels: true,
+            curve: 'basis'
+        },
+        maxEdges: 5000,
+        maxNodes: 5000
     });
-    
-    // Load pathway data
-    async function loadPathway(pathwayId) {
-        // Show loading indicator
-        document.getElementById('loading').style.display = 'flex';
-        
-        try {
-            // Load pathway image
-            document.getElementById('pathway-image').src = `${CONFIG.pathwayBaseUrl}${pathwayId}`;
-            
-            // In a real implementation, you would load your node/edge data here
-            // For this example, we'll use mock data
-            pathwayData = await loadMockData();
-            
-            // Process and display the data
-            processPathwayData();
-            
-        } catch (error) {
-            console.error('Error loading pathway:', error);
-            throw error;
-        } finally {
-            // Hide loading indicator
-            document.getElementById('loading').style.display = 'none';
-        }
-    }
-    
-    // Load mock data (replace with actual data loading)
-    async function loadMockData() {
-        // In a real implementation, you would fetch this from your server
-        return {
-            nodes: [
-                { id: 'C00031', name: 'D-Glucose', type: 'source', x: 100, y: 150, width: 80, height: 40 },
-                { id: 'C00022', name: 'Pyruvate', type: 'normal', x: 300, y: 200, width: 80, height: 40 },
-                { id: 'C00036', name: 'Oxaloacetate', type: 'normal', x: 400, y: 250, width: 80, height: 40 },
-                { id: 'C00042', name: 'Succinate', type: 'sink', x: 500, y: 300, width: 80, height: 40 },
-                { id: '1.1.1.1', name: 'Alcohol dehydrogenase', type: 'sanitizer', x: 200, y: 100, width: 80, height: 40 }
-            ],
-            edges: [
-                { source: 'C00031', target: 'C00022', label: 'glycolysis' },
-                { source: 'C00022', target: 'C00036', label: 'TCA cycle' },
-                { source: 'C00036', target: 'C00042', label: 'TCA cycle' }
-            ],
-            sensitiveNodes: ['C00022']
-        };
-    }
-    
-    // Process pathway data and create visual elements
-    function processPathwayData() {
-        const container = document.getElementById('pathway-container');
-        
-        // Clear existing nodes
-        document.querySelectorAll('.pathway-node').forEach(el => el.remove());
-        
-        // Create node elements
-        pathwayData.nodes.forEach(node => {
-            if (!shouldShowNode(node)) return;
-            
-            const nodeEl = document.createElement('div');
-            nodeEl.className = `pathway-node ${node.type}`;
-            nodeEl.style.left = `${node.x}px`;
-            nodeEl.style.top = `${node.y}px`;
-            nodeEl.style.width = `${node.width}px`;
-            nodeEl.style.height = `${node.height}px`;
-            
-            // Mark sensitive nodes
-            if (pathwayData.sensitiveNodes.includes(node.id)) {
-                nodeEl.classList.add('sensitive');
+
+    // Global variables
+    let allNodes = [];
+    let allEdges = [];
+    let sensitiveNodes = [];
+    let panzoomInstance = null;
+    let currentActiveElement = null;
+
+    // Color scheme
+    const COLORS = {
+        source: '#ffcccc',
+        sink: '#ccffcc',
+        sanitizer: '#ccccff',
+        normal: '#eeeeee',
+        sensitive: '#ff9999',
+        edge: '#888'
+    };
+
+    // Parse GraphML data
+    function parseGraphML(graphmlText) {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(graphmlText, "text/xml");
+
+        const nodes = [];
+        const edges = [];
+        const sensitiveNodes = [];
+
+        // Parse nodes
+        const nodeElements = xmlDoc.getElementsByTagName("node");
+        for (let node of nodeElements) {
+            const id = node.getAttribute("id");
+            const dataElements = node.getElementsByTagName("data");
+            let type = "normal";
+            let name = id;
+            let keggid = "";
+
+            for (let data of dataElements) {
+                const key = data.getAttribute("key");
+                if (key === "type") {
+                    // Not using type for now since all are compounds in the sample
+                } else if (key === "class") {
+                    type = data.textContent;
+                } else if (key === "name") {
+                    name = data.textContent === "none" ? id : data.textContent;
+                } else if (key === "keggid") {
+                    keggid = data.textContent;
+                }
             }
+
+            nodes.push({
+                id,
+                name,
+                type,
+                keggid
+            });
+
+            if (type === "sanitizer") {
+                sensitiveNodes.push(id);
+            }
+        }
+
+        // Parse edges
+        const edgeElements = xmlDoc.getElementsByTagName("edge");
+        for (let edge of edgeElements) {
+            const source = edge.getAttribute("source");
+            const target = edge.getAttribute("target");
+            const dataElements = edge.getElementsByTagName("data");
+            let label = "";
+
+            for (let data of dataElements) {
+                const key = data.getAttribute("key");
+                if (key === "label") {
+                    label = data.textContent;
+                }
+            }
+
+            edges.push({
+                source,
+                target,
+                label
+            });
+        }
+
+        return { nodes, edges, sensitiveNodes };
+    }
+
+    // Generate Mermaid diagram from parsed data
+    function generateKeggDiagram(graphData) {
+        let diagram = 'flowchart LR\n';
+        const suspiciousItems = [];
+
+        // Group nodes by type for better organization
+        diagram += '    subgraph Sources[Sources]\n';
+        graphData.nodes.filter(node => node.type === 'source').forEach(node => {
+            const safeName = sanitizeId(node.id);
+            diagram += `        ${safeName}["${node.name}"]:::source\n`;
+        });
+        diagram += '    end\n\n';
+
+        diagram += '    subgraph Sinks[Sinks]\n';
+        graphData.nodes.filter(node => node.type === 'sink').forEach(node => {
+            const safeName = sanitizeId(node.id);
+            diagram += `        ${safeName}["${node.name}"]:::sink\n`;
+        });
+        diagram += '    end\n\n';
+
+        diagram += '    subgraph Sanitizers[Sanitizers]\n';
+        graphData.nodes.filter(node => node.type === 'sanitizer').forEach(node => {
+            const safeName = sanitizeId(node.id);
+            diagram += `        ${safeName}["${node.name}"]:::sanitizer\n`;
+            suspiciousItems.push(node.name);
+        });
+        diagram += '    end\n\n';
+
+        // Add normal nodes
+        graphData.nodes.filter(node => node.type === 'normal').forEach(node => {
+            const safeName = sanitizeId(node.id);
+            diagram += `    ${safeName}["${node.name}"]:::normal\n`;
+        });
+
+        // Process edges with interaction labels
+        graphData.edges.forEach(edge => {
+            const safeFrom = sanitizeId(edge.source);
+            const safeTo = sanitizeId(edge.target);
+            // Skip empty labels to avoid Mermaid parsing errors
+            const label = edge.label ? `|${edge.label}|` : '';
+            diagram += `    ${safeFrom} -->${label} ${safeTo}\n`;
+        });
+
+        // Mark sensitive nodes
+        graphData.sensitiveNodes.forEach(nodeId => {
+            const safeNode = sanitizeId(nodeId);
+            diagram += `    ${safeNode}:::suspicious\n`;
+        });
+
+        // Add custom styles
+        diagram += `
+                classDef source fill:#ffcccc,stroke:#cc0000,stroke-width:2px;
+                classDef sink fill:#ccffcc,stroke:#00cc00,stroke-width:2px;
+                classDef sanitizer fill:#ccccff,stroke:#0000cc,stroke-width:2px;
+                classDef normal fill:#eeeeee,stroke:#888,stroke-width:1px;
+                classDef suspicious stroke:red,stroke-width:2px,stroke-dasharray:5;
+            `;
+
+        return { diagram, suspiciousItems };
+    }
+
+    // Sanitize IDs for Mermaid
+    function sanitizeId(id) {
+        return id.replace(/[^a-zA-Z0-9_]/g, '_');
+    }
+
+    // Update issues list
+    function updateIssuesList(items) {
+        const issuesList = document.getElementById('suspiciousList');
+        issuesList.innerHTML = items.map(item => `
+                <div class="suspicious-item">
+                    <strong>${item}</strong>
+                    <div>Potential drug target</div>
+                </div>
+            `).join('');
+    }
+
+    // Setup diagram interactivity
+    function setupDiagramInteractivity() {
+        const diagramContainer = document.getElementById('diagram');
+        const svg = diagramContainer.querySelector('svg');
+
+        if (!svg) return;
+
+        // Add hover effects
+        svg.querySelectorAll('.node, .edgeLabel').forEach(element => {
+            element.style.cursor = 'pointer';
             
-            // Add tooltip and click handler
-            nodeEl.title = `${node.name} (${node.id})`;
-            nodeEl.addEventListener('click', () => showNodeDetails(node));
-            
-            container.appendChild(nodeEl);
+            element.addEventListener('click', function() {
+                if (this.classList.contains('node')) {
+                    const title = this.querySelector('title');
+                    const nodeId = title ? title.textContent : 'Unknown';
+                    const nodeType = this.classList.contains('source') ? 'Source (Compound)' :
+                        this.classList.contains('sink') ? 'Sink (Pathway)' :
+                            this.classList.contains('sanitizer') ? 'Sanitizer (Enzyme)' : 'Normal Node';
+
+                    let details = `Node: ${nodeId}\nType: ${nodeType}`;
+                    if (this.classList.contains('suspicious')) {
+                        details += '\n⚠️ Sensitive compound';
+                    }
+
+                    // Find connected edges
+                    const connectedEdges = allEdges.filter(edge => 
+                        edge.source === nodeId || edge.target === nodeId
+                    );
+                    
+                    if (connectedEdges.length > 0) {
+                        details += '\n\nConnected to:';
+                        connectedEdges.forEach(edge => {
+                            const otherNodeId = edge.source === nodeId ? edge.target : edge.source;
+                            const otherNode = allNodes.find(n => n.id === otherNodeId);
+                            const direction = edge.source === nodeId ? '→' : '←';
+                            
+                            if (otherNode) {
+                                details += `\n${direction} ${otherNode.name} (${edge.label || 'interaction'})`;
+                            }
+                        });
+                    }
+
+                    document.getElementById('node-info').textContent = details;
+                    
+                    // Highlight the clicked node
+                    if (currentActiveElement) {
+                        currentActiveElement.style.filter = '';
+                    }
+                    this.style.filter = 'drop-shadow(0 0 8px rgba(52, 152, 219, 0.8))';
+                    currentActiveElement = this;
+                    
+                } else if (this.classList.contains('edgeLabel')) {
+                    const textElement = this.querySelector('text');
+                    const interaction = textElement ? textElement.textContent : 'Unknown interaction';
+                    const pathId = this.parentNode.id.replace('-edge-label', '');
+                    const path = svg.querySelector(`#${pathId}`);
+
+                    if (path) {
+                        const sourceTitle = path.getAttribute('data-source-title');
+                        const targetTitle = path.getAttribute('data-target-title');
+                        document.getElementById('node-info').textContent = 
+                            `Interaction: ${interaction}\nFrom: ${sourceTitle || 'Unknown'}\nTo: ${targetTitle || 'Unknown'}`;
+                    }
+                }
+            });
         });
         
-        // Initialize panzoom on the pathway image
+        // Initialize panzoom after diagram is rendered
         initPanzoom();
-        
-        // Update issues list
-        updateIssuesList();
     }
-    
-    // Determine if a node should be shown based on current filters
-    function shouldShowNode(node) {
-        const showSources = document.getElementById('show-sources').checked;
-        const showSinks = document.getElementById('show-sinks').checked;
-        const showSanitizers = document.getElementById('show-sanitizers').checked;
-        
-        if (node.type === 'source' && !showSources) return false;
-        if (node.type === 'sink' && !showSinks) return false;
-        if (node.type === 'sanitizer' && !showSanitizers) return false;
-        
-        return true;
-    }
-    
+
     // Initialize panzoom functionality
     function initPanzoom() {
         const container = document.getElementById('pathway-container');
@@ -360,98 +473,9 @@
             minZoom: 0.5
         });
     }
-    
-    // Show node details in the info panel
-    function showNodeDetails(node) {
-        const infoPanel = document.getElementById('node-info');
-        let details = `ID: ${node.id}\nName: ${node.name}\nType: ${node.type}`;
-        
-        if (pathwayData.sensitiveNodes.includes(node.id)) {
-            details += '\n\n⚠️ Sensitive compound';
-        }
-        
-        // Find connected edges
-        const connectedEdges = pathwayData.edges.filter(edge => 
-            edge.source === node.id || edge.target === node.id
-        );
-        
-        if (connectedEdges.length > 0) {
-            details += '\n\nConnected to:';
-            connectedEdges.forEach(edge => {
-                const otherNodeId = edge.source === node.id ? edge.target : edge.source;
-                const otherNode = pathwayData.nodes.find(n => n.id === otherNodeId);
-                const direction = edge.source === node.id ? '→' : '←';
-                
-                if (otherNode) {
-                    details += `\n${direction} ${otherNode.name} (${edge.label || 'interaction'})`;
-                }
-            });
-        }
-        
-        infoPanel.textContent = details;
-    }
-    
-    // Update the issues list
-    function updateIssuesList() {
-        const issuesList = document.getElementById('issues-list');
-        const sensitiveNodes = pathwayData.nodes.filter(node => 
-            pathwayData.sensitiveNodes.includes(node.id)
-        );
-        
-        if (sensitiveNodes.length === 0) {
-            issuesList.innerHTML = '<p>No sensitive nodes detected</p>';
-            return;
-        }
-        
-        issuesList.innerHTML = `
-            <p>${sensitiveNodes.length} sensitive nodes detected:</p>
-            <ul>
-                ${sensitiveNodes.map(node => 
-                    `<li>
-                        <strong>${node.name}</strong> (${node.id})
-                        <button onclick="highlightNode('${node.id}')">Show</button>
-                    </li>`
-                ).join('')}
-            </ul>
-        `;
-    }
-    
-    // Highlight a specific node
-    function highlightNode(nodeId) {
-        // Remove previous highlights
-        document.querySelectorAll('.pathway-node').forEach(el => {
-            el.style.boxShadow = 'none';
-        });
-        
-        // Find and highlight the node
-        const nodeEl = document.querySelector(`.pathway-node[data-id="${nodeId}"]`);
-        if (nodeEl) {
-            nodeEl.style.boxShadow = '0 0 15px rgba(255, 0, 0, 0.8)';
-            
-            // Scroll to the node
-            nodeEl.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' });
-            
-            // Show node details
-            const node = pathwayData.nodes.find(n => n.id === nodeId);
-            if (node) showNodeDetails(node);
-        }
-    }
-    
-    // Setup event listeners
-    function setupEventListeners() {
-        // Pathway selector
-        document.getElementById('pathway-selector').addEventListener('change', (e) => {
-            currentPathway = e.target.value;
-            loadPathway(currentPathway);
-        });
-        
-        // Display options
-        document.getElementById('show-sources').addEventListener('change', () => processPathwayData());
-        document.getElementById('show-sinks').addEventListener('change', () => processPathwayData());
-        document.getElementById('show-sanitizers').addEventListener('change', () => processPathwayData());
-        document.getElementById('highlight-sensitive').addEventListener('change', () => processPathwayData());
-        
-        // Zoom controls
+
+    // Setup zoom controls
+    function setupZoomControls() {
         document.getElementById('zoom-in').addEventListener('click', () => {
             if (panzoomInstance) panzoomInstance.smoothZoom(0, 0, 1.2);
         });
@@ -467,9 +491,65 @@
             }
         });
     }
-    
-    // Expose highlightNode to global scope for button clicks
-    window.highlightNode = highlightNode;
+
+    // Load and render the pathway
+    async function loadAndRenderPathway() {
+        try {
+            document.getElementById('loading').style.display = 'flex';
+            
+            // Load the GraphML file
+            const response = await fetch('pathways.graphml');
+            if (!response.ok) throw new Error(`Failed to load GraphML: ${response.status}`);
+
+            const graphmlText = await response.text();
+            const graphData = parseGraphML(graphmlText);
+
+            allNodes = graphData.nodes;
+            allEdges = graphData.edges;
+            sensitiveNodes = graphData.sensitiveNodes;
+
+            // Generate and render the diagram
+            const { diagram, suspiciousItems } = generateKeggDiagram(graphData);
+            const container = document.getElementById('diagram');
+            
+            container.innerHTML = diagram;
+            container.className = 'mermaid';
+
+            // Initialize Mermaid rendering
+            await mermaid.run({
+                querySelector: '#diagram',
+                suppressErrors: false
+            });
+
+            // Setup interactivity
+            setupDiagramInteractivity();
+            setupZoomControls();
+            
+            // Update the issues list
+            updateIssuesList(suspiciousItems);
+
+        } catch (error) {
+            console.error('Error loading pathway:', error);
+            document.getElementById('diagram').innerHTML = `
+                <div style="color:red; padding:20px;">
+                    <h3>Error Loading Pathway</h3>
+                    <p>${error.message}</p>
+                </div>
+            `;
+        } finally {
+            document.getElementById('loading').style.display = 'none';
+        }
+    }
+
+    // Initialize the visualization
+    document.addEventListener('DOMContentLoaded', () => {
+        loadAndRenderPathway();
+        
+        // Setup display control event listeners
+        document.getElementById('toggleSanitizers').addEventListener('change', loadAndRenderPathway);
+        document.getElementById('toggleSuspicious').addEventListener('change', loadAndRenderPathway);
+        document.getElementById('toggleNormalNodes').addEventListener('change', loadAndRenderPathway);
+    });
 </script>
 </body>
 </html>
