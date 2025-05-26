@@ -1,0 +1,1125 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="1,2-Diacylglycerol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="11,12,15-THETA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="11,12-DHET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="11,12-EET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="11,14,15-THETA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="11H-14,15-EETA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="12(13)-EpOME">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="12(R)-HPETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="12(S)-HPETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="12,13(S)-EOT">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="12-OPDA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="13(S)-HPODE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="13-HPOT">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="14,15-DHET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="14,15-EET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="15(S)-HPETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="15H-11,12-EETA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="19(S)-HETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="20-HETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Dehydrosphinganine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxo-OPC4-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxo-OPC8-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5(S)-HPETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5,6-DHET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5,6-EET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="8(S)-HPETE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="8,9-DHET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="8,9-EET">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="9(10)-EpOME">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aminoethanol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Arachidonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Bios_I">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00093">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01241">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03201">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03372">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03454">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03715">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03820">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03892">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03968">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04308">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04317">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04475">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04635">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04756">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05212">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05977">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06040">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06041">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06364">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06365">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16328">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16332">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16336">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16339">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20897">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CDP-diacylglycerol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CDP-ethanolamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cardiolipin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cephalin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ceramide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ceramide_II">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cerebroside">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Choline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Citicoline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DGDG">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dihydroceramide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gamolenic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glcbeta1-&gt;3acyl2Gro">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glyceride">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerone_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LTA4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LTB4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LTC4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LTD4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lecithin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Linoleate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Linolenate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lysophosphatidate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="MGDG">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="OPC-8:0">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="OPC4-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="OPC6-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="OPC8-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PAF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGD2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGE2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGF2a">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGG2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGH2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PGI2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Palmitoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphatidate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphatidylinositol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphatidylserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphocholine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphoethanolamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phytosphingosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PtdGro">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="S1P">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="SQDG">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Serine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sphinganine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sphingoid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sphingomyelin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sulfatide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TXA2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Triglyceride">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="1,2-Diacylglycerol" target="Phosphatidate">
+      <data key="d2">R02239</data>
+      <data key="d3">rn:R02239 rn:R02240 rn:R09944</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="Glyceride">
+      <data key="d2">R02687</data>
+      <data key="d3">rn:R02687</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="SQDG">
+      <data key="d2">R06867</data>
+      <data key="d3">rn:R06867</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="Glcbeta1-&gt;3acyl2Gro">
+      <data key="d2">R02689</data>
+      <data key="d3">rn:R02689</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="MGDG">
+      <data key="d2">R02691</data>
+      <data key="d3">rn:R02691</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="Triglyceride">
+      <data key="d2">R02250</data>
+      <data key="d3">rn:R02250 rn:R02251 rn:R05333</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="1,2-Diacylglycerol" target="C06364">
+      <data key="d2">R10850</data>
+      <data key="d3">rn:R10850</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="11,12,15-THETA" target="15H-11,12-EETA">
+      <data key="d2">R07044</data>
+      <data key="d3">rn:R07044</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="11,12-DHET" target="11,12-EET">
+      <data key="d2">R07109</data>
+      <data key="d3">rn:R07109</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="11,12-EET" target="Arachidonate">
+      <data key="d2">R07050</data>
+      <data key="d3">rn:R07050</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="11,14,15-THETA" target="11H-14,15-EETA">
+      <data key="d2">R07045</data>
+      <data key="d3">rn:R07045</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="11H-14,15-EETA" target="15(S)-HPETE">
+      <data key="d2">R07043</data>
+      <data key="d3">rn:R07043</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12(13)-EpOME" target="Linoleate">
+      <data key="d2">R07056</data>
+      <data key="d3">rn:R07056</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12(R)-HPETE" target="Arachidonate">
+      <data key="d2">R07038</data>
+      <data key="d3">rn:R07038</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12(S)-HPETE" target="Arachidonate">
+      <data key="d2">R01596</data>
+      <data key="d3">rn:R01596</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12,13(S)-EOT" target="13-HPOT">
+      <data key="d2">R07863</data>
+      <data key="d3">rn:R07863</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12,13(S)-EOT" target="12-OPDA">
+      <data key="d2">R03402</data>
+      <data key="d3">rn:R03402</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="12-OPDA" target="OPC-8:0">
+      <data key="d2">R03401</data>
+      <data key="d3">rn:R03401</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="13(S)-HPODE" target="Linoleate">
+      <data key="d2">R03626</data>
+      <data key="d3">rn:R03626</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="13-HPOT" target="Linolenate">
+      <data key="d2">R07869</data>
+      <data key="d3">rn:R07869</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="14,15-DHET" target="14,15-EET">
+      <data key="d2">R07108</data>
+      <data key="d3">rn:R07108</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="14,15-EET" target="Arachidonate">
+      <data key="d2">R07048</data>
+      <data key="d3">rn:R07048</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="15(S)-HPETE" target="Arachidonate">
+      <data key="d2">R01593</data>
+      <data key="d3">rn:R01593</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="15(S)-HPETE" target="15H-11,12-EETA">
+      <data key="d2">R07042</data>
+      <data key="d3">rn:R07042</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="19(S)-HETE" target="Arachidonate">
+      <data key="d2">R07046</data>
+      <data key="d3">rn:R07046</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="20-HETE" target="Arachidonate">
+      <data key="d2">R07041</data>
+      <data key="d3">rn:R07041</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="3-Dehydrosphinganine" target="Sphinganine">
+      <data key="d2">R02978</data>
+      <data key="d3">rn:R02978</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="3-Dehydrosphinganine" target="Palmitoyl-CoA">
+      <data key="d2">R01281</data>
+      <data key="d3">rn:R01281</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="3-Oxo-OPC4-CoA" target="C16339">
+      <data key="d2">R07899</data>
+      <data key="d3">rn:R07899</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="3-Oxo-OPC8-CoA" target="OPC6-CoA">
+      <data key="d2">R07891</data>
+      <data key="d3">rn:R07891</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="5(S)-HPETE" target="Arachidonate">
+      <data key="d2">R01595</data>
+      <data key="d3">rn:R01595</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="5(S)-HPETE" target="LTA4">
+      <data key="d2">R03058</data>
+      <data key="d3">rn:R03058</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="5,6-DHET" target="5,6-EET">
+      <data key="d2">R07111</data>
+      <data key="d3">rn:R07111</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="5,6-EET" target="Arachidonate">
+      <data key="d2">R07052</data>
+      <data key="d3">rn:R07052</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="8(S)-HPETE" target="Arachidonate">
+      <data key="d2">R07053</data>
+      <data key="d3">rn:R07053</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="8,9-DHET" target="8,9-EET">
+      <data key="d2">R07110</data>
+      <data key="d3">rn:R07110</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="8,9-EET" target="Arachidonate">
+      <data key="d2">R07051</data>
+      <data key="d3">rn:R07051</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="9(10)-EpOME" target="Linoleate">
+      <data key="d2">R07055</data>
+      <data key="d3">rn:R07055</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Aminoethanol" target="Phosphoethanolamine">
+      <data key="d2">R01468</data>
+      <data key="d3">rn:R01468</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Aminoethanol" target="Ethanal">
+      <data key="d2">R00749</data>
+      <data key="d3">rn:R00749</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Arachidonate" target="PGG2">
+      <data key="d2">R01590</data>
+      <data key="d3">rn:R01590</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Arachidonate" target="Lecithin">
+      <data key="d2">R01317</data>
+      <data key="d3">rn:R01317</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C00093" target="Lysophosphatidate">
+      <data key="d2">R00851</data>
+      <data key="d3">rn:R00851</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C00093" target="Glycerin">
+      <data key="d2">R00841</data>
+      <data key="d3">rn:R00841 rn:R00847</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C01241" target="C04308">
+      <data key="d2">R03424</data>
+      <data key="d3">rn:R03424</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C01241" target="Cephalin">
+      <data key="d2">R02056</data>
+      <data key="d3">rn:R02056</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03201" target="C05977">
+      <data key="d2">R04162</data>
+      <data key="d3">rn:R04162</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03201" target="C04475">
+      <data key="d2">R06364</data>
+      <data key="d3">rn:R06364</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03372" target="Lysophosphatidate">
+      <data key="d2">R02756</data>
+      <data key="d3">rn:R02756</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03372" target="C03715">
+      <data key="d2">R04311</data>
+      <data key="d3">rn:R04311</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03454" target="C04756">
+      <data key="d2">R07381</data>
+      <data key="d3">rn:R07381 rn:R07384</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03715" target="C03968">
+      <data key="d2">R04360</data>
+      <data key="d3">rn:R04360</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03820" target="PAF">
+      <data key="d2">R04321</data>
+      <data key="d3">rn:R04321</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03892" target="CDP-diacylglycerol">
+      <data key="d2">R01801</data>
+      <data key="d3">rn:R01801</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C03892" target="PtdGro">
+      <data key="d2">R02029</data>
+      <data key="d3">rn:R02029</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C04308" target="Lecithin">
+      <data key="d2">R01320</data>
+      <data key="d3">rn:R01320</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C04317" target="PAF">
+      <data key="d2">R03437</data>
+      <data key="d3">rn:R03437 rn:R04452</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C04317" target="C05212">
+      <data key="d2">R03438</data>
+      <data key="d3">rn:R03438 rn:R07387</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C04635" target="C04756">
+      <data key="d2">R04413</data>
+      <data key="d3">rn:R04413 rn:R07379</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C06040" target="C06041">
+      <data key="d2">R05081</data>
+      <data key="d3">rn:R05081</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C06364" target="C06365">
+      <data key="d2">R05164</data>
+      <data key="d3">rn:R05164</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C06365" target="C20897">
+      <data key="d2">R10849</data>
+      <data key="d3">rn:R10849</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C16328" target="OPC8-CoA">
+      <data key="d2">R07888</data>
+      <data key="d3">rn:R07888</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C16332" target="OPC6-CoA">
+      <data key="d2">R07892</data>
+      <data key="d3">rn:R07892</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="C16336" target="OPC4-CoA">
+      <data key="d2">R07896</data>
+      <data key="d3">rn:R07896</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-diacylglycerol" target="Cardiolipin">
+      <data key="d2">R02030</data>
+      <data key="d3">rn:R02030</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-diacylglycerol" target="Phosphatidate">
+      <data key="d2">R01799</data>
+      <data key="d3">rn:R01799</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-diacylglycerol" target="Phosphatidylserine">
+      <data key="d2">R01800</data>
+      <data key="d3">rn:R01800</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-diacylglycerol" target="Phosphatidylinositol">
+      <data key="d2">R01802</data>
+      <data key="d3">rn:R01802</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-ethanolamine" target="Cephalin">
+      <data key="d2">R02057</data>
+      <data key="d3">rn:R02057</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="CDP-ethanolamine" target="Phosphoethanolamine">
+      <data key="d2">R02038</data>
+      <data key="d3">rn:R02038</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Cardiolipin" target="PtdGro">
+      <data key="d2">R07390</data>
+      <data key="d3">rn:R07390 rn:R11062</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Cephalin" target="Phosphatidylserine">
+      <data key="d2">R02055</data>
+      <data key="d3">rn:R02055 rn:R07376</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Cephalin" target="Phosphatidate">
+      <data key="d2">R02051</data>
+      <data key="d3">rn:R02051</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide" target="Dihydroceramide">
+      <data key="d2">R06519</data>
+      <data key="d3">rn:R06519</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide" target="Sphingomyelin">
+      <data key="d2">R01891</data>
+      <data key="d3">rn:R01891 rn:R02541 rn:R08969</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide" target="Cerebroside">
+      <data key="d2">R01500</data>
+      <data key="d3">rn:R01500 rn:R03617</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide" target="Sphingoid">
+      <data key="d2">R01494</data>
+      <data key="d3">rn:R01494</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide_II" target="Phytosphingosine">
+      <data key="d2">R06527</data>
+      <data key="d3">rn:R06527 rn:R06528</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ceramide_II" target="Dihydroceramide">
+      <data key="d2">R06526</data>
+      <data key="d3">rn:R06526</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Cerebroside" target="Sulfatide">
+      <data key="d2">R04017</data>
+      <data key="d3">rn:R04017</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Choline" target="Phosphocholine">
+      <data key="d2">R01021</data>
+      <data key="d3">rn:R01021 rn:R06871</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Citicoline" target="Lecithin">
+      <data key="d2">R01321</data>
+      <data key="d3">rn:R01321</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Citicoline" target="Phosphocholine">
+      <data key="d2">R01890</data>
+      <data key="d3">rn:R01890</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="DGDG" target="MGDG">
+      <data key="d2">R04469</data>
+      <data key="d3">rn:R04469</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Dihydroceramide" target="Sphinganine">
+      <data key="d2">R06517</data>
+      <data key="d3">rn:R06517</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Ethanal" target="Phosphoethanolamine">
+      <data key="d2">R00748</data>
+      <data key="d3">rn:R00748</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Gamolenic_acid" target="Linoleate">
+      <data key="d2">R07063</data>
+      <data key="d3">rn:R07063</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Glyceride" target="Lysophosphatidate">
+      <data key="d2">R02757</data>
+      <data key="d3">rn:R02757</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Glyceride" target="Glycerin">
+      <data key="d2">R01351</data>
+      <data key="d3">rn:R01351</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Glycerin" target="Glycerone">
+      <data key="d2">R01034</data>
+      <data key="d3">rn:R01034 rn:R01039</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Glycerone" target="Glycerone_phosphate">
+      <data key="d2">R01011</data>
+      <data key="d3">rn:R01011 rn:R01012</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="LTA4" target="LTB4">
+      <data key="d2">R03057</data>
+      <data key="d3">rn:R03057</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="LTA4" target="LTC4">
+      <data key="d2">R03059</data>
+      <data key="d3">rn:R03059</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="LTC4" target="LTD4">
+      <data key="d2">R09875</data>
+      <data key="d3">rn:R09875</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Lecithin" target="Phosphatidate">
+      <data key="d2">R01310</data>
+      <data key="d3">rn:R01310</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Lecithin" target="Phosphatidylserine">
+      <data key="d2">R07377</data>
+      <data key="d3">rn:R07377</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Lecithin" target="Linoleate">
+      <data key="d2">R07064</data>
+      <data key="d3">rn:R07064</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Lecithin" target="Linolenate">
+      <data key="d2">R07859</data>
+      <data key="d3">rn:R07859 rn:R07860</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Lysophosphatidate" target="Phosphatidate">
+      <data key="d2">R02241</data>
+      <data key="d3">rn:R02241</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="OPC-8:0" target="OPC8-CoA">
+      <data key="d2">R07887</data>
+      <data key="d3">rn:R07887</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGD2" target="PGH2">
+      <data key="d2">R02266</data>
+      <data key="d3">rn:R02266</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGE2" target="PGH2">
+      <data key="d2">R02265</data>
+      <data key="d3">rn:R02265</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGE2" target="PGF2a">
+      <data key="d2">R02581</data>
+      <data key="d3">rn:R02581</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGF2a" target="PGH2">
+      <data key="d2">R09506</data>
+      <data key="d3">rn:R09506</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGG2" target="PGH2">
+      <data key="d2">R00073</data>
+      <data key="d3">rn:R00073</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGH2" target="TXA2">
+      <data key="d2">R02268</data>
+      <data key="d3">rn:R02268</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="PGH2" target="PGI2">
+      <data key="d2">R02267</data>
+      <data key="d3">rn:R02267</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Phosphoethanolamine" target="S1P">
+      <data key="d2">R06516</data>
+      <data key="d3">rn:R06516</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="Phytosphingosine" target="Sphinganine">
+      <data key="d2">R06525</data>
+      <data key="d3">rn:R06525</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+    <edge source="S1P" target="Sphingoid">
+      <data key="d2">R01926</data>
+      <data key="d3">rn:R01926</data>
+      <data key="d4">False</data>
+      <data key="d5">Lipid Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

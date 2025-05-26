@@ -1,0 +1,2017 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="3'-LM1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxo-OPC6-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00043">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00199">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00692">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01112">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01212">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01246">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03862">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04478">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04652">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04702">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04738">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04851">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05382">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05892">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05893">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05894">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05895">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06022">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06251">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06397">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06398">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07836">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07838">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11472">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17541">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17542">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17549">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17550">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CD77">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CMP-KDO">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ceramide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chondroitin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DS_3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DWA-2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dermatan">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dolichol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dolichol_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dolichol_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00001">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00002">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00003">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00004">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00005">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00006">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00007">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00008">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00009">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00010">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00011">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00012">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00013">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00014">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00015">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00016">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00017">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00019">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00020">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00021">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00022">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00023">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00024">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00025">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00026">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00027">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00028">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00029">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00031">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00032">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00035">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00039">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00040">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00042">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00043">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00044">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00045">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00046">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00047">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00048">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00052">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00054">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00055">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00056">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00057">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00058">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00059">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00063">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00066">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00067">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00077">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00095">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00099">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00128">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00129">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00143">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00144">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00145">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00146">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00147">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00148">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00149">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00154">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00155">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00156">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00157">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00158">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00159">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00160">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00162">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00163">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00164">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00171">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00179">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00392">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00403">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G00428">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G01391">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G01813">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G01945">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G01977">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G02632">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G02977">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G05477">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G09660">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10526">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10595">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10596">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10597">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10598">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10599">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10611">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10665">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10694">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10770">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G10920">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G11492">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G12336">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G12396">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13026">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13027">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13028">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13034">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13035">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13036">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13037">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13038">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13039">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13040">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13041">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13042">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13043">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13044">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13056">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13057">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13058">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13059">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13073">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13074">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13081">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13087">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13103">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13104">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13105">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13107">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="G13108">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GA1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GA2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GD1a">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GD1b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GD1c">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GD2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GD3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GDP-mannose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GM1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GM1b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GM2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GM3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GQ1b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GT1a">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GT1b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GT1c">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GT2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GT3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gb4Cer">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gb5Cer">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucocerebroside">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Heparin_sulfate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="KDO">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="KDO-lipid_IV(A)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="KDO2-lipid_A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="KDO2-lipid_IV(A)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LA1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LacCer">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lc3Cer">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lc4Cer">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lipid_A_disaccharide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lipid_IV(A)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lipid_X">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="MSGG">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NORint">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="OPC4-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PIM1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PIM2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PX2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphatidylinositol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protein_asparagine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protein_serine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="SSEA-1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-MurNAc">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-xylose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="3'-LM1" target="LA1">
+      <data key="d2">R06026</data>
+      <data key="d3">rn:R06026</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="3'-LM1" target="G00063">
+      <data key="d2">R06075</data>
+      <data key="d3">rn:R06075</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="3-Oxo-OPC6-CoA" target="OPC4-CoA">
+      <data key="d2">R07895</data>
+      <data key="d3">rn:R07895</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C04738">
+      <data key="d2">R04567</data>
+      <data key="d3">rn:R04567</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C00199" target="C01112">
+      <data key="d2">R01530</data>
+      <data key="d3">rn:R01530</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C00692" target="C01212">
+      <data key="d2">R02783</data>
+      <data key="d3">rn:R02783</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C00692" target="C05892">
+      <data key="d2">R02786</data>
+      <data key="d3">rn:R02786</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C01112" target="C04478">
+      <data key="d2">R03254</data>
+      <data key="d3">rn:R03254</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C01212" target="UDP-MurNAc">
+      <data key="d2">R03193</data>
+      <data key="d3">rn:R03193</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C01246" target="Dolichol_phosphate">
+      <data key="d2">R01005</data>
+      <data key="d3">rn:R01005 rn:R01006</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C03862" target="Dolichol_phosphate">
+      <data key="d2">R01009</data>
+      <data key="d3">rn:R01009</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04478" target="KDO">
+      <data key="d2">R03350</data>
+      <data key="d3">rn:R03350</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04652" target="C06022">
+      <data key="d2">R04550</data>
+      <data key="d3">rn:R04550</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04652" target="Lipid_X">
+      <data key="d2">R04549</data>
+      <data key="d3">rn:R04549</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04652" target="Lipid_A_disaccharide">
+      <data key="d2">R04606</data>
+      <data key="d3">rn:R04606</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04702" target="C05892">
+      <data key="d2">R04573</data>
+      <data key="d3">rn:R04573</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04702" target="C04851">
+      <data key="d2">R05629</data>
+      <data key="d3">rn:R05629</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04738" target="C06022">
+      <data key="d2">R04587</data>
+      <data key="d3">rn:R04587</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C04851" target="C05893">
+      <data key="d2">R05662</data>
+      <data key="d3">rn:R05662</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C05382" target="C07836">
+      <data key="d2">R05645</data>
+      <data key="d3">rn:R05645</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C05893" target="C17550">
+      <data key="d2">R08779</data>
+      <data key="d3">rn:R08779</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C05894" target="C17541">
+      <data key="d2">R08776</data>
+      <data key="d3">rn:R08776</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C05895" target="C17542">
+      <data key="d2">R08778</data>
+      <data key="d3">rn:R08778</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C06251" target="KDO2-lipid_IV(A)">
+      <data key="d2">R05146</data>
+      <data key="d3">rn:R05146</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C06251" target="KDO2-lipid_A">
+      <data key="d2">R05075</data>
+      <data key="d3">rn:R05075</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C06397" target="C06398">
+      <data key="d2">R05176</data>
+      <data key="d3">rn:R05176</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C06397" target="C07838">
+      <data key="d2">R05644</data>
+      <data key="d3">rn:R05644</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C07836" target="C11472">
+      <data key="d2">R05646</data>
+      <data key="d3">rn:R05646</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C07838" target="C11472">
+      <data key="d2">R05647</data>
+      <data key="d3">rn:R05647</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C17541" target="C17542">
+      <data key="d2">R08777</data>
+      <data key="d3">rn:R08777</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="C17549" target="C17550">
+      <data key="d2">R08780</data>
+      <data key="d3">rn:R08780</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="CD77" target="LacCer">
+      <data key="d2">R05960</data>
+      <data key="d3">rn:R05960 rn:R05961</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="CD77" target="Gb4Cer">
+      <data key="d2">R05962</data>
+      <data key="d3">rn:R05962 rn:R05963</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="CMP-KDO" target="KDO2-lipid_IV(A)">
+      <data key="d2">R05074</data>
+      <data key="d3">rn:R05074</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="CMP-KDO" target="KDO">
+      <data key="d2">R03351</data>
+      <data key="d3">rn:R03351</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Ceramide" target="Glucocerebroside">
+      <data key="d2">R01497</data>
+      <data key="d3">rn:R01497 rn:R01498</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Chondroitin" target="Dermatan">
+      <data key="d2">R04104</data>
+      <data key="d3">rn:R04104</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="DS_3" target="G00017">
+      <data key="d2">R05990</data>
+      <data key="d3">rn:R05990</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="DWA-2" target="G13043">
+      <data key="d2">R07824</data>
+      <data key="d3">rn:R07824</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="DWA-2" target="G12336">
+      <data key="d2">R07825</data>
+      <data key="d3">rn:R07825</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Dolichol" target="Dolichol_phosphate">
+      <data key="d2">R01003</data>
+      <data key="d3">rn:R01003 rn:R01018</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Dolichol_diphosphate" target="G00008">
+      <data key="d2">R05976</data>
+      <data key="d3">rn:R05976</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Dolichol_phosphate" target="G00001">
+      <data key="d2">R05969</data>
+      <data key="d3">rn:R05969</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00001" target="G00002">
+      <data key="d2">R05970</data>
+      <data key="d3">rn:R05970</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00003" target="G00004">
+      <data key="d2">R05973</data>
+      <data key="d3">rn:R05973</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00003" target="GDP-mannose">
+      <data key="d2">R05972</data>
+      <data key="d3">rn:R05972</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00004" target="G00005">
+      <data key="d2">R06238</data>
+      <data key="d3">rn:R06238</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00005" target="G10526">
+      <data key="d2">R06127</data>
+      <data key="d3">rn:R06127</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00006" target="G10595">
+      <data key="d2">R06258</data>
+      <data key="d3">rn:R06258</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00006" target="G10526">
+      <data key="d2">R06128</data>
+      <data key="d3">rn:R06128</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00007" target="G10597">
+      <data key="d2">R06261</data>
+      <data key="d3">rn:R06261</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00007" target="G10598">
+      <data key="d2">R06262</data>
+      <data key="d3">rn:R06262</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00008" target="G10599">
+      <data key="d2">R06264</data>
+      <data key="d3">rn:R06264</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00009" target="G00171">
+      <data key="d2">R05979</data>
+      <data key="d3">rn:R05979</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00010" target="G00171">
+      <data key="d2">R05980</data>
+      <data key="d3">rn:R05980</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00010" target="G00011">
+      <data key="d2">R05981</data>
+      <data key="d3">rn:R05981</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00011" target="G00012">
+      <data key="d2">R05982</data>
+      <data key="d3">rn:R05982</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00011" target="G10694">
+      <data key="d2">R06722</data>
+      <data key="d3">rn:R06722</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00012" target="G00013">
+      <data key="d2">R05983</data>
+      <data key="d3">rn:R05983</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00013" target="G00014">
+      <data key="d2">R05984</data>
+      <data key="d3">rn:R05984</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00014" target="G00015">
+      <data key="d2">R05985</data>
+      <data key="d3">rn:R05985</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00014" target="G10770">
+      <data key="d2">R09319</data>
+      <data key="d3">rn:R09319</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00015" target="G00019">
+      <data key="d2">R05986</data>
+      <data key="d3">rn:R05986</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00015" target="G00020">
+      <data key="d2">R05987</data>
+      <data key="d3">rn:R05987</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00015" target="G00016">
+      <data key="d2">R05988</data>
+      <data key="d3">rn:R05988</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00015" target="G00179">
+      <data key="d2">R06016</data>
+      <data key="d3">rn:R06016</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00016" target="G00017">
+      <data key="d2">R05989</data>
+      <data key="d3">rn:R05989</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00020" target="G00021">
+      <data key="d2">R05991</data>
+      <data key="d3">rn:R05991</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00021" target="G00022">
+      <data key="d2">R05992</data>
+      <data key="d3">rn:R05992</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00023" target="G10611">
+      <data key="d2">R05907</data>
+      <data key="d3">rn:R05907</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00023" target="G00035">
+      <data key="d2">R05911</data>
+      <data key="d3">rn:R05911</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00023" target="G00024">
+      <data key="d2">R05908</data>
+      <data key="d3">rn:R05908</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00023" target="G00028">
+      <data key="d2">R05909</data>
+      <data key="d3">rn:R05909</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00023" target="G00031">
+      <data key="d2">R05910</data>
+      <data key="d3">rn:R05910</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00024" target="G00025">
+      <data key="d2">R05912</data>
+      <data key="d3">rn:R05912</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00024" target="G00026">
+      <data key="d2">R05913</data>
+      <data key="d3">rn:R05913</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00026" target="G00027">
+      <data key="d2">R05914</data>
+      <data key="d3">rn:R05914</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00028" target="G00029">
+      <data key="d2">R05915</data>
+      <data key="d3">rn:R05915</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00031" target="G00032">
+      <data key="d2">R07628</data>
+      <data key="d3">rn:R07628</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00039" target="G00044">
+      <data key="d2">R06168</data>
+      <data key="d3">rn:R06168</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00039" target="G00040">
+      <data key="d2">R06164</data>
+      <data key="d3">rn:R06164</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00042" target="G00044">
+      <data key="d2">R06167</data>
+      <data key="d3">rn:R06167</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00042" target="G00043">
+      <data key="d2">R06162</data>
+      <data key="d3">rn:R06162</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00044" target="Lc4Cer">
+      <data key="d2">R06156</data>
+      <data key="d3">rn:R06156</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00044" target="G00045">
+      <data key="d2">R06163</data>
+      <data key="d3">rn:R06163</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00046" target="Lc4Cer">
+      <data key="d2">R06155</data>
+      <data key="d3">rn:R06155</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00047" target="Lc4Cer">
+      <data key="d2">R06153</data>
+      <data key="d3">rn:R06153</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00047" target="G00048">
+      <data key="d2">R06165</data>
+      <data key="d3">rn:R06165</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00052" target="G00055">
+      <data key="d2">R06029</data>
+      <data key="d3">rn:R06029</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00054" target="G00055">
+      <data key="d2">R06187</data>
+      <data key="d3">rn:R06187</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00055" target="LA1">
+      <data key="d2">R06024</data>
+      <data key="d3">rn:R06024</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00055" target="G00056">
+      <data key="d2">R06095</data>
+      <data key="d3">rn:R06095</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00057" target="G00058">
+      <data key="d2">R06031</data>
+      <data key="d3">rn:R06031</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00058" target="G00059">
+      <data key="d2">R06197</data>
+      <data key="d3">rn:R06197</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00066" target="LA1">
+      <data key="d2">R05975</data>
+      <data key="d3">rn:R05975</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00066" target="G00067">
+      <data key="d2">R06033</data>
+      <data key="d3">rn:R06033</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00067" target="G00077">
+      <data key="d2">R06189</data>
+      <data key="d3">rn:R06189</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00095" target="Gb4Cer">
+      <data key="d2">R05965</data>
+      <data key="d3">rn:R05965 rn:R05966</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00099" target="Gb5Cer">
+      <data key="d2">R05968</data>
+      <data key="d3">rn:R05968</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00128" target="GD1a">
+      <data key="d2">R05945</data>
+      <data key="d3">rn:R05945</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00129" target="GT1b">
+      <data key="d2">R05951</data>
+      <data key="d3">rn:R05951</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00143" target="Phosphatidylinositol">
+      <data key="d2">R05916</data>
+      <data key="d3">rn:R05916</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00143" target="G00144">
+      <data key="d2">R05917</data>
+      <data key="d3">rn:R05917</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00144" target="G00145">
+      <data key="d2">R05918</data>
+      <data key="d3">rn:R05918</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00144" target="G12396">
+      <data key="d2">R06623</data>
+      <data key="d3">rn:R06623</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00145" target="G00146">
+      <data key="d2">R05919</data>
+      <data key="d3">rn:R05919</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00146" target="G00147">
+      <data key="d2">R05920</data>
+      <data key="d3">rn:R05920</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00147" target="G00148">
+      <data key="d2">R05921</data>
+      <data key="d3">rn:R05921</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00148" target="G00149">
+      <data key="d2">R05922</data>
+      <data key="d3">rn:R05922</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00149" target="G13044">
+      <data key="d2">R08107</data>
+      <data key="d3">rn:R08107</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00154" target="Protein_serine">
+      <data key="d2">R05925</data>
+      <data key="d3">rn:R05925</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00154" target="G00155">
+      <data key="d2">R05926</data>
+      <data key="d3">rn:R05926</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00155" target="G00156">
+      <data key="d2">R05927</data>
+      <data key="d3">rn:R05927</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00156" target="G00157">
+      <data key="d2">R05928</data>
+      <data key="d3">rn:R05928</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00157" target="G00158">
+      <data key="d2">R05929</data>
+      <data key="d3">rn:R05929</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00157" target="G00162">
+      <data key="d2">R05930</data>
+      <data key="d3">rn:R05930</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00158" target="G00159">
+      <data key="d2">R05931</data>
+      <data key="d3">rn:R05931</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00159" target="G00160">
+      <data key="d2">R05932</data>
+      <data key="d3">rn:R05932</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00162" target="G00163">
+      <data key="d2">R05935</data>
+      <data key="d3">rn:R05935</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00163" target="G00164">
+      <data key="d2">R05936</data>
+      <data key="d3">rn:R05936</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00179" target="G13056">
+      <data key="d2">R09318</data>
+      <data key="d3">rn:R09318</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00392" target="G00403">
+      <data key="d2">R11321</data>
+      <data key="d3">rn:R11321</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00392" target="G02977">
+      <data key="d2">R11322</data>
+      <data key="d3">rn:R11322</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00403" target="LacCer">
+      <data key="d2">R11320</data>
+      <data key="d3">rn:R11320</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G00428" target="LA1">
+      <data key="d2">R11375</data>
+      <data key="d3">rn:R11375</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G01391" target="G13074">
+      <data key="d2">R07809</data>
+      <data key="d3">rn:R07809</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G01391" target="G13073">
+      <data key="d2">R07810</data>
+      <data key="d3">rn:R07810</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G01813" target="G10694">
+      <data key="d2">R08599</data>
+      <data key="d3">rn:R08599</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G01945" target="G01977">
+      <data key="d2">R07806</data>
+      <data key="d3">rn:R07806</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G01977" target="G13073">
+      <data key="d2">R07807</data>
+      <data key="d3">rn:R07807</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G02632" target="G09660">
+      <data key="d2">R07819</data>
+      <data key="d3">rn:R07819</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G05477" target="G10770">
+      <data key="d2">R11318</data>
+      <data key="d3">rn:R11318</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G05477" target="G10920">
+      <data key="d2">R11317</data>
+      <data key="d3">rn:R11317</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G09660" target="G13040">
+      <data key="d2">R07818</data>
+      <data key="d3">rn:R07818</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G10595" target="G10596">
+      <data key="d2">R06259</data>
+      <data key="d3">rn:R06259</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G10596" target="G10597">
+      <data key="d2">R06260</data>
+      <data key="d3">rn:R06260</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G10598" target="G10599">
+      <data key="d2">R06263</data>
+      <data key="d3">rn:R06263</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G10665" target="G13056">
+      <data key="d2">R11316</data>
+      <data key="d3">rn:R11316</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G10770" target="G13057">
+      <data key="d2">R09320</data>
+      <data key="d3">rn:R09320</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G11492" target="Gb4Cer">
+      <data key="d2">R11376</data>
+      <data key="d3">rn:R11376</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G11492" target="NORint">
+      <data key="d2">R11379</data>
+      <data key="d3">rn:R11379</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G12336" target="G13042">
+      <data key="d2">R07822</data>
+      <data key="d3">rn:R07822</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G12336" target="G13043">
+      <data key="d2">R07823</data>
+      <data key="d3">rn:R07823</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13026" target="G13027">
+      <data key="d2">R07619</data>
+      <data key="d3">rn:R07619</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13026" target="G13028">
+      <data key="d2">R07621</data>
+      <data key="d3">rn:R07621</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13027" target="Protein_serine">
+      <data key="d2">R07620</data>
+      <data key="d3">rn:R07620</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13027" target="G13087">
+      <data key="d2">R11407</data>
+      <data key="d3">rn:R11407</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13034" target="Heparin_sulfate">
+      <data key="d2">R07811</data>
+      <data key="d3">rn:R07811</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13034" target="G13035">
+      <data key="d2">R07812</data>
+      <data key="d3">rn:R07812</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13035" target="G13036">
+      <data key="d2">R07813</data>
+      <data key="d3">rn:R07813</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13036" target="G13037">
+      <data key="d2">R07814</data>
+      <data key="d3">rn:R07814</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13037" target="G13038">
+      <data key="d2">R07815</data>
+      <data key="d3">rn:R07815</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13038" target="G13039">
+      <data key="d2">R07816</data>
+      <data key="d3">rn:R07816</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13041" target="G13042">
+      <data key="d2">R07821</data>
+      <data key="d3">rn:R07821</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13057" target="G13058">
+      <data key="d2">R09323</data>
+      <data key="d3">rn:R09323</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13058" target="G13059">
+      <data key="d2">R09324</data>
+      <data key="d3">rn:R09324</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13073" target="G13074">
+      <data key="d2">R07808</data>
+      <data key="d3">rn:R07808</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13081" target="NORint">
+      <data key="d2">R11377</data>
+      <data key="d3">rn:R11377</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13103" target="G13108">
+      <data key="d2">R11994</data>
+      <data key="d3">rn:R11994</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13104" target="G13105">
+      <data key="d2">R11997</data>
+      <data key="d3">rn:R11997</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13107" target="PIM1">
+      <data key="d2">R12039</data>
+      <data key="d3">rn:R12039</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13107" target="G13108">
+      <data key="d2">R12041</data>
+      <data key="d3">rn:R12041</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="G13108" target="PIM2">
+      <data key="d2">R12042</data>
+      <data key="d3">rn:R12042</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GA1" target="GA2">
+      <data key="d2">R05956</data>
+      <data key="d3">rn:R05956</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GA1" target="GM1b">
+      <data key="d2">R05957</data>
+      <data key="d3">rn:R05957</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GA2" target="LacCer">
+      <data key="d2">R05938</data>
+      <data key="d3">rn:R05938</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1a" target="GM1">
+      <data key="d2">R05942</data>
+      <data key="d3">rn:R05942</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1a" target="GT1a">
+      <data key="d2">R05943</data>
+      <data key="d3">rn:R05943</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1a" target="GM1b">
+      <data key="d2">R05959</data>
+      <data key="d3">rn:R05959</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1b" target="GD2">
+      <data key="d2">R05948</data>
+      <data key="d3">rn:R05948</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1b" target="GT1b">
+      <data key="d2">R05949</data>
+      <data key="d3">rn:R05949</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD1c" target="GM1b">
+      <data key="d2">R05958</data>
+      <data key="d3">rn:R05958</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD2" target="GD3">
+      <data key="d2">R05946</data>
+      <data key="d3">rn:R05946</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD3" target="GM3">
+      <data key="d2">R05940</data>
+      <data key="d3">rn:R05940</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GD3" target="GT3">
+      <data key="d2">R05947</data>
+      <data key="d3">rn:R05947</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GM1" target="GM2">
+      <data key="d2">R05941</data>
+      <data key="d3">rn:R05941 rn:R06010</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GM2" target="GM3">
+      <data key="d2">R05939</data>
+      <data key="d3">rn:R05939 rn:R06004</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GM3" target="LacCer">
+      <data key="d2">R05937</data>
+      <data key="d3">rn:R05937</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GQ1b" target="GT1b">
+      <data key="d2">R05950</data>
+      <data key="d3">rn:R05950</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GT1c" target="GT2">
+      <data key="d2">R05953</data>
+      <data key="d3">rn:R05953</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="GT2" target="GT3">
+      <data key="d2">R05952</data>
+      <data key="d3">rn:R05952</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Gb4Cer" target="Gb5Cer">
+      <data key="d2">R05964</data>
+      <data key="d3">rn:R05964</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Gb5Cer" target="MSGG">
+      <data key="d2">R05967</data>
+      <data key="d3">rn:R05967</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Glucocerebroside" target="LacCer">
+      <data key="d2">R03354</data>
+      <data key="d3">rn:R03354 rn:R03355</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="KDO-lipid_IV(A)" target="Lipid_IV(A)">
+      <data key="d2">R04658</data>
+      <data key="d3">rn:R04658</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="LA1" target="Lc3Cer">
+      <data key="d2">R05977</data>
+      <data key="d3">rn:R05977</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="LA1" target="SSEA-1">
+      <data key="d2">R06025</data>
+      <data key="d3">rn:R06025</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="LA1" target="PX2">
+      <data key="d2">R11378</data>
+      <data key="d3">rn:R11378</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="LacCer" target="Lc3Cer">
+      <data key="d2">R05971</data>
+      <data key="d3">rn:R05971</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Lc3Cer" target="Lc4Cer">
+      <data key="d2">R06006</data>
+      <data key="d3">rn:R06006</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="Lipid_A_disaccharide" target="Lipid_IV(A)">
+      <data key="d2">R04657</data>
+      <data key="d3">rn:R04657</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="PIM1" target="Phosphatidylinositol">
+      <data key="d2">R12038</data>
+      <data key="d3">rn:R12038</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+    <edge source="PIM1" target="PIM2">
+      <data key="d2">R12040</data>
+      <data key="d3">rn:R12040</data>
+      <data key="d4">False</data>
+      <data key="d5">Carbohydrate Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

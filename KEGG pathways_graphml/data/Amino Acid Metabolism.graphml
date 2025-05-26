@@ -1,0 +1,3135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(-)-Ureidoglycolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(E)-Cinnamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-2-Acetolactate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-2-Aminobutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Ketovaline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxoadipate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxoarginine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxobutyrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxoglutarate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxoisocaproate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Dehydroshikimate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Fumarylpyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Iodo-L-tyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Isopropylmalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Methoxytyramine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phosphoglycerate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phosphooxypyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Sulfinoalanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Sulfinopyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Acetamidobutanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Acetamidobutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Aminobutanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Guanidinobutanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Guanidinobutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Maleylacetoacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Oxobutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5,10-Methylene-THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Dehydroquinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetoacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Agmatine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Allophanate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Allysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Arterenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Betaine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Betaine_aldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00021">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00173">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00279">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00436">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00439">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00441">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00450">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00632">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00666">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00671">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00680">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01100">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01102">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01165">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01179">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01180">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01234">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01242">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01250">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01252">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01267">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01269">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01302">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C02504">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03082">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03089">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03175">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03227">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03231">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03283">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03287">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03296">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03344">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03366">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03415">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03506">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03539">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03680">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03824">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03871">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03912">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03972">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04043">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04092">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04133">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04188">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04236">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04272">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04281">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04302">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04390">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04405">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04409">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04421">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04462">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04582">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04666">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04896">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04916">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05539">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05576">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05577">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05580">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05583">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05584">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05594">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05634">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05635">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05852">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05931">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05932">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05946">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05947">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06000">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06001">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06002">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06006">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06007">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06032">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06157">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06442">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07303">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C08276">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15532">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15606">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15650">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15651">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15699">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15700">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15975">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15977">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15979">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15980">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17938">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19787">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19886">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19887">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19888">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19929">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20949">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20950">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21015">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CO2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Carbamoyl_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Carboxyspermidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Choline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chorismate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Citraconate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Citrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Citrulline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Creatine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Creatinine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Crotonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Citramalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Proline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Serine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DAHP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DHI">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DHICA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Decarboxy-AdoMet">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dexfosfoserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dimethylacryloyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dimethylglycine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dopamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dopaquinone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ectoine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Feruloyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Fumarate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Fumarylacetoacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GABA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gentisate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gentisate_aldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gln-tRNA(Gln)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glu-tRNA(Gln)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutaryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gly">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycocyamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glyoxalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="H2S">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HMG-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HTPA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Histamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homocitrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homocysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homogentisate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homoisocitrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homoprotocatechuate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homovanillate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Homovanillin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxyproline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxypyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="IAA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Indole">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Indole-5,6-quinone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Indoleacetaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Indolepyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isobutyryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isovaleryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-2-Aminoadipate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Adrenaline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Allothreonine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Arg">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Argininosuccinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asp">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asparagine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Cystathionine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Cysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Diiodotyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Dopa">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Dopachrome">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Glutamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Histidinal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Histidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Histidinol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Homoserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Hydroxylysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Isoleucine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Kynurenine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Leucine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Metanephrine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Normetanephrine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Ornithine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Phenylalanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Pipecolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Proline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Threonine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Valine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LysW-L-ornithine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LysW-gamma-L-lysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="LysW-glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="MTA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Maleylpyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Melatonin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Mercaptopyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methacrylyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methionine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetyl-L-aspartate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetyl-L-glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetylornithine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetylputrescine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetylserotonin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Carbamoylsarcosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Formylkynurenine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Methylhydantoin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NAAG">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NAAG2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NH3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="O-Acetyl-L-serine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="O-Acetylhomoserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="O-Succinylhomoserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ophthalmate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxaloacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxitriptan">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PEP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PRPP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phenylacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phenylpyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphocreatine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphoribosyl-AMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphoribosyl-ATP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Prephenate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pretyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propionyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Putrescine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="S-Sulfo-L-cysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="SAM">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Saccharopine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sarcosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Serine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Serotonin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Shikimate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Spermidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Spermine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Succinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="T3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="T4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tiglyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tryptamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tryptophan">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Urea">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Urocanate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vanillin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_L1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-Tolualdehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Citrylglutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="cis-Homoaconitate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="gamma-Glutamyl-GABA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="o-Aminomuconate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(-)-Ureidoglycolate" target="Urea">
+      <data key="d2">R00776</data>
+      <data key="d3">rn:R00776</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="(E)-Cinnamate" target="L-Phenylalanine">
+      <data key="d2">R00697</data>
+      <data key="d3">rn:R00697</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="(S)-2-Acetolactate" target="Pyruvate">
+      <data key="d2">R00226</data>
+      <data key="d3">rn:R00226</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="(S)-2-Aminobutanoate" target="2-Oxobutyrate">
+      <data key="d2">R10991</data>
+      <data key="d3">rn:R10991</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="(S)-2-Aminobutanoate" target="C21015">
+      <data key="d2">R10993</data>
+      <data key="d3">rn:R10993</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Ketovaline" target="C04272">
+      <data key="d2">R04441</data>
+      <data key="d3">rn:R04441</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Ketovaline" target="C02504">
+      <data key="d2">R01213</data>
+      <data key="d3">rn:R01213</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Ketovaline" target="L-Valine">
+      <data key="d2">R01214</data>
+      <data key="d3">rn:R01214 rn:R01215 rn:R01434</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Ketovaline" target="C15977">
+      <data key="d2">R01701</data>
+      <data key="d3">rn:R01701</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoadipate" target="Homoisocitrate">
+      <data key="d2">R01934</data>
+      <data key="d3">rn:R01934</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoadipate" target="L-2-Aminoadipate">
+      <data key="d2">R01939</data>
+      <data key="d3">rn:R01939</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoadipate" target="C06157">
+      <data key="d2">R01940</data>
+      <data key="d3">rn:R01940</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoarginine" target="L-Arg">
+      <data key="d2">R08197</data>
+      <data key="d3">rn:R08197</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoarginine" target="4-Guanidinobutanal">
+      <data key="d2">R03178</data>
+      <data key="d3">rn:R03178</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxobutyrate" target="O-Succinylhomoserine">
+      <data key="d2">R00999</data>
+      <data key="d3">rn:R00999</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxobutyrate" target="L-Threonine">
+      <data key="d2">R00996</data>
+      <data key="d3">rn:R00996</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxobutyrate" target="C06032">
+      <data key="d2">R00994</data>
+      <data key="d3">rn:R00994</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoglutarate" target="Glutamate">
+      <data key="d2">R00093</data>
+      <data key="d3">rn:R00093 rn:R00114 rn:R00243 rn:R00248</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoisocaproate" target="L-Leucine">
+      <data key="d2">R01088</data>
+      <data key="d3">rn:R01088 rn:R01090</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoisocaproate" target="C15975">
+      <data key="d2">R01702</data>
+      <data key="d3">rn:R01702</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="2-Oxoisocaproate" target="Isovaleryl-CoA">
+      <data key="d2">R08566</data>
+      <data key="d3">rn:R08566</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Dehydroshikimate" target="5-Dehydroquinate">
+      <data key="d2">R03084</data>
+      <data key="d3">rn:R03084</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Dehydroshikimate" target="Shikimate">
+      <data key="d2">R02413</data>
+      <data key="d3">rn:R02413 rn:R02415 rn:R06847</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Fumarylpyruvate" target="Maleylpyruvate">
+      <data key="d2">R03868</data>
+      <data key="d3">rn:R03868</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Fumarylpyruvate" target="Pyruvate">
+      <data key="d2">R01085</data>
+      <data key="d3">rn:R01085</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Iodo-L-tyrosine" target="Tyrosine">
+      <data key="d2">R03539</data>
+      <data key="d3">rn:R03539</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Iodo-L-tyrosine" target="L-Diiodotyrosine">
+      <data key="d2">R03973</data>
+      <data key="d3">rn:R03973</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Isopropylmalate" target="C04236">
+      <data key="d2">R04426</data>
+      <data key="d3">rn:R04426</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Methoxytyramine" target="Dopamine">
+      <data key="d2">R04301</data>
+      <data key="d3">rn:R04301</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Methoxytyramine" target="Homovanillin">
+      <data key="d2">R04890</data>
+      <data key="d3">rn:R04890</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Phosphoglycerate" target="3-Phosphooxypyruvate">
+      <data key="d2">R01513</data>
+      <data key="d3">rn:R01513</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Phosphooxypyruvate" target="Dexfosfoserine">
+      <data key="d2">R04173</data>
+      <data key="d3">rn:R04173</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Sulfinoalanine" target="L-Cysteine">
+      <data key="d2">R00893</data>
+      <data key="d3">rn:R00893</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="3-Sulfinoalanine" target="3-Sulfinopyruvate">
+      <data key="d2">R02619</data>
+      <data key="d3">rn:R02619</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Acetamidobutanal" target="N-Acetylputrescine">
+      <data key="d2">R04025</data>
+      <data key="d3">rn:R04025</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Acetamidobutanal" target="4-Acetamidobutanoate">
+      <data key="d2">R05050</data>
+      <data key="d3">rn:R05050</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Aminobutanal" target="Putrescine">
+      <data key="d2">R01151</data>
+      <data key="d3">rn:R01151 rn:R01155 rn:R08714</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Aminobutanal" target="GABA">
+      <data key="d2">R01986</data>
+      <data key="d3">rn:R01986 rn:R02549</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Aminobutanal" target="Spermidine">
+      <data key="d2">R01914</data>
+      <data key="d3">rn:R01914 rn:R01915</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Guanidinobutanal" target="4-Guanidinobutanoate">
+      <data key="d2">R03177</data>
+      <data key="d3">rn:R03177</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Guanidinobutanoate" target="GABA">
+      <data key="d2">R01989</data>
+      <data key="d3">rn:R01989 rn:R01990</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Maleylacetoacetate" target="Homogentisate">
+      <data key="d2">R02519</data>
+      <data key="d3">rn:R02519</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Maleylacetoacetate" target="Fumarylacetoacetate">
+      <data key="d2">R03181</data>
+      <data key="d3">rn:R03181</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Oxobutanoate" target="Succinate">
+      <data key="d2">R00713</data>
+      <data key="d3">rn:R00713 rn:R00714</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="4-Oxobutanoate" target="GABA">
+      <data key="d2">R01648</data>
+      <data key="d3">rn:R01648 rn:R10178</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="Serine">
+      <data key="d2">R00945</data>
+      <data key="d3">rn:R00945</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="C01242">
+      <data key="d2">R04125</data>
+      <data key="d3">rn:R04125</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="5-Dehydroquinate" target="DAHP">
+      <data key="d2">R03083</data>
+      <data key="d3">rn:R03083</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Acetoacetate" target="Fumarylacetoacetate">
+      <data key="d2">R01364</data>
+      <data key="d3">rn:R01364</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="Homocitrate">
+      <data key="d2">R00271</data>
+      <data key="d3">rn:R00271</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Agmatine" target="Putrescine">
+      <data key="d2">R01157</data>
+      <data key="d3">rn:R01157</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Agmatine" target="L-Arg">
+      <data key="d2">R00566</data>
+      <data key="d3">rn:R00566</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Agmatine" target="C00436">
+      <data key="d2">R01416</data>
+      <data key="d3">rn:R01416</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Allophanate" target="Urea">
+      <data key="d2">R00774</data>
+      <data key="d3">rn:R00774</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Allysine" target="Saccharopine">
+      <data key="d2">R02313</data>
+      <data key="d3">rn:R02313 rn:R02315</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Allysine" target="L-Lysine">
+      <data key="d2">R00446</data>
+      <data key="d3">rn:R00446</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Allysine" target="C00450">
+      <data key="d2">R02317</data>
+      <data key="d3">rn:R02317</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Allysine" target="C03366">
+      <data key="d2">R10270</data>
+      <data key="d3">rn:R10270</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Arterenol" target="Dopamine">
+      <data key="d2">R02535</data>
+      <data key="d3">rn:R02535</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Arterenol" target="L-Adrenaline">
+      <data key="d2">R02533</data>
+      <data key="d3">rn:R02533</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Arterenol" target="C05577">
+      <data key="d2">R02532</data>
+      <data key="d3">rn:R02532</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Arterenol" target="L-Normetanephrine">
+      <data key="d2">R02534</data>
+      <data key="d3">rn:R02534</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Betaine" target="Dimethylglycine">
+      <data key="d2">R02821</data>
+      <data key="d3">rn:R02821</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Betaine" target="Betaine_aldehyde">
+      <data key="d2">R02565</data>
+      <data key="d3">rn:R02565 rn:R02566 rn:R08211</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Betaine_aldehyde" target="Choline">
+      <data key="d2">R01022</data>
+      <data key="d3">rn:R01022 rn:R08557 rn:R08558</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00021" target="Homocysteine">
+      <data key="d2">R00192</data>
+      <data key="d3">rn:R00192</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00021" target="SAM">
+      <data key="d2">R04858</data>
+      <data key="d3">rn:R04858 rn:R10404</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00021" target="C03539">
+      <data key="d2">R00194</data>
+      <data key="d3">rn:R00194</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00173" target="MTA">
+      <data key="d2">R08940</data>
+      <data key="d3">rn:R08940</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00436" target="Putrescine">
+      <data key="d2">R01152</data>
+      <data key="d3">rn:R01152</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00439" target="C03680">
+      <data key="d2">R02288</data>
+      <data key="d3">rn:R02288</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00439" target="Glutamate">
+      <data key="d2">R02285</data>
+      <data key="d3">rn:R02285 rn:R02287</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00441" target="C03082">
+      <data key="d2">R02291</data>
+      <data key="d3">rn:R02291</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00441" target="L-Homoserine">
+      <data key="d2">R01773</data>
+      <data key="d3">rn:R01773 rn:R01775</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00441" target="C03283">
+      <data key="d2">R06977</data>
+      <data key="d3">rn:R06977</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00441" target="HTPA">
+      <data key="d2">R10147</data>
+      <data key="d3">rn:R10147</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00450" target="L-Pipecolate">
+      <data key="d2">R02204</data>
+      <data key="d3">rn:R02204 rn:R02205 rn:R08414</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00632" target="C03227">
+      <data key="d2">R02668</data>
+      <data key="d3">rn:R02668</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00632" target="C04409">
+      <data key="d2">R02665</data>
+      <data key="d3">rn:R02665</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00666" target="C00680">
+      <data key="d2">R02735</data>
+      <data key="d3">rn:R02735</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00666" target="C04421">
+      <data key="d2">R02734</data>
+      <data key="d3">rn:R02734</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00666" target="C04390">
+      <data key="d2">R02733</data>
+      <data key="d3">rn:R02733</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00666" target="C03972">
+      <data key="d2">R07613</data>
+      <data key="d3">rn:R07613</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00671" target="C06007">
+      <data key="d2">R05070</data>
+      <data key="d3">rn:R05070</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00671" target="L-Isoleucine">
+      <data key="d2">R02197</data>
+      <data key="d3">rn:R02197 rn:R02199</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00671" target="C15979">
+      <data key="d2">R04225</data>
+      <data key="d3">rn:R04225</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00671" target="C15980">
+      <data key="d2">R08567</data>
+      <data key="d3">rn:R08567</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00680" target="L-Lysine">
+      <data key="d2">R00451</data>
+      <data key="d3">rn:R00451</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C00680" target="C03871">
+      <data key="d2">R02755</data>
+      <data key="d3">rn:R02755</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01100" target="C01267">
+      <data key="d2">R03243</data>
+      <data key="d3">rn:R03243</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01100" target="L-Histidinol">
+      <data key="d2">R03013</data>
+      <data key="d3">rn:R03013</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01102" target="L-Homoserine">
+      <data key="d2">R01771</data>
+      <data key="d3">rn:R01771</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01102" target="L-Threonine">
+      <data key="d2">R01466</data>
+      <data key="d3">rn:R01466</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01165" target="L-Ornithine">
+      <data key="d2">R00667</data>
+      <data key="d3">rn:R00667</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01165" target="C03287">
+      <data key="d2">R03313</data>
+      <data key="d3">rn:R03313</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01165" target="C01250">
+      <data key="d2">R12085</data>
+      <data key="d3">rn:R12085</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01179" target="Prephenate">
+      <data key="d2">R01728</data>
+      <data key="d3">rn:R01728 rn:R01730</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01179" target="Tyrosine">
+      <data key="d2">R00729</data>
+      <data key="d3">rn:R00729 rn:R00734 rn:R09254</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01179" target="Homogentisate">
+      <data key="d2">R02521</data>
+      <data key="d3">rn:R02521</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01180" target="Methionine">
+      <data key="d2">R00648</data>
+      <data key="d3">rn:R00648 rn:R07396</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01180" target="C15606">
+      <data key="d2">R07364</data>
+      <data key="d3">rn:R07364</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01234" target="SAM">
+      <data key="d2">R00179</data>
+      <data key="d3">rn:R00179</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01234" target="Ethene">
+      <data key="d2">R07214</data>
+      <data key="d3">rn:R07214</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01242" target="Gly">
+      <data key="d2">R03425</data>
+      <data key="d3">rn:R03425</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01250" target="C04133">
+      <data key="d2">R03443</data>
+      <data key="d3">rn:R03443</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01250" target="N-Acetylornithine">
+      <data key="d2">R02283</data>
+      <data key="d3">rn:R02283</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01252" target="L-Kynurenine">
+      <data key="d2">R01956</data>
+      <data key="d3">rn:R01956</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01267" target="C04666">
+      <data key="d2">R03457</data>
+      <data key="d3">rn:R03457</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01269" target="C03175">
+      <data key="d2">R03460</data>
+      <data key="d3">rn:R03460</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01269" target="Chorismate">
+      <data key="d2">R01714</data>
+      <data key="d3">rn:R01714</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01302" target="C04302">
+      <data key="d2">R03509</data>
+      <data key="d3">rn:R03509</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C01302" target="C03506">
+      <data key="d2">R03508</data>
+      <data key="d3">rn:R03508</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03082" target="L-Asp">
+      <data key="d2">R00480</data>
+      <data key="d3">rn:R00480</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03089" target="C04188">
+      <data key="d2">R04143</data>
+      <data key="d3">rn:R04143</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03089" target="MTA">
+      <data key="d2">R01401</data>
+      <data key="d3">rn:R01401</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03175" target="Shikimate">
+      <data key="d2">R02412</data>
+      <data key="d3">rn:R02412</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03227" target="L-Kynurenine">
+      <data key="d2">R01960</data>
+      <data key="d3">rn:R01960</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03231" target="Dimethylacryloyl-CoA">
+      <data key="d2">R04138</data>
+      <data key="d3">rn:R04138</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03231" target="HMG-CoA">
+      <data key="d2">R02085</data>
+      <data key="d3">rn:R02085</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03283" target="C06442">
+      <data key="d2">R06978</data>
+      <data key="d3">rn:R06978</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03283" target="C19929">
+      <data key="d2">R09801</data>
+      <data key="d3">rn:R09801</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03287" target="Glutamate">
+      <data key="d2">R00239</data>
+      <data key="d3">rn:R00239</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03296" target="C03415">
+      <data key="d2">R04189</data>
+      <data key="d3">rn:R04189</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03296" target="L-Arg">
+      <data key="d2">R00832</data>
+      <data key="d3">rn:R00832</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03344" target="Propionyl-CoA">
+      <data key="d2">R00927</data>
+      <data key="d3">rn:R00927</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03344" target="C04405">
+      <data key="d2">R04203</data>
+      <data key="d3">rn:R04203</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03366" target="L-Hydroxylysine">
+      <data key="d2">R03378</data>
+      <data key="d3">rn:R03378</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03415" target="C05932">
+      <data key="d2">R04217</data>
+      <data key="d3">rn:R04217</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03506" target="Indole">
+      <data key="d2">R02340</data>
+      <data key="d3">rn:R02340</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03539" target="Homocysteine">
+      <data key="d2">R01291</data>
+      <data key="d3">rn:R01291</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03680" target="Urocanate">
+      <data key="d2">R02914</data>
+      <data key="d3">rn:R02914</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03824" target="C04409">
+      <data key="d2">R04323</data>
+      <data key="d3">rn:R04323</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03824" target="o-Aminomuconate">
+      <data key="d2">R03889</data>
+      <data key="d3">rn:R03889</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03912" target="L-Proline">
+      <data key="d2">R01248</data>
+      <data key="d3">rn:R01248 rn:R01251 rn:R01253</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03912" target="Glutamate">
+      <data key="d2">R00707</data>
+      <data key="d3">rn:R00707 rn:R00708</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03972" target="C04462">
+      <data key="d2">R04365</data>
+      <data key="d3">rn:R04365</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03972" target="HTPA">
+      <data key="d2">R04198</data>
+      <data key="d3">rn:R04198 rn:R04199</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C03972" target="C05539">
+      <data key="d2">R04364</data>
+      <data key="d3">rn:R04364</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04043" target="Homoprotocatechuate">
+      <data key="d2">R03300</data>
+      <data key="d3">rn:R03300 rn:R03302</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04043" target="Dopamine">
+      <data key="d2">R04300</data>
+      <data key="d3">rn:R04300</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04092" target="L-Pipecolate">
+      <data key="d2">R02201</data>
+      <data key="d3">rn:R02201 rn:R02203</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04133" target="N-Acetyl-L-glutamate">
+      <data key="d2">R02649</data>
+      <data key="d3">rn:R02649</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04188" target="C04582">
+      <data key="d2">R04420</data>
+      <data key="d3">rn:R04420</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04188" target="MTA">
+      <data key="d2">R01402</data>
+      <data key="d3">rn:R01402</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04188" target="C19787">
+      <data key="d2">R09668</data>
+      <data key="d3">rn:R09668</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04281" target="C05947">
+      <data key="d2">R04444</data>
+      <data key="d3">rn:R04444 rn:R04445</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04281" target="Hydroxyproline">
+      <data key="d2">R03291</data>
+      <data key="d3">rn:R03291 rn:R03293 rn:R03295</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04302" target="Vitamin_L1">
+      <data key="d2">R01073</data>
+      <data key="d3">rn:R01073</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04390" target="C05539">
+      <data key="d2">R04467</data>
+      <data key="d3">rn:R04467</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04405" target="Tiglyl-CoA">
+      <data key="d2">R04204</data>
+      <data key="d3">rn:R04204</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04421" target="C04462">
+      <data key="d2">R04475</data>
+      <data key="d3">rn:R04475</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04582" target="C15650">
+      <data key="d2">R07392</data>
+      <data key="d3">rn:R07392</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04666" target="C04916">
+      <data key="d2">R04558</data>
+      <data key="d3">rn:R04558</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04896" target="Phosphoribosyl-AMP">
+      <data key="d2">R04037</data>
+      <data key="d3">rn:R04037</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C04896" target="C04916">
+      <data key="d2">R04640</data>
+      <data key="d3">rn:R04640</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05576" target="C05577">
+      <data key="d2">R04880</data>
+      <data key="d3">rn:R04880</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05576" target="C05594">
+      <data key="d2">R04881</data>
+      <data key="d3">rn:R04881</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05577" target="C05580">
+      <data key="d2">R04882</data>
+      <data key="d3">rn:R04882 rn:R04883</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05577" target="L-Adrenaline">
+      <data key="d2">R02919</data>
+      <data key="d3">rn:R02919</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05580" target="C05584">
+      <data key="d2">R04887</data>
+      <data key="d3">rn:R04887</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05583" target="L-Metanephrine">
+      <data key="d2">R04894</data>
+      <data key="d3">rn:R04894</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05583" target="C05584">
+      <data key="d2">R04891</data>
+      <data key="d3">rn:R04891 rn:R04892</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05583" target="L-Normetanephrine">
+      <data key="d2">R04893</data>
+      <data key="d3">rn:R04893</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05634" target="Serotonin">
+      <data key="d2">R02908</data>
+      <data key="d3">rn:R02908</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05634" target="C05635">
+      <data key="d2">R04903</data>
+      <data key="d3">rn:R04903 rn:R04904</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05852" target="Phenylacetate">
+      <data key="d2">R05487</data>
+      <data key="d3">rn:R05487</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05852" target="Phenylpyruvate">
+      <data key="d2">R01372</data>
+      <data key="d3">rn:R01372</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05931" target="Glutamate">
+      <data key="d2">R00411</data>
+      <data key="d3">rn:R00411</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05931" target="C05932">
+      <data key="d2">R05049</data>
+      <data key="d3">rn:R05049</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05946" target="Glyoxalate">
+      <data key="d2">R00471</data>
+      <data key="d3">rn:R00471</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C05946" target="C05947">
+      <data key="d2">R05052</data>
+      <data key="d3">rn:R05052 rn:R05053</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06000" target="C06001">
+      <data key="d2">R05064</data>
+      <data key="d3">rn:R05064</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06000" target="Methacrylyl-CoA">
+      <data key="d2">R04224</data>
+      <data key="d3">rn:R04224</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06001" target="C06002">
+      <data key="d2">R05066</data>
+      <data key="d3">rn:R05066</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06002" target="Propionyl-CoA">
+      <data key="d2">R00935</data>
+      <data key="d3">rn:R00935</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06006" target="Pyruvate">
+      <data key="d2">R08648</data>
+      <data key="d3">rn:R08648</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06032" target="Citraconate">
+      <data key="d2">R03898</data>
+      <data key="d3">rn:R03898</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06157" target="Glutaryl-CoA">
+      <data key="d2">R02571</data>
+      <data key="d3">rn:R02571</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C06442" target="Ectoine">
+      <data key="d2">R06979</data>
+      <data key="d3">rn:R06979</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C07303" target="Feruloyl-CoA">
+      <data key="d2">R05772</data>
+      <data key="d3">rn:R05772</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C07303" target="Vanillin">
+      <data key="d2">R05773</data>
+      <data key="d3">rn:R05773</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C08276" target="C15606">
+      <data key="d2">R07363</data>
+      <data key="d3">rn:R07363</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15532" target="N-Acetylornithine">
+      <data key="d2">R07245</data>
+      <data key="d3">rn:R07245</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15532" target="Citrulline">
+      <data key="d2">R09107</data>
+      <data key="d3">rn:R09107</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15606" target="C15651">
+      <data key="d2">R07394</data>
+      <data key="d3">rn:R07394</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15606" target="C15650">
+      <data key="d2">R07395</data>
+      <data key="d3">rn:R07395</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15650" target="C15651">
+      <data key="d2">R07393</data>
+      <data key="d3">rn:R07393</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15699" target="Putrescine">
+      <data key="d2">R07414</data>
+      <data key="d3">rn:R07414</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15699" target="C15700">
+      <data key="d2">R07415</data>
+      <data key="d3">rn:R07415</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15700" target="gamma-Glutamyl-GABA">
+      <data key="d2">R07417</data>
+      <data key="d3">rn:R07417 rn:R07418</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15975" target="Isovaleryl-CoA">
+      <data key="d2">R04097</data>
+      <data key="d3">rn:R04097</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15977" target="Isobutyryl-CoA">
+      <data key="d2">R02662</data>
+      <data key="d3">rn:R02662</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15979" target="C15980">
+      <data key="d2">R03174</data>
+      <data key="d3">rn:R03174</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C15980" target="Tiglyl-CoA">
+      <data key="d2">R03172</data>
+      <data key="d3">rn:R03172</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C17938" target="DHICA">
+      <data key="d2">R08965</data>
+      <data key="d3">rn:R08965</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19787" target="MTA">
+      <data key="d2">R09660</data>
+      <data key="d3">rn:R09660</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19886" target="L-2-Aminoadipate">
+      <data key="d2">R09775</data>
+      <data key="d3">rn:R09775</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19886" target="C19887">
+      <data key="d2">R09776</data>
+      <data key="d3">rn:R09776</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19887" target="C19888">
+      <data key="d2">R09777</data>
+      <data key="d3">rn:R09777</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19888" target="LysW-gamma-L-lysine">
+      <data key="d2">R09778</data>
+      <data key="d3">rn:R09778</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C19929" target="Ectoine">
+      <data key="d2">R09800</data>
+      <data key="d3">rn:R09800</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C20949" target="LysW-glutamate">
+      <data key="d2">R10930</data>
+      <data key="d3">rn:R10930</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C20949" target="C20950">
+      <data key="d2">R10931</data>
+      <data key="d3">rn:R10931</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C20950" target="LysW-L-ornithine">
+      <data key="d2">R10932</data>
+      <data key="d3">rn:R10932</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="C21015" target="Ophthalmate">
+      <data key="d2">R10994</data>
+      <data key="d3">rn:R10994</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="CO2" target="Urea">
+      <data key="d2">R00131</data>
+      <data key="d3">rn:R00131</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Carbamoyl_phosphate" target="Citrulline">
+      <data key="d2">R01398</data>
+      <data key="d3">rn:R01398</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Carbamoyl_phosphate" target="NH3">
+      <data key="d2">R00149</data>
+      <data key="d3">rn:R00149 rn:R00150</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Carbamoyl_phosphate" target="L-Glutamine">
+      <data key="d2">R00575</data>
+      <data key="d3">rn:R00575</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Carboxyspermidine" target="Putrescine">
+      <data key="d2">R09079</data>
+      <data key="d3">rn:R09079</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Carboxyspermidine" target="Spermidine">
+      <data key="d2">R09081</data>
+      <data key="d3">rn:R09081</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Chorismate" target="Vitamin_L1">
+      <data key="d2">R00985</data>
+      <data key="d3">rn:R00985 rn:R00986</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Chorismate" target="Prephenate">
+      <data key="d2">R01715</data>
+      <data key="d3">rn:R01715</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Citraconate" target="D-Citramalate">
+      <data key="d2">R03896</data>
+      <data key="d3">rn:R03896</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Citrate" target="beta-Citrylglutamate">
+      <data key="d2">R10677</data>
+      <data key="d3">rn:R10677</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Citrulline" target="L-Arg">
+      <data key="d2">R00552</data>
+      <data key="d3">rn:R00552 rn:R00557 rn:R11711</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Citrulline" target="L-Argininosuccinate">
+      <data key="d2">R01954</data>
+      <data key="d3">rn:R01954</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Creatine" target="Phosphocreatine">
+      <data key="d2">R01881</data>
+      <data key="d3">rn:R01881</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Creatine" target="Glycocyamine">
+      <data key="d2">R01883</data>
+      <data key="d3">rn:R01883</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Creatine" target="Sarcosine">
+      <data key="d2">R01566</data>
+      <data key="d3">rn:R01566</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Creatinine" target="N-Methylhydantoin">
+      <data key="d2">R02922</data>
+      <data key="d3">rn:R02922</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Crotonyl-CoA" target="Glutaryl-CoA">
+      <data key="d2">R02488</data>
+      <data key="d3">rn:R02488</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="D-Citramalate" target="Pyruvate">
+      <data key="d2">R07399</data>
+      <data key="d3">rn:R07399</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="D-Proline" target="L-Proline">
+      <data key="d2">R01255</data>
+      <data key="d3">rn:R01255</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="D-Serine" target="Serine">
+      <data key="d2">R00589</data>
+      <data key="d3">rn:R00589</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="DAHP" target="PEP">
+      <data key="d2">R01826</data>
+      <data key="d3">rn:R01826</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="DHI" target="Indole-5,6-quinone">
+      <data key="d2">R04884</data>
+      <data key="d3">rn:R04884</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="DHICA" target="L-Dopachrome">
+      <data key="d2">R03673</data>
+      <data key="d3">rn:R03673</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Decarboxy-AdoMet" target="SAM">
+      <data key="d2">R00178</data>
+      <data key="d3">rn:R00178</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Dexfosfoserine" target="Serine">
+      <data key="d2">R00582</data>
+      <data key="d3">rn:R00582</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Dimethylacryloyl-CoA" target="Isovaleryl-CoA">
+      <data key="d2">R04095</data>
+      <data key="d3">rn:R04095</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Dimethylglycine" target="Sarcosine">
+      <data key="d2">R01565</data>
+      <data key="d3">rn:R01565</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Dopamine" target="L-Dopa">
+      <data key="d2">R02080</data>
+      <data key="d3">rn:R02080</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Dopaquinone" target="L-Dopa">
+      <data key="d2">R00045</data>
+      <data key="d3">rn:R00045</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Fumarate" target="L-Asp">
+      <data key="d2">R00490</data>
+      <data key="d3">rn:R00490</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="GABA" target="Glutamate">
+      <data key="d2">R00261</data>
+      <data key="d3">rn:R00261</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="GABA" target="gamma-Glutamyl-GABA">
+      <data key="d2">R07419</data>
+      <data key="d3">rn:R07419</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gentisate" target="Gentisate_aldehyde">
+      <data key="d2">R02655</data>
+      <data key="d3">rn:R02655 rn:R02657</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gentisate" target="Maleylpyruvate">
+      <data key="d2">R02656</data>
+      <data key="d3">rn:R02656</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gln-tRNA(Gln)" target="L-Glutamine">
+      <data key="d2">R03652</data>
+      <data key="d3">rn:R03652</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gln-tRNA(Gln)" target="Glu-tRNA(Gln)">
+      <data key="d2">R03905</data>
+      <data key="d3">rn:R03905</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Glu-tRNA(Gln)" target="Glutamate">
+      <data key="d2">R03651</data>
+      <data key="d3">rn:R03651</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Glutamate" target="N-Acetyl-L-glutamate">
+      <data key="d2">R00259</data>
+      <data key="d3">rn:R00259</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Glutamate" target="LysW-glutamate">
+      <data key="d2">R10929</data>
+      <data key="d3">rn:R10929</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gly" target="L-Threonine">
+      <data key="d2">R00751</data>
+      <data key="d3">rn:R00751</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gly" target="Glyoxalate">
+      <data key="d2">R00364</data>
+      <data key="d3">rn:R00364 rn:R00366 rn:R00372</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gly" target="L-Allothreonine">
+      <data key="d2">R06171</data>
+      <data key="d3">rn:R06171</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gly" target="Sarcosine">
+      <data key="d2">R00610</data>
+      <data key="d3">rn:R00610 rn:R00611</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Gly" target="NH3">
+      <data key="d2">R01221</data>
+      <data key="d3">rn:R01221</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Glycocyamine" target="L-Arg">
+      <data key="d2">R00565</data>
+      <data key="d3">rn:R00565</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="H2S" target="L-Cysteine">
+      <data key="d2">R00897</data>
+      <data key="d3">rn:R00897</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Histamine" target="L-Histidine">
+      <data key="d2">R01167</data>
+      <data key="d3">rn:R01167</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homocitrate" target="cis-Homoaconitate">
+      <data key="d2">R03444</data>
+      <data key="d3">rn:R03444</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homocysteine" target="O-Succinylhomoserine">
+      <data key="d2">R01288</data>
+      <data key="d3">rn:R01288</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homocysteine" target="Methionine">
+      <data key="d2">R00650</data>
+      <data key="d3">rn:R00650 rn:R00946 rn:R02821 rn:R04405</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homocysteine" target="O-Acetylhomoserine">
+      <data key="d2">R01287</data>
+      <data key="d3">rn:R01287 rn:R02026</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homocysteine" target="L-Cystathionine">
+      <data key="d2">R01286</data>
+      <data key="d3">rn:R01286 rn:R01290 rn:R10305</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homoisocitrate" target="cis-Homoaconitate">
+      <data key="d2">R04371</data>
+      <data key="d3">rn:R04371</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homoprotocatechuate" target="Homovanillate">
+      <data key="d2">R03304</data>
+      <data key="d3">rn:R03304</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Homovanillate" target="Homovanillin">
+      <data key="d2">R04888</data>
+      <data key="d3">rn:R04888 rn:R04889</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Hydroxyproline" target="L-Proline">
+      <data key="d2">R01252</data>
+      <data key="d3">rn:R01252</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Hydroxypyruvate" target="Serine">
+      <data key="d2">R00585</data>
+      <data key="d3">rn:R00585 rn:R00588</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="IAA" target="Indoleacetaldehyde">
+      <data key="d2">R02678</data>
+      <data key="d3">rn:R02678</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="IAA" target="Indolepyruvate">
+      <data key="d2">R10181</data>
+      <data key="d3">rn:R10181</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Indole" target="Tryptophan">
+      <data key="d2">R00674</data>
+      <data key="d3">rn:R00674</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Indoleacetaldehyde" target="Indolepyruvate">
+      <data key="d2">R01974</data>
+      <data key="d3">rn:R01974</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Indolepyruvate" target="Tryptophan">
+      <data key="d2">R00677</data>
+      <data key="d3">rn:R00677 rn:R00684 rn:R10180</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Isobutyryl-CoA" target="Methacrylyl-CoA">
+      <data key="d2">R02661</data>
+      <data key="d3">rn:R02661</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Adrenaline" target="L-Metanephrine">
+      <data key="d2">R02920</data>
+      <data key="d3">rn:R02920</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Alanine" target="L-Asp">
+      <data key="d2">R00397</data>
+      <data key="d3">rn:R00397</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Alanine" target="Pyruvate">
+      <data key="d2">R00258</data>
+      <data key="d3">rn:R00258 rn:R00369 rn:R00396 rn:R00400</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Arg" target="L-Argininosuccinate">
+      <data key="d2">R01086</data>
+      <data key="d3">rn:R01086</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Arg" target="Urea">
+      <data key="d2">R00551</data>
+      <data key="d3">rn:R00551</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Asp" target="Oxaloacetate">
+      <data key="d2">R00357</data>
+      <data key="d3">rn:R00357</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Asp" target="L-Asparagine">
+      <data key="d2">R00483</data>
+      <data key="d3">rn:R00483 rn:R00485 rn:R00578</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Asp" target="beta-Alanine">
+      <data key="d2">R00489</data>
+      <data key="d3">rn:R00489</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Asp" target="N-Acetyl-L-aspartate">
+      <data key="d2">R00487</data>
+      <data key="d3">rn:R00487 rn:R00488</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cystathionine" target="O-Acetylhomoserine">
+      <data key="d2">R03217</data>
+      <data key="d3">rn:R03217</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cystathionine" target="O-Succinylhomoserine">
+      <data key="d2">R03260</data>
+      <data key="d3">rn:R03260</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cystathionine" target="L-Cysteine">
+      <data key="d2">R01001</data>
+      <data key="d3">rn:R01001</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cystathionine" target="Serine">
+      <data key="d2">R01290</data>
+      <data key="d3">rn:R01290</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cysteine" target="Pyruvate">
+      <data key="d2">R00782</data>
+      <data key="d3">rn:R00782</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cysteine" target="Mercaptopyruvate">
+      <data key="d2">R00895</data>
+      <data key="d3">rn:R00895 rn:R00896</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Cysteine" target="O-Acetyl-L-serine">
+      <data key="d2">R04859</data>
+      <data key="d3">rn:R04859</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Diiodotyrosine" target="T3">
+      <data key="d2">R03953</data>
+      <data key="d3">rn:R03953</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Diiodotyrosine" target="T4">
+      <data key="d2">R03208</data>
+      <data key="d3">rn:R03208</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Dopa" target="Tyrosine">
+      <data key="d2">R00031</data>
+      <data key="d3">rn:R00031 rn:R00731 rn:R01815</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Histidinal" target="L-Histidine">
+      <data key="d2">R01163</data>
+      <data key="d3">rn:R01163</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Histidinal" target="L-Histidinol">
+      <data key="d2">R03012</data>
+      <data key="d3">rn:R03012</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Histidine" target="Urocanate">
+      <data key="d2">R01168</data>
+      <data key="d3">rn:R01168</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Homoserine" target="O-Acetylhomoserine">
+      <data key="d2">R01776</data>
+      <data key="d3">rn:R01776</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Homoserine" target="O-Succinylhomoserine">
+      <data key="d2">R01777</data>
+      <data key="d3">rn:R01777</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Kynurenine" target="N-Formylkynurenine">
+      <data key="d2">R01959</data>
+      <data key="d3">rn:R01959</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Kynurenine" target="Vitamin_L1">
+      <data key="d2">R00987</data>
+      <data key="d3">rn:R00987</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Lysine" target="LysW-gamma-L-lysine">
+      <data key="d2">R09779</data>
+      <data key="d3">rn:R09779</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Lysine" target="Saccharopine">
+      <data key="d2">R00715</data>
+      <data key="d3">rn:R00715 rn:R00716</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Ornithine" target="N-Acetylornithine">
+      <data key="d2">R00669</data>
+      <data key="d3">rn:R00669 rn:R02282</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Ornithine" target="Putrescine">
+      <data key="d2">R00670</data>
+      <data key="d3">rn:R00670</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Ornithine" target="LysW-L-ornithine">
+      <data key="d2">R10933</data>
+      <data key="d3">rn:R10933</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Phenylalanine" target="Phenylpyruvate">
+      <data key="d2">R00688</data>
+      <data key="d3">rn:R00688 rn:R00689 rn:R00692 rn:R00694</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="L-Phenylalanine" target="Tyrosine">
+      <data key="d2">R01795</data>
+      <data key="d3">rn:R01795</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Melatonin" target="N-Acetylserotonin">
+      <data key="d2">R03130</data>
+      <data key="d3">rn:R03130</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Mercaptopyruvate" target="Pyruvate">
+      <data key="d2">R03105</data>
+      <data key="d3">rn:R03105</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Methionine" target="SAM">
+      <data key="d2">R00177</data>
+      <data key="d3">rn:R00177</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Acetyl-L-aspartate" target="NAAG">
+      <data key="d2">R10678</data>
+      <data key="d3">rn:R10678 rn:R10687</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Acetylputrescine" target="Putrescine">
+      <data key="d2">R01154</data>
+      <data key="d3">rn:R01154 rn:R01156</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Acetylserotonin" target="Serotonin">
+      <data key="d2">R02911</data>
+      <data key="d3">rn:R02911</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Carbamoylsarcosine" target="Sarcosine">
+      <data key="d2">R01563</data>
+      <data key="d3">rn:R01563</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Carbamoylsarcosine" target="N-Methylhydantoin">
+      <data key="d2">R03187</data>
+      <data key="d3">rn:R03187</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="N-Formylkynurenine" target="Tryptophan">
+      <data key="d2">R00678</data>
+      <data key="d3">rn:R00678</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="NAAG" target="NAAG2">
+      <data key="d2">R10693</data>
+      <data key="d3">rn:R10693 rn:R10688</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="O-Acetyl-L-serine" target="Serine">
+      <data key="d2">R00586</data>
+      <data key="d3">rn:R00586</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="O-Acetyl-L-serine" target="S-Sulfo-L-cysteine">
+      <data key="d2">R03132</data>
+      <data key="d3">rn:R03132</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Oxitriptan" target="Tryptophan">
+      <data key="d2">R01814</data>
+      <data key="d3">rn:R01814</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Oxitriptan" target="Serotonin">
+      <data key="d2">R02701</data>
+      <data key="d3">rn:R02701</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="PRPP" target="Phosphoribosyl-ATP">
+      <data key="d2">R01071</data>
+      <data key="d3">rn:R01071</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Phenylpyruvate" target="Prephenate">
+      <data key="d2">R01373</data>
+      <data key="d3">rn:R01373</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Phenylpyruvate" target="alpha-Tolualdehyde">
+      <data key="d2">R01377</data>
+      <data key="d3">rn:R01377</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Phosphoribosyl-AMP" target="Phosphoribosyl-ATP">
+      <data key="d2">R04035</data>
+      <data key="d3">rn:R04035</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Prephenate" target="Pretyrosine">
+      <data key="d2">R01731</data>
+      <data key="d3">rn:R01731 rn:R07276</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Pretyrosine" target="Tyrosine">
+      <data key="d2">R00732</data>
+      <data key="d3">rn:R00732 rn:R00733</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Putrescine" target="Spermidine">
+      <data key="d2">R01920</data>
+      <data key="d3">rn:R01920</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Pyruvate" target="Serine">
+      <data key="d2">R00220</data>
+      <data key="d3">rn:R00220</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Serine" target="Tryptophan">
+      <data key="d2">R02722</data>
+      <data key="d3">rn:R02722</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Spermidine" target="Spermine">
+      <data key="d2">R02869</data>
+      <data key="d3">rn:R02869</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+    <edge source="Tryptamine" target="Tryptophan">
+      <data key="d2">R00685</data>
+      <data key="d3">rn:R00685</data>
+      <data key="d4">False</data>
+      <data key="d5">Amino Acid Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

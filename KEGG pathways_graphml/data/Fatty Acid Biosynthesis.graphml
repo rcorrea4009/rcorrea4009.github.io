@@ -1,0 +1,1737 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(2E)-Decenoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Decenoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Dodecenoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Hexenoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Hexenoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Octenoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(2E)-Octenoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="16-Hydroxypalmitate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="19-Oxotestosterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2,3-Oxidosqualene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="24-Methylenelophenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="24-epi-Campesterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxodecanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxodecanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxododecanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxohexanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxohexanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxooctanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxooctanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxopalmitoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Dehydroepisterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="7-Dehydrodesmosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetoacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetoacetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetoacetyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aldosterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Androstenedione">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Brassicasterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Butyryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Butyryl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01089">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01124">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01144">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01176">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01301">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03594">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03939">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04246">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04554">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04618">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04619">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04620">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04633">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04722">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05103">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05108">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05138">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05258">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05260">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05261">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05262">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05264">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05266">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05268">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05272">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05273">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05290">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05294">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05297">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05300">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05337">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05439">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05440">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05444">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05445">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05446">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05447">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05448">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05449">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05450">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05451">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05452">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05453">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05454">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05455">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05460">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05467">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05479">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05500">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05501">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05502">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05747">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05756">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05757">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05758">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05759">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05760">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05762">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05763">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C08830">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11455">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15613">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15776">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15778">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15781">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15808">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15816">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17339">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17343">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17345">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17346">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20876">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20877">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20878">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20879">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Calcidiol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Calciol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Calcitetrol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Calcitriol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Campesterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chenodiol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cholate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cholesterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Choloyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Corticosterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cortisol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cortisone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cortodoxone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Crotonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cycloartenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cycloeucalenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DHA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DOC">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Decanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Decanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Decanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Delta8,14-Sterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Desmosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Diol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dodecanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Episterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ergosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Estradiol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Estriol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Estrone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Fecosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycocholate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HMA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HMG-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hexadecanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hexanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hexanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lanosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lathosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lauric_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lauroyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malonyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Myristic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Myristoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Obtusifoliol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Octanoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Octanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Octylic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Palmitate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Palmitoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pregnanolone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pregnenolone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Progesterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Provitamin_D3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Secalciferol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Taurine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Taurocholate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Testosterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tetradecanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Zymostenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Zymosterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(2E)-Decenoyl-CoA" target="Decanoyl-CoA">
+      <data key="d2">R04753</data>
+      <data key="d3">rn:R04753 rn:R04754</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Decenoyl-CoA" target="C05264">
+      <data key="d2">R04744</data>
+      <data key="d3">rn:R04744</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Decenoyl-[acp]" target="Decanoyl-[acp]">
+      <data key="d2">R04961</data>
+      <data key="d3">rn:R04961 rn:R04962</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Decenoyl-[acp]" target="C04619">
+      <data key="d2">R04535</data>
+      <data key="d3">rn:R04535</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Dodecenoyl-CoA" target="Lauroyl-CoA">
+      <data key="d2">R03856</data>
+      <data key="d3">rn:R03856 rn:R03857</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Dodecenoyl-CoA" target="C05262">
+      <data key="d2">R04170</data>
+      <data key="d3">rn:R04170</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Hexenoyl-CoA" target="Hexanoyl-CoA">
+      <data key="d2">R04751</data>
+      <data key="d3">rn:R04751 rn:R06985</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Hexenoyl-CoA" target="C05268">
+      <data key="d2">R04749</data>
+      <data key="d3">rn:R04749</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Hexenoyl-[acp]" target="Hexanoyl-[acp]">
+      <data key="d2">R04955</data>
+      <data key="d3">rn:R04955 rn:R04956</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Hexenoyl-[acp]" target="C05747">
+      <data key="d2">R04954</data>
+      <data key="d3">rn:R04954</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Octenoyl-CoA" target="Octanoyl-CoA">
+      <data key="d2">R03776</data>
+      <data key="d3">rn:R03776 rn:R03777</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Octenoyl-CoA" target="C05266">
+      <data key="d2">R04746</data>
+      <data key="d3">rn:R04746</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Octenoyl-[acp]" target="Octanoyl-[acp]">
+      <data key="d2">R04958</data>
+      <data key="d3">rn:R04958 rn:R04959</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="(2E)-Octenoyl-[acp]" target="C04620">
+      <data key="d2">R04537</data>
+      <data key="d3">rn:R04537</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="16-Hydroxypalmitate" target="Palmitate">
+      <data key="d2">R09451</data>
+      <data key="d3">rn:R09451</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="19-Oxotestosterone" target="C05294">
+      <data key="d2">R04761</data>
+      <data key="d3">rn:R04761</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="19-Oxotestosterone" target="Estradiol">
+      <data key="d2">R03087</data>
+      <data key="d3">rn:R03087</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="2,3-Oxidosqualene" target="Lanosterol">
+      <data key="d2">R03199</data>
+      <data key="d3">rn:R03199</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="2,3-Oxidosqualene" target="Cycloartenol">
+      <data key="d2">R03200</data>
+      <data key="d3">rn:R03200</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="24-Methylenelophenol" target="Episterol">
+      <data key="d2">R07490</data>
+      <data key="d3">rn:R07490</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="24-Methylenelophenol" target="C15776">
+      <data key="d2">R07484</data>
+      <data key="d3">rn:R07484</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="24-epi-Campesterol" target="C15781">
+      <data key="d2">R11096</data>
+      <data key="d3">rn:R11096</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="24-epi-Campesterol" target="Brassicasterol">
+      <data key="d2">R11097</data>
+      <data key="d3">rn:R11097</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxodecanoyl-CoA" target="C05264">
+      <data key="d2">R04743</data>
+      <data key="d3">rn:R04743</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxodecanoyl-CoA" target="Octanoyl-CoA">
+      <data key="d2">R03778</data>
+      <data key="d3">rn:R03778</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxodecanoyl-[acp]" target="C04619">
+      <data key="d2">R04534</data>
+      <data key="d3">rn:R04534</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxodecanoyl-[acp]" target="Malonyl-[acp]">
+      <data key="d2">R04960</data>
+      <data key="d3">rn:R04960</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxododecanoyl-CoA" target="C05262">
+      <data key="d2">R04741</data>
+      <data key="d3">rn:R04741</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxododecanoyl-CoA" target="Decanoyl-CoA">
+      <data key="d2">R04742</data>
+      <data key="d3">rn:R04742</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxohexanoyl-CoA" target="C05268">
+      <data key="d2">R04748</data>
+      <data key="d3">rn:R04748</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxohexanoyl-CoA" target="Butyryl-CoA">
+      <data key="d2">R01177</data>
+      <data key="d3">rn:R01177</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxohexanoyl-[acp]" target="C05747">
+      <data key="d2">R04953</data>
+      <data key="d3">rn:R04953</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxohexanoyl-[acp]" target="Malonyl-[acp]">
+      <data key="d2">R04952</data>
+      <data key="d3">rn:R04952</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxooctanoyl-CoA" target="C05266">
+      <data key="d2">R04745</data>
+      <data key="d3">rn:R04745</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxooctanoyl-CoA" target="Hexanoyl-CoA">
+      <data key="d2">R04747</data>
+      <data key="d3">rn:R04747</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxooctanoyl-[acp]" target="C04620">
+      <data key="d2">R04536</data>
+      <data key="d3">rn:R04536</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxooctanoyl-[acp]" target="Malonyl-[acp]">
+      <data key="d2">R04957</data>
+      <data key="d3">rn:R04957</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxopalmitoyl-CoA" target="C05258">
+      <data key="d2">R04737</data>
+      <data key="d3">rn:R04737</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="3-Oxopalmitoyl-CoA" target="Myristoyl-CoA">
+      <data key="d2">R03991</data>
+      <data key="d3">rn:R03991</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="5-Dehydroepisterol" target="Episterol">
+      <data key="d2">R07491</data>
+      <data key="d3">rn:R07491</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="5-Dehydroepisterol" target="C15781">
+      <data key="d2">R07492</data>
+      <data key="d3">rn:R07492</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="7-Dehydrodesmosterol" target="Provitamin_D3">
+      <data key="d2">R07507</data>
+      <data key="d3">rn:R07507</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetate" target="HMG-CoA">
+      <data key="d2">R01360</data>
+      <data key="d3">rn:R01360</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetate" target="C01089">
+      <data key="d2">R01361</data>
+      <data key="d3">rn:R01361</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetate" target="Acetone">
+      <data key="d2">R01366</data>
+      <data key="d3">rn:R01366</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetyl-CoA" target="C01144">
+      <data key="d2">R01975</data>
+      <data key="d3">rn:R01975 rn:R01976</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetyl-CoA" target="Acetyl-CoA">
+      <data key="d2">R00238</data>
+      <data key="d3">rn:R00238</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetyl-[acp]" target="C04618">
+      <data key="d2">R04533</data>
+      <data key="d3">rn:R04533</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetyl-[acp]" target="C03939">
+      <data key="d2">R04355</data>
+      <data key="d3">rn:R04355</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetoacetyl-[acp]" target="Malonyl-[acp]">
+      <data key="d2">R10707</data>
+      <data key="d3">rn:R10707</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="C05261">
+      <data key="d2">R03858</data>
+      <data key="d3">rn:R03858</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="C03939">
+      <data key="d2">R01624</data>
+      <data key="d3">rn:R01624</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="Malonyl-CoA">
+      <data key="d2">R00742</data>
+      <data key="d3">rn:R00742</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Aldosterone" target="C01124">
+      <data key="d2">R03263</data>
+      <data key="d3">rn:R03263</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Androstenedione" target="DHA">
+      <data key="d2">R01837</data>
+      <data key="d3">rn:R01837</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Androstenedione" target="Testosterone">
+      <data key="d2">R01836</data>
+      <data key="d3">rn:R01836 rn:R01838</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Androstenedione" target="C05290">
+      <data key="d2">R01840</data>
+      <data key="d3">rn:R01840</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Butyryl-CoA" target="Crotonyl-CoA">
+      <data key="d2">R01171</data>
+      <data key="d3">rn:R01171 rn:R01175</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Butyryl-[acp]" target="C04246">
+      <data key="d2">R04429</data>
+      <data key="d3">rn:R04429 rn:R04430</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01124" target="Corticosterone">
+      <data key="d2">R03262</data>
+      <data key="d3">rn:R03262</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01144" target="Crotonyl-CoA">
+      <data key="d2">R03026</data>
+      <data key="d3">rn:R03026</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01176" target="Progesterone">
+      <data key="d2">R02211</data>
+      <data key="d3">rn:R02211</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01176" target="Cortodoxone">
+      <data key="d2">R03326</data>
+      <data key="d3">rn:R03326</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01176" target="C05138">
+      <data key="d2">R03327</data>
+      <data key="d3">rn:R03327</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01301" target="C05446">
+      <data key="d2">R08759</data>
+      <data key="d3">rn:R08759</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C01301" target="C04722">
+      <data key="d2">R08761</data>
+      <data key="d3">rn:R08761</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C03594" target="Cholesterol">
+      <data key="d2">R01463</data>
+      <data key="d3">rn:R01463</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C03594" target="C05455">
+      <data key="d2">R04263</data>
+      <data key="d3">rn:R04263</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04246" target="C04618">
+      <data key="d2">R04428</data>
+      <data key="d3">rn:R04428</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04554" target="C05445">
+      <data key="d2">R08760</data>
+      <data key="d3">rn:R08760</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04554" target="C17345">
+      <data key="d2">R08738</data>
+      <data key="d3">rn:R08738</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04633" target="C05763">
+      <data key="d2">R04544</data>
+      <data key="d3">rn:R04544</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04633" target="C05762">
+      <data key="d2">R04543</data>
+      <data key="d3">rn:R04543</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C04722" target="C15613">
+      <data key="d2">R08733</data>
+      <data key="d3">rn:R08733</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05103" target="C15816">
+      <data key="d2">R07495</data>
+      <data key="d3">rn:R07495</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05108" target="C11455">
+      <data key="d2">R05639</data>
+      <data key="d3">rn:R05639</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05108" target="C15808">
+      <data key="d2">R07509</data>
+      <data key="d3">rn:R07509</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05138" target="Pregnenolone">
+      <data key="d2">R03783</data>
+      <data key="d3">rn:R03783</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05138" target="DHA">
+      <data key="d2">R08517</data>
+      <data key="d3">rn:R08517</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05258" target="C05272">
+      <data key="d2">R04738</data>
+      <data key="d3">rn:R04738</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05260" target="C05273">
+      <data key="d2">R04740</data>
+      <data key="d3">rn:R04740</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05260" target="C05261">
+      <data key="d2">R04739</data>
+      <data key="d3">rn:R04739</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05272" target="Palmitoyl-CoA">
+      <data key="d2">R01278</data>
+      <data key="d3">rn:R01278 rn:R01279</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05273" target="Myristoyl-CoA">
+      <data key="d2">R03989</data>
+      <data key="d3">rn:R03989 rn:R03990</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05290" target="C05297">
+      <data key="d2">R04759</data>
+      <data key="d3">rn:R04759</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05294" target="Testosterone">
+      <data key="d2">R02501</data>
+      <data key="d3">rn:R02501</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05297" target="Estrone">
+      <data key="d2">R02351</data>
+      <data key="d3">rn:R02351</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05300" target="Estrone">
+      <data key="d2">R02356</data>
+      <data key="d3">rn:R02356</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05300" target="Estriol">
+      <data key="d2">R04681</data>
+      <data key="d3">rn:R04681 rn:R04682</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05337" target="C05449">
+      <data key="d2">R04811</data>
+      <data key="d3">rn:R04811</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05337" target="Chenodiol">
+      <data key="d2">R03974</data>
+      <data key="d3">rn:R03974 rn:R08743</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05439" target="Zymosterol">
+      <data key="d2">R04804</data>
+      <data key="d3">rn:R04804</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05439" target="Lathosterol">
+      <data key="d2">R05703</data>
+      <data key="d3">rn:R05703</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05440" target="C15778">
+      <data key="d2">R07506</data>
+      <data key="d3">rn:R07506</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05440" target="Ergosterol">
+      <data key="d2">R05641</data>
+      <data key="d3">rn:R05641</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05444" target="C05452">
+      <data key="d2">R04806</data>
+      <data key="d3">rn:R04806</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05444" target="C05445">
+      <data key="d2">R08758</data>
+      <data key="d3">rn:R08758</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05446" target="C05454">
+      <data key="d2">R04807</data>
+      <data key="d3">rn:R04807</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05447" target="C17346">
+      <data key="d2">R08740</data>
+      <data key="d3">rn:R08740</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05447" target="C05448">
+      <data key="d2">R04809</data>
+      <data key="d3">rn:R04809</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05448" target="C05449">
+      <data key="d2">R04810</data>
+      <data key="d3">rn:R04810</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05450" target="C05460">
+      <data key="d2">R04813</data>
+      <data key="d3">rn:R04813</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05450" target="C05467">
+      <data key="d2">R04812</data>
+      <data key="d3">rn:R04812</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05451" target="C05455">
+      <data key="d2">R04817</data>
+      <data key="d3">rn:R04817</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05451" target="C05452">
+      <data key="d2">R04818</data>
+      <data key="d3">rn:R04818 rn:R04819</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05453" target="C17339">
+      <data key="d2">R04823</data>
+      <data key="d3">rn:R04823</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05453" target="C05454">
+      <data key="d2">R04824</data>
+      <data key="d3">rn:R04824 rn:R04825</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05455" target="C17339">
+      <data key="d2">R04826</data>
+      <data key="d3">rn:R04826</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05460" target="C17343">
+      <data key="d2">R08735</data>
+      <data key="d3">rn:R08735</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05467" target="Choloyl-CoA">
+      <data key="d2">R03719</data>
+      <data key="d3">rn:R03719</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05479" target="Progesterone">
+      <data key="d2">R02215</data>
+      <data key="d3">rn:R02215 rn:R02219</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05479" target="Pregnanolone">
+      <data key="d2">R04845</data>
+      <data key="d3">rn:R04845 rn:R04846</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05500" target="Cholesterol">
+      <data key="d2">R01454</data>
+      <data key="d3">rn:R01454</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05500" target="C05501">
+      <data key="d2">R04854</data>
+      <data key="d3">rn:R04854</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05501" target="Pregnenolone">
+      <data key="d2">R03933</data>
+      <data key="d3">rn:R03933</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05501" target="C05502">
+      <data key="d2">R04855</data>
+      <data key="d3">rn:R04855</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05502" target="Cholesterol">
+      <data key="d2">R02723</data>
+      <data key="d3">rn:R02723</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05756" target="C05757">
+      <data key="d2">R04964</data>
+      <data key="d3">rn:R04964</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05756" target="Malonyl-[acp]">
+      <data key="d2">R04963</data>
+      <data key="d3">rn:R04963</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05757" target="C05758">
+      <data key="d2">R04965</data>
+      <data key="d3">rn:R04965</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05758" target="Dodecanoyl-[acp]">
+      <data key="d2">R04724</data>
+      <data key="d3">rn:R04724 rn:R04725</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05759" target="HMA">
+      <data key="d2">R04566</data>
+      <data key="d3">rn:R04566</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05759" target="Malonyl-[acp]">
+      <data key="d2">R04726</data>
+      <data key="d3">rn:R04726</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05760" target="Tetradecanoyl-[acp]">
+      <data key="d2">R04966</data>
+      <data key="d3">rn:R04966 rn:R04967</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05760" target="HMA">
+      <data key="d2">R04568</data>
+      <data key="d3">rn:R04568</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05762" target="Malonyl-[acp]">
+      <data key="d2">R04968</data>
+      <data key="d3">rn:R04968</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C05763" target="Hexadecanoyl-[acp]">
+      <data key="d2">R04969</data>
+      <data key="d3">rn:R04969 rn:R04970</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C08830" target="Cycloartenol">
+      <data key="d2">R07481</data>
+      <data key="d3">rn:R07481</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C08830" target="Cycloeucalenol">
+      <data key="d2">R07482</data>
+      <data key="d3">rn:R07482</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C11455" target="Lanosterol">
+      <data key="d2">R05640</data>
+      <data key="d3">rn:R05640</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C15613" target="C17343">
+      <data key="d2">R08734</data>
+      <data key="d3">rn:R08734</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C15776" target="Delta8,14-Sterol">
+      <data key="d2">R07483</data>
+      <data key="d3">rn:R07483</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C15778" target="Episterol">
+      <data key="d2">R07505</data>
+      <data key="d3">rn:R07505</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C15781" target="Campesterol">
+      <data key="d2">R07493</data>
+      <data key="d3">rn:R07493</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C15808" target="C15816">
+      <data key="d2">R07494</data>
+      <data key="d3">rn:R07494</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C17345" target="C17346">
+      <data key="d2">R08739</data>
+      <data key="d3">rn:R08739</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C20876" target="C20879">
+      <data key="d2">R10828</data>
+      <data key="d3">rn:R10828</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C20877" target="Malonyl-CoA">
+      <data key="d2">R10825</data>
+      <data key="d3">rn:R10825</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C20877" target="C20878">
+      <data key="d2">R10826</data>
+      <data key="d3">rn:R10826</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="C20878" target="C20879">
+      <data key="d2">R10827</data>
+      <data key="d3">rn:R10827</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Calcidiol" target="Calciol">
+      <data key="d2">R03611</data>
+      <data key="d3">rn:R03611 rn:R11458</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Calcidiol" target="Calcitriol">
+      <data key="d2">R03610</data>
+      <data key="d3">rn:R03610 rn:R11459</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Calcidiol" target="Secalciferol">
+      <data key="d2">R09516</data>
+      <data key="d3">rn:R09516</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Calcitetrol" target="Calcitriol">
+      <data key="d2">R09515</data>
+      <data key="d3">rn:R09515</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cholate" target="Choloyl-CoA">
+      <data key="d2">R02794</data>
+      <data key="d3">rn:R02794 rn:R07296</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cholate" target="Glycocholate">
+      <data key="d2">R05835</data>
+      <data key="d3">rn:R05835</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cholate" target="Taurocholate">
+      <data key="d2">R02797</data>
+      <data key="d3">rn:R02797</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cholesterol" target="Desmosterol">
+      <data key="d2">R01457</data>
+      <data key="d3">rn:R01457</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cholesterol" target="Provitamin_D3">
+      <data key="d2">R01451</data>
+      <data key="d3">rn:R01451 rn:R01456</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Choloyl-CoA" target="Glycocholate">
+      <data key="d2">R03718</data>
+      <data key="d3">rn:R03718</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Choloyl-CoA" target="Taurocholate">
+      <data key="d2">R03720</data>
+      <data key="d3">rn:R03720</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Corticosterone" target="DOC">
+      <data key="d2">R03851</data>
+      <data key="d3">rn:R03851</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cortisol" target="Cortodoxone">
+      <data key="d2">R02843</data>
+      <data key="d3">rn:R02843</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cortisol" target="Cortisone">
+      <data key="d2">R02834</data>
+      <data key="d3">rn:R02834 rn:R02836</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Cycloeucalenol" target="Obtusifoliol">
+      <data key="d2">R03775</data>
+      <data key="d3">rn:R03775</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="DOC" target="Progesterone">
+      <data key="d2">R02213</data>
+      <data key="d3">rn:R02213</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Decanoate" target="Decanoyl-[acp]">
+      <data key="d2">R08158</data>
+      <data key="d3">rn:R08158</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Delta8,14-Sterol" target="Obtusifoliol">
+      <data key="d2">R05731</data>
+      <data key="d3">rn:R05731</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Diol" target="Pregnanolone">
+      <data key="d2">R04847</data>
+      <data key="d3">rn:R04847</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Dodecanoyl-[acp]" target="Lauric_acid">
+      <data key="d2">R04014</data>
+      <data key="d3">rn:R04014</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Episterol" target="Fecosterol">
+      <data key="d2">R07497</data>
+      <data key="d3">rn:R07497</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Estradiol" target="Estrone">
+      <data key="d2">R02352</data>
+      <data key="d3">rn:R02352 rn:R02353</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Estradiol" target="Estriol">
+      <data key="d2">R03089</data>
+      <data key="d3">rn:R03089</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Fecosterol" target="Zymosterol">
+      <data key="d2">R04427</data>
+      <data key="d3">rn:R04427</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Hexadecanoyl-[acp]" target="Palmitate">
+      <data key="d2">R01706</data>
+      <data key="d3">rn:R01706</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Hexadecanoyl-[acp]" target="Palmitoyl-CoA">
+      <data key="d2">R10700</data>
+      <data key="d3">rn:R10700</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Lathosterol" target="Zymostenol">
+      <data key="d2">R03353</data>
+      <data key="d3">rn:R03353</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Lathosterol" target="Provitamin_D3">
+      <data key="d2">R07215</data>
+      <data key="d3">rn:R07215</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Malonyl-CoA" target="Malonyl-[acp]">
+      <data key="d2">R01626</data>
+      <data key="d3">rn:R01626</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Myristic_acid" target="Tetradecanoyl-[acp]">
+      <data key="d2">R08159</data>
+      <data key="d3">rn:R08159</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Octanoyl-[acp]" target="Octylic_acid">
+      <data key="d2">R08157</data>
+      <data key="d3">rn:R08157</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Palmitate" target="Palmitoyl-CoA">
+      <data key="d2">R01274</data>
+      <data key="d3">rn:R01274 rn:R01280</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Pregnenolone" target="Progesterone">
+      <data key="d2">R02216</data>
+      <data key="d3">rn:R02216</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Taurine" target="Taurocholate">
+      <data key="d2">R03720</data>
+      <data key="d3">rn:R03720</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+    <edge source="Zymostenol" target="Zymosterol">
+      <data key="d2">R07498</data>
+      <data key="d3">rn:R07498</data>
+      <data key="d4">False</data>
+      <data key="d5">Fatty Acid Biosynthesis</data>
+    </edge>
+  </graph>
+</graphml>

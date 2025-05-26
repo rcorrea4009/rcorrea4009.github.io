@@ -1,0 +1,1225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(-)-Comphene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(-)-Limonene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(-)-alpha-Pinene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(L)-alpha-Terpineol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2,3-Oxidosqualene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Oxospirilloxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3,4-Dehydrolycopene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3,4-Dehydrorhodopin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Dehydroteasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Deoxocastasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Deoxocathasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Deoxoteasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Deoxotyphasterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Oxocampestanol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="8-Hydroxygeraniol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="9'-cis-Neoxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="9-cis-Violaxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ABA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Abietadiene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Abietal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Abietol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Abscisic_aldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetoacetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Anhydrorhodovibrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Antheraxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aristolochene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Baccatin_III">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Brassinolide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00118">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00129">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00353">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01107">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01143">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03190">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03427">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03428">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04432">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05414">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05430">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05431">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06089">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11434">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11435">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11436">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11437">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11453">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11700">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11811">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11895">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11897">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11899">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15786">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15800">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15803">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15857">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15858">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15879">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15885">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15886">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15887">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15888">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15970">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16428">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19759">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19764">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19765">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19892">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Campest-4-en-3-one">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Campestanol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Caryophyllene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Casbene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Castasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cathasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chloroxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Copalyl_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DMAPP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Demethylspheroidene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Farnesyl_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Geraniol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Geranyl_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Germacradienol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gibberellin_A12">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HMG-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxyspheroidene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxyspheroidenone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isopentenyl-ATP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Kaurenic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Levomenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Loganin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Longifolene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lutein">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lycopene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methoxyneurosporene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Mevalonic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Neoxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Nerolidol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Neurosporaxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phytoene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phytyl_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Rhodopin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Rhodovibrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Rhodoviolascin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Secologanin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Spheroidene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Spheroidenone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Supraene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Taxa-4,11-diene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Teasterone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Torulene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Typhasterol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Violaxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xanthoxin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Zeaxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Zeinoxanthin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="d-Limonene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="delta-Cadinene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="delta-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ent-Kaurene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="epsilon-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="gamma-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="gamma-Humulene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(-)-Comphene" target="Geranyl_diphosphate">
+      <data key="d2">R09972</data>
+      <data key="d3">rn:R09972</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="(-)-Limonene" target="Geranyl_diphosphate">
+      <data key="d2">R02013</data>
+      <data key="d3">rn:R02013</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="(-)-alpha-Pinene" target="Geranyl_diphosphate">
+      <data key="d2">R05765</data>
+      <data key="d3">rn:R05765</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="(L)-alpha-Terpineol" target="Geranyl_diphosphate">
+      <data key="d2">R06421</data>
+      <data key="d3">rn:R06421</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="2,3-Oxidosqualene" target="Supraene">
+      <data key="d2">R02874</data>
+      <data key="d3">rn:R02874</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="2-Oxospirilloxanthin" target="Rhodoviolascin">
+      <data key="d2">R07525</data>
+      <data key="d3">rn:R07525</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="2-Oxospirilloxanthin" target="C15885">
+      <data key="d2">R07526</data>
+      <data key="d3">rn:R07526</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3,4-Dehydrolycopene" target="Lycopene">
+      <data key="d2">R07518</data>
+      <data key="d3">rn:R07518</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3,4-Dehydrolycopene" target="Torulene">
+      <data key="d2">R10508</data>
+      <data key="d3">rn:R10508</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3,4-Dehydrorhodopin" target="Rhodopin">
+      <data key="d2">R07520</data>
+      <data key="d3">rn:R07520</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3,4-Dehydrorhodopin" target="Anhydrorhodovibrin">
+      <data key="d2">R07521</data>
+      <data key="d3">rn:R07521</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3-Dehydroteasterone" target="Teasterone">
+      <data key="d2">R07444</data>
+      <data key="d3">rn:R07444</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="3-Dehydroteasterone" target="Typhasterol">
+      <data key="d2">R07469</data>
+      <data key="d3">rn:R07469</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxocastasterone" target="6-Deoxotyphasterol">
+      <data key="d2">R07474</data>
+      <data key="d3">rn:R07474</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxocastasterone" target="C15803">
+      <data key="d2">R07450</data>
+      <data key="d3">rn:R07450</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxocathasterone" target="Campestanol">
+      <data key="d2">R07454</data>
+      <data key="d3">rn:R07454</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxocathasterone" target="6-Deoxoteasterone">
+      <data key="d2">R07448</data>
+      <data key="d3">rn:R07448</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxoteasterone" target="C15800">
+      <data key="d2">R07449</data>
+      <data key="d3">rn:R07449</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Deoxotyphasterol" target="C15800">
+      <data key="d2">R07473</data>
+      <data key="d3">rn:R07473</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="6-Oxocampestanol" target="Cathasterone">
+      <data key="d2">R07430</data>
+      <data key="d3">rn:R07430</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="8-Hydroxygeraniol" target="Geraniol">
+      <data key="d2">R08785</data>
+      <data key="d3">rn:R08785</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="9'-cis-Neoxanthin" target="9-cis-Violaxanthin">
+      <data key="d2">R06951</data>
+      <data key="d3">rn:R06951</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="9'-cis-Neoxanthin" target="Xanthoxin">
+      <data key="d2">R06952</data>
+      <data key="d3">rn:R06952</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="9-cis-Violaxanthin" target="Xanthoxin">
+      <data key="d2">R06953</data>
+      <data key="d3">rn:R06953</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="ABA" target="Abscisic_aldehyde">
+      <data key="d2">R06957</data>
+      <data key="d3">rn:R06957</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="ABA" target="C15970">
+      <data key="d2">R07575</data>
+      <data key="d3">rn:R07575</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Abietadiene" target="Copalyl_diphosphate">
+      <data key="d2">R06301</data>
+      <data key="d3">rn:R06301</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Abietal" target="Abietol">
+      <data key="d2">R06354</data>
+      <data key="d3">rn:R06354</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Abscisic_aldehyde" target="Xanthoxin">
+      <data key="d2">R06954</data>
+      <data key="d3">rn:R06954</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Acetoacetyl-CoA" target="HMG-CoA">
+      <data key="d2">R01978</data>
+      <data key="d3">rn:R01978</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Anhydrorhodovibrin" target="Rhodovibrin">
+      <data key="d2">R07522</data>
+      <data key="d3">rn:R07522</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Antheraxanthin" target="Zeaxanthin">
+      <data key="d2">R06946</data>
+      <data key="d3">rn:R06946 rn:R07179</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Antheraxanthin" target="Violaxanthin">
+      <data key="d2">R06947</data>
+      <data key="d3">rn:R06947 rn:R07178</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Aristolochene" target="Farnesyl_diphosphate">
+      <data key="d2">R02307</data>
+      <data key="d3">rn:R02307</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Baccatin_III" target="C11700">
+      <data key="d2">R06311</data>
+      <data key="d3">rn:R06311</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Brassinolide" target="Castasterone">
+      <data key="d2">R07471</data>
+      <data key="d3">rn:R07471</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00118" target="C11437">
+      <data key="d2">R05636</data>
+      <data key="d3">rn:R05636</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="C11811">
+      <data key="d2">R05884</data>
+      <data key="d3">rn:R05884</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="C01143">
+      <data key="d2">R01121</data>
+      <data key="d3">rn:R01121</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="DMAPP">
+      <data key="d2">R01123</data>
+      <data key="d3">rn:R01123</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="Geranyl_diphosphate">
+      <data key="d2">R01658</data>
+      <data key="d3">rn:R01658</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="Farnesyl_diphosphate">
+      <data key="d2">R02003</data>
+      <data key="d3">rn:R02003</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00129" target="C00353">
+      <data key="d2">R02061</data>
+      <data key="d3">rn:R02061</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="Phytyl_diphosphate">
+      <data key="d2">R02063</data>
+      <data key="d3">rn:R02063</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="Casbene">
+      <data key="d2">R02064</data>
+      <data key="d3">rn:R02064</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="Copalyl_diphosphate">
+      <data key="d2">R06298</data>
+      <data key="d3">rn:R06298</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="C06089">
+      <data key="d2">R02068</data>
+      <data key="d3">rn:R02068</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="Taxa-4,11-diene">
+      <data key="d2">R06305</data>
+      <data key="d3">rn:R06305</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C00353" target="C03427">
+      <data key="d2">R02065</data>
+      <data key="d3">rn:R02065</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C01107" target="C01143">
+      <data key="d2">R03245</data>
+      <data key="d3">rn:R03245</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C01107" target="Mevalonic_acid">
+      <data key="d2">R02245</data>
+      <data key="d3">rn:R02245</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C03190" target="Geranyl_diphosphate">
+      <data key="d2">R02007</data>
+      <data key="d3">rn:R02007</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C03427" target="Phytoene">
+      <data key="d2">R04218</data>
+      <data key="d3">rn:R04218</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C03428" target="Farnesyl_diphosphate">
+      <data key="d2">R00702</data>
+      <data key="d3">rn:R00702</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C03428" target="Supraene">
+      <data key="d2">R02872</data>
+      <data key="d3">rn:R02872</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C04432" target="DMAPP">
+      <data key="d2">R01122</data>
+      <data key="d3">rn:R01122</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C05414" target="Phytoene">
+      <data key="d2">R09692</data>
+      <data key="d3">rn:R09692</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C05414" target="C05430">
+      <data key="d2">R04787</data>
+      <data key="d3">rn:R04787</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C05430" target="C05431">
+      <data key="d2">R04798</data>
+      <data key="d3">rn:R04798</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C05431" target="Lycopene">
+      <data key="d2">R04800</data>
+      <data key="d3">rn:R04800</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C05431" target="Chloroxanthin">
+      <data key="d2">R07532</data>
+      <data key="d3">rn:R07532</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C06089" target="ent-Kaurene">
+      <data key="d2">R05092</data>
+      <data key="d3">rn:R05092</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11434" target="C11437">
+      <data key="d2">R05688</data>
+      <data key="d3">rn:R05688</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11434" target="C11435">
+      <data key="d2">R05633</data>
+      <data key="d3">rn:R05633</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11435" target="C11436">
+      <data key="d2">R05634</data>
+      <data key="d3">rn:R05634</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11436" target="C11453">
+      <data key="d2">R05637</data>
+      <data key="d3">rn:R05637</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11453" target="C11811">
+      <data key="d2">R08689</data>
+      <data key="d3">rn:R08689 rn:R10859</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11700" target="C11899">
+      <data key="d2">R06310</data>
+      <data key="d3">rn:R06310</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11895" target="Taxa-4,11-diene">
+      <data key="d2">R06306</data>
+      <data key="d3">rn:R06306</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C11895" target="C11897">
+      <data key="d2">R06308</data>
+      <data key="d3">rn:R06308</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15786" target="Campest-4-en-3-one">
+      <data key="d2">R07429</data>
+      <data key="d3">rn:R07429</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15803" target="Castasterone">
+      <data key="d2">R07451</data>
+      <data key="d3">rn:R07451</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15857" target="C19764">
+      <data key="d2">R09655</data>
+      <data key="d3">rn:R09655</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15857" target="C19759">
+      <data key="d2">R09656</data>
+      <data key="d3">rn:R09656</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15858" target="C19759">
+      <data key="d2">R09658</data>
+      <data key="d3">rn:R09658</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15858" target="Lycopene">
+      <data key="d2">R07512</data>
+      <data key="d3">rn:R07512</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15879" target="Rhodovibrin">
+      <data key="d2">R07523</data>
+      <data key="d3">rn:R07523</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15879" target="Rhodoviolascin">
+      <data key="d2">R07524</data>
+      <data key="d3">rn:R07524</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15886" target="Rhodopin">
+      <data key="d2">R07527</data>
+      <data key="d3">rn:R07527</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15886" target="C15887">
+      <data key="d2">R07528</data>
+      <data key="d3">rn:R07528</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C15887" target="C15888">
+      <data key="d2">R07529</data>
+      <data key="d3">rn:R07529</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C16428" target="Isopentenyl-ATP">
+      <data key="d2">R08053</data>
+      <data key="d3">rn:R08053</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C19764" target="C19765">
+      <data key="d2">R09654</data>
+      <data key="d3">rn:R09654</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C19765" target="Phytoene">
+      <data key="d2">R09653</data>
+      <data key="d3">rn:R09653</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C19892" target="Torulene">
+      <data key="d2">R09782</data>
+      <data key="d3">rn:R09782</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="C19892" target="Neurosporaxanthin">
+      <data key="d2">R09783</data>
+      <data key="d3">rn:R09783</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Caryophyllene" target="Farnesyl_diphosphate">
+      <data key="d2">R08541</data>
+      <data key="d3">rn:R08541</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Castasterone" target="Typhasterol">
+      <data key="d2">R07470</data>
+      <data key="d3">rn:R07470</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Cathasterone" target="Teasterone">
+      <data key="d2">R07431</data>
+      <data key="d3">rn:R07431</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Chloroxanthin" target="Demethylspheroidene">
+      <data key="d2">R07534</data>
+      <data key="d3">rn:R07534</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Chloroxanthin" target="Methoxyneurosporene">
+      <data key="d2">R07533</data>
+      <data key="d3">rn:R07533</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="DMAPP" target="Isopentenyl-ATP">
+      <data key="d2">R08051</data>
+      <data key="d3">rn:R08051</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Demethylspheroidene" target="Spheroidene">
+      <data key="d2">R07535</data>
+      <data key="d3">rn:R07535</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="Supraene">
+      <data key="d2">R06223</data>
+      <data key="d3">rn:R06223</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="gamma-Humulene">
+      <data key="d2">R08540</data>
+      <data key="d3">rn:R08540</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="Longifolene">
+      <data key="d2">R08542</data>
+      <data key="d3">rn:R08542</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="delta-Cadinene">
+      <data key="d2">R02311</data>
+      <data key="d3">rn:R02311</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="Germacradienol">
+      <data key="d2">R07647</data>
+      <data key="d3">rn:R07647</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="Levomenol">
+      <data key="d2">R08370</data>
+      <data key="d3">rn:R08370</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Farnesyl_diphosphate" target="Nerolidol">
+      <data key="d2">R08374</data>
+      <data key="d3">rn:R08374</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Geraniol" target="Geranyl_diphosphate">
+      <data key="d2">R08396</data>
+      <data key="d3">rn:R08396</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Geranyl_diphosphate" target="d-Limonene">
+      <data key="d2">R06120</data>
+      <data key="d3">rn:R06120</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Gibberellin_A12" target="Kaurenic_acid">
+      <data key="d2">R10067</data>
+      <data key="d3">rn:R10067</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="HMG-CoA" target="Mevalonic_acid">
+      <data key="d2">R02082</data>
+      <data key="d3">rn:R02082</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Hydroxyspheroidene" target="Hydroxyspheroidenone">
+      <data key="d2">R07538</data>
+      <data key="d3">rn:R07538</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Hydroxyspheroidene" target="Spheroidene">
+      <data key="d2">R07536</data>
+      <data key="d3">rn:R07536</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Hydroxyspheroidenone" target="Spheroidenone">
+      <data key="d2">R07539</data>
+      <data key="d3">rn:R07539</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Kaurenic_acid" target="ent-Kaurene">
+      <data key="d2">R10066</data>
+      <data key="d3">rn:R10066</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Loganin" target="Secologanin">
+      <data key="d2">R03555</data>
+      <data key="d3">rn:R03555</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Lutein" target="Zeinoxanthin">
+      <data key="d2">R07531</data>
+      <data key="d3">rn:R07531</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Lycopene" target="gamma-Carotene">
+      <data key="d2">R05341</data>
+      <data key="d3">rn:R05341</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Lycopene" target="delta-Carotene">
+      <data key="d2">R06963</data>
+      <data key="d3">rn:R06963</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Lycopene" target="Rhodopin">
+      <data key="d2">R07519</data>
+      <data key="d3">rn:R07519</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Neoxanthin" target="Violaxanthin">
+      <data key="d2">R06948</data>
+      <data key="d3">rn:R06948</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Spheroidene" target="Spheroidenone">
+      <data key="d2">R07537</data>
+      <data key="d3">rn:R07537</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="Zeinoxanthin" target="alpha-Carotene">
+      <data key="d2">R07530</data>
+      <data key="d3">rn:R07530</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="alpha-Carotene" target="delta-Carotene">
+      <data key="d2">R06962</data>
+      <data key="d3">rn:R06962</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="beta-Carotene" target="gamma-Carotene">
+      <data key="d2">R03824</data>
+      <data key="d3">rn:R03824</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+    <edge source="delta-Carotene" target="epsilon-Carotene">
+      <data key="d2">R07840</data>
+      <data key="d3">rn:R07840</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Terpenoids and Polyketides</data>
+    </edge>
+  </graph>
+</graphml>

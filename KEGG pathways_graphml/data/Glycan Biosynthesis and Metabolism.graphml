@@ -1,0 +1,2225 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="1,4-beta-D-Xylan">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="10-Formyl-THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2,5-Dioxopentanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Inosose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Phosphoglycolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Dehydro-L-gulonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxopropanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phosphoglycerate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Hydroxybutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Hydroxybutyryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Oxobutanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5,10-Methylene-THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ADP-glucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acrylyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Amylose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ascorbate_radical">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Bios_I">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Butanoylphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Butyrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Butyryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00043">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00118">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00128">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00199">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00203">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00204">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00231">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00275">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00352">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00357">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00445">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00446">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00636">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00645">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00679">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00684">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00689">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01094">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01097">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01101">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01113">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01115">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01146">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01170">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01182">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01216">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01220">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01222">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01243">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01272">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01277">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01284">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01286">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03289">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03291">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03383">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03618">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03785">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03906">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04063">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04257">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04287">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04477">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04501">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04549">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04631">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04637">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05345">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05385">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05668">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06156">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06241">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06311">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06400">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11554">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C14899">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15926">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16156">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16157">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16186">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16737">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20237">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20680">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21027">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CDP-glucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CDP-ribitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cellobiose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cellodextrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cellulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chitin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chitobiose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chitosamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chitosan">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cori_ester">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Crotonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Altronate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Fructuronate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Galactonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Galacturonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Glucosaminide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Glyceraldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Lyxitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Lyxulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Mannonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Methylmalonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Ribulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Tagaturonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Xylose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DKH">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DKHP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dehydroascorbate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dextrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Digalacturonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dulcose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Formate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Formyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GDP-L-fucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GDP-L-galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GDP-mannose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GlcNAc">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucarate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucuronate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucurone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glucuronide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycerone_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glyoxalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gulonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydracrylic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxypyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Inositol_3-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Inositol_4-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ins(1,4,5)P3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isocitrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Arabinonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Arabinose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Arabonolactone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Citramalyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Fucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Fucose_1-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Galactonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Glycerose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Gulonolactone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lactate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lyxitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lyxulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Methylmalonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Ribulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lactose_6'-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lactoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Levulose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malonyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Maltodextrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Maltose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Mannose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Mesaconate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="MurNAc_6-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Acetylmuramate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Neu5Ac">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxaloacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxalyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PEP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pectate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pectin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphatidylinositol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phytate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propionate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propionyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propionyl_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ribitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ribitol_5-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Robison_ester">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sorbitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Starch">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Succinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Succinyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sucrose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sucrose_6F-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Trehalose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-L-Ara4FN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-L-Ara4N">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-L-Ara4O">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-L-arabinose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-MurNAc">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP-xylose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDPgalacturonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDPglucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDPglucuronate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_C">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xylitol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-D-Galactose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-D-Glucose">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="1,4-beta-D-Xylan" target="UDP-xylose">
+      <data key="d2">R03928</data>
+      <data key="d3">rn:R03928</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="1,4-beta-D-Xylan" target="D-Xylose">
+      <data key="d2">R01433</data>
+      <data key="d3">rn:R01433</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="10-Formyl-THF" target="C00445">
+      <data key="d2">R01655</data>
+      <data key="d3">rn:R01655</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="10-Formyl-THF" target="Formate">
+      <data key="d2">R00943</data>
+      <data key="d3">rn:R00943</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="2,5-Dioxopentanoate" target="C00679">
+      <data key="d2">R02279</data>
+      <data key="d3">rn:R02279</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="2,5-Dioxopentanoate" target="C00684">
+      <data key="d2">R02278</data>
+      <data key="d3">rn:R02278</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="2-Inosose" target="Bios_I">
+      <data key="d2">R01183</data>
+      <data key="d3">rn:R01183</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="2-Inosose" target="C04287">
+      <data key="d2">R02782</data>
+      <data key="d3">rn:R02782</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="2-Phosphoglycolate" target="Glycolate">
+      <data key="d2">R01334</data>
+      <data key="d3">rn:R01334</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Dehydro-L-gulonate" target="Gulonate">
+      <data key="d2">R02640</data>
+      <data key="d3">rn:R02640</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="Acetyl-CoA">
+      <data key="d2">R00705</data>
+      <data key="d3">rn:R00705 rn:R00706</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="Malonyl-CoA">
+      <data key="d2">R00740</data>
+      <data key="d3">rn:R00740</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="DKHP">
+      <data key="d2">R05378</data>
+      <data key="d3">rn:R05378</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Phosphoglycerate" target="Glycerate">
+      <data key="d2">R01514</data>
+      <data key="d3">rn:R01514</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="3-Phosphoglycerate" target="C01182">
+      <data key="d2">R03140</data>
+      <data key="d3">rn:R03140</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybutanoate" target="4-Oxobutanoate">
+      <data key="d2">R01644</data>
+      <data key="d3">rn:R01644 rn:R09281</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybutanoate" target="4-Hydroxybutyryl-CoA">
+      <data key="d2">R05336</data>
+      <data key="d3">rn:R05336</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybutyryl-CoA" target="Crotonyl-CoA">
+      <data key="d2">R10782</data>
+      <data key="d3">rn:R10782</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="4-Oxobutanoate" target="Succinyl-CoA">
+      <data key="d2">R09280</data>
+      <data key="d3">rn:R09280</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="C00445">
+      <data key="d2">R01220</data>
+      <data key="d3">rn:R01220</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="ADP-glucose" target="Cori_ester">
+      <data key="d2">R00948</data>
+      <data key="d3">rn:R00948 rn:R00951</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="ADP-glucose" target="Amylose">
+      <data key="d2">R02421</data>
+      <data key="d3">rn:R02421</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="ADP-glucose" target="Trehalose">
+      <data key="d2">R08946</data>
+      <data key="d3">rn:R08946</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="ADP-glucose" target="C20237">
+      <data key="d2">R11530</data>
+      <data key="d3">rn:R11530</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acetate" target="Acetyl_phosphate">
+      <data key="d2">R00315</data>
+      <data key="d3">rn:R00315 rn:R00320</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="Malonyl-CoA">
+      <data key="d2">R00233</data>
+      <data key="d3">rn:R00233</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="Ethanal">
+      <data key="d2">R00228</data>
+      <data key="d3">rn:R00228</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acetyl-CoA" target="Acetyl_phosphate">
+      <data key="d2">R00230</data>
+      <data key="d3">rn:R00230</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acetyl_phosphate" target="Pyruvate">
+      <data key="d2">R00207</data>
+      <data key="d3">rn:R00207</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acrylyl-CoA" target="C05668">
+      <data key="d2">R03045</data>
+      <data key="d3">rn:R03045</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acrylyl-CoA" target="Lactoyl-CoA">
+      <data key="d2">R02963</data>
+      <data key="d3">rn:R02963</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Acrylyl-CoA" target="Propionyl-CoA">
+      <data key="d2">R00919</data>
+      <data key="d3">rn:R00919 rn:R04432 rn:R10161</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Amylose" target="Starch">
+      <data key="d2">R02110</data>
+      <data key="d3">rn:R02110</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Amylose" target="UDPglucose">
+      <data key="d2">R00292</data>
+      <data key="d3">rn:R00292</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Amylose" target="C20237">
+      <data key="d2">R09994</data>
+      <data key="d3">rn:R09994</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Ascorbate_radical" target="Vitamin_C">
+      <data key="d2">R00095</data>
+      <data key="d3">rn:R00095</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Bios_I" target="Inositol_3-phosphate">
+      <data key="d2">R01187</data>
+      <data key="d3">rn:R01187 rn:R07279</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Bios_I" target="Inositol_4-phosphate">
+      <data key="d2">R01186</data>
+      <data key="d3">rn:R01186</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Butanoylphosphate" target="Butyrate">
+      <data key="d2">R01688</data>
+      <data key="d3">rn:R01688</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Butanoylphosphate" target="Butyryl-CoA">
+      <data key="d2">R01174</data>
+      <data key="d3">rn:R01174</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Butyrate" target="Butyryl-CoA">
+      <data key="d2">R01176</data>
+      <data key="d3">rn:R01176 rn:R01179</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C04501">
+      <data key="d2">R00416</data>
+      <data key="d3">rn:R00416</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C00203">
+      <data key="d2">R00418</data>
+      <data key="d3">rn:R00418</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C01170">
+      <data key="d2">R00420</data>
+      <data key="d3">rn:R00420</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C04631">
+      <data key="d2">R00660</data>
+      <data key="d3">rn:R00660</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00043" target="C00645">
+      <data key="d2">R00414</data>
+      <data key="d3">rn:R00414</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00118" target="C03785">
+      <data key="d2">R01069</data>
+      <data key="d3">rn:R01069</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00118" target="C01286">
+      <data key="d2">R01064</data>
+      <data key="d3">rn:R01064</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00128" target="Neu5Ac">
+      <data key="d2">R01117</data>
+      <data key="d3">rn:R01117</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00199" target="D-Ribulose">
+      <data key="d2">R01526</data>
+      <data key="d3">rn:R01526</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00199" target="Ribitol_5-phosphate">
+      <data key="d2">R01524</data>
+      <data key="d3">rn:R01524 rn:R01525</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00204" target="D-Mannonate">
+      <data key="d2">R05606</data>
+      <data key="d3">rn:R05606</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00204" target="D-Altronate">
+      <data key="d2">R01540</data>
+      <data key="d3">rn:R01540</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00231" target="C01101">
+      <data key="d2">R05850</data>
+      <data key="d3">rn:R05850</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00231" target="D-Lyxulose">
+      <data key="d2">R01639</data>
+      <data key="d3">rn:R01639</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00275" target="Mannose">
+      <data key="d2">R01326</data>
+      <data key="d3">rn:R01326 rn:R02630</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00275" target="C05345">
+      <data key="d2">R01819</data>
+      <data key="d3">rn:R01819</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00275" target="C00636">
+      <data key="d2">R01818</data>
+      <data key="d3">rn:R01818</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00352" target="C05345">
+      <data key="d2">R00768</data>
+      <data key="d3">rn:R00768</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00352" target="C06156">
+      <data key="d2">R02060</data>
+      <data key="d3">rn:R02060</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00352" target="Chitosamine">
+      <data key="d2">R01961</data>
+      <data key="d3">rn:R01961</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00357" target="GlcNAc">
+      <data key="d2">R01201</data>
+      <data key="d3">rn:R01201</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00357" target="C04501">
+      <data key="d2">R08193</data>
+      <data key="d3">rn:R08193</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00357" target="MurNAc_6-phosphate">
+      <data key="d2">R08555</data>
+      <data key="d3">rn:R08555</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00446" target="UDP-galactose">
+      <data key="d2">R00502</data>
+      <data key="d3">rn:R00502 rn:R00955</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00446" target="alpha-D-Galactose">
+      <data key="d2">R01092</data>
+      <data key="d3">rn:R01092</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00636" target="GDP-mannose">
+      <data key="d2">R00883</data>
+      <data key="d3">rn:R00883 rn:R00885</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00645" target="C04257">
+      <data key="d2">R02705</data>
+      <data key="d3">rn:R02705</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00679" target="Glucarate">
+      <data key="d2">R02752</data>
+      <data key="d3">rn:R02752</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00684" target="L-Arabinonate">
+      <data key="d2">R02522</data>
+      <data key="d3">rn:R02522</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00689" target="UDPglucose">
+      <data key="d2">R02737</data>
+      <data key="d3">rn:R02737</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C00689" target="Trehalose">
+      <data key="d2">R02778</data>
+      <data key="d3">rn:R02778</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01094" target="Levulose">
+      <data key="d2">R00866</data>
+      <data key="d3">rn:R00866 rn:R03232</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01094" target="Glycerone_phosphate">
+      <data key="d2">R02568</data>
+      <data key="d3">rn:R02568</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01097" target="C06311">
+      <data key="d2">R05571</data>
+      <data key="d3">rn:R05571</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01097" target="C03785">
+      <data key="d2">R03236</data>
+      <data key="d3">rn:R03236 rn:R03237 rn:R03238 rn:R03239</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01097" target="C01113">
+      <data key="d2">R03240</data>
+      <data key="d3">rn:R03240</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01101" target="L-Ribulose">
+      <data key="d2">R02439</data>
+      <data key="d3">rn:R02439</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01101" target="C03291">
+      <data key="d2">R03244</data>
+      <data key="d3">rn:R03244</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01113" target="Lactose_6'-phosphate">
+      <data key="d2">R03256</data>
+      <data key="d3">rn:R03256</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01115" target="Vitamin_C">
+      <data key="d2">R00640</data>
+      <data key="d3">rn:R00640 rn:R00643</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01115" target="L-Galactose">
+      <data key="d2">R07675</data>
+      <data key="d3">rn:R07675</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01146" target="Glyoxalate">
+      <data key="d2">R00013</data>
+      <data key="d3">rn:R00013</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01146" target="Glycerate">
+      <data key="d2">R01745</data>
+      <data key="d3">rn:R01745 rn:R01747</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01146" target="Hydroxypyruvate">
+      <data key="d2">R01394</data>
+      <data key="d3">rn:R01394</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01216" target="C01286">
+      <data key="d2">R03387</data>
+      <data key="d3">rn:R03387</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01216" target="D-Galactonate">
+      <data key="d2">R03033</data>
+      <data key="d3">rn:R03033</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01216" target="Pyruvate">
+      <data key="d2">R10616</data>
+      <data key="d3">rn:R10616</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01220" target="Ins(1,4,5)P3">
+      <data key="d2">R03394</data>
+      <data key="d3">rn:R03394</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01220" target="Inositol_4-phosphate">
+      <data key="d2">R03393</data>
+      <data key="d3">rn:R03393</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01222" target="GDP-mannose">
+      <data key="d2">R00888</data>
+      <data key="d3">rn:R00888</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01222" target="GDP-L-fucose">
+      <data key="d2">R05692</data>
+      <data key="d3">rn:R05692</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01243" target="C01272">
+      <data key="d2">R03430</data>
+      <data key="d3">rn:R03430</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01243" target="C04477">
+      <data key="d2">R03429</data>
+      <data key="d3">rn:R03429</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01243" target="C04063">
+      <data key="d2">R03427</data>
+      <data key="d3">rn:R03427</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01272" target="Ins(1,4,5)P3">
+      <data key="d2">R03433</data>
+      <data key="d3">rn:R03433</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01277" target="C04637">
+      <data key="d2">R03469</data>
+      <data key="d3">rn:R03469 rn:R04404</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01277" target="Phosphatidylinositol">
+      <data key="d2">R03361</data>
+      <data key="d3">rn:R03361 rn:R11680</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01277" target="C11554">
+      <data key="d2">R05795</data>
+      <data key="d3">rn:R05795</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01284" target="C04477">
+      <data key="d2">R03478</data>
+      <data key="d3">rn:R03478</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C01284" target="Phytate">
+      <data key="d2">R05202</data>
+      <data key="d3">rn:R05202</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03289" target="L-Gulonolactone">
+      <data key="d2">R03184</data>
+      <data key="d3">rn:R03184</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03289" target="Vitamin_C">
+      <data key="d2">R00647</data>
+      <data key="d3">rn:R00647</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03291" target="C14899">
+      <data key="d2">R07125</data>
+      <data key="d3">rn:R07125</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03383" target="D-Galactose">
+      <data key="d2">R01094</data>
+      <data key="d3">rn:R01094 rn:R01097</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03618" target="Mesaconate">
+      <data key="d2">R03696</data>
+      <data key="d3">rn:R03696</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03618" target="Glutamate">
+      <data key="d2">R00262</data>
+      <data key="d3">rn:R00262</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03906" target="UDP-L-arabinose">
+      <data key="d2">R03077</data>
+      <data key="d3">rn:R03077</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C03906" target="L-Arabinose">
+      <data key="d2">R01754</data>
+      <data key="d3">rn:R01754</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04063" target="Inositol_3-phosphate">
+      <data key="d2">R04372</data>
+      <data key="d3">rn:R04372</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04257" target="C06241">
+      <data key="d2">R04435</data>
+      <data key="d3">rn:R04435</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04287" target="C16737">
+      <data key="d2">R08603</data>
+      <data key="d3">rn:R08603</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04501" target="C06156">
+      <data key="d2">R05332</data>
+      <data key="d3">rn:R05332</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04549" target="C11554">
+      <data key="d2">R07299</data>
+      <data key="d3">rn:R07299</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04549" target="Phosphatidylinositol">
+      <data key="d2">R03362</data>
+      <data key="d3">rn:R03362 rn:R03363</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04631" target="UDP-MurNAc">
+      <data key="d2">R03191</data>
+      <data key="d3">rn:R03191 rn:R03192</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C04637" target="Ins(1,4,5)P3">
+      <data key="d2">R03435</data>
+      <data key="d3">rn:R03435</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C05345" target="Levulose">
+      <data key="d2">R00867</data>
+      <data key="d3">rn:R00867</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C05385" target="UDPglucuronate">
+      <data key="d2">R01381</data>
+      <data key="d3">rn:R01381</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C05385" target="Glucuronate">
+      <data key="d2">R01476</data>
+      <data key="d3">rn:R01476</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C05668" target="Hydracrylic_acid">
+      <data key="d2">R03158</data>
+      <data key="d3">rn:R03158</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C06241" target="Neu5Ac">
+      <data key="d2">R01805</data>
+      <data key="d3">rn:R01805</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C06311" target="Dulcose">
+      <data key="d2">R05570</data>
+      <data key="d3">rn:R05570</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C06400" target="Maltodextrin">
+      <data key="d2">R01824</data>
+      <data key="d3">rn:R01824</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C06400" target="Trehalose">
+      <data key="d2">R11256</data>
+      <data key="d3">rn:R11256</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C14899" target="C16186">
+      <data key="d2">R07677</data>
+      <data key="d3">rn:R07677</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C15926" target="L-Galactose">
+      <data key="d2">R07674</data>
+      <data key="d3">rn:R07674</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C15926" target="GDP-L-galactose">
+      <data key="d2">R07678</data>
+      <data key="d3">rn:R07678</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C16156" target="UDP-L-Ara4FN">
+      <data key="d2">R07661</data>
+      <data key="d3">rn:R07661</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C16156" target="C16157">
+      <data key="d2">R07662</data>
+      <data key="d3">rn:R07662</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C16186" target="Vitamin_C">
+      <data key="d2">R07671</data>
+      <data key="d3">rn:R07671</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C16737" target="DKH">
+      <data key="d2">R08503</data>
+      <data key="d3">rn:R08503</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C20237" target="Maltose">
+      <data key="d2">R09945</data>
+      <data key="d3">rn:R09945</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C20680" target="L-Galactonate">
+      <data key="d2">R10532</data>
+      <data key="d3">rn:R10532</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C20680" target="L-Glycerose">
+      <data key="d2">R10550</data>
+      <data key="d3">rn:R10550</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C21027" target="UDP-MurNAc">
+      <data key="d2">R11025</data>
+      <data key="d3">rn:R11025</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="C21027" target="N-Acetylmuramate">
+      <data key="d2">R11024</data>
+      <data key="d3">rn:R11024</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="CDP-glucose" target="Cori_ester">
+      <data key="d2">R00956</data>
+      <data key="d3">rn:R00956</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="CDP-ribitol" target="Ribitol_5-phosphate">
+      <data key="d2">R02921</data>
+      <data key="d3">rn:R02921</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellobiose" target="Cellulose">
+      <data key="d2">R02886</data>
+      <data key="d3">rn:R02886</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellobiose" target="Cellodextrin">
+      <data key="d2">R02887</data>
+      <data key="d3">rn:R02887 rn:R11308</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellobiose" target="Glucose">
+      <data key="d2">R00306</data>
+      <data key="d3">rn:R00306</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellobiose" target="Cori_ester">
+      <data key="d2">R00952</data>
+      <data key="d3">rn:R00952</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellodextrin" target="Cellulose">
+      <data key="d2">R11307</data>
+      <data key="d3">rn:R11307</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cellulose" target="UDPglucose">
+      <data key="d2">R02889</data>
+      <data key="d3">rn:R02889</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Chitin" target="Chitosan">
+      <data key="d2">R02333</data>
+      <data key="d3">rn:R02333</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Chitin" target="Chitobiose">
+      <data key="d2">R02334</data>
+      <data key="d3">rn:R02334</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Chitobiose" target="GlcNAc">
+      <data key="d2">R00022</data>
+      <data key="d3">rn:R00022</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Chitosamine" target="D-Glucosaminide">
+      <data key="d2">R01966</data>
+      <data key="d3">rn:R01966</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Chitosan" target="D-Glucosaminide">
+      <data key="d2">R02833</data>
+      <data key="d3">rn:R02833</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cori_ester" target="UDPglucose">
+      <data key="d2">R00287</data>
+      <data key="d3">rn:R00287 rn:R00289 rn:R00955</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Cori_ester" target="Starch">
+      <data key="d2">R02111</data>
+      <data key="d3">rn:R02111</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Altronate" target="D-Tagaturonate">
+      <data key="d2">R02555</data>
+      <data key="d3">rn:R02555</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Fructuronate" target="Glucuronate">
+      <data key="d2">R01482</data>
+      <data key="d3">rn:R01482</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Fructuronate" target="D-Mannonate">
+      <data key="d2">R02454</data>
+      <data key="d3">rn:R02454</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Fructuronate" target="Gulonate">
+      <data key="d2">R10848</data>
+      <data key="d3">rn:R10848</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Fructuronate" target="D-Tagaturonate">
+      <data key="d2">R11624</data>
+      <data key="d3">rn:R11624</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galactose" target="Lactose">
+      <data key="d2">R01678</data>
+      <data key="d3">rn:R01678</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galactose" target="Dulcose">
+      <data key="d2">R01093</data>
+      <data key="d3">rn:R01093 rn:R01095</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galactose" target="alpha-D-Galactose">
+      <data key="d2">R10619</data>
+      <data key="d3">rn:R10619</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galacturonate" target="D-Tagaturonate">
+      <data key="d2">R01983</data>
+      <data key="d3">rn:R01983</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galacturonate" target="Digalacturonate">
+      <data key="d2">R07413</data>
+      <data key="d3">rn:R07413</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galacturonate" target="Pectate">
+      <data key="d2">R01982</data>
+      <data key="d3">rn:R01982</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Galacturonate" target="L-Galactonate">
+      <data key="d2">R07676</data>
+      <data key="d3">rn:R07676 rn:R10565</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Lyxitol" target="D-Ribulose">
+      <data key="d2">R07134</data>
+      <data key="d3">rn:R07134 rn:R07144</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Lyxitol" target="D-Lyxulose">
+      <data key="d2">R05604</data>
+      <data key="d3">rn:R05604 rn:R07143</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Lyxulose" target="Xylitol">
+      <data key="d2">R01896</data>
+      <data key="d3">rn:R01896</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Lyxulose" target="D-Xylose">
+      <data key="d2">R01432</data>
+      <data key="d3">rn:R01432</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Methylmalonyl-CoA" target="Propionyl-CoA">
+      <data key="d2">R01859</data>
+      <data key="d3">rn:R01859</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Methylmalonyl-CoA" target="L-Methylmalonyl-CoA">
+      <data key="d2">R02765</data>
+      <data key="d3">rn:R02765</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Ribulose" target="Ribitol">
+      <data key="d2">R01895</data>
+      <data key="d3">rn:R01895</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="D-Xylose" target="Xylitol">
+      <data key="d2">R01431</data>
+      <data key="d3">rn:R01431 rn:R07152 rn:R09477</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="DKH" target="DKHP">
+      <data key="d2">R05661</data>
+      <data key="d3">rn:R05661</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="DKHP" target="Glycerone_phosphate">
+      <data key="d2">R05378</data>
+      <data key="d3">rn:R05378</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Dehydroascorbate" target="Vitamin_C">
+      <data key="d2">R00068</data>
+      <data key="d3">rn:R00068 rn:R01108</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Dextrin" target="Starch">
+      <data key="d2">R02112</data>
+      <data key="d3">rn:R02112</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Dextrin" target="alpha-D-Glucose">
+      <data key="d2">R01791</data>
+      <data key="d3">rn:R01791</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Digalacturonate" target="Pectate">
+      <data key="d2">R02360</data>
+      <data key="d3">rn:R02360</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Formate" target="Oxalate">
+      <data key="d2">R00522</data>
+      <data key="d3">rn:R00522</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Formyl-CoA" target="Oxalyl-CoA">
+      <data key="d2">R01908</data>
+      <data key="d3">rn:R01908</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="GDP-L-fucose" target="L-Fucose_1-phosphate">
+      <data key="d2">R01951</data>
+      <data key="d3">rn:R01951</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="GDP-L-galactose" target="GDP-mannose">
+      <data key="d2">R00889</data>
+      <data key="d3">rn:R00889</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucarate" target="Glucurone">
+      <data key="d2">R02957</data>
+      <data key="d3">rn:R02957</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucose" target="Sucrose">
+      <data key="d2">R05140</data>
+      <data key="d3">rn:R05140</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucose" target="Maltose">
+      <data key="d2">R00028</data>
+      <data key="d3">rn:R00028 rn:R01555 rn:R05196</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucose" target="Trehalose">
+      <data key="d2">R00010</data>
+      <data key="d3">rn:R00010 rn:R02727</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucuronate" target="Glucuronide">
+      <data key="d2">R01478</data>
+      <data key="d3">rn:R01478</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucuronate" target="Gulonate">
+      <data key="d2">R01481</data>
+      <data key="d3">rn:R01481</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glucuronide" target="UDPglucuronate">
+      <data key="d2">R01383</data>
+      <data key="d3">rn:R01383</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glycerate" target="Hydroxypyruvate">
+      <data key="d2">R01388</data>
+      <data key="d3">rn:R01388 rn:R01392</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glycerin" target="L-Glycerose">
+      <data key="d2">R10563</data>
+      <data key="d3">rn:R10563</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glycolate" target="Glyoxalate">
+      <data key="d2">R00465</data>
+      <data key="d3">rn:R00465 rn:R00475 rn:R00717</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glyoxalate" target="Malate">
+      <data key="d2">R00472</data>
+      <data key="d3">rn:R00472</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Glyoxalate" target="Isocitrate">
+      <data key="d2">R00479</data>
+      <data key="d3">rn:R00479</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Gulonate" target="L-Gulonolactone">
+      <data key="d2">R02933</data>
+      <data key="d3">rn:R02933</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Inositol_3-phosphate" target="Robison_ester">
+      <data key="d2">R07324</data>
+      <data key="d3">rn:R07324</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Arabinonate" target="L-Arabonolactone">
+      <data key="d2">R02526</data>
+      <data key="d3">rn:R02526</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Arabinose" target="L-Ribulose">
+      <data key="d2">R01761</data>
+      <data key="d3">rn:R01761</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Arabinose" target="L-Lyxitol">
+      <data key="d2">R01758</data>
+      <data key="d3">rn:R01758 rn:R01759</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Citramalyl-CoA" target="Pyruvate">
+      <data key="d2">R00237</data>
+      <data key="d3">rn:R00237</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Fucose" target="L-Fucose_1-phosphate">
+      <data key="d2">R03161</data>
+      <data key="d3">rn:R03161</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Lactate" target="Pyruvate">
+      <data key="d2">R00196</data>
+      <data key="d3">rn:R00196 rn:R00703 rn:R01447</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Lactate" target="Lactoyl-CoA">
+      <data key="d2">R01449</data>
+      <data key="d3">rn:R01449</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Lyxulose" target="Xylitol">
+      <data key="d2">R01904</data>
+      <data key="d3">rn:R01904</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="L-Methylmalonyl-CoA" target="Succinyl-CoA">
+      <data key="d2">R00833</data>
+      <data key="d3">rn:R00833</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Lactose" target="Lactose_6'-phosphate">
+      <data key="d2">R04393</data>
+      <data key="d3">rn:R04393</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Levulose" target="Sorbitol">
+      <data key="d2">R00875</data>
+      <data key="d3">rn:R00875</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Levulose" target="alpha-D-Glucose">
+      <data key="d2">R00878</data>
+      <data key="d3">rn:R00878</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Levulose" target="Sucrose">
+      <data key="d2">R00801</data>
+      <data key="d3">rn:R00801</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Maltodextrin" target="Maltose">
+      <data key="d2">R11262</data>
+      <data key="d3">rn:R11262</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Maltodextrin" target="Starch">
+      <data key="d2">R11261</data>
+      <data key="d3">rn:R11261</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Maltose" target="Trehalose">
+      <data key="d2">R01557</data>
+      <data key="d3">rn:R01557</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Oxalate" target="Oxalyl-CoA">
+      <data key="d2">R01558</data>
+      <data key="d3">rn:R01558 rn:R01559</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Oxaloacetate" target="PEP">
+      <data key="d2">R00341</data>
+      <data key="d3">rn:R00341 rn:R00345 rn:R00346 rn:R00431 rn:R00726</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Oxaloacetate" target="Pyruvate">
+      <data key="d2">R00217</data>
+      <data key="d3">rn:R00217 rn:R00344</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Pectate" target="Pectin">
+      <data key="d2">R02362</data>
+      <data key="d3">rn:R02362</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Propionate" target="Propionyl-CoA">
+      <data key="d2">R00925</data>
+      <data key="d3">rn:R00925 rn:R00920 rn:R00928</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Propionate" target="Propionyl_phosphate">
+      <data key="d2">R01353</data>
+      <data key="d3">rn:R01353</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Propionyl-CoA" target="Propionyl_phosphate">
+      <data key="d2">R00921</data>
+      <data key="d3">rn:R00921</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Starch" target="alpha-D-Glucose">
+      <data key="d2">R01790</data>
+      <data key="d3">rn:R01790</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Succinate" target="Succinyl-CoA">
+      <data key="d2">R10343</data>
+      <data key="d3">rn:R10343</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Sucrose" target="UDPglucose">
+      <data key="d2">R00806</data>
+      <data key="d3">rn:R00806</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="Sucrose_6F-phosphate" target="UDPglucose">
+      <data key="d2">R00766</data>
+      <data key="d3">rn:R00766</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-L-Ara4FN" target="UDP-L-Ara4N">
+      <data key="d2">R07660</data>
+      <data key="d3">rn:R07660</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-L-Ara4N" target="UDP-L-Ara4O">
+      <data key="d2">R07659</data>
+      <data key="d3">rn:R07659</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-L-Ara4O" target="UDPglucuronate">
+      <data key="d2">R07658</data>
+      <data key="d3">rn:R07658</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-L-arabinose" target="UDP-xylose">
+      <data key="d2">R01473</data>
+      <data key="d3">rn:R01473</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-galactose" target="UDPglucose">
+      <data key="d2">R00291</data>
+      <data key="d3">rn:R00291</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDP-xylose" target="UDPglucuronate">
+      <data key="d2">R01384</data>
+      <data key="d3">rn:R01384</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDPgalacturonate" target="UDPglucuronate">
+      <data key="d2">R01385</data>
+      <data key="d3">rn:R01385</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+    <edge source="UDPglucose" target="UDPglucuronate">
+      <data key="d2">R00286</data>
+      <data key="d3">rn:R00286</data>
+      <data key="d4">False</data>
+      <data key="d5">Glycan Biosynthesis and Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

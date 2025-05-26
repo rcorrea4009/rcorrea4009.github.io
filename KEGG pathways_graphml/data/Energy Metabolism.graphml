@@ -1,0 +1,469 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(3S)-Citryl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phosphoglycerate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Formyl-H4MPT">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Methyl-THMPT">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="APS">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Acetyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00118">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00199">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00231">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00279">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00354">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00447">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01080">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01182">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04330">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04377">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05382">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CH3OH">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CH4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CO2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Citrate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CoB">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CoM-S-S-CoB">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coenzyme_F420">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Formalin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Formate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Formylmethanofuran">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="H+">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="H2S">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hyposulfite">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asp">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Glutamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methanofuran">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methyl-CoM">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NH3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Neuberg_ester">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxaloacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PAPS">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PEP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ribose_5-phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sulfate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sulfite">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(3S)-Citryl-CoA" target="Citrate">
+      <data key="d2">R01322</data>
+      <data key="d3">rn:R01322</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="(3S)-Citryl-CoA" target="Oxaloacetate">
+      <data key="d2">R00354</data>
+      <data key="d3">rn:R00354</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="3-Phosphoglycerate" target="C01182">
+      <data key="d2">R00024</data>
+      <data key="d3">rn:R00024</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="5-Formyl-H4MPT" target="Formylmethanofuran">
+      <data key="d2">R03390</data>
+      <data key="d3">rn:R03390</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="5-Formyl-H4MPT" target="C04330">
+      <data key="d2">R03464</data>
+      <data key="d3">rn:R03464</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="5-Methyl-THMPT" target="C01080">
+      <data key="d2">R04464</data>
+      <data key="d3">rn:R04464</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="5-Methyl-THMPT" target="Methyl-CoM">
+      <data key="d2">R04347</data>
+      <data key="d3">rn:R04347</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="APS" target="Sulfate">
+      <data key="d2">R00529</data>
+      <data key="d3">rn:R00529 rn:R00530 rn:R00531</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="APS" target="Sulfite">
+      <data key="d2">R08553</data>
+      <data key="d3">rn:R08553</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="APS" target="PAPS">
+      <data key="d2">R00508</data>
+      <data key="d3">rn:R00508 rn:R00509</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00118" target="C00354">
+      <data key="d2">R01068</data>
+      <data key="d3">rn:R01068</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00118" target="C00231">
+      <data key="d2">R01621</data>
+      <data key="d3">rn:R01621</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00118" target="Ribose_5-phosphate">
+      <data key="d2">R01641</data>
+      <data key="d3">rn:R01641</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00199" target="C01182">
+      <data key="d2">R01523</data>
+      <data key="d3">rn:R01523</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00199" target="Ribose_5-phosphate">
+      <data key="d2">R01056</data>
+      <data key="d3">rn:R01056</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00199" target="C00231">
+      <data key="d2">R01529</data>
+      <data key="d3">rn:R01529</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00279" target="C00447">
+      <data key="d2">R01829</data>
+      <data key="d3">rn:R01829</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00279" target="Neuberg_ester">
+      <data key="d2">R01067</data>
+      <data key="d3">rn:R01067</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00354" target="Neuberg_ester">
+      <data key="d2">R00762</data>
+      <data key="d3">rn:R00762</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C00447" target="C05382">
+      <data key="d2">R01845</data>
+      <data key="d3">rn:R01845</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C01080" target="Coenzyme_F420">
+      <data key="d2">R03025</data>
+      <data key="d3">rn:R03025</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C04330" target="C04377">
+      <data key="d2">R04456</data>
+      <data key="d3">rn:R04456 rn:R08059</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="C05382" target="Ribose_5-phosphate">
+      <data key="d2">R01641</data>
+      <data key="d3">rn:R01641</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CH3OH" target="CH4">
+      <data key="d2">R01142</data>
+      <data key="d3">rn:R01142 rn:R09518</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CH3OH" target="Formalin">
+      <data key="d2">R00602</data>
+      <data key="d3">rn:R00602 rn:R00605 rn:R00608 rn:R01146</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CH4" target="CoB">
+      <data key="d2">R04541</data>
+      <data key="d3">rn:R04541</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CO2" target="Formylmethanofuran">
+      <data key="d2">R03015</data>
+      <data key="d3">rn:R03015</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CO2" target="Formate">
+      <data key="d2">R00134</data>
+      <data key="d3">rn:R00134 rn:R10797</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="CoB" target="CoM-S-S-CoB">
+      <data key="d2">R04540</data>
+      <data key="d3">rn:R04540 rn:R11928 rn:R11931 rn:R11943 rn:R11944</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Formalin" target="Formate">
+      <data key="d2">R00604</data>
+      <data key="d3">rn:R00604</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Formate" target="H+">
+      <data key="d2">R00134</data>
+      <data key="d3">rn:R00134 rn:R00519 rn:R10797</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Glutamate" target="L-Glutamine">
+      <data key="d2">R00253</data>
+      <data key="d3">rn:R00253 rn:R00256</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Glutamate" target="L-Asp">
+      <data key="d2">R00355</data>
+      <data key="d3">rn:R00355</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="H2S" target="Sulfite">
+      <data key="d2">R00858</data>
+      <data key="d3">rn:R00858 rn:R00859 rn:R00861 rn:R10146</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Hyposulfite" target="Sulfate">
+      <data key="d2">R10151</data>
+      <data key="d3">rn:R10151</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="L-Alanine" target="Pyruvate">
+      <data key="d2">R00258</data>
+      <data key="d3">rn:R00258</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="L-Asp" target="Oxaloacetate">
+      <data key="d2">R00355</data>
+      <data key="d3">rn:R00355</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="L-Glutamine" target="NH3">
+      <data key="d2">R00253</data>
+      <data key="d3">rn:R00253 rn:R00256</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Malate" target="Pyruvate">
+      <data key="d2">R00214</data>
+      <data key="d3">rn:R00214 rn:R00216</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Malate" target="Oxaloacetate">
+      <data key="d2">R00343</data>
+      <data key="d3">rn:R00343</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="N2" target="NH3">
+      <data key="d2">R05185</data>
+      <data key="d3">rn:R05185 rn:R05186</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Oxaloacetate" target="PEP">
+      <data key="d2">R00341</data>
+      <data key="d3">rn:R00341</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="PAPS" target="Sulfite">
+      <data key="d2">R02021</data>
+      <data key="d3">rn:R02021</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="PEP" target="Pyruvate">
+      <data key="d2">R00206</data>
+      <data key="d3">rn:R00206</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+    <edge source="Sulfate" target="Sulfite">
+      <data key="d2">R00528</data>
+      <data key="d3">rn:R00528 rn:R00533 rn:R11487</data>
+      <data key="d4">False</data>
+      <data key="d5">Energy Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

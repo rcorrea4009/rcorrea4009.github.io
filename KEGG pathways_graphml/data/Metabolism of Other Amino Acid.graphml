@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="2-Oxoarginine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxopropanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phosphonopyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Sulfinoalanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Anserine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00669">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01110">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03167">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03170">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03740">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05674">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05675">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05676">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05730">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06459">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CMPciliatine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Carnosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ciliatine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cys-Gly">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cysteamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Ala">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Ala-D-Ala">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Arginine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Glutamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Ornithine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GSH">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gly">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HCN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hypotaurine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isethionate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-3-Cyanoalanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Arg">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asp">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asparagine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Cysteate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Cysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Selenocysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PEP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pidolic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Selenide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Selenophosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Spermidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sulfoacetaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Taurine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Trypanothione">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="2-Oxoarginine" target="D-Arginine">
+      <data key="d2">R02923</data>
+      <data key="d3">rn:R02923 rn:R02924 rn:R11018</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="2-Oxoarginine" target="L-Arg">
+      <data key="d2">R11031</data>
+      <data key="d3">rn:R11031 rn:R11032</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="beta-Alanine">
+      <data key="d2">R00907</data>
+      <data key="d3">rn:R00907 rn:R00908</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="3-Phosphonopyruvate" target="PEP">
+      <data key="d2">R00661</data>
+      <data key="d3">rn:R00661</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="3-Phosphonopyruvate" target="C03167">
+      <data key="d2">R04053</data>
+      <data key="d3">rn:R04053</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="3-Sulfinoalanine" target="Hypotaurine">
+      <data key="d2">R02466</data>
+      <data key="d3">rn:R02466</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Anserine" target="beta-Alanine">
+      <data key="d2">R03288</data>
+      <data key="d3">rn:R03288</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C00669" target="L-Cysteine">
+      <data key="d2">R02743</data>
+      <data key="d3">rn:R02743</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C00669" target="GSH">
+      <data key="d2">R00497</data>
+      <data key="d3">rn:R00497</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C01110" target="D-Ornithine">
+      <data key="d2">R02457</data>
+      <data key="d3">rn:R02457 rn:R02459</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C03167" target="Ciliatine">
+      <data key="d2">R04152</data>
+      <data key="d3">rn:R04152</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C03167" target="Ethanal">
+      <data key="d2">R00747</data>
+      <data key="d3">rn:R00747</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C03170" target="Trypanothione">
+      <data key="d2">R03821</data>
+      <data key="d3">rn:R03821 rn:R08362 rn:R08364</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C03740" target="GSH">
+      <data key="d2">R01262</data>
+      <data key="d3">rn:R01262</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C03740" target="Pidolic_acid">
+      <data key="d2">R03749</data>
+      <data key="d3">rn:R03749</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C05674" target="C06459">
+      <data key="d2">R02590</data>
+      <data key="d3">rn:R02590</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C05674" target="C05676">
+      <data key="d2">R04922</data>
+      <data key="d3">rn:R04922</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C05675" target="CMPciliatine">
+      <data key="d2">R04920</data>
+      <data key="d3">rn:R04920</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C05730" target="GSH">
+      <data key="d2">R01917</data>
+      <data key="d3">rn:R01917 rn:R01918</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="C05730" target="Trypanothione">
+      <data key="d2">R03822</data>
+      <data key="d3">rn:R03822 rn:R08350</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="CMPciliatine" target="Ciliatine">
+      <data key="d2">R04247</data>
+      <data key="d3">rn:R04247</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Carnosine" target="beta-Alanine">
+      <data key="d2">R01166</data>
+      <data key="d3">rn:R01166</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Cys-Gly" target="GSH">
+      <data key="d2">R11861</data>
+      <data key="d3">rn:R11861</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Cys-Gly" target="L-Cysteine">
+      <data key="d2">R00899</data>
+      <data key="d3">rn:R00899</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Cysteamine" target="Hypotaurine">
+      <data key="d2">R02467</data>
+      <data key="d3">rn:R02467</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="D-Ala" target="Pyruvate">
+      <data key="d2">R01148</data>
+      <data key="d3">rn:R01148</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="D-Ala" target="L-Alanine">
+      <data key="d2">R00401</data>
+      <data key="d3">rn:R00401</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="D-Ala" target="D-Ala-D-Ala">
+      <data key="d2">R01150</data>
+      <data key="d3">rn:R01150</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="D-Glutamate" target="D-Glutamine">
+      <data key="d2">R01579</data>
+      <data key="d3">rn:R01579</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="D-Glutamate" target="Glutamate">
+      <data key="d2">R00260</data>
+      <data key="d3">rn:R00260</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Glutamate" target="Pidolic_acid">
+      <data key="d2">R00251</data>
+      <data key="d3">rn:R00251</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Isethionate" target="Sulfoacetaldehyde">
+      <data key="d2">R02600</data>
+      <data key="d3">rn:R02600</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="L-3-Cyanoalanine" target="L-Asparagine">
+      <data key="d2">R01267</data>
+      <data key="d3">rn:R01267</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="L-3-Cyanoalanine" target="L-Asp">
+      <data key="d2">R00486</data>
+      <data key="d3">rn:R00486</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="L-3-Cyanoalanine" target="L-Cysteine">
+      <data key="d2">R03524</data>
+      <data key="d3">rn:R03524</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="L-Cysteate" target="Taurine">
+      <data key="d2">R01682</data>
+      <data key="d3">rn:R01682</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="L-Selenocysteine" target="Selenide">
+      <data key="d2">R03599</data>
+      <data key="d3">rn:R03599</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Selenide" target="Selenophosphate">
+      <data key="d2">R03595</data>
+      <data key="d3">rn:R03595</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+    <edge source="Sulfoacetaldehyde" target="Taurine">
+      <data key="d2">R05652</data>
+      <data key="d3">rn:R05652</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Other Amino Acid</data>
+    </edge>
+  </graph>
+</graphml>

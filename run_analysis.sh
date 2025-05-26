@@ -13,9 +13,9 @@ if [ -d "${KEGG_DIR}" ]; then
     echo "Processing KEGG metabolic pathways..."
     DATASET_TYPE="kegg"
     INPUT_PREFIX="${OUTPUT_DIR}/kegg"
-    
+
     # Convert GraphML to facts
-    python3 graphml_to_fact.py "${KEGG_DIR}" "${INPUT_PREFIX}" || {
+    python3 parse_kegg_graphml.py "${KEGG_DIR}" "pathways.graphml" || {
         echo "Failed to convert GraphML"
         exit 1
     }
@@ -32,26 +32,26 @@ java Test/PathwayTester.java || {
 
 if [ -f "TestsPassed.facts" ]; then
     echo "Tests passed. Running main analysis..."
-    
+
     # Build the base command
     CMD="souffle -F ${OUTPUT_PREFIX}_facts -D output hospital_flows.dl -j4"
-    
+
     # Add KEGG-specific flags if needed
     if [ "$DATASET_TYPE" = "kegg" ]; then
         CMD+=" --macro='DATASET_TYPE=kegg'"
     fi
-    
+
     # Execute the command
     echo "Executing: $CMD"
     eval "$CMD" || {
         echo "Analysis failed"
         exit 1
     }
-    
+
     # Generate visualization
     echo "Generating visualization..."
     cp hospital_viz.html "${OUTPUT_PREFIX}_viz.html"
-    
+
     # Try to open in browser (cross-platform)
     if command -v xdg-open >/dev/null; then
         xdg-open "${OUTPUT_PREFIX}_viz.html" 2>/dev/null

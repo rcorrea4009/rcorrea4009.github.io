@@ -1,0 +1,1865 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(+)-Muconolactone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-1-Phenylethanol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-Styrene_oxide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1,2-Anthracenediol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1,2-Ethanediol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1,2-Naphthalenediol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2,4,5-T">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Chloroethanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Chloroethanol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Fluorobenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Hydroxymuconate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3,6-Dichlorocatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Ethylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Fluorobenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Hydroxypimelyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Methylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxoadipate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxoadipyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxopropanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Phenylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Vinylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Chlorocatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Fluorobenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Fluorocatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Hydroxybenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Hydroxybenzoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Methylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Oxalocrotonate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Tolylcarbinol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Oxohexanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="9-Fluorenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="9-Fluorenone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adipate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adipyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Allophanate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Androstenedione">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Anthracene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Atrazine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Benzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Benzoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Benzoylsuccinyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Benzylsuccinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Benzylsuccinyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biphenyl">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biuret">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00633">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00682">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01163">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01273">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01278">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03164">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03203">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03233">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03434">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03569">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03586">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03589">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03676">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04314">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04468">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04706">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04729">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04783">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04793">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06203">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06204">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06210">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06318">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06321">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06322">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06329">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06589">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06599">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06600">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06609">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06610">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06611">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06612">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06613">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06614">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06615">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06720">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06727">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06729">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06731">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06749">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06760">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06762">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06791">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06792">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07087">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07089">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07093">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07095">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07097">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07099">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07101">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07123">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07213">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07216">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07478">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07479">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07731">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07733">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07734">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C08061">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C08062">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C09819">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C09821">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C10700">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11354">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11425">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11426">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11427">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12831">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12832">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12833">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12834">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12835">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12836">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C13636">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C14144">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C14145">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C14909">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16203">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16262">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16263">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16264">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16348">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16474">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16476">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16479">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16480">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16482">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20144">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21104">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21105">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CO2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Carbazole">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Catechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chloranil">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chloroacetic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cyanuric_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DSHA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dibenzo-p-dioxin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dibenzofuran">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dutch_liquid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="E-Phenylitaconyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethylene_oxide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ethylenzene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Fluorene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glycolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HIP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="HIP-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxyatrazine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxyquinol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Maleylacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Isopropylammelide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Naphthalene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Oxopent-4-enoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PCE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PCP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phenanthrene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phenylacetate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phthalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Propionyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protocatechuate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyruvate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Salicylaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Salicylate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Secophenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Styrene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TCE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Terephthalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Toluate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Toluol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tosylate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Trichlorobenzene_A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-Tolualdehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="cis,cis-Muconate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="m-Tolualdehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="m-Toluic_Acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="m-Xylene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="o-Cresol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="o-Tolualdehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="o-Toluate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="o-Xylene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Chlorophenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Cresol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Dichlorobenzene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Tolualdehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Xylene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(+)-Muconolactone" target="cis,cis-Muconate">
+      <data key="d2">R06989</data>
+      <data key="d3">rn:R06989</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="(+)-Muconolactone" target="C03586">
+      <data key="d2">R06990</data>
+      <data key="d3">rn:R06990</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="(S)-1-Phenylethanol" target="Ethylenzene">
+      <data key="d2">R05745</data>
+      <data key="d3">rn:R05745</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="(S)-Styrene_oxide" target="Styrene">
+      <data key="d2">R05488</data>
+      <data key="d3">rn:R05488</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="(S)-Styrene_oxide" target="alpha-Tolualdehyde">
+      <data key="d2">R10697</data>
+      <data key="d3">rn:R10697</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="1,2-Anthracenediol" target="C16203">
+      <data key="d2">R07705</data>
+      <data key="d3">rn:R07705</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="1,2-Ethanediol" target="Ethylene_oxide">
+      <data key="d2">R05842</data>
+      <data key="d3">rn:R05842</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="1,2-Naphthalenediol" target="C06204">
+      <data key="d2">R04117</data>
+      <data key="d3">rn:R04117</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="1,2-Naphthalenediol" target="C04314">
+      <data key="d2">R04115</data>
+      <data key="d3">rn:R04115</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="1,2-Naphthalenediol" target="C03203">
+      <data key="d2">R05632</data>
+      <data key="d3">rn:R05632</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2,4,5-T" target="C07101">
+      <data key="d2">R05418</data>
+      <data key="d3">rn:R05418</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Chloroethanal" target="2-Chloroethanol">
+      <data key="d2">R05285</data>
+      <data key="d3">rn:R05285 rn:R09128</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Chloroethanal" target="Chloroacetic_acid">
+      <data key="d2">R05286</data>
+      <data key="d3">rn:R05286</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Chloroethanol" target="Dutch_liquid">
+      <data key="d2">R05284</data>
+      <data key="d3">rn:R05284</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Fluorobenzoate" target="C16482">
+      <data key="d2">R08100</data>
+      <data key="d3">rn:R08100</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Hydroxymuconate" target="4-Oxalocrotonate">
+      <data key="d2">R03966</data>
+      <data key="d3">rn:R03966</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="2-Hydroxymuconate" target="C00682">
+      <data key="d2">R02762</data>
+      <data key="d3">rn:R02762</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3,6-Dichlorocatechol" target="C07093">
+      <data key="d2">R05397</data>
+      <data key="d3">rn:R05397</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3,6-Dichlorocatechol" target="C07095">
+      <data key="d2">R05409</data>
+      <data key="d3">rn:R05409</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Ethylcatechol" target="C07123">
+      <data key="d2">R05416</data>
+      <data key="d3">rn:R05416</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Fluorobenzoate" target="C16479">
+      <data key="d2">R08109</data>
+      <data key="d3">rn:R08109</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Hydroxypimelyl-CoA" target="C09821">
+      <data key="d2">R05594</data>
+      <data key="d3">rn:R05594</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Methylcatechol" target="C06731">
+      <data key="d2">R05314</data>
+      <data key="d3">rn:R05314</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Methylcatechol" target="C06720">
+      <data key="d2">R05309</data>
+      <data key="d3">rn:R05309</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Methylcatechol" target="o-Cresol">
+      <data key="d2">R03608</data>
+      <data key="d3">rn:R03608</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Methylcatechol" target="C06210">
+      <data key="d2">R04089</data>
+      <data key="d3">rn:R04089</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxoadipate" target="C03586">
+      <data key="d2">R02991</data>
+      <data key="d3">rn:R02991</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxoadipate" target="3-Oxoadipyl-CoA">
+      <data key="d2">R02990</data>
+      <data key="d3">rn:R02990</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxoadipate" target="Maleylacetate">
+      <data key="d2">R02988</data>
+      <data key="d3">rn:R02988 rn:R02989</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxoadipyl-CoA" target="C14145">
+      <data key="d2">R06941</data>
+      <data key="d3">rn:R06941</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="C06614">
+      <data key="d2">R05371</data>
+      <data key="d3">rn:R05371</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="C06615">
+      <data key="d2">R05372</data>
+      <data key="d3">rn:R05372</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Phenylcatechol" target="C06589">
+      <data key="d2">R05239</data>
+      <data key="d3">rn:R05239</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Phenylcatechol" target="C01273">
+      <data key="d2">R03462</data>
+      <data key="d3">rn:R03462</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="3-Vinylcatechol" target="C07087">
+      <data key="d2">R05404</data>
+      <data key="d3">rn:R05404</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Chlorocatechol" target="p-Chlorophenol">
+      <data key="d2">R05441</data>
+      <data key="d3">rn:R05441</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Chlorocatechol" target="C07089">
+      <data key="d2">R05406</data>
+      <data key="d3">rn:R05406</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Fluorobenzoate" target="C16480">
+      <data key="d2">R08110</data>
+      <data key="d3">rn:R08110</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Fluorocatechol" target="C16474">
+      <data key="d2">R08115</data>
+      <data key="d3">rn:R08115</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Fluorocatechol" target="C16479">
+      <data key="d2">R08112</data>
+      <data key="d3">rn:R08112</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Fluorocatechol" target="C16480">
+      <data key="d2">R08113</data>
+      <data key="d3">rn:R08113</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="C00633">
+      <data key="d2">R01293</data>
+      <data key="d3">rn:R01293</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="4-Hydroxybenzoyl-CoA">
+      <data key="d2">R01300</data>
+      <data key="d3">rn:R01300 rn:R01301</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="Protocatechuate">
+      <data key="d2">R01296</data>
+      <data key="d3">rn:R01296 rn:R01298</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="Benzoate">
+      <data key="d2">R01295</data>
+      <data key="d3">rn:R01295</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Hydroxybenzoyl-CoA" target="Benzoyl-CoA">
+      <data key="d2">R05316</data>
+      <data key="d3">rn:R05316</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Methylcatechol" target="Tosylate">
+      <data key="d2">R05294</data>
+      <data key="d3">rn:R05294</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Methylcatechol" target="C06729">
+      <data key="d2">R05292</data>
+      <data key="d3">rn:R05292 rn:R05293</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Methylcatechol" target="C06760">
+      <data key="d2">R05295</data>
+      <data key="d3">rn:R05295</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Oxalocrotonate" target="Oxopent-4-enoate">
+      <data key="d2">R02602</data>
+      <data key="d3">rn:R02602</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Tolylcarbinol" target="p-Xylene">
+      <data key="d2">R05288</data>
+      <data key="d3">rn:R05288</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="4-Tolylcarbinol" target="p-Tolualdehyde">
+      <data key="d2">R05282</data>
+      <data key="d3">rn:R05282</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="6-Oxohexanoate" target="Adipate">
+      <data key="d2">R05099</data>
+      <data key="d3">rn:R05099</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="9-Fluorenol" target="Fluorene">
+      <data key="d2">R05422</data>
+      <data key="d3">rn:R05422</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="9-Fluorenone" target="C16262">
+      <data key="d2">R07799</data>
+      <data key="d3">rn:R07799</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Adipate" target="Adipyl-CoA">
+      <data key="d2">R06944</data>
+      <data key="d3">rn:R06944</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Adipyl-CoA" target="C14144">
+      <data key="d2">R06943</data>
+      <data key="d3">rn:R06943</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Allophanate" target="Biuret">
+      <data key="d2">R05563</data>
+      <data key="d3">rn:R05563</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Allophanate" target="CO2">
+      <data key="d2">R00005</data>
+      <data key="d3">rn:R00005</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Androstenedione" target="C20144">
+      <data key="d2">R09884</data>
+      <data key="d3">rn:R09884</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Anthracene" target="C16203">
+      <data key="d2">R07704</data>
+      <data key="d3">rn:R07704</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Atrazine" target="Hydroxyatrazine">
+      <data key="d2">R05558</data>
+      <data key="d3">rn:R05558</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzoate" target="C06321">
+      <data key="d2">R05621</data>
+      <data key="d3">rn:R05621 rn:R05622</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzoate" target="Benzoyl-CoA">
+      <data key="d2">R01422</data>
+      <data key="d3">rn:R01422</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzoyl-CoA" target="C06322">
+      <data key="d2">R02451</data>
+      <data key="d3">rn:R02451</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzoyl-CoA" target="Benzoylsuccinyl-CoA">
+      <data key="d2">R05587</data>
+      <data key="d3">rn:R05587</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzoylsuccinyl-CoA" target="C09819">
+      <data key="d2">R05575</data>
+      <data key="d3">rn:R05575</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzylsuccinate" target="Toluol">
+      <data key="d2">R05598</data>
+      <data key="d3">rn:R05598</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzylsuccinate" target="Benzylsuccinyl-CoA">
+      <data key="d2">R05588</data>
+      <data key="d3">rn:R05588</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Benzylsuccinyl-CoA" target="E-Phenylitaconyl-CoA">
+      <data key="d2">R05584</data>
+      <data key="d3">rn:R05584</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Biphenyl" target="C06589">
+      <data key="d2">R05263</data>
+      <data key="d3">rn:R05263 rn:R05264</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Biuret" target="Cyanuric_acid">
+      <data key="d2">R05561</data>
+      <data key="d3">rn:R05561</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C00633" target="p-Cresol">
+      <data key="d2">R02675</data>
+      <data key="d3">rn:R02675</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C00682" target="Oxopent-4-enoate">
+      <data key="d2">R02604</data>
+      <data key="d3">rn:R02604</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C00682" target="Catechol">
+      <data key="d2">R00816</data>
+      <data key="d3">rn:R00816</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C01163" target="Protocatechuate">
+      <data key="d2">R01631</data>
+      <data key="d3">rn:R01631</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C01163" target="C01278">
+      <data key="d2">R03307</data>
+      <data key="d3">rn:R03307</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C01273" target="Oxopent-4-enoate">
+      <data key="d2">R02606</data>
+      <data key="d3">rn:R02606</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C01278" target="C03586">
+      <data key="d2">R03470</data>
+      <data key="d3">rn:R03470</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03164" target="C04468">
+      <data key="d2">R04151</data>
+      <data key="d3">rn:R04151</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03164" target="C11425">
+      <data key="d2">R05650</data>
+      <data key="d3">rn:R05650</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03203" target="C11427">
+      <data key="d2">R05649</data>
+      <data key="d3">rn:R05649</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03233" target="C04783">
+      <data key="d2">R05275</data>
+      <data key="d3">rn:R05275</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03233" target="Protocatechuate">
+      <data key="d2">R01635</data>
+      <data key="d3">rn:R01635</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03434" target="Chloranil">
+      <data key="d2">R11585</data>
+      <data key="d3">rn:R11585</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03434" target="C07099">
+      <data key="d2">R05402</data>
+      <data key="d3">rn:R05402</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03569" target="Dibenzofuran">
+      <data key="d2">R05434</data>
+      <data key="d3">rn:R05434</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03569" target="C07731">
+      <data key="d2">R05411</data>
+      <data key="d3">rn:R05411</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03589" target="Oxopent-4-enoate">
+      <data key="d2">R02601</data>
+      <data key="d3">rn:R02601</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03589" target="Pyruvate">
+      <data key="d2">R00750</data>
+      <data key="d3">rn:R00750</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C03676" target="Hydroxyquinol">
+      <data key="d2">R04061</data>
+      <data key="d3">rn:R04061</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04314" target="Naphthalene">
+      <data key="d2">R02968</data>
+      <data key="d3">rn:R02968</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04468" target="Phenanthrene">
+      <data key="d2">R05843</data>
+      <data key="d3">rn:R05843</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04706" target="C06329">
+      <data key="d2">R05511</data>
+      <data key="d3">rn:R05511</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04729" target="C07095">
+      <data key="d2">R05392</data>
+      <data key="d3">rn:R05392</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04783" target="Phthalate">
+      <data key="d2">R03630</data>
+      <data key="d3">rn:R03630</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04793" target="Secophenol">
+      <data key="d2">R09819</data>
+      <data key="d3">rn:R09819</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C04793" target="DSHA">
+      <data key="d2">R04597</data>
+      <data key="d3">rn:R04597</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06203" target="Salicylaldehyde">
+      <data key="d2">R05136</data>
+      <data key="d3">rn:R05136</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06203" target="C06204">
+      <data key="d2">R05137</data>
+      <data key="d3">rn:R05137</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06210" target="Oxopent-4-enoate">
+      <data key="d2">R05138</data>
+      <data key="d3">rn:R05138</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06318" target="Protocatechuate">
+      <data key="d2">R01633</data>
+      <data key="d3">rn:R01633</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06318" target="Terephthalate">
+      <data key="d2">R05148</data>
+      <data key="d3">rn:R05148</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06321" target="Catechol">
+      <data key="d2">R00813</data>
+      <data key="d3">rn:R00813</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06322" target="C06749">
+      <data key="d2">R05597</data>
+      <data key="d3">rn:R05597</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06329" target="Maleylacetate">
+      <data key="d2">R05355</data>
+      <data key="d3">rn:R05355</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06329" target="C07097">
+      <data key="d2">R05408</data>
+      <data key="d3">rn:R05408</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06599" target="C06600">
+      <data key="d2">R05243</data>
+      <data key="d3">rn:R05243</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06600" target="C21105">
+      <data key="d2">R05446</data>
+      <data key="d3">rn:R05446</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06609" target="C06611">
+      <data key="d2">R05367</data>
+      <data key="d3">rn:R05367</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06610" target="C06612">
+      <data key="d2">R05368</data>
+      <data key="d3">rn:R05368</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06611" target="C06613">
+      <data key="d2">R05233</data>
+      <data key="d3">rn:R05233</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06612" target="C16348">
+      <data key="d2">R05234</data>
+      <data key="d3">rn:R05234</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06613" target="C06614">
+      <data key="d2">R05237</data>
+      <data key="d3">rn:R05237</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06615" target="C16348">
+      <data key="d2">R05238</data>
+      <data key="d3">rn:R05238</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06720" target="m-Toluic_Acid">
+      <data key="d2">R05665</data>
+      <data key="d3">rn:R05665</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06727" target="Ethylenzene">
+      <data key="d2">R05440</data>
+      <data key="d3">rn:R05440</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06729" target="Toluate">
+      <data key="d2">R05290</data>
+      <data key="d3">rn:R05290 rn:R05291</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06731" target="o-Toluate">
+      <data key="d2">R05428</data>
+      <data key="d3">rn:R05428</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06749" target="C09821">
+      <data key="d2">R05581</data>
+      <data key="d3">rn:R05581</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06760" target="C11354">
+      <data key="d2">R05865</data>
+      <data key="d3">rn:R05865</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06760" target="C07478">
+      <data key="d2">R05353</data>
+      <data key="d3">rn:R05353</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06762" target="C11354">
+      <data key="d2">R05864</data>
+      <data key="d3">rn:R05864</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06762" target="Propanal">
+      <data key="d2">R05298</data>
+      <data key="d3">rn:R05298</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06791" target="TCE">
+      <data key="d2">R05500</data>
+      <data key="d3">rn:R05500</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C06792" target="TCE">
+      <data key="d2">R05501</data>
+      <data key="d3">rn:R05501</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07087" target="Oxopent-4-enoate">
+      <data key="d2">R05362</data>
+      <data key="d3">rn:R05362</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07093" target="p-Dichlorobenzene">
+      <data key="d2">R05429</data>
+      <data key="d3">rn:R05429</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07097" target="C07099">
+      <data key="d2">R05403</data>
+      <data key="d3">rn:R05403</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07101" target="C21104">
+      <data key="d2">R05447</data>
+      <data key="d3">rn:R05447</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07123" target="Oxopent-4-enoate">
+      <data key="d2">R05366</data>
+      <data key="d3">rn:R05366</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07213" target="o-Xylene">
+      <data key="d2">R05442</data>
+      <data key="d3">rn:R05442</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07213" target="o-Tolualdehyde">
+      <data key="d2">R05348</data>
+      <data key="d3">rn:R05348</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07216" target="m-Xylene">
+      <data key="d2">R05443</data>
+      <data key="d3">rn:R05443</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07216" target="m-Tolualdehyde">
+      <data key="d2">R05347</data>
+      <data key="d3">rn:R05347</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07478" target="C07479">
+      <data key="d2">R05389</data>
+      <data key="d3">rn:R05389</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07479" target="C11354">
+      <data key="d2">R05374</data>
+      <data key="d3">rn:R05374</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07731" target="Oxopent-4-enoate">
+      <data key="d2">R05360</data>
+      <data key="d3">rn:R05360</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07733" target="Dibenzo-p-dioxin">
+      <data key="d2">R05439</data>
+      <data key="d3">rn:R05439</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07733" target="C07734">
+      <data key="d2">R05413</data>
+      <data key="d3">rn:R05413</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C07734" target="Catechol">
+      <data key="d2">R05361</data>
+      <data key="d3">rn:R05361</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C08061" target="Carbazole">
+      <data key="d2">R05414</data>
+      <data key="d3">rn:R05414</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C08061" target="C08062">
+      <data key="d2">R05415</data>
+      <data key="d3">rn:R05415</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C08062" target="Oxopent-4-enoate">
+      <data key="d2">R05365</data>
+      <data key="d3">rn:R05365</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C09819" target="E-Phenylitaconyl-CoA">
+      <data key="d2">R05599</data>
+      <data key="d3">rn:R05599</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C10700" target="C13636">
+      <data key="d2">R06892</data>
+      <data key="d3">rn:R06892</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C11426" target="C11427">
+      <data key="d2">R05648</data>
+      <data key="d3">rn:R05648</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12831" target="C12833">
+      <data key="d2">R06833</data>
+      <data key="d3">rn:R06833</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12831" target="C12832">
+      <data key="d2">R06832</data>
+      <data key="d3">rn:R06832</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12832" target="Trichlorobenzene_A">
+      <data key="d2">R06831</data>
+      <data key="d3">rn:R06831</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12833" target="C12834">
+      <data key="d2">R06834</data>
+      <data key="d3">rn:R06834</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12834" target="C12835">
+      <data key="d2">R06835</data>
+      <data key="d3">rn:R06835</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C12835" target="C12836">
+      <data key="d2">R06848</data>
+      <data key="d3">rn:R06848</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C14144" target="C14145">
+      <data key="d2">R06942</data>
+      <data key="d3">rn:R06942</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C14909" target="C20144">
+      <data key="d2">R09860</data>
+      <data key="d3">rn:R09860</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C16262" target="C16263">
+      <data key="d2">R07800</data>
+      <data key="d3">rn:R07800</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C16263" target="C16264">
+      <data key="d2">R07801</data>
+      <data key="d3">rn:R07801</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C16264" target="Phthalate">
+      <data key="d2">R07802</data>
+      <data key="d3">rn:R07802</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C16474" target="C16476">
+      <data key="d2">R08116</data>
+      <data key="d3">rn:R08116</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="C16476" target="Maleylacetate">
+      <data key="d2">R08121</data>
+      <data key="d3">rn:R08121</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Catechol" target="Salicylate">
+      <data key="d2">R00818</data>
+      <data key="d3">rn:R00818</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Catechol" target="cis,cis-Muconate">
+      <data key="d2">R00817</data>
+      <data key="d3">rn:R00817</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Chloranil" target="PCP">
+      <data key="d2">R03982</data>
+      <data key="d3">rn:R03982</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Chloroacetic_acid" target="Glycolate">
+      <data key="d2">R05287</data>
+      <data key="d3">rn:R05287</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Cyanuric_acid" target="N-Isopropylammelide">
+      <data key="d2">R05560</data>
+      <data key="d3">rn:R05560</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="DSHA" target="HIP">
+      <data key="d2">R09883</data>
+      <data key="d3">rn:R09883</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Ethene" target="Ethylene_oxide">
+      <data key="d2">R05444</data>
+      <data key="d3">rn:R05444</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="HIP" target="HIP-CoA">
+      <data key="d2">R10769</data>
+      <data key="d3">rn:R10769</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Hydroxyatrazine" target="N-Isopropylammelide">
+      <data key="d2">R05559</data>
+      <data key="d3">rn:R05559</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Hydroxyquinol" target="Maleylacetate">
+      <data key="d2">R03891</data>
+      <data key="d3">rn:R03891</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="PCE" target="TCE">
+      <data key="d2">R05499</data>
+      <data key="d3">rn:R05499</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Phenylacetate" target="alpha-Tolualdehyde">
+      <data key="d2">R02536</data>
+      <data key="d3">rn:R02536 rn:R02537</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Propanal" target="Propionyl-CoA">
+      <data key="d2">R09097</data>
+      <data key="d3">rn:R09097</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Salicylaldehyde" target="Salicylate">
+      <data key="d2">R02941</data>
+      <data key="d3">rn:R02941</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Toluate" target="p-Tolualdehyde">
+      <data key="d2">R05289</data>
+      <data key="d3">rn:R05289</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Toluol" target="o-Cresol">
+      <data key="d2">R03560</data>
+      <data key="d3">rn:R03560</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="Toluol" target="p-Cresol">
+      <data key="d2">R05666</data>
+      <data key="d3">rn:R05666</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="m-Tolualdehyde" target="m-Toluic_Acid">
+      <data key="d2">R05664</data>
+      <data key="d3">rn:R05664</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+    <edge source="o-Tolualdehyde" target="o-Toluate">
+      <data key="d2">R05663</data>
+      <data key="d3">rn:R05663</data>
+      <data key="d4">False</data>
+      <data key="d5">Xenobiotics Biodegradation and Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

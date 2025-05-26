@@ -1,0 +1,1011 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(-)-Ureidoglycolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(5R)-Dihydrothymine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-Allantoin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Oxopropanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Ureidopropanoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Hydroxyisourate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ADP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="AICAR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="AIR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="AMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ATP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adenine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adenosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adenylosuccinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Allantoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aminoacrylate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00438">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01205">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03090">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04640">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04751">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12248">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15667">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20231">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20249">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21029">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Carbamoyl_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cytidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cytosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DNA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Deoxyadenosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Deoxyguanosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Deoxyinosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FAICAR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GAR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glyoxalate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Guanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Guanosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydracrylic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydrouracil">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="IMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Inosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Dihydroorotate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Formyl-GAR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NH3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Orotate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Orotidylic_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PRPP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Purine-6-ol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="RNA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="SAICAR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Thymidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Thymine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Uracil">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Urate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Urea">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Uridine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="XMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xanthosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dADP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dAMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dATP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dCDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dCMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dCTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dGDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dGMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dGTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dTDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dTMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dUDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dUMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="dUTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(-)-Ureidoglycolate" target="NH3">
+      <data key="d2">R00469</data>
+      <data key="d3">rn:R00469</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="(5R)-Dihydrothymine" target="Thymine">
+      <data key="d2">R01415</data>
+      <data key="d3">rn:R01415 rn:R11026</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="(5R)-Dihydrothymine" target="C21029">
+      <data key="d2">R03055</data>
+      <data key="d3">rn:R03055</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="(S)-Allantoin" target="C12248">
+      <data key="d2">R06604</data>
+      <data key="d3">rn:R06604</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="(S)-Allantoin" target="Allantoate">
+      <data key="d2">R02425</data>
+      <data key="d3">rn:R02425</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="Aminoacrylate">
+      <data key="d2">R09983</data>
+      <data key="d3">rn:R09983</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="3-Oxopropanoate" target="Hydracrylic_acid">
+      <data key="d2">R09289</data>
+      <data key="d3">rn:R09289</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="3-Ureidopropanoate" target="Hydrouracil">
+      <data key="d2">R02269</data>
+      <data key="d3">rn:R02269</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="3-Ureidopropanoate" target="beta-Alanine">
+      <data key="d2">R00905</data>
+      <data key="d3">rn:R00905</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="5-Hydroxyisourate" target="Urate">
+      <data key="d2">R02106</data>
+      <data key="d3">rn:R02106 rn:R09514</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="5-Hydroxyisourate" target="C12248">
+      <data key="d2">R06601</data>
+      <data key="d3">rn:R06601</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="ADP" target="AMP">
+      <data key="d2">R00127</data>
+      <data key="d3">rn:R00127</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="ADP" target="dADP">
+      <data key="d2">R02017</data>
+      <data key="d3">rn:R02017</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="ADP" target="ATP">
+      <data key="d2">R00124</data>
+      <data key="d3">rn:R00124 rn:R00200</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AICAR" target="SAICAR">
+      <data key="d2">R04559</data>
+      <data key="d3">rn:R04559</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AICAR" target="FAICAR">
+      <data key="d2">R04560</data>
+      <data key="d3">rn:R04560 rn:R06975</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AIR" target="C04640">
+      <data key="d2">R04208</data>
+      <data key="d3">rn:R04208</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AIR" target="C04751">
+      <data key="d2">R04209</data>
+      <data key="d3">rn:R04209</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AIR" target="C15667">
+      <data key="d2">R07404</data>
+      <data key="d3">rn:R07404</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AMP" target="Adenylosuccinate">
+      <data key="d2">R01083</data>
+      <data key="d3">rn:R01083</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AMP" target="Adenosine">
+      <data key="d2">R00183</data>
+      <data key="d3">rn:R00183 rn:R00185</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AMP" target="Adenine">
+      <data key="d2">R00190</data>
+      <data key="d3">rn:R00190</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="AMP" target="IMP">
+      <data key="d2">R00181</data>
+      <data key="d3">rn:R00181</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="ATP" target="dATP">
+      <data key="d2">R02014</data>
+      <data key="d3">rn:R02014 rn:R11634</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="ATP" target="RNA">
+      <data key="d2">R00435</data>
+      <data key="d3">rn:R00435</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Adenine" target="Adenosine">
+      <data key="d2">R01245</data>
+      <data key="d3">rn:R01245 rn:R01561</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Adenine" target="Purine-6-ol">
+      <data key="d2">R01244</data>
+      <data key="d3">rn:R01244</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Adenine" target="Deoxyadenosine">
+      <data key="d2">R02557</data>
+      <data key="d3">rn:R02557</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Adenosine" target="Inosine">
+      <data key="d2">R01560</data>
+      <data key="d3">rn:R01560</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Adenylosuccinate" target="IMP">
+      <data key="d2">R01135</data>
+      <data key="d3">rn:R01135</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Allantoate" target="Urea">
+      <data key="d2">R02422</data>
+      <data key="d3">rn:R02422</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Aminoacrylate" target="C20249">
+      <data key="d2">R09982</data>
+      <data key="d3">rn:R09982</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C00438" target="Carbamoyl_phosphate">
+      <data key="d2">R01397</data>
+      <data key="d3">rn:R01397</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C00438" target="L-Dihydroorotate">
+      <data key="d2">R01993</data>
+      <data key="d3">rn:R01993</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C01205" target="C21029">
+      <data key="d2">R04666</data>
+      <data key="d3">rn:R04666</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C03090" target="PRPP">
+      <data key="d2">R01072</data>
+      <data key="d3">rn:R01072</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C03090" target="GAR">
+      <data key="d2">R04144</data>
+      <data key="d3">rn:R04144</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C04640" target="N-Formyl-GAR">
+      <data key="d2">R04463</data>
+      <data key="d3">rn:R04463</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C04751" target="SAICAR">
+      <data key="d2">R04591</data>
+      <data key="d3">rn:R04591</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C04751" target="C15667">
+      <data key="d2">R07405</data>
+      <data key="d3">rn:R07405</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C20231" target="C20249">
+      <data key="d2">R09947</data>
+      <data key="d3">rn:R09947</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="C20231" target="Uracil">
+      <data key="d2">R09936</data>
+      <data key="d3">rn:R09936</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CDP" target="CTP">
+      <data key="d2">R00570</data>
+      <data key="d3">rn:R00570</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CDP" target="CMP">
+      <data key="d2">R00512</data>
+      <data key="d3">rn:R00512</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CDP" target="dCDP">
+      <data key="d2">R02024</data>
+      <data key="d3">rn:R02024</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CMP" target="Cytidine">
+      <data key="d2">R00513</data>
+      <data key="d3">rn:R00513 rn:R00516 rn:R00517 rn:R00962 rn:R01548 rn:R02091 rn:R02096 rn:R02371 rn:R02372</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CTP" target="UTP">
+      <data key="d2">R00571</data>
+      <data key="d3">rn:R00571 rn:R00573</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CTP" target="dCTP">
+      <data key="d2">R02022</data>
+      <data key="d3">rn:R02022 rn:R11636</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="CTP" target="RNA">
+      <data key="d2">R00442</data>
+      <data key="d3">rn:R00442</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Cytidine" target="Uridine">
+      <data key="d2">R01878</data>
+      <data key="d3">rn:R01878</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Cytidine" target="Cytosine">
+      <data key="d2">R02137</data>
+      <data key="d3">rn:R02137 rn:R02296</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Cytosine" target="Uracil">
+      <data key="d2">R00974</data>
+      <data key="d3">rn:R00974</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="DNA" target="dCTP">
+      <data key="d2">R00377</data>
+      <data key="d3">rn:R00377</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="DNA" target="TTP">
+      <data key="d2">R00378</data>
+      <data key="d3">rn:R00378</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="DNA" target="dATP">
+      <data key="d2">R00375</data>
+      <data key="d3">rn:R00375</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="DNA" target="dGTP">
+      <data key="d2">R00376</data>
+      <data key="d3">rn:R00376</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Deoxyadenosine" target="dAMP">
+      <data key="d2">R02088</data>
+      <data key="d3">rn:R02088 rn:R02089</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Deoxyadenosine" target="Deoxyinosine">
+      <data key="d2">R02556</data>
+      <data key="d3">rn:R02556</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Deoxyguanosine" target="dGMP">
+      <data key="d2">R01967</data>
+      <data key="d3">rn:R01967 rn:R01968</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Deoxyguanosine" target="Guanine">
+      <data key="d2">R01969</data>
+      <data key="d3">rn:R01969</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Deoxyinosine" target="Purine-6-ol">
+      <data key="d2">R02748</data>
+      <data key="d3">rn:R02748</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="FAICAR" target="IMP">
+      <data key="d2">R01127</data>
+      <data key="d3">rn:R01127</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GAR" target="N-Formyl-GAR">
+      <data key="d2">R04325</data>
+      <data key="d3">rn:R04325</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GDP" target="GMP">
+      <data key="d2">R00332</data>
+      <data key="d3">rn:R00332</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GDP" target="GTP">
+      <data key="d2">R00330</data>
+      <data key="d3">rn:R00330 rn:R00430</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GDP" target="dGDP">
+      <data key="d2">R02019</data>
+      <data key="d3">rn:R02019</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GMP" target="XMP">
+      <data key="d2">R01230</data>
+      <data key="d3">rn:R01230 rn:R01231</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GMP" target="Guanosine">
+      <data key="d2">R01227</data>
+      <data key="d3">rn:R01227</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GMP" target="Guanine">
+      <data key="d2">R01229</data>
+      <data key="d3">rn:R01229</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GTP" target="dGTP">
+      <data key="d2">R02020</data>
+      <data key="d3">rn:R02020 rn:R11633</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="GTP" target="RNA">
+      <data key="d2">R00441</data>
+      <data key="d3">rn:R00441</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Guanine" target="Guanosine">
+      <data key="d2">R02147</data>
+      <data key="d3">rn:R02147</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Guanine" target="Xanthine">
+      <data key="d2">R01676</data>
+      <data key="d3">rn:R01676</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Hydrouracil" target="Uracil">
+      <data key="d2">R00977</data>
+      <data key="d3">rn:R00977 rn:R00978</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="IMP" target="Inosine">
+      <data key="d2">R01126</data>
+      <data key="d3">rn:R01126</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="IMP" target="Purine-6-ol">
+      <data key="d2">R01128</data>
+      <data key="d3">rn:R01128 rn:R01132</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="IMP" target="XMP">
+      <data key="d2">R01130</data>
+      <data key="d3">rn:R01130</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Inosine" target="Purine-6-ol">
+      <data key="d2">R01863</data>
+      <data key="d3">rn:R01863</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="L-Dihydroorotate" target="Orotate">
+      <data key="d2">R01867</data>
+      <data key="d3">rn:R01867 rn:R01868 rn:R01869</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Orotate" target="Orotidylic_acid">
+      <data key="d2">R01870</data>
+      <data key="d3">rn:R01870</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Orotidylic_acid" target="UMP">
+      <data key="d2">R00965</data>
+      <data key="d3">rn:R00965</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Purine-6-ol" target="Xanthine">
+      <data key="d2">R01768</data>
+      <data key="d3">rn:R01768 rn:R01769</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="RNA" target="UTP">
+      <data key="d2">R00443</data>
+      <data key="d3">rn:R00443</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="TTP" target="dTDP">
+      <data key="d2">R02093</data>
+      <data key="d3">rn:R02093</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Thymidine" target="dTMP">
+      <data key="d2">R01567</data>
+      <data key="d3">rn:R01567 rn:R01569</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Thymidine" target="Thymine">
+      <data key="d2">R01570</data>
+      <data key="d3">rn:R01570 rn:R02806</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="UDP" target="UMP">
+      <data key="d2">R00158</data>
+      <data key="d3">rn:R00158</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="UDP" target="UTP">
+      <data key="d2">R00156</data>
+      <data key="d3">rn:R00156</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="UMP" target="Uridine">
+      <data key="d2">R00964</data>
+      <data key="d3">rn:R00964 rn:R00967 rn:R00968 rn:R00970 rn:R01549 rn:R01880 rn:R02097 rn:R02327 rn:R02332</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="UMP" target="UTP">
+      <data key="d2">R00662</data>
+      <data key="d3">rn:R00662</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="UMP" target="Uracil">
+      <data key="d2">R00966</data>
+      <data key="d3">rn:R00966</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Uracil" target="Uridine">
+      <data key="d2">R01876</data>
+      <data key="d3">rn:R01876</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Urate" target="Xanthine">
+      <data key="d2">R02103</data>
+      <data key="d3">rn:R02103 rn:R02107</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="XMP" target="Xanthosine">
+      <data key="d2">R02719</data>
+      <data key="d3">rn:R02719</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="XMP" target="Xanthine">
+      <data key="d2">R02142</data>
+      <data key="d3">rn:R02142</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="Xanthine" target="Xanthosine">
+      <data key="d2">R02297</data>
+      <data key="d3">rn:R02297</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dADP" target="dATP">
+      <data key="d2">R01137</data>
+      <data key="d3">rn:R01137 rn:R01138</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dADP" target="dAMP">
+      <data key="d2">R01547</data>
+      <data key="d3">rn:R01547</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dCDP" target="dCTP">
+      <data key="d2">R02326</data>
+      <data key="d3">rn:R02326</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dCDP" target="dCMP">
+      <data key="d2">R01665</data>
+      <data key="d3">rn:R01665 rn:R01667</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dCMP" target="dUMP">
+      <data key="d2">R01663</data>
+      <data key="d3">rn:R01663</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dCMP" target="dCTP">
+      <data key="d2">R01668</data>
+      <data key="d3">rn:R01668</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dCTP" target="dUTP">
+      <data key="d2">R02325</data>
+      <data key="d3">rn:R02325</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dGDP" target="dGTP">
+      <data key="d2">R01857</data>
+      <data key="d3">rn:R01857 rn:R01858</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dGDP" target="dGMP">
+      <data key="d2">R02090</data>
+      <data key="d3">rn:R02090</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dTDP" target="dTMP">
+      <data key="d2">R02094</data>
+      <data key="d3">rn:R02094</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dTMP" target="dUMP">
+      <data key="d2">R02101</data>
+      <data key="d3">rn:R02101</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dUDP" target="dUTP">
+      <data key="d2">R02331</data>
+      <data key="d3">rn:R02331</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dUDP" target="dUMP">
+      <data key="d2">R02098</data>
+      <data key="d3">rn:R02098</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+    <edge source="dUMP" target="dUTP">
+      <data key="d2">R02100</data>
+      <data key="d3">rn:R02100</data>
+      <data key="d4">False</data>
+      <data key="d5">Nucleotide Metabolism</data>
+    </edge>
+  </graph>
+</graphml>

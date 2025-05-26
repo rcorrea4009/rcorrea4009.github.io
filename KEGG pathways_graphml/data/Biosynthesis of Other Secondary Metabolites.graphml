@@ -1,0 +1,997 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(+)-Reticuline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(E)-Cinnamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(R)-Reticuline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-Cheilanthifoline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-Norcoclaurine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="(S)-Scoulerine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1-Methylpyrrolinium">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1-Methylxanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Methylxanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Coumarate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Coumaroyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Coumaroylshikimate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Aminopentanal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="6-Hydroxyprotopine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="7-Methylxanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="7-Methylxanthosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ACV">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="AFMU">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adicillin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Apigenin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aromadendrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00353">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03112">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03309">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03325">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03648">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05176">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05202">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05322">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05619">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06163">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06167">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C10434">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12137">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12203">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C12204">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15804">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16356">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20525">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20526">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20529">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cadaverine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Caffeate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Caffeine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Caffeoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cephalosporin_C">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cinnamaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cinnamoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cocaine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coclaurine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Codeine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Codeinone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coniferol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DAOC">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Daturine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dopamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Emindole_SB">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ferulaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Ferulate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Feruloyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Guaiacyl_lignin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isopenicillin_N">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isosalipurpol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isotrifoliin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-2-Aminoadipate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Valine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Luteolin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Methyl_ecgonine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Morphine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="N-Methylputrescine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Naringenin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Neopinone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Paraxanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Paspaline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pelargonidin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Penam">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protopine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Putrescine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Quercetin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Salutaridinol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Secologanin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sinapaldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sinapate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sinapoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sinapyl_alcohol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sinoacutine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Strictosidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Stylopine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Swartziol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Syringyl_lignin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Taxifolin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Thebaine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Theobromine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Theophylline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tropine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tropinone">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tryptamine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="UDP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xanthine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Xanthosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Coumaraldehyde">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="p-Coumaryl_alcohol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(+)-Reticuline" target="C05202">
+      <data key="d2">R03832</data>
+      <data key="d3">rn:R03832</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(+)-Reticuline" target="C06167">
+      <data key="d2">R03833</data>
+      <data key="d3">rn:R03833</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(+)-Reticuline" target="(S)-Scoulerine">
+      <data key="d2">R03831</data>
+      <data key="d3">rn:R03831</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(E)-Cinnamate" target="Cinnamoyl-CoA">
+      <data key="d2">R02255</data>
+      <data key="d3">rn:R02255</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(E)-Cinnamate" target="4-Coumarate">
+      <data key="d2">R02253</data>
+      <data key="d3">rn:R02253</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(R)-Reticuline" target="C06167">
+      <data key="d2">R04695</data>
+      <data key="d3">rn:R04695</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(R)-Reticuline" target="Sinoacutine">
+      <data key="d2">R04696</data>
+      <data key="d3">rn:R04696</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(S)-Cheilanthifoline" target="(S)-Scoulerine">
+      <data key="d2">R03834</data>
+      <data key="d3">rn:R03834</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(S)-Cheilanthifoline" target="Stylopine">
+      <data key="d2">R04690</data>
+      <data key="d3">rn:R04690</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(S)-Norcoclaurine" target="Dopamine">
+      <data key="d2">R04305</data>
+      <data key="d3">rn:R04305</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="(S)-Norcoclaurine" target="Coclaurine">
+      <data key="d2">R05123</data>
+      <data key="d3">rn:R05123</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="1-Methylpyrrolinium" target="N-Methylputrescine">
+      <data key="d2">R04027</data>
+      <data key="d3">rn:R04027</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="1-Methylxanthine" target="Theophylline">
+      <data key="d2">R07975</data>
+      <data key="d3">rn:R07975 rn:R07976</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="1-Methylxanthine" target="Xanthine">
+      <data key="d2">R07969</data>
+      <data key="d3">rn:R07969 rn:R07970</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="1-Methylxanthine" target="Paraxanthine">
+      <data key="d2">R07943</data>
+      <data key="d3">rn:R07943 rn:R07959 rn:R07960</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="3-Methylxanthine" target="Theophylline">
+      <data key="d2">R07973</data>
+      <data key="d3">rn:R07973 rn:R07974</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="3-Methylxanthine" target="Xanthine">
+      <data key="d2">R07967</data>
+      <data key="d3">rn:R07967 rn:R07968</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumarate" target="4-Coumaroyl-CoA">
+      <data key="d2">R01616</data>
+      <data key="d3">rn:R01616</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumarate" target="Caffeate">
+      <data key="d2">R07826</data>
+      <data key="d3">rn:R07826</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumarate" target="Tyrosine">
+      <data key="d2">R00737</data>
+      <data key="d3">rn:R00737</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumaroyl-CoA" target="p-Coumaraldehyde">
+      <data key="d2">R01615</data>
+      <data key="d3">rn:R01615</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumaroyl-CoA" target="Isosalipurpol">
+      <data key="d2">R01613</data>
+      <data key="d3">rn:R01613</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumaroyl-CoA" target="4-Coumaroylshikimate">
+      <data key="d2">R02416</data>
+      <data key="d3">rn:R02416</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="4-Coumaroylshikimate" target="C10434">
+      <data key="d2">R06582</data>
+      <data key="d3">rn:R06582</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="5-Aminopentanal" target="Cadaverine">
+      <data key="d2">R06740</data>
+      <data key="d3">rn:R06740</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="6-Hydroxyprotopine" target="Protopine">
+      <data key="d2">R04699</data>
+      <data key="d3">rn:R04699</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="7-Methylxanthine" target="Theobromine">
+      <data key="d2">R07919</data>
+      <data key="d3">rn:R07919</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="7-Methylxanthosine" target="Xanthosine">
+      <data key="d2">R07917</data>
+      <data key="d3">rn:R07917</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="ACV" target="L-Valine">
+      <data key="d2">R04870</data>
+      <data key="d3">rn:R04870</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="ACV" target="Isopenicillin_N">
+      <data key="d2">R04872</data>
+      <data key="d3">rn:R04872</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="AFMU" target="Paraxanthine">
+      <data key="d2">R07940</data>
+      <data key="d3">rn:R07940</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Adicillin" target="Isopenicillin_N">
+      <data key="d2">R04147</data>
+      <data key="d3">rn:R04147</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Adicillin" target="DAOC">
+      <data key="d2">R05301</data>
+      <data key="d3">rn:R05301</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Apigenin" target="Naringenin">
+      <data key="d2">R02445</data>
+      <data key="d3">rn:R02445</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Apigenin" target="Luteolin">
+      <data key="d2">R06537</data>
+      <data key="d3">rn:R06537</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Aromadendrin" target="Naringenin">
+      <data key="d2">R02444</data>
+      <data key="d3">rn:R02444</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Aromadendrin" target="C03648">
+      <data key="d2">R03123</data>
+      <data key="d3">rn:R03123 rn:R06540</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Aromadendrin" target="Taxifolin">
+      <data key="d2">R03124</data>
+      <data key="d3">rn:R03124</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Aromadendrin" target="Swartziol">
+      <data key="d2">R03126</data>
+      <data key="d3">rn:R03126</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C00353" target="C20525">
+      <data key="d2">R10349</data>
+      <data key="d3">rn:R10349</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C03112" target="DAOC">
+      <data key="d2">R05229</data>
+      <data key="d3">rn:R05229</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C03112" target="Cephalosporin_C">
+      <data key="d2">R03064</data>
+      <data key="d3">rn:R03064</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C03309" target="Strictosidine">
+      <data key="d2">R03820</data>
+      <data key="d3">rn:R03820</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C03325" target="Daturine">
+      <data key="d2">R03812</data>
+      <data key="d3">rn:R03812</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C03648" target="Pelargonidin">
+      <data key="d2">R04276</data>
+      <data key="d3">rn:R04276</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05176" target="Coclaurine">
+      <data key="d2">R04692</data>
+      <data key="d3">rn:R04692</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05176" target="C05202">
+      <data key="d2">R05732</data>
+      <data key="d3">rn:R05732</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05322" target="Salutaridinol">
+      <data key="d2">R04723</data>
+      <data key="d3">rn:R04723</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05619" target="Ferulate">
+      <data key="d2">R07440</data>
+      <data key="d3">rn:R07440</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05619" target="C12203">
+      <data key="d2">R06583</data>
+      <data key="d3">rn:R06583</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C05619" target="Sinapate">
+      <data key="d2">R02379</data>
+      <data key="d3">rn:R02379</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C06163" target="Stylopine">
+      <data key="d2">R04691</data>
+      <data key="d3">rn:R04691</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C06163" target="Protopine">
+      <data key="d2">R04700</data>
+      <data key="d3">rn:R04700</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C10434" target="Caffeoyl-CoA">
+      <data key="d2">R07433</data>
+      <data key="d3">rn:R07433</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C10434" target="Caffeate">
+      <data key="d2">R10701</data>
+      <data key="d3">rn:R10701</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C12203" target="C12204">
+      <data key="d2">R06569</data>
+      <data key="d3">rn:R06569</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C12203" target="Sinapoyl-CoA">
+      <data key="d2">R06578</data>
+      <data key="d3">rn:R06578</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C12204" target="Ferulaldehyde">
+      <data key="d2">R06572</data>
+      <data key="d3">rn:R06572</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C12204" target="Sinapaldehyde">
+      <data key="d2">R06576</data>
+      <data key="d3">rn:R06576</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C15804" target="p-Coumaryl_alcohol">
+      <data key="d2">R04007</data>
+      <data key="d3">rn:R04007</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C16356" target="Paraxanthine">
+      <data key="d2">R07945</data>
+      <data key="d3">rn:R07945 rn:R07977</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C20525" target="C20526">
+      <data key="d2">R10350</data>
+      <data key="d3">rn:R10350</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C20526" target="Emindole_SB">
+      <data key="d2">R10352</data>
+      <data key="d3">rn:R10352</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C20529" target="Emindole_SB">
+      <data key="d2">R10351</data>
+      <data key="d3">rn:R10351</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="C20529" target="Paspaline">
+      <data key="d2">R10353</data>
+      <data key="d3">rn:R10353</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Cadaverine" target="L-Lysine">
+      <data key="d2">R00462</data>
+      <data key="d3">rn:R00462</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Caffeate" target="Caffeoyl-CoA">
+      <data key="d2">R01943</data>
+      <data key="d3">rn:R01943</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Caffeate" target="Ferulate">
+      <data key="d2">R03366</data>
+      <data key="d3">rn:R03366</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Caffeine" target="Theobromine">
+      <data key="d2">R07920</data>
+      <data key="d3">rn:R07920 rn:R07955 rn:R07956</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Caffeine" target="Paraxanthine">
+      <data key="d2">R07939</data>
+      <data key="d3">rn:R07939 rn:R07954</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Caffeoyl-CoA" target="Feruloyl-CoA">
+      <data key="d2">R01942</data>
+      <data key="d3">rn:R01942</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Cinnamaldehyde" target="Cinnamoyl-CoA">
+      <data key="d2">R02506</data>
+      <data key="d3">rn:R02506</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Cocaine" target="Methyl_ecgonine">
+      <data key="d2">R06728</data>
+      <data key="d3">rn:R06728 rn:R08430</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Codeine" target="Codeinone">
+      <data key="d2">R05124</data>
+      <data key="d3">rn:R05124</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Codeine" target="Morphine">
+      <data key="d2">R09402</data>
+      <data key="d3">rn:R09402</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Coniferol" target="Ferulaldehyde">
+      <data key="d2">R02593</data>
+      <data key="d3">rn:R02593</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Coniferol" target="Guaiacyl_lignin">
+      <data key="d2">R02596</data>
+      <data key="d3">rn:R02596</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Ferulaldehyde" target="Feruloyl-CoA">
+      <data key="d2">R02193</data>
+      <data key="d3">rn:R02193</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Ferulate" target="Feruloyl-CoA">
+      <data key="d2">R02194</data>
+      <data key="d3">rn:R02194</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Isopenicillin_N" target="Penam">
+      <data key="d2">R06361</data>
+      <data key="d3">rn:R06361</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Isosalipurpol" target="Naringenin">
+      <data key="d2">R02446</data>
+      <data key="d3">rn:R02446</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Isotrifoliin" target="Quercetin">
+      <data key="d2">R02158</data>
+      <data key="d3">rn:R02158</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="N-Methylputrescine" target="Putrescine">
+      <data key="d2">R01153</data>
+      <data key="d3">rn:R01153</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Neopinone" target="Thebaine">
+      <data key="d2">R05126</data>
+      <data key="d3">rn:R05126</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Pelargonidin" target="UDP">
+      <data key="d2">R06534</data>
+      <data key="d3">rn:R06534</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Quercetin" target="Taxifolin">
+      <data key="d2">R02160</data>
+      <data key="d3">rn:R02160</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Quercetin" target="Swartziol">
+      <data key="d2">R06538</data>
+      <data key="d3">rn:R06538</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Salutaridinol" target="Sinoacutine">
+      <data key="d2">R04697</data>
+      <data key="d3">rn:R04697</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Sinapaldehyde" target="Sinapoyl-CoA">
+      <data key="d2">R02220</data>
+      <data key="d3">rn:R02220</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Sinapaldehyde" target="Sinapyl_alcohol">
+      <data key="d2">R03918</data>
+      <data key="d3">rn:R03918</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Sinapate" target="Sinapoyl-CoA">
+      <data key="d2">R02221</data>
+      <data key="d3">rn:R02221</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Sinapyl_alcohol" target="Syringyl_lignin">
+      <data key="d2">R03919</data>
+      <data key="d3">rn:R03919</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Strictosidine" target="Tryptamine">
+      <data key="d2">R03738</data>
+      <data key="d3">rn:R03738</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="Tropine" target="Tropinone">
+      <data key="d2">R02832</data>
+      <data key="d3">rn:R02832</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+    <edge source="p-Coumaraldehyde" target="p-Coumaryl_alcohol">
+      <data key="d2">R07437</data>
+      <data key="d3">rn:R07437</data>
+      <data key="d4">False</data>
+      <data key="d5">Biosynthesis of Other Secondary Metabolites</data>
+    </edge>
+  </graph>
+</graphml>

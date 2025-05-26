@@ -1,0 +1,2549 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d5" for="edge" attr.name="subsystem" attr.type="string" />
+  <key id="d4" for="edge" attr.name="reversible" attr.type="boolean" />
+  <key id="d3" for="edge" attr.name="reaction_name" attr.type="string" />
+  <key id="d2" for="edge" attr.name="reaction_id" attr.type="string" />
+  <key id="d1" for="node" attr.name="desciption" attr.type="string" />
+  <key id="d0" for="node" attr.name="formula" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="(R)-Lipoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="1-Methylnicotinamide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="10-Formyl-THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Dehydropantoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Ketovaline">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="2-Polyprenylphenol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="3-Polyprenylcatechol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Hydroxybenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Phosphoerythronate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="4-Pyridoxate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5,10-Methylene-THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="5-Aminolevulinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="7,8-Dihydrobiopterin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="ABEE">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="AIR">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adenosylcobinamide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Adenosylcobyric_acid">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aneurin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Aquacobalamin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Bilirubin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biliverdin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biocytin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biotin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biotin_sulfoxide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Biotinyl-5'-AMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00173">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00199">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00279">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00440">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00445">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00647">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C00664">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01079">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01185">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01268">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01300">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C01304">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03114">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03150">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03263">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03492">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03657">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03684">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C03741">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04244">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04294">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04327">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04332">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04352">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04454">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04536">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04556">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04732">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04752">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04778">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04807">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C04895">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05787">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05818">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05841">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05842">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05843">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05848">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05922">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05923">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C05925">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06054">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06055">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06148">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06503">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06504">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06505">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06506">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06509">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C06510">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C07335">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11437">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11638">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C11831">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C13309">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15522">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15547">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15556">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15563">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15810">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15812">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15813">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15814">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15882">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15883">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C15996">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16236">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16237">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16519">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16540">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16675">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C16677">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17552">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17554">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17559">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17560">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17561">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C17562">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C18151">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C18910">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C18911">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19673">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19846">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19848">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C19871">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20239">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20246">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20248">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20264">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20267">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20372">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20373">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20374">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20375">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20376">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20377">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20378">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20566">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20567">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C20784">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21310">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="C21640">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Calomide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cbl">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chlorophyll_a">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chlorophyll_b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chlorophyllide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chlorophyllide_b">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Chorismate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-factor_II">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-factor_III">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin-8">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_3">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_5A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_5B">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_6">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_6B">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobalt-precorrin_7">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Cobyrinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coproheme_III">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coproporphyrin_III">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Coproporphyrinogen_I">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="D-Urobilinogen">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DAPA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="DPN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Deamido-NAD">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dephospho-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dethiobiotin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dihydrobiopterin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dihydrofolate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dihydroneopterin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Dihydropteroate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FAD">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FADH2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FAMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FMN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="FMNH2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Folate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="GTP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Glutamate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Gly">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="H2Dtpp-mP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Haem">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Heme_A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Heme_O">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Holo-[carboxylase]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydrogenobyrinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Hydroxymethylbilane">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Iminoglycine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Iminosuccinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Isochorismate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="KAPA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Asp">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Cysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Glutamyl-tRNA(Glu)">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="L-Lysine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Leucovorin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lipoyl-ACP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Lipoyl-AMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Malonyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Mg-protoporphyrin_IX">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Molybdenum_cofactor">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="NMN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Niacin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Octanoyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PLP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="PM">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pantoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pantothenate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phosphopantetheine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Phytyl_diphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pimelate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pimeloyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pimelyl-[acp]">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Porphobilinogen">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_3A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_3B">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_4">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_5">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_6A">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_6B">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Precorrin_8">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protochlorophyllide">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Protoporphyrin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyridoxal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyridoxine_phosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Pyridoxol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Q">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Quinolinate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Reduced_riboflavin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Retinal">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Retinol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="SHCHC">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sepiapterin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Siroheme">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Sirohydrochlorin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Succinylbenzoate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Succinylbenzoyl-CoA">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="THF">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TPN">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="TPP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tetrahydrobiopterin">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Thiamin_triphosphate">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Toxopyrimidine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tretin_M">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Tyrosine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Uroporphyrinogen_I">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Uroporphyrinogen_III">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_B12r">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_B2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_E">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_K1">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_K2">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="Vitamin_PP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="[Enzyme]-cysteine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="alpha-Ribazole">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Alanine">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Carotene">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="beta-Tocopherol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="cPMP">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="cThz-P">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="delta-Tocopherol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <node id="gamma-Tocopherol">
+      <data key="d0">none</data>
+      <data key="d1">none</data>
+    </node>
+    <edge source="(R)-Lipoate" target="C16237">
+      <data key="d2">R11143</data>
+      <data key="d3">rn:R11143</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="1-Methylnicotinamide" target="Vitamin_PP">
+      <data key="d2">R01269</data>
+      <data key="d3">rn:R01269</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="1-Methylnicotinamide" target="C05842">
+      <data key="d2">R08408</data>
+      <data key="d3">rn:R08408</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="1-Methylnicotinamide" target="C05843">
+      <data key="d2">R04085</data>
+      <data key="d3">rn:R04085</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="10-Formyl-THF" target="THF">
+      <data key="d2">R00943</data>
+      <data key="d3">rn:R00943 rn:R04325 rn:R04560</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="2-Dehydropantoate" target="2-Ketovaline">
+      <data key="d2">R01226</data>
+      <data key="d3">rn:R01226</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="2-Dehydropantoate" target="Pantoate">
+      <data key="d2">R02472</data>
+      <data key="d3">rn:R02472</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="2-Polyprenylphenol" target="C05848">
+      <data key="d2">R04985</data>
+      <data key="d3">rn:R04985</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="2-Polyprenylphenol" target="3-Polyprenylcatechol">
+      <data key="d2">R08768</data>
+      <data key="d3">rn:R08768</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="3-Polyprenylcatechol" target="C17552">
+      <data key="d2">R08769</data>
+      <data key="d3">rn:R08769</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="Chorismate">
+      <data key="d2">R01302</data>
+      <data key="d3">rn:R01302</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="4-Hydroxybenzoate" target="C05848">
+      <data key="d2">R05000</data>
+      <data key="d3">rn:R05000</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="4-Phosphoerythronate" target="C00279">
+      <data key="d2">R01825</data>
+      <data key="d3">rn:R01825</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="4-Phosphoerythronate" target="C06054">
+      <data key="d2">R04210</data>
+      <data key="d3">rn:R04210</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="4-Pyridoxate" target="Pyridoxal">
+      <data key="d2">R01709</data>
+      <data key="d3">rn:R01709</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="C00445">
+      <data key="d2">R01218</data>
+      <data key="d3">rn:R01218 rn:R01220</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="C00440">
+      <data key="d2">R01217</data>
+      <data key="d3">rn:R01217 rn:R01224 rn:R07168</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5,10-Methylene-THF" target="THF">
+      <data key="d2">R00945</data>
+      <data key="d3">rn:R00945 rn:R01225 rn:R04125 rn:R06613</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5-Aminolevulinate" target="Gly">
+      <data key="d2">R00830</data>
+      <data key="d3">rn:R00830</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5-Aminolevulinate" target="Porphobilinogen">
+      <data key="d2">R00036</data>
+      <data key="d3">rn:R00036</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="5-Aminolevulinate" target="C03741">
+      <data key="d2">R02272</data>
+      <data key="d3">rn:R02272</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="7,8-Dihydrobiopterin" target="Sepiapterin">
+      <data key="d2">R02975</data>
+      <data key="d3">rn:R02975</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="7,8-Dihydrobiopterin" target="Tetrahydrobiopterin">
+      <data key="d2">R11765</data>
+      <data key="d3">rn:R11765</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="ABEE" target="Dihydropteroate">
+      <data key="d2">R03067</data>
+      <data key="d3">rn:R03067</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="AIR" target="C04556">
+      <data key="d2">R03472</data>
+      <data key="d3">rn:R03472</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Adenosylcobinamide" target="Adenosylcobyric_acid">
+      <data key="d2">R05226</data>
+      <data key="d3">rn:R05226 rn:R07302</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Adenosylcobinamide" target="C06509">
+      <data key="d2">R05221</data>
+      <data key="d3">rn:R05221 rn:R06558</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Adenosylcobyric_acid" target="C06506">
+      <data key="d2">R05225</data>
+      <data key="d3">rn:R05225</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Adenosylcobyric_acid" target="C06509">
+      <data key="d2">R06529</data>
+      <data key="d3">rn:R06529</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Aneurin" target="TMP">
+      <data key="d2">R02134</data>
+      <data key="d3">rn:R02134 rn:R02135</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Aneurin" target="C04294">
+      <data key="d2">R02133</data>
+      <data key="d3">rn:R02133</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Aneurin" target="TPP">
+      <data key="d2">R00619</data>
+      <data key="d3">rn:R00619</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Aquacobalamin" target="Vitamin_B12r">
+      <data key="d2">R00097</data>
+      <data key="d3">rn:R00097 rn:R00107</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Bilirubin" target="Biliverdin">
+      <data key="d2">R02391</data>
+      <data key="d3">rn:R02391 rn:R02393</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Bilirubin" target="C05787">
+      <data key="d2">R02389</data>
+      <data key="d3">rn:R02389</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biliverdin" target="Haem">
+      <data key="d2">R00311</data>
+      <data key="d3">rn:R00311 rn:R11579</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biocytin" target="L-Lysine">
+      <data key="d2">R01077</data>
+      <data key="d3">rn:R01077</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biotin" target="Dethiobiotin">
+      <data key="d2">R01078</data>
+      <data key="d3">rn:R01078</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biotin" target="Biotinyl-5'-AMP">
+      <data key="d2">R01074</data>
+      <data key="d3">rn:R01074</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biotin" target="Biotin_sulfoxide">
+      <data key="d2">R10127</data>
+      <data key="d3">rn:R10127</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Biotinyl-5'-AMP" target="Holo-[carboxylase]">
+      <data key="d2">R05145</data>
+      <data key="d3">rn:R05145</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00173" target="Pimelyl-[acp]">
+      <data key="d2">R10123</data>
+      <data key="d3">rn:R10123</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00199" target="C15556">
+      <data key="d2">R07281</data>
+      <data key="d3">rn:R07281</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00445" target="Leucovorin">
+      <data key="d2">R02301</data>
+      <data key="d3">rn:R02301</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00445" target="C00664">
+      <data key="d2">R02302</data>
+      <data key="d3">rn:R02302</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00445" target="THF">
+      <data key="d2">R04326</data>
+      <data key="d3">rn:R04326</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00647" target="PLP">
+      <data key="d2">R00277</data>
+      <data key="d3">rn:R00277</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00647" target="PM">
+      <data key="d2">R02493</data>
+      <data key="d3">rn:R02493 rn:R02494</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C00664" target="THF">
+      <data key="d2">R02287</data>
+      <data key="d3">rn:R02287 rn:R02729</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01079" target="C03263">
+      <data key="d2">R03220</data>
+      <data key="d3">rn:R03220 rn:R06895</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01079" target="Protoporphyrin">
+      <data key="d2">R03222</data>
+      <data key="d3">rn:R03222 rn:R09489</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01185" target="Quinolinate">
+      <data key="d2">R03348</data>
+      <data key="d3">rn:R03348</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01185" target="Deamido-NAD">
+      <data key="d2">R03004</data>
+      <data key="d3">rn:R03004 rn:R03005</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01185" target="Niacin">
+      <data key="d2">R01724</data>
+      <data key="d3">rn:R01724</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01185" target="C05841">
+      <data key="d2">R03347</data>
+      <data key="d3">rn:R03347</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01268" target="C01304">
+      <data key="d2">R03459</data>
+      <data key="d3">rn:R03459</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01268" target="C04454">
+      <data key="d2">R03458</data>
+      <data key="d3">rn:R03458</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01300" target="Dihydroneopterin">
+      <data key="d2">R03504</data>
+      <data key="d3">rn:R03504</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01300" target="C04807">
+      <data key="d2">R03503</data>
+      <data key="d3">rn:R03503</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01300" target="C04895">
+      <data key="d2">R11719</data>
+      <data key="d3">rn:R11719</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01304" target="GTP">
+      <data key="d2">R00425</data>
+      <data key="d3">rn:R00425</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01304" target="C15563">
+      <data key="d2">R09374</data>
+      <data key="d3">rn:R09374</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01304" target="C18910">
+      <data key="d2">R09375</data>
+      <data key="d3">rn:R09375</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C01304" target="C05925">
+      <data key="d2">R11072</data>
+      <data key="d3">rn:R11072</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03114" target="C04778">
+      <data key="d2">R04148</data>
+      <data key="d3">rn:R04148</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03114" target="FMNH2">
+      <data key="d2">R09083</data>
+      <data key="d3">rn:R09083</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03150" target="Vitamin_PP">
+      <data key="d2">R02294</data>
+      <data key="d3">rn:R02294</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03150" target="NMN">
+      <data key="d2">R02324</data>
+      <data key="d3">rn:R02324</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03263" target="Uroporphyrinogen_III">
+      <data key="d2">R03197</data>
+      <data key="d3">rn:R03197</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03263" target="Coproporphyrin_III">
+      <data key="d2">R04178</data>
+      <data key="d3">rn:R04178</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03492" target="Pantothenate">
+      <data key="d2">R03018</data>
+      <data key="d3">rn:R03018</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03492" target="C04352">
+      <data key="d2">R04230</data>
+      <data key="d3">rn:R04230 rn:R04231</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03492" target="C18911">
+      <data key="d2">R09379</data>
+      <data key="d3">rn:R09379</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03657" target="C15547">
+      <data key="d2">R07262</data>
+      <data key="d3">rn:R07262</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03657" target="C05818">
+      <data key="d2">R05617</data>
+      <data key="d3">rn:R05617</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03657" target="C13309">
+      <data key="d2">R06858</data>
+      <data key="d3">rn:R06858</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03684" target="C04895">
+      <data key="d2">R04286</data>
+      <data key="d3">rn:R04286</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03684" target="C04244">
+      <data key="d2">R04285</data>
+      <data key="d3">rn:R04285</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03684" target="C20264">
+      <data key="d2">R09990</data>
+      <data key="d3">rn:R09990</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03684" target="Tetrahydrobiopterin">
+      <data key="d2">R08208</data>
+      <data key="d3">rn:R08208</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03684" target="C21640">
+      <data key="d2">R11763</data>
+      <data key="d3">rn:R11763</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C03741" target="L-Glutamyl-tRNA(Glu)">
+      <data key="d2">R04109</data>
+      <data key="d3">rn:R04109</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04244" target="Tetrahydrobiopterin">
+      <data key="d2">R01813</data>
+      <data key="d3">rn:R01813</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04294" target="C04327">
+      <data key="d2">R04448</data>
+      <data key="d3">rn:R04448</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04332" target="Vitamin_B2">
+      <data key="d2">R00066</data>
+      <data key="d3">rn:R00066</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04332" target="C15556">
+      <data key="d2">R04457</data>
+      <data key="d3">rn:R04457</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04352" target="Phosphopantetheine">
+      <data key="d2">R03269</data>
+      <data key="d3">rn:R03269</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04454" target="C04732">
+      <data key="d2">R07280</data>
+      <data key="d3">rn:R07280</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04454" target="C18910">
+      <data key="d2">R09377</data>
+      <data key="d3">rn:R09377</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04536" target="Mg-protoporphyrin_IX">
+      <data key="d2">R04237</data>
+      <data key="d3">rn:R04237</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04556" target="C04752">
+      <data key="d2">R04509</data>
+      <data key="d3">rn:R04509</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04556" target="Toxopyrimidine">
+      <data key="d2">R03471</data>
+      <data key="d3">rn:R03471</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04556" target="PLP">
+      <data key="d2">R10686</data>
+      <data key="d3">rn:R10686</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04752" target="TMP">
+      <data key="d2">R03223</data>
+      <data key="d3">rn:R03223</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04778" target="alpha-Ribazole">
+      <data key="d2">R04594</data>
+      <data key="d3">rn:R04594</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04895" target="C06148">
+      <data key="d2">R04639</data>
+      <data key="d3">rn:R04639</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04895" target="Dihydroneopterin">
+      <data key="d2">R04620</data>
+      <data key="d3">rn:R04620</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04895" target="C20239">
+      <data key="d2">R09959</data>
+      <data key="d3">rn:R09959</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C04895" target="C05925">
+      <data key="d2">R04638</data>
+      <data key="d3">rn:R04638</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05787" target="D-Urobilinogen">
+      <data key="d2">R04979</data>
+      <data key="d3">rn:R04979</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05818" target="Vitamin_K2">
+      <data key="d2">R04993</data>
+      <data key="d3">rn:R04993</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05841" target="Niacin">
+      <data key="d2">R02295</data>
+      <data key="d3">rn:R02295</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05922" target="GTP">
+      <data key="d2">R00428</data>
+      <data key="d3">rn:R00428</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05922" target="C05923">
+      <data key="d2">R05046</data>
+      <data key="d3">rn:R05046</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05923" target="C06148">
+      <data key="d2">R05048</data>
+      <data key="d3">rn:R05048</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C05925" target="C20567">
+      <data key="d2">R10344</data>
+      <data key="d3">rn:R10344</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06054" target="C06055">
+      <data key="d2">R05085</data>
+      <data key="d3">rn:R05085</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06055" target="C07335">
+      <data key="d2">R05681</data>
+      <data key="d3">rn:R05681</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06503" target="Hydrogenobyrinate">
+      <data key="d2">R05224</data>
+      <data key="d3">rn:R05224</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06503" target="C06504">
+      <data key="d2">R05227</data>
+      <data key="d3">rn:R05227</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06504" target="C06505">
+      <data key="d2">R05218</data>
+      <data key="d3">rn:R05218</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06504" target="Cobyrinate">
+      <data key="d2">R05815</data>
+      <data key="d3">rn:R05815</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06505" target="C06506">
+      <data key="d2">R05220</data>
+      <data key="d3">rn:R05220</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C06509" target="C06510">
+      <data key="d2">R05222</data>
+      <data key="d3">rn:R05222</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C11638" target="Pyridoxine_phosphate">
+      <data key="d2">R05838</data>
+      <data key="d3">rn:R05838</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C11831" target="Protochlorophyllide">
+      <data key="d2">R06271</data>
+      <data key="d3">rn:R06271 rn:R06896 rn:R11519</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C13309" target="Vitamin_K1">
+      <data key="d2">R06859</data>
+      <data key="d3">rn:R06859</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15522" target="Dihydrobiopterin">
+      <data key="d2">R04734</data>
+      <data key="d3">rn:R04734</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15522" target="Tetrahydrobiopterin">
+      <data key="d2">R07211</data>
+      <data key="d3">rn:R07211 rn:R07212 rn:R07213</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15547" target="Succinylbenzoyl-CoA">
+      <data key="d2">R07263</data>
+      <data key="d3">rn:R07263</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15563" target="GTP">
+      <data key="d2">R07306</data>
+      <data key="d3">rn:R07306</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15810" target="C15813">
+      <data key="d2">R07459</data>
+      <data key="d3">rn:R07459</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15812" target="C15814">
+      <data key="d2">R07461</data>
+      <data key="d3">rn:R07461</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15812" target="[Enzyme]-cysteine">
+      <data key="d2">R07460</data>
+      <data key="d3">rn:R07460</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15814" target="C20246">
+      <data key="d2">R10247</data>
+      <data key="d3">rn:R10247</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15882" target="Phytyl_diphosphate">
+      <data key="d2">R07500</data>
+      <data key="d3">rn:R07500</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15882" target="C15883">
+      <data key="d2">R07501</data>
+      <data key="d3">rn:R07501</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15882" target="delta-Tocopherol">
+      <data key="d2">R07503</data>
+      <data key="d3">rn:R07503</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15883" target="gamma-Tocopherol">
+      <data key="d2">R07502</data>
+      <data key="d3">rn:R07502</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15996" target="C16675">
+      <data key="d2">R07605</data>
+      <data key="d3">rn:R07605</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C15996" target="C20248">
+      <data key="d2">R09978</data>
+      <data key="d3">rn:R09978</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16236" target="Octanoyl-[acp]">
+      <data key="d2">R07766</data>
+      <data key="d3">rn:R07766</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16236" target="C16237">
+      <data key="d2">R07767</data>
+      <data key="d3">rn:R07767</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16237" target="Lipoyl-ACP">
+      <data key="d2">R07769</data>
+      <data key="d3">rn:R07769</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16237" target="Lipoyl-AMP">
+      <data key="d2">R07771</data>
+      <data key="d3">rn:R07771</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16519" target="Isochorismate">
+      <data key="d2">R08165</data>
+      <data key="d3">rn:R08165</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16519" target="SHCHC">
+      <data key="d2">R08166</data>
+      <data key="d3">rn:R08166</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16540" target="Chlorophyllide_b">
+      <data key="d2">R08914</data>
+      <data key="d3">rn:R08914 rn:R08915 rn:R08204</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16540" target="Chlorophyllide">
+      <data key="d2">R08203</data>
+      <data key="d3">rn:R08203</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C16677" target="Tretin_M">
+      <data key="d2">R08392</data>
+      <data key="d3">rn:R08392</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C17552" target="C17560">
+      <data key="d2">R08773</data>
+      <data key="d3">rn:R08773</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C17554" target="C17559">
+      <data key="d2">R08771</data>
+      <data key="d3">rn:R08771</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C17560" target="C17561">
+      <data key="d2">R08774</data>
+      <data key="d3">rn:R08774</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C17561" target="C17562">
+      <data key="d2">R08775</data>
+      <data key="d3">rn:R08775</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C17562" target="Q">
+      <data key="d2">R08781</data>
+      <data key="d3">rn:R08781</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C18151" target="Chlorophyll_a">
+      <data key="d2">R09071</data>
+      <data key="d3">rn:R09071</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C18151" target="Chlorophyll_b">
+      <data key="d2">R09069</data>
+      <data key="d3">rn:R09069 rn:R09070</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C18911" target="Pantoate">
+      <data key="d2">R09378</data>
+      <data key="d3">rn:R09378</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19673" target="C20372">
+      <data key="d2">R10115</data>
+      <data key="d3">rn:R10115</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19673" target="Malonyl-[acp]">
+      <data key="d2">R09543</data>
+      <data key="d3">rn:R09543</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19846" target="Pimelyl-[acp]">
+      <data key="d2">R09725</data>
+      <data key="d3">rn:R09725</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19846" target="C20378">
+      <data key="d2">R10122</data>
+      <data key="d3">rn:R10122</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19848" target="H2Dtpp-mP">
+      <data key="d2">R09726</data>
+      <data key="d3">rn:R09726</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19848" target="Molybdenum_cofactor">
+      <data key="d2">R09735</data>
+      <data key="d3">rn:R09735</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C19871" target="Molybdenum_cofactor">
+      <data key="d2">R11581</data>
+      <data key="d3">rn:R11581</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20239" target="C20248">
+      <data key="d2">R10002</data>
+      <data key="d3">rn:R10002</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20246" target="cThz-P">
+      <data key="d2">R09977</data>
+      <data key="d3">rn:R09977</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20267" target="FAMP">
+      <data key="d2">R11313</data>
+      <data key="d3">rn:R11313</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20267" target="Toxopyrimidine">
+      <data key="d2">R09993</data>
+      <data key="d3">rn:R09993</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20372" target="C20373">
+      <data key="d2">R10116</data>
+      <data key="d3">rn:R10116</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20373" target="C20374">
+      <data key="d2">R10117</data>
+      <data key="d3">rn:R10117</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20374" target="C20375">
+      <data key="d2">R10118</data>
+      <data key="d3">rn:R10118</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20375" target="C20376">
+      <data key="d2">R10119</data>
+      <data key="d3">rn:R10119</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20376" target="C20377">
+      <data key="d2">R10120</data>
+      <data key="d3">rn:R10120</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20377" target="C20378">
+      <data key="d2">R10121</data>
+      <data key="d3">rn:R10121</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20566" target="C20567">
+      <data key="d2">R10345</data>
+      <data key="d3">rn:R10345</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20567" target="GTP">
+      <data key="d2">R10348</data>
+      <data key="d3">rn:R10348</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C20784" target="Gly">
+      <data key="d2">R10685</data>
+      <data key="d3">rn:R10685 rn:R12026</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C21310" target="GTP">
+      <data key="d2">R09394</data>
+      <data key="d3">rn:R09394</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C21310" target="cPMP">
+      <data key="d2">R11372</data>
+      <data key="d3">rn:R11372</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="C21640" target="Tetrahydrobiopterin">
+      <data key="d2">R11764</data>
+      <data key="d3">rn:R11764</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Calomide" target="alpha-Ribazole">
+      <data key="d2">R05223</data>
+      <data key="d3">rn:R05223</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Calomide" target="Cbl">
+      <data key="d2">R01492</data>
+      <data key="d3">rn:R01492</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Chlorophyll_a" target="Chlorophyllide">
+      <data key="d2">R05618</data>
+      <data key="d3">rn:R05618 rn:R06284</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Chlorophyll_b" target="Chlorophyllide_b">
+      <data key="d2">R09067</data>
+      <data key="d3">rn:R09067 rn:R09068</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Chlorophyllide" target="Protochlorophyllide">
+      <data key="d2">R03845</data>
+      <data key="d3">rn:R03845 rn:R06282</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Chorismate" target="Isochorismate">
+      <data key="d2">R01717</data>
+      <data key="d3">rn:R01717</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="CoA" target="Dephospho-CoA">
+      <data key="d2">R00130</data>
+      <data key="d3">rn:R00130</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-factor_II" target="Sirohydrochlorin">
+      <data key="d2">R05807</data>
+      <data key="d3">rn:R05807</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-factor_II" target="Cobalt-factor_III">
+      <data key="d2">R05808</data>
+      <data key="d3">rn:R05808</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-factor_III" target="Cobalt-precorrin_4">
+      <data key="d2">R11580</data>
+      <data key="d3">rn:R11580</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin-8" target="Cobalt-precorrin_7">
+      <data key="d2">R07775</data>
+      <data key="d3">rn:R07775</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin-8" target="Cobyrinate">
+      <data key="d2">R05814</data>
+      <data key="d3">rn:R05814</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_3" target="Cobalt-precorrin_4">
+      <data key="d2">R05809</data>
+      <data key="d3">rn:R05809</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_4" target="Cobalt-precorrin_5A">
+      <data key="d2">R05810</data>
+      <data key="d3">rn:R05810</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_5A" target="Cobalt-precorrin_5B">
+      <data key="d2">R07772</data>
+      <data key="d3">rn:R07772</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_5B" target="Cobalt-precorrin_6">
+      <data key="d2">R07773</data>
+      <data key="d3">rn:R07773</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_6" target="Cobalt-precorrin_6B">
+      <data key="d2">R05812</data>
+      <data key="d3">rn:R05812</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Cobalt-precorrin_6B" target="Cobalt-precorrin_7">
+      <data key="d2">R07774</data>
+      <data key="d3">rn:R07774</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Coproheme_III" target="Coproporphyrin_III">
+      <data key="d2">R11329</data>
+      <data key="d3">rn:R11329</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Coproheme_III" target="Haem">
+      <data key="d2">R11522</data>
+      <data key="d3">rn:R11522</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Coproporphyrinogen_I" target="Uroporphyrinogen_I">
+      <data key="d2">R04972</data>
+      <data key="d3">rn:R04972</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DAPA" target="Dethiobiotin">
+      <data key="d2">R03182</data>
+      <data key="d3">rn:R03182</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DAPA" target="KAPA">
+      <data key="d2">R03231</data>
+      <data key="d3">rn:R03231 rn:R10699</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DPN" target="Deamido-NAD">
+      <data key="d2">R00189</data>
+      <data key="d3">rn:R00189 rn:R00257</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DPN" target="Vitamin_PP">
+      <data key="d2">R00102</data>
+      <data key="d3">rn:R00102</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DPN" target="TPN">
+      <data key="d2">R00104</data>
+      <data key="d3">rn:R00104 rn:R00112</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="DPN" target="NMN">
+      <data key="d2">R00103</data>
+      <data key="d3">rn:R00103 rn:R00137</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Dephospho-CoA" target="Phosphopantetheine">
+      <data key="d2">R03035</data>
+      <data key="d3">rn:R03035 rn:R03036</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Dihydrobiopterin" target="Tetrahydrobiopterin">
+      <data key="d2">R01793</data>
+      <data key="d3">rn:R01793 rn:R01794</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Dihydrofolate" target="Dihydropteroate">
+      <data key="d2">R02237</data>
+      <data key="d3">rn:R02237</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Dihydrofolate" target="THF">
+      <data key="d2">R00936</data>
+      <data key="d3">rn:R00936 rn:R00939</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Dihydrofolate" target="Folate">
+      <data key="d2">R02235</data>
+      <data key="d3">rn:R02235 rn:R02236</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="FAD" target="FMN">
+      <data key="d2">R00160</data>
+      <data key="d3">rn:R00160 rn:R00161</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="FAD" target="FADH2">
+      <data key="d2">R09520</data>
+      <data key="d3">rn:R09520 rn:R09748</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="FMN" target="Vitamin_B2">
+      <data key="d2">R00548</data>
+      <data key="d3">rn:R00548 rn:R00549 rn:R00550 rn:R08574</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="FMN" target="FMNH2">
+      <data key="d2">R05705</data>
+      <data key="d3">rn:R05705 rn:R05706</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Folate" target="THF">
+      <data key="d2">R00937</data>
+      <data key="d3">rn:R00937 rn:R00940</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Glutamate" target="L-Glutamyl-tRNA(Glu)">
+      <data key="d2">R05578</data>
+      <data key="d3">rn:R05578</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Gly" target="Iminoglycine">
+      <data key="d2">R07463</data>
+      <data key="d3">rn:R07463</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="H2Dtpp-mP" target="cPMP">
+      <data key="d2">R09395</data>
+      <data key="d3">rn:R09395</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Haem" target="Protoporphyrin">
+      <data key="d2">R00310</data>
+      <data key="d3">rn:R00310</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Haem" target="Heme_O">
+      <data key="d2">R07411</data>
+      <data key="d3">rn:R07411</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Heme_A" target="Heme_O">
+      <data key="d2">R07412</data>
+      <data key="d3">rn:R07412</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Hydrogenobyrinate" target="Precorrin_8">
+      <data key="d2">R05177</data>
+      <data key="d3">rn:R05177</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Hydroxymethylbilane" target="Porphobilinogen">
+      <data key="d2">R00084</data>
+      <data key="d3">rn:R00084</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Hydroxymethylbilane" target="Uroporphyrinogen_III">
+      <data key="d2">R03165</data>
+      <data key="d3">rn:R03165</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Iminoglycine" target="Tyrosine">
+      <data key="d2">R10246</data>
+      <data key="d3">rn:R10246</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Iminosuccinate" target="L-Asp">
+      <data key="d2">R00481</data>
+      <data key="d3">rn:R00481 rn:R07407 rn:R07410</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Iminosuccinate" target="Quinolinate">
+      <data key="d2">R04292</data>
+      <data key="d3">rn:R04292</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="KAPA" target="Pimeloyl-CoA">
+      <data key="d2">R03210</data>
+      <data key="d3">rn:R03210</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="KAPA" target="Pimelyl-[acp]">
+      <data key="d2">R10124</data>
+      <data key="d3">rn:R10124</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Leucovorin" target="THF">
+      <data key="d2">R03189</data>
+      <data key="d3">rn:R03189</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Lipoyl-ACP" target="Octanoyl-[acp]">
+      <data key="d2">R07768</data>
+      <data key="d3">rn:R07768</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Mg-protoporphyrin_IX" target="Protoporphyrin">
+      <data key="d2">R03877</data>
+      <data key="d3">rn:R03877</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="NMN" target="Vitamin_PP">
+      <data key="d2">R01271</data>
+      <data key="d3">rn:R01271</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Niacin" target="Vitamin_PP">
+      <data key="d2">R01268</data>
+      <data key="d3">rn:R01268</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="PLP" target="Pyridoxine_phosphate">
+      <data key="d2">R00278</data>
+      <data key="d3">rn:R00278</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="PLP" target="Pyridoxal">
+      <data key="d2">R00173</data>
+      <data key="d3">rn:R00173 rn:R00174</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="PM" target="Pyridoxal">
+      <data key="d2">R01710</data>
+      <data key="d3">rn:R01710</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Pantothenate" target="beta-Alanine">
+      <data key="d2">R02473</data>
+      <data key="d3">rn:R02473 rn:R02474</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Pimelate" target="Pimeloyl-CoA">
+      <data key="d2">R03209</data>
+      <data key="d3">rn:R03209</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_2" target="Uroporphyrinogen_III">
+      <data key="d2">R03194</data>
+      <data key="d3">rn:R03194</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_2" target="Sirohydrochlorin">
+      <data key="d2">R03947</data>
+      <data key="d3">rn:R03947</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_2" target="Precorrin_3A">
+      <data key="d2">R03948</data>
+      <data key="d3">rn:R03948</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_3A" target="Precorrin_3B">
+      <data key="d2">R05217</data>
+      <data key="d3">rn:R05217</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_3B" target="Precorrin_4">
+      <data key="d2">R05180</data>
+      <data key="d3">rn:R05180</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_4" target="Precorrin_5">
+      <data key="d2">R05181</data>
+      <data key="d3">rn:R05181</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_5" target="Precorrin_6A">
+      <data key="d2">R05219</data>
+      <data key="d3">rn:R05219</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_6A" target="Precorrin_6B">
+      <data key="d2">R05150</data>
+      <data key="d3">rn:R05150</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Precorrin_6B" target="Precorrin_8">
+      <data key="d2">R05149</data>
+      <data key="d3">rn:R05149</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Pyridoxal" target="Pyridoxol">
+      <data key="d2">R01708</data>
+      <data key="d3">rn:R01708 rn:R01711</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Pyridoxine_phosphate" target="Pyridoxol">
+      <data key="d2">R01909</data>
+      <data key="d3">rn:R01909 rn:R01911</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Reduced_riboflavin" target="Vitamin_B2">
+      <data key="d2">R05707</data>
+      <data key="d3">rn:R05707 rn:R09750</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Retinal" target="Tretin_M">
+      <data key="d2">R02123</data>
+      <data key="d3">rn:R02123 rn:R02125</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Retinal" target="beta-Carotene">
+      <data key="d2">R00032</data>
+      <data key="d3">rn:R00032</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Retinal" target="Retinol">
+      <data key="d2">R02124</data>
+      <data key="d3">rn:R02124 rn:R08379</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="SHCHC" target="Succinylbenzoate">
+      <data key="d2">R04031</data>
+      <data key="d3">rn:R04031</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Siroheme" target="Sirohydrochlorin">
+      <data key="d2">R02864</data>
+      <data key="d3">rn:R02864</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Succinylbenzoate" target="Succinylbenzoyl-CoA">
+      <data key="d2">R04030</data>
+      <data key="d3">rn:R04030</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="TMP" target="TPP">
+      <data key="d2">R00615</data>
+      <data key="d3">rn:R00615 rn:R00617</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="TMP" target="cThz-P">
+      <data key="d2">R10712</data>
+      <data key="d3">rn:R10712</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="TPP" target="Thiamin_triphosphate">
+      <data key="d2">R00616</data>
+      <data key="d3">rn:R00616 rn:R00618 rn:R11319</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="Vitamin_E" target="gamma-Tocopherol">
+      <data key="d2">R07236</data>
+      <data key="d3">rn:R07236</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+    <edge source="beta-Tocopherol" target="delta-Tocopherol">
+      <data key="d2">R07504</data>
+      <data key="d3">rn:R07504</data>
+      <data key="d4">False</data>
+      <data key="d5">Metabolism of Cofactors and Vitamins</data>
+    </edge>
+  </graph>
+</graphml>
