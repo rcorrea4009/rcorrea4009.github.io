@@ -1,0 +1,11 @@
+# Tryptophan Pathway Nodes
+Chorismate        source
+Tryptophan        normal
+Indole-5,6-quinone normal
+Serotonin         sink
+Melatonin         sink
+C06611            sanitizer  # Tryptophan 2,3-dioxygenase
+C06613            sanitizer  # Kynureninase
+C05268            sanitizer  # Methacrylyl-CoA hydratase
+C04330            sanitizer  # Arylformamidase
+C04377            sanitizer  # Indoleamine 2,3-dioxygenase

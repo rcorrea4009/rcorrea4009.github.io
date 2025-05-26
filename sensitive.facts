@@ -1,0 +1,3 @@
+# Mark drug targets and sensitive compounds
+drug_target       C04377    # IDO enzyme (common drug target)
+pii_compound      Tryptophan

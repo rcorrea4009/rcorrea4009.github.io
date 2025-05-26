@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KEGG Pathway Visualizer (Mermaid)</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .visualization {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            position: relative;
+        }
+        #diagram {
+            width: 100%;
+            height: 700px;
+            overflow: auto;
+        }
+        .controls {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .control-group {
+            margin-bottom: 20px;
+        }
+        .control-group h3 {
+            margin-top: 0;
+            color: #34495e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .checkbox-label input {
+            margin-right: 8px;
+        }
+        .suspicious-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .suspicious-item {
+            background: #ffebee;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            border-left: 4px solid #f44336;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+        }
+        .node-details {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            pointer-events: none;
+            z-index: 9999;
+            max-width: 300px;
+            font-size: 13px;
+            display: none;
+        }
+        .pagination-controls {
+            margin-top: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Custom Mermaid styles */
+        .mermaid .node rect {
+            stroke-width: 2px;
+        }
+        .mermaid .node.source rect {
+            fill: #ffcccc;
+            stroke: #cc0000;
+        }
+        .mermaid .node.sink rect {
+            fill: #ccffcc;
+            stroke: #00cc00;
+        }
+        .mermaid .node.sanitizer rect {
+            fill: #ccccff;
+            stroke: #0000cc;
+        }
+        .mermaid .node.normal rect {
+            fill: #eeeeee;
+            stroke: #888;
+        }
+        .mermaid .node.suspicious rect {
+            stroke: red !important;
+            stroke-width: 2px !important;
+            stroke-dasharray: 5 !important;
+        }
+        .mermaid .edgeLabel {
+            background: white;
+            padding: 0 3px;
+            font-size: 12px;
+        }
+        .mermaid .cluster rect {
+            fill: rgba(200, 200, 255, 0.2);
+            stroke: rgba(0, 0, 255, 0.3);
+            stroke-width: 1px;
+        }
+    </style>
+</head>
+<body>
+<h1>KEGG Pathway Analysis</h1>
+
+<div class="dashboard">
+    <div class="visualization">
+        <div id="diagram" class="loading">Loading diagram...</div>
+        <div class="tooltip" id="tooltip"></div>
+
+        <div class="pagination-controls">
+            <button id="prevPage" disabled>Previous</button>
+            <span id="pageInfo">Page 1</span>
+            <button id="nextPage" disabled>Next</button>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #ffcccc;"></div>
+                <span>Source (Compound)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #ccffcc;"></div>
+                <span>Sink (Pathway)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #ccccff;"></div>
+                <span>Sanitizer (Enzyme)</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background-color: #eeeeee;"></div>
+                <span>Normal Node</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="control-group">
+            <h3>Display Controls</h3>
+            <label class="checkbox-label">
+                <input type="checkbox" id="toggleSanitizers" checked>
+                Show Sanitizers
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="toggleSuspicious" checked>
+                Highlight Sensitive Flows
+            </label>
+            <label class="checkbox-label">
+                <input type="checkbox" id="toggleNormalNodes" checked>
+                Show Normal Nodes
+            </label>
+        </div>
+
+        <div class="control-group">
+            <h3>Detected Issues</h3>
+            <ul class="suspicious-list" id="suspiciousList">
+                <!-- Will be populated dynamically -->
+            </ul>
+        </div>
+
+        <div class="control-group">
+            <h3>Node Details</h3>
+            <div class="node-details" id="nodeDetails">
+                Click on any node or edge to see details
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initialize Mermaid with custom configuration
+    mermaid.initialize({
+        startOnLoad: false,
+        theme: 'default',
+        securityLevel: 'loose',
+        maxTextSize: 1000000,
+        flowchart: {
+            useMaxWidth: false,
+            htmlLabels: true,
+            curve: 'basis'
+        }
+    });
+
+    // Global variables
+    let currentPage = 1;
+    let totalPages = 1;
+    let allNodes = [];
+    let allEdges = [];
+    let sensitiveNodes = [];
+    const NODES_PER_PAGE = 50;
+
+    // Color scheme
+    const COLORS = {
+        source: '#ffcccc',
+        sink: '#ccffcc',
+        sanitizer: '#ccccff',
+        normal: '#eeeeee',
+        sensitive: '#ff9999',
+        edge: '#888'
+    };
+
+    // Tooltip management
+    const tooltip = document.getElementById('tooltip');
+    let activeElement = null;
+
+    function showTooltip(content, x, y) {
+        tooltip.innerHTML = content;
+        tooltip.style.display = 'block';
+        tooltip.style.left = `${x + 10}px`;
+        tooltip.style.top = `${y + 10}px`;
+    }
+
+    function hideTooltip() {
+        tooltip.style.display = 'none';
+    }
+
+    function setupDiagramInteractivity() {
+        const diagramContainer = document.getElementById('diagram');
+        const svg = diagramContainer.querySelector('svg');
+
+        if (!svg) return;
+
+        // Add hover effects
+        svg.querySelectorAll('.node, .edgeLabel').forEach(element => {
+            element.style.cursor = 'pointer';
+            element.addEventListener('mouseover', function(e) {
+                const rect = this.getBoundingClientRect();
+                let content = '';
+
+                if (this.classList.contains('node')) {
+                    const title = this.querySelector('title');
+                    const nodeId = title ? title.textContent : 'Unknown';
+                    const nodeType = this.classList.contains('source') ? 'Source (Compound)' :
+                        this.classList.contains('sink') ? 'Sink (Pathway)' :
+                            this.classList.contains('sanitizer') ? 'Sanitizer (Enzyme)' : 'Normal Node';
+
+                    content = `<strong>${nodeId}</strong><br>Type: ${nodeType}`;
+                    if (this.classList.contains('suspicious')) {
+                        content += '<br><span style="color:#ff6666">⚠️ Sensitive compound</span>';
+                    }
+                } else if (this.classList.contains('edgeLabel')) {
+                    const textElement = this.querySelector('text');
+                    const interaction = textElement ? textElement.textContent : 'Unknown interaction';
+                    const pathId = this.parentNode.id.replace('-edge-label', '');
+                    const path = svg.querySelector(`#${pathId}`);
+
+                    if (path) {
+                        const sourceTitle = path.getAttribute('data-source-title');
+                        const targetTitle = path.getAttribute('data-target-title');
+                        content = `
+                                <strong>Interaction:</strong> ${interaction}<br>
+                                <strong>From:</strong> ${sourceTitle || 'Unknown'}<br>
+                                <strong>To:</strong> ${targetTitle || 'Unknown'}
+                            `;
+                    }
+                }
+
+                showTooltip(content, e.clientX, e.clientY);
+            });
+
+            element.addEventListener('mouseout', hideTooltip);
+
+            element.addEventListener('click', function() {
+                if (this.classList.contains('node')) {
+                    const title = this.querySelector('title');
+                    const nodeId = title ? title.textContent : 'Unknown';
+                    const nodeType = this.classList.contains('source') ? 'Source (Compound)' :
+                        this.classList.contains('sink') ? 'Sink (Pathway)' :
+                            this.classList.contains('sanitizer') ? 'Sanitizer (Enzyme)' : 'Normal Node';
+
+                    let details = `<strong>Node:</strong> ${nodeId}<br><strong>Type:</strong> ${nodeType}`;
+                    if (this.classList.contains('suspicious')) {
+                        details += '<br><strong style="color:red">⚠️ Sensitive compound</strong>';
+                    }
+
+                    document.getElementById('nodeDetails').innerHTML = details;
+                } else if (this.classList.contains('edgeLabel')) {
+                    const textElement = this.querySelector('text');
+                    const interaction = textElement ? textElement.textContent : 'Unknown interaction';
+                    const pathId = this.parentNode.id.replace('-edge-label', '');
+                    const path = svg.querySelector(`#${pathId}`);
+
+                    if (path) {
+                        const sourceTitle = path.getAttribute('data-source-title');
+                        const targetTitle = path.getAttribute('data-target-title');
+                        document.getElementById('nodeDetails').innerHTML = `
+                                <strong>Interaction:</strong> ${interaction}<br>
+                                <strong>From:</strong> ${sourceTitle || 'Unknown'}<br>
+                                <strong>To:</strong> ${targetTitle || 'Unknown'}
+                            `;
+                    }
+                }
+            });
+        });
+    }
+
+    function generateKeggDiagram(nodes, edges, sensitive) {
+        let diagram = 'flowchart LR\n';
+        const suspiciousItems = [];
+
+        // Group nodes by type for better organization
+        diagram += '    subgraph Sources[Sources]\n';
+        nodes.filter(node => {
+            const parts = node.split('\t');
+            return parts.length >= 2 && parts[1] === 'source';
+        }).forEach(node => {
+            const [name] = node.split('\t');
+            const safeName = name.replace(/\W/g, '_');
+            diagram += `        ${safeName}["${name}"]:::source\n`;
+        });
+        diagram += '    end\n\n';
+
+        diagram += '    subgraph Sinks[Sinks]\n';
+        nodes.filter(node => {
+            const parts = node.split('\t');
+            return parts.length >= 2 && parts[1] === 'sink';
+        }).forEach(node => {
+            const [name] = node.split('\t');
+            const safeName = name.replace(/\W/g, '_');
+            diagram += `        ${safeName}["${name}"]:::sink\n`;
+        });
+        diagram += '    end\n\n';
+
+        diagram += '    subgraph Sanitizers[Sanitizers]\n';
+        nodes.filter(node => {
+            const parts = node.split('\t');
+            return parts.length >= 2 && parts[1] === 'sanitizer';
+        }).forEach(node => {
+            const [name] = node.split('\t');
+            const safeName = name.replace(/\W/g, '_');
+            diagram += `        ${safeName}["${name}"]:::sanitizer\n`;
+        });
+        diagram += '    end\n\n';
+
+        // Add normal nodes
+        nodes.filter(node => {
+            const parts = node.split('\t');
+            return parts.length >= 2 && parts[1] === 'normal';
+        }).forEach(node => {
+            const [name] = node.split('\t');
+            const safeName = name.replace(/\W/g, '_');
+            diagram += `    ${safeName}["${name}"]:::normal\n`;
+        });
+
+        // Process edges with interaction labels
+        edges.forEach(line => {
+            if (!line) return;
+            const parts = line.split('\t');
+            if (parts.length < 2) return;
+
+            const [from, to, interaction] = parts;
+            const safeFrom = from.replace(/\W/g, '_');
+            const safeTo = to.replace(/\W/g, '_');
+            diagram += `    ${safeFrom} -->|${interaction || ''}| ${safeTo}\n`;
+        });
+
+        // Mark sensitive nodes
+        sensitive.forEach(line => {
+            if (!line) return;
+            const parts = line.split('\t');
+            if (parts.length < 1) return;
+
+            const [node] = parts;
+            const safeNode = node.replace(/\W/g, '_');
+            suspiciousItems.push(node);
+            diagram += `    ${safeNode}:::suspicious\n`;
+        });
+
+        // Add custom styles
+        diagram += `
+                classDef source fill:#ffcccc,stroke:#cc0000,stroke-width:2px;
+                classDef sink fill:#ccffcc,stroke:#00cc00,stroke-width:2px;
+                classDef sanitizer fill:#ccccff,stroke:#0000cc,stroke-width:2px;
+                classDef normal fill:#eeeeee,stroke:#888,stroke-width:1px;
+                classDef suspicious stroke:red,stroke-width:2px,stroke-dasharray:5;
+            `;
+
+        return { diagram, suspiciousItems };
+    }
+
+    function updateIssuesList(items) {
+        const issuesList = document.getElementById('suspiciousList');
+        issuesList.innerHTML = items.map(item => `
+                <li class="suspicious-item">
+                    <strong>${item}</strong>
+                    <div>Potential drug target</div>
+                </li>
+            `).join('');
+    }
+
+    async function loadData(prefix) {
+        try {
+            document.getElementById('diagram').className = 'loading';
+            document.getElementById('diagram').textContent = 'Loading data...';
+
+            const responses = await Promise.all([
+                fetch(`output/${prefix}_nodes.facts`),
+                fetch(`output/${prefix}_edges.facts`),
+                fetch(`sensitive.facts`).catch(() => null)
+            ]);
+
+            if (!responses[0].ok) throw new Error(`Failed to load nodes: ${responses[0].status}`);
+            if (!responses[1].ok) throw new Error(`Failed to load edges: ${responses[1].status}`);
+
+            const [nodes, edges] = await Promise.all([
+                responses[0].text(),
+                responses[1].text()
+            ]);
+
+            let sensitive = "";
+            if (responses[2] && responses[2].ok) {
+                sensitive = await responses[2].text();
+            }
+
+            allNodes = nodes.split('\n').filter(line => line.trim().length > 0);
+            allEdges = edges.split('\n').filter(line => line.trim().length > 0);
+            sensitiveNodes = sensitive ? sensitive.split('\n').filter(line => line.trim().length > 0) : [];
+
+            totalPages = Math.ceil(allNodes.length / NODES_PER_PAGE);
+            updatePaginationControls();
+
+            return { nodes: allNodes, edges: allEdges, sensitive: sensitiveNodes };
+        } catch (error) {
+            console.error('Data loading failed:', error);
+            throw error;
+        }
+    }
+
+    function updatePaginationControls() {
+        document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+        document.getElementById('prevPage').disabled = currentPage <= 1;
+        document.getElementById('nextPage').disabled = currentPage >= totalPages;
+    }
+
+    function getPaginatedData() {
+        const startIdx = (currentPage - 1) * NODES_PER_PAGE;
+        const endIdx = startIdx + NODES_PER_PAGE;
+        const currentNodes = allNodes.slice(startIdx, endIdx);
+        const nodeNames = currentNodes.map(node => node.split('\t')[0]);
+
+        return {
+            nodes: currentNodes,
+            edges: allEdges.filter(edge => {
+                const [from] = edge.split('\t');
+                return nodeNames.includes(from);
+            }),
+            sensitive: sensitiveNodes.filter(sens => {
+                const [node] = sens.split('\t');
+                return nodeNames.includes(node);
+            })
+        };
+    }
+
+    async function renderCurrentPage() {
+        const { nodes, edges, sensitive } = getPaginatedData();
+        const { diagram } = generateKeggDiagram(nodes, edges, sensitive);
+        const container = document.getElementById('diagram');
+
+        try {
+            container.innerHTML = diagram;
+            container.className = 'mermaid';
+
+            // Initialize Mermaid rendering
+            await mermaid.run({
+                querySelector: '#diagram',
+                suppressErrors: false
+            });
+
+            // Setup interactivity after rendering
+            setupDiagramInteractivity();
+
+        } catch (error) {
+            console.error('Rendering failed:', error);
+            container.innerHTML = `
+                    <div style="color:red; padding:20px;">
+                        <h3>Rendering Error</h3>
+                        <p>${error.message}</p>
+                        <p>Check browser console for details</p>
+                    </div>
+                `;
+        }
+    }
+
+    // Initialize the visualization
+    document.addEventListener('DOMContentLoaded', async () => {
+        try {
+            const prefix = 'kegg';
+            await loadData(prefix);
+            await renderCurrentPage();
+
+            // Pagination controls
+            document.getElementById('prevPage').addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    updatePaginationControls();
+                    renderCurrentPage();
+                }
+            });
+
+            document.getElementById('nextPage').addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    updatePaginationControls();
+                    renderCurrentPage();
+                }
+            });
+
+        } catch (error) {
+            console.error('Initialization failed:', error);
+            document.getElementById('diagram').innerHTML = `
+                    <div style="color:red; padding:20px;">
+                        <h3>Initialization Error</h3>
+                        <p>${error.message}</p>
+                        <p>Check browser console for details</p>
+                    </div>
+                `;
+        }
+    });
+</script>
+</body>
+</html>

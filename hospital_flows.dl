@@ -1,0 +1,110 @@
+// hospital_flow.dl - Fixed version with proper type declarations
+
+/********************
+ * Data Loading Section
+ ********************/
+
+// Test verification
+.decl TestsPassed(test_name: symbol)
+.input TestsPassed(filename="Facts/TestsPassed.facts", delimiter="\t")
+
+.decl AllTestsPassed()
+AllTestsPassed() :-
+    TestsPassed("nodes_file_exists"),
+    TestsPassed("edges_file_exists"),
+    TestsPassed("sensitive_file_exists").
+
+// Unified input relations
+.decl input_node(name: symbol, type: symbol)
+.input input_node(filename="output/kegg_nodes.facts", delimiter="\t")
+
+.decl input_edge(from: symbol, to: symbol, interaction: symbol)
+.input input_edge(filename="output/kegg_edges.facts", delimiter="\t")
+
+.decl input_sensitive(label: symbol, node: symbol)
+.input input_sensitive(filename="sensitive.facts", delimiter=" ")
+
+/********************
+ * Core Data Structures
+ ********************/
+
+// Node classification
+.decl Node(name: symbol, type: symbol)
+Node(n, t) :- input_node(n, t), AllTestsPassed().
+
+.decl Edge(from: symbol, to: symbol, interaction: symbol)
+Edge(f, t, i) :- input_edge(f, t, i), AllTestsPassed().
+
+.decl SensitiveNode(label: symbol, node: symbol)
+SensitiveNode(l, n) :- input_sensitive(l, n), AllTestsPassed().
+
+/********************
+ * Pathway Analysis Logic
+ ********************/
+
+// Reachability - finds all connected nodes
+.decl Reach(from: symbol, to: symbol)
+Reach(x, y) :- Edge(x, y, _).
+Reach(x, z) :- Reach(x, y), Edge(y, z, _).
+
+// KEGG-specific rules
+.decl SourceCompound(compound: symbol)
+SourceCompound(c) :- Node(c, "source").
+
+.decl PathwaySink(sink: symbol)
+PathwaySink(p) :- Node(p, "sink").
+
+.decl BiologicalSanitizer(enzyme: symbol)
+BiologicalSanitizer(e) :- Node(e, "sanitizer").
+
+// Complete pathway detection
+.decl CompletePathway(source: symbol, sink: symbol)
+CompletePathway(s, t) :-
+    SourceCompound(s),
+    PathwaySink(t),
+    Reach(s, t).
+
+// Sanitized pathway detection
+.decl SanitizedPathway(source: symbol, sink: symbol, sanitizer: symbol)
+SanitizedPathway(s, t, e) :-
+    CompletePathway(s, t),
+    BiologicalSanitizer(e),
+    Reach(s, e),
+    Reach(e, t).
+
+// Unsanitized flows (potential issues)
+.decl UnsanitizedPathway(source: symbol, sink: symbol, reason: symbol)
+UnsanitizedPathway(s, t, "no_sanitizer") :-
+    CompletePathway(s, t),
+    SensitiveNode(_, s),
+    !SanitizedPathway(s, t, _).
+
+// Drug-target interactions
+.decl DrugTargetInteraction(drug: symbol, target: symbol, pathway: symbol)
+DrugTargetInteraction(d, e, p) :-
+    SourceCompound(d),
+    BiologicalSanitizer(e),
+    PathwaySink(p),
+    Reach(d, e),
+    Reach(e, p).
+
+/********************
+ * Output Relations
+ ********************/
+
+// Primary outputs
+.output CompletePathway(filename="complete_pathways.facts")
+.output SanitizedPathway(filename="sanitized_pathways.facts")
+.output UnsanitizedPathway(filename="unverified_pathways.facts")
+.output DrugTargetInteraction(filename="drug_interactions.facts")
+
+// Fixed NodeDegree implementation
+.type Degree = number  // Explicit type definition
+
+.decl NodeDegree(node: symbol, out_degree: Degree, in_degree: Degree)
+NodeDegree(n, out, in) :-
+    Node(n, _),
+    out = count : { Edge(n, _, _) },
+    in = count : { Edge(_, n, _) }.
+
+.output NodeDegree(filename="node_degrees.facts")

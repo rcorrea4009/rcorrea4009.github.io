@@ -1,0 +1,12 @@
+Chorismate        Tryptophan          biosynthesis
+Tryptophan        C06611              substrate
+C06611            Indole-5,6-quinone  product
+Indole-5,6-quinone C06613             substrate
+C06613            Methacrylyl-CoA     product
+Methacrylyl-CoA   C05268              substrate
+C05268            Indolepyruvate      product
+Indolepyruvate    Tryptophan          reversible
+Tryptophan        C04377              substrate
+C04377            Serotonin           product
+Serotonin         C04330              substrate
+C04330            Melatonin           product

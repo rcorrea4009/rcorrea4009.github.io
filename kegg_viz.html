@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Information Flow Visualizer</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .dashboard {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 20px;
+        }
+        .visualization {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .controls {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .mermaid {
+            font-size: 14px;
+            height: 600px;
+        }
+        .control-group {
+            margin-bottom: 20px;
+        }
+        .control-group h3 {
+            margin-top: 0;
+            color: #34495e;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+        .checkbox-label input {
+            margin-right: 8px;
+        }
+        .suspicious-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .suspicious-item {
+            background: #ffebee;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 4px;
+            border-left: 4px solid #f44336;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+            border: 1px solid #ddd;
+        }
+        .node-details {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 13px;
+        }
+        .error {
+            color: red;
+            padding: 20px;
+            border: 1px solid red;
+            background: #ffeeee;
+        }
+
+        .mermaid {
+            min-height: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .mermaid .node.suspicious > rect {
+            stroke: red !important;
+            stroke-width: 2px !important;
+            stroke-dasharray: 5 !important;
+        }
+        /* KEGG-specific styles */
+        .kegg-mode #sourceColor { background-color: #e6f3ff; }
+        .kegg-mode #sinkColor { background-color: #ccffcc; }
+        .kegg-mode #sanitizerColor { background-color: #ffebee; }
+        .kegg-mode #normalColor { background-color: #eeeeee; }
+        .kegg-mode #sourceLabel::after { content: " (Compound)"; }
+        .kegg-mode #sinkLabel::after { content: " (Pathway)"; }
+        .kegg-mode #sanitizerLabel::after { content: " (Enzyme)"; }
+    </style>
+</head>
+<body>
+    <h1>Hospital Information Flow Analysis</h1>
+    
+    <div class="dashboard">
+        <div class="visualization">
+            <div id="diagram" class="mermaid">
+                <!-- Fallback text -->
+                Loading diagram...
+            </div>
+            <h2>Flowchart</h2>
+            <div id="mermaid"></div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" id="sourceColor"></div>
+                    <span id="sourceLabel">Source (Sensitive Data)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" id="sinkColor"></div>
+                    <span id="sinkLabel">Sink (Public Output)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" id="sanitizerColor"></div>
+                    <span id="sanitizerLabel">Sanitizer</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" id="normalColor"></div>
+                    <span id="normalLabel">Normal Node</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: repeating-linear-gradient(45deg, #ffcccc, #ffcccc 5px, white 5px, white 10px);"></div>
+                    <span>Suspicious Flow</span>
+                </div>
+            </div>
+        
+        <div class="controls">
+            <div class="control-group">
+                <h3>Display Controls</h3>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="toggleSanitizers" checked>
+                    Show Sanitizers
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="toggleSuspicious" checked>
+                    Highlight Suspicious Flows
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="toggleNormalNodes" checked>
+                    Show Normal Nodes
+                </label>
+            </div>
+            
+            <div class="control-group">
+                <h3>Detected Issues</h3>
+                <ul class="suspicious-list" id="suspiciousList">
+                    <li class="suspicious-item">
+                        <strong>patient_records → public_website</strong>
+                        <div>No sanitizer in path (contains PII)</div>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="control-group">
+                <h3>Node Details</h3>
+                <div class="node-details" id="nodeDetails">
+                    Click on any node to see details
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Mermaid
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'default',
+            securityLevel: 'loose'
+        });
+        
+        async function renderDiagram1() {
+            try {
+                // 1. Clear previous errors
+                const container = document.getElementById('mermaid');
+                container.innerHTML = '<div class="mermaid"></div>';
+                
+                // 2. Load data
+                const [nodes, edges, suspicious] = await Promise.all([
+                    fetch('nodes.facts').then(r => r.text()),
+                    fetch('edges.facts').then(r => r.text()),
+                    fetch('SuspiciousFlow.facts').then(r => r.text())
+                ]);
+        
+                // 3. Process nodes
+                const nodeDefs = [];
+                const nodeTypes = {};
+                nodes.split('\n').filter(Boolean).forEach(line => {
+                    const [name, type] = line.split('\t');
+                    if (name && type) {
+                        const safeName = name.replace(/\W/g, '_');
+                        nodeTypes[safeName] = type.toLowerCase();
+                        nodeDefs.push(`${safeName}["${name}"]:::${type.toLowerCase()}`);
+                    }
+                });
+        
+                // 4. Process edges
+                const edgeDefs = [];
+                edges.split('\n').filter(Boolean).forEach(line => {
+                    const [from, to, label] = line.split('\t');
+                    if (from && to) {
+                        const safeFrom = from.replace(/\W/g, '_');
+                        const safeTo = to.replace(/\W/g, '_');
+                        edgeDefs.push(`${safeFrom} -->|${label || ''}| ${safeTo}`);
+                    }
+                });
+        
+                // 5. Process suspicious flows
+                const suspiciousItems = [];
+                suspicious.split('\n').filter(Boolean).forEach(line => {
+                    const [from, to] = line.split('\t');
+                    if (from && to) {
+                        const safeFrom = from.replace(/\W/g, '_');
+                        const safeTo = to.replace(/\W/g, '_');
+                        edgeDefs.push(`${safeFrom} -.-> ${safeTo}:::suspicious`);
+                        suspiciousItems.push(`${from} → ${to}`);
+                    }
+                });
+        
+                // 6. Build diagram
+                const diagram = `
+        flowchart LR
+            ${nodeDefs.join('\n    ')}
+            ${edgeDefs.join('\n    ')}
+            
+            classDef source fill:#ffcccc,stroke:#333;
+            classDef sink fill:#ccffcc,stroke:#333;
+            classDef sanitizer fill:#ccccff,stroke:#333;
+            classDef normal fill:#eeeeee,stroke:#333;
+            classDef suspicious stroke:red,stroke-width:2px,stroke-dasharray:5;
+        `;
+        
+                // 7. Render
+                container.querySelector('.mermaid').textContent = diagram;
+                await mermaid.run({
+                    querySelector: '.mermaid',
+                    suppressErrors: false
+                });
+        
+                // 8. Update issues list
+                document.getElementById('suspiciousList').innerHTML = suspiciousItems
+                    .map(item => `<li class="suspicious-item"><strong>${item}</strong><div>No sanitizer in path</div></li>`)
+                    .join('');
+        
+            } catch (error) {
+                console.error('Rendering failed:', error);
+                document.getElementById('mermaid').innerHTML = `
+                    <div class="error">
+                        <h3>Rendering Error</h3>
+                        <p>${error.message}</p>
+                        <p>Check browser console for details</p>
+                    </div>
+                `;
+            }
+        }
+        
+        function determineDatasetType() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('dataset') || 'hospital'; // Default to hospital
+}
+
+async function renderDiagram() {
+    const datasetType = determineDatasetType();
+    const prefix = datasetType === 'kegg' ? 'kegg' : 'hospital';
+    
+    try {
+        const container = document.getElementById('mermaid');
+        container.innerHTML = '<div class="mermaid"></div>';
+        
+        const [nodes, edges, sensitive] = await Promise.all([
+            fetch(`kegg_nodes.facts`).then(r => r.text()),
+            fetch(`kegg_edges.facts`).then(r => r.text()),
+            fetch(`kegg_sensitive.facts`).then(r => r.text())
+        ]);
+
+        let diagram = 'flowchart LR\n';
+        const nodeStyles = new Set();
+        const suspiciousItems = [];
+
+        // Process nodes
+        nodes.split('\n').filter(Boolean).forEach(line => {
+            const [name, type] = line.split('\t');
+            if (name && type) {
+                const safeName = name.replace(/\W/g, '_');
+                const style = datasetType === 'kegg' ? 
+                    (type === 'compound' ? 'normal' : type) : type;
+                nodeStyles.add(style);
+                diagram += `    ${safeName}["${name}"]:::${style}\n`;
+            }
+        });
+
+        // Process edges
+        edges.split('\n').filter(Boolean).forEach(line => {
+            const [from, to, label] = line.split('\t');
+            if (from && to) {
+                const safeFrom = from.replace(/\W/g, '_');
+                const safeTo = to.replace(/\W/g, '_');
+                diagram += `    ${safeFrom} -->|${label || ''}| ${safeTo}\n`;
+            }
+        });
+
+        // Process sensitive flows
+        sensitive.split('\n').filter(Boolean).forEach(line => {
+            const [_, node] = line.split('\t');
+            if (node) {
+                const safeNode = node.replace(/\W/g, '_');
+                suspiciousItems.push(node);
+                // For KEGG, highlight compounds marked as sensitive
+                if (datasetType === 'kegg') {
+                    diagram += `    ${safeNode}:::suspicious\n`;
+                }
+            }
+        });
+
+        // Add style definitions
+        if (datasetType === 'kegg') {
+            diagram += `
+                classDef compound fill:#e6f3ff,stroke:#333;
+                classDef pathway fill:#ccffcc,stroke:#333;
+                classDef enzyme fill:#ffebee,stroke:#333;
+                classDef suspicious stroke:red,stroke-width:3px;
+            `;
+            document.querySelector('h1').textContent = 'KEGG Pathway Analysis';
+        } else {
+            diagram += `
+                classDef source fill:#ffcccc,stroke:#333;
+                classDef sink fill:#ccffcc,stroke:#333;
+                classDef sanitizer fill:#ccccff,stroke:#333;
+                classDef normal fill:#eeeeee,stroke:#333;
+                classDef suspicious stroke:red,stroke-width:2px,stroke-dasharray:5;
+            `;
+            document.querySelector('h1').textContent = 'Hospital Information Flow Analysis';
+        }
+
+        // Update UI elements
+        container.querySelector('.mermaid').textContent = diagram;
+        await mermaid.run({
+            querySelector: '.mermaid',
+            suppressErrors: false
+        });
+
+        // Update issues list
+        const issuesList = document.getElementById('suspiciousList');
+        issuesList.innerHTML = suspiciousItems.map(item => `
+            <li class="suspicious-item">
+                <strong>${item}</strong>
+                <div>${datasetType === 'kegg' ? 'Potential drug target' : 'No sanitizer in path'}</div>
+            </li>
+        `).join('');
+
+    } catch (error) {
+        console.error('Rendering failed:', error);
+        document.getElementById('mermaid').innerHTML = `
+            <div class="error">
+                <h3>Rendering Error</h3>
+                <p>${error.message}</p>
+                <p>Check browser console for details</p>
+            </div>
+        `;
+    }
+}
+function generateKeggDiagram(nodes, edges, suspicious) {
+    let diagram = 'flowchart LR\n';
+    const nodeTypes = {};
+    const suspiciousItems = [];
+    
+    // Process nodes
+    nodes.split('\n').filter(Boolean).forEach(line => {
+        const [name, type] = line.split('\t');
+        if (name && type) {
+            const safeName = name.replace(/\W/g, '_');
+            nodeTypes[safeName] = type;
+            
+            // Special formatting for compounds
+            const displayName = type === 'source' ? 
+                `"${name} (Drug)"` : `"${name}"`;
+                
+            diagram += `    ${safeName}[${displayName}]:::${type}\n`;
+        }
+    });
+    
+    // Process edges
+    edges.split('\n').filter(Boolean).forEach(line => {
+        const [from, to, label] = line.split('\t');
+        if (from && to) {
+            const safeFrom = from.replace(/\W/g, '_');
+            const safeTo = to.replace(/\W/g, '_');
+            diagram += `    ${safeFrom} -->|${label || ''}| ${safeTo}\n`;
+        }
+    });
+    
+    // Process suspicious flows
+    suspicious.split('\n').filter(Boolean).forEach(line => {
+        const [from, to] = line.split('\t');
+        if (from && to) {
+            const safeFrom = from.replace(/\W/g, '_');
+            const safeTo = to.replace(/\W/g, '_');
+            diagram += `    ${safeFrom} -.-> ${safeTo}:::suspicious\n`;
+            suspiciousItems.push(`${from} → ${to}`);
+        }
+    });
+    
+    // Add KEGG-specific styles
+    diagram += `
+        classDef source fill:#ffcccc,stroke:#333;  // Drugs
+        classDef sink fill:#ccffcc,stroke:#333;    // Pathways
+        classDef sanitizer fill:#ccccff,stroke:#333;  // Enzymes
+        classDef normal fill:#eeeeee,stroke:#333;  // Other compounds
+        classDef suspicious stroke:red,stroke-width:2px,stroke-dasharray:5;
+    `;
+    
+    return { diagram, suspiciousItems };
+}
+
+// Update the event listener
+document.addEventListener('DOMContentLoaded', generateKeggDiagram);
+        </script>
+    
+    
+</body>
+</html>

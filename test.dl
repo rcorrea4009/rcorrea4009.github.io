@@ -1,0 +1,173 @@
+// test.dl - Fixed version with proper conditional logic
+
+/********************
+ * Test Framework Setup
+ ********************/
+.decl TestResult(test_name: symbol, status: symbol, message: symbol)
+
+// Initialize all tests as failed by default
+TestResult(test_name, "failed", "Not yet implemented") :-
+    TestDefinition(test_name, _).
+
+// Test definitions
+.decl TestDefinition(test_name: symbol, description: symbol)
+TestDefinition("file_validation", "Verify input files exist and are properly formatted").
+TestDefinition("node_classification", "Check proper source/sink/sanitizer classifications").
+TestDefinition("pathway_integrity", "Validate complete pathways exist").
+TestDefinition("sanitization_coverage", "Verify critical paths are properly sanitized").
+TestDefinition("drug_target_analysis", "Check drug-target interactions are detected").
+
+/********************
+ * Data Loading with Validation
+ ********************/
+// Nodes with validation
+.decl Node(name: symbol, type: symbol)
+.input Node(filename="nodes.facts", delimiter="\t")
+
+TestResult("nodes_file_loaded", 
+           "passed", 
+           "Nodes file loaded successfully") :-
+    count : { Node(_, _) } > 0.
+
+// Edges with validation
+.decl Edge(from: symbol, to: symbol, interaction: symbol)
+.input Edge(filename="edges.facts", delimiter="\t")
+
+TestResult("edges_file_loaded", 
+           "passed", 
+           "Edges file loaded successfully") :-
+    count : { Edge(_, _, _) } > 0.
+
+// Sensitive data with validation
+.decl SensitiveData(label: symbol, node: symbol)
+.input SensitiveData(filename="sensitive.facts", delimiter="\t")
+
+TestResult("sensitive_file_loaded", 
+           "passed", 
+           "Sensitive data file loaded successfully") :-
+    count : { SensitiveData(_, _) } > 0.
+
+/********************
+ * Core Test Cases
+ ********************/
+
+// 1. File Validation Tests - CORRECTED VERSION
+TestResult("file_validation", "passed", "All input files loaded successfully") :-
+    TestResult("nodes_file_loaded", "passed", _),
+    TestResult("edges_file_loaded", "passed", _),
+    TestResult("sensitive_file_loaded", "passed", _).
+
+TestResult("file_validation", "failed", "Missing or empty input files detected") :-
+    (TestResult("nodes_file_loaded", "failed", _);
+     TestResult("edges_file_loaded", "failed", _);
+     TestResult("sensitive_file_loaded", "failed", _)).
+
+// 2. Node Classification Tests - SIMPLIFIED WORKING VERSION
+.decl NodeCounts(sources: symbol, sinks: symbol, sanitizers: symbol)
+NodeCounts(toString(s), toString(si), toString(sa)) :-
+    s = count : { Node(_, "source") },
+    si = count : { Node(_, "sink") },
+    sa = count : { Node(_, "sanitizer") }.
+
+// First concatenation step
+.decl MsgPart1(test: symbol, status: symbol, part: symbol)
+MsgPart1("node_classification", "passed", concat("Found ", sources)) :-
+    NodeCounts(sources, _, _),
+    number("0") < sources.
+MsgPart1("node_classification", "failed", concat("Found ", sources)) :-
+    NodeCounts(sources, _, _),
+    sources = "0".
+
+// Second concatenation step
+.decl MsgPart2(test: symbol, status: symbol, part: symbol)
+MsgPart2(test, status, concat(part1, concat(" sources, ", sinks))) :-
+    MsgPart1(test, status, part1),
+    NodeCounts(_, sinks, _).
+
+// Final message construction
+TestResult(test, status, concat(part2, concat(" sinks, and ", concat(sanitizers, " sanitizers")))) :-
+    MsgPart2(test, status, part2),
+    NodeCounts(_, _, sanitizers).
+    
+// 3. Pathway Integrity Tests - WORKING VERSION
+.decl PathwayMsg(test: symbol, status: symbol, count: symbol)
+PathwayMsg("pathway_integrity", "passed", count) :-
+    count = toString(cnt),
+    cnt = count : { CompletePathway(_, _) },
+    cnt > 0.
+PathwayMsg("pathway_integrity", "failed", "0") :-
+    count : { CompletePathway(_, _) } = 0.
+
+TestResult(test, status, concat(concat("Found ", count), 
+                              " complete source-to-sink pathways")) :-
+    PathwayMsg(test, status, count).
+
+.decl CompletePathway(source: symbol, sink: symbol)
+CompletePathway(s, t) :-
+    Node(s, "source"),
+    Node(t, "sink"),
+    Reach(s, t).
+
+TestResult("pathway_integrity", "passed", msg) :-
+    pathway_count = count : { CompletePathway(_, _) },
+    pathway_count > 0,
+    msg = concat("Found ", toString(pathway_count), 
+                " complete source-to-sink pathways").
+
+TestResult("pathway_integrity", "failed", "No complete pathways found") :-
+    count : { CompletePathway(_, _) } = 0.
+
+// 4. Sanitization Coverage Tests
+.decl SanitizedPathway(source: symbol, sink: symbol)
+SanitizedPathway(s, t) :-
+    CompletePathway(s, t),
+    Node(m, "sanitizer"),
+    Reach(s, m),
+    Reach(m, t).
+
+.decl UnsanitizedPathway(source: symbol, sink: symbol)
+UnsanitizedPathway(s, t) :-
+    CompletePathway(s, t),
+    SensitiveData(_, s),
+    !SanitizedPathway(s, t).
+
+TestResult("sanitization_coverage", "passed", "All sensitive pathways are sanitized") :-
+    count : { UnsanitizedPathway(_, _) } = 0.
+
+TestResult("sanitization_coverage", "failed", msg) :-
+    unsanitized_count = count : { UnsanitizedPathway(_, _) },
+    unsanitized_count > 0,
+    msg = concat("Found ", toString(unsanitized_count), 
+                " unsanitized sensitive pathways").
+
+// 5. Drug Target Analysis Tests
+.decl DrugTargetInteraction(drug: symbol, target: symbol)
+DrugTargetInteraction(d, e) :-
+    Node(d, "source"),
+    Node(e, "sanitizer"),
+    Reach(d, e).
+
+TestResult("drug_target_analysis", "passed", msg) :-
+    interactions = count : { DrugTargetInteraction(_, _) },
+    interactions > 0,
+    msg = concat("Found ", toString(interactions), 
+                " drug-target interactions").
+
+TestResult("drug_target_analysis", "failed", "No drug-target interactions found") :-
+    count : { DrugTargetInteraction(_, _) } = 0.
+
+/********************
+ * Test Summary
+ ********************/
+.decl TestSummary(total_tests: number, passed_tests: number)
+TestSummary(total, passed) :-
+    total = count : { TestDefinition(_, _) },
+    passed = count : { TestResult(_, "passed", _) }.
+
+// Output Results
+.output TestResult(filename="test_results.csv", delimiter="\t", headers=1)
+.output TestSummary(filename="test_summary.csv", delimiter="\t", headers=1)
+.output CompletePathway(filename="complete_pathways.facts")
+.output SanitizedPathway(filename="sanitized_pathways.facts")
+.output UnsanitizedPathway(filename="unverified_pathways.facts")
+.output DrugTargetInteraction(filename="drug_interactions.facts")
