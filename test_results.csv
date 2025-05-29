@@ -1,0 +1,6 @@
+Test Name,Status,Message
+graphml_loaded,passed,GraphML file loaded successfully with 1733 nodes and 1924 edges
+node_classification,passed,Classified nodes: 556 Sources, 537 Sinks, 32 Sanitizers
+all_paths,passed,Found 1660 paths from Sources to Sinks
+unsafe_paths,warning,Found 1207 unsafe paths (no sanitizer)
+safe_paths,passed,Found 453 safe paths (with sanitizer)

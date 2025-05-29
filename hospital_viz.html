@@ -504,9 +504,9 @@
         sensitiveNodes: []
     };
     let svg = null;
-    let zoom = null;
     let zoomLevel = 1;
-    const gridSize = 150; // Size of each grid cell
+    const gridSize = 150;
+    let simulation = null;
 
     // Initialize the application
     document.addEventListener('DOMContentLoaded', async () => {
@@ -535,45 +535,16 @@
     async function loadPathwayData() {
         try {
             // Load the GraphML file
-            const response = await fetch('pathways.graphml');
+            const response = await fetch('Test/colt.graphml');
             if (!response.ok) throw new Error(`Failed to load GraphML: ${response.status}`);
 
             const graphmlText = await response.text();
             pathwayData = parseGraphML(graphmlText);
 
-            // Organize nodes by type for grid layout
-            const nodesByType = {
-                source: [],
-                sanitizer: [],
-                sink: []
-            };
+            // Classify nodes based on connectivity (similar to your test results)
+            classifyNodes();
 
-            // Categorize nodes
-            pathwayData.nodes.forEach(node => {
-                if (node.type === 'source') {
-                    nodesByType.source.push(node);
-                } else if (node.type === 'sanitizer') {
-                    nodesByType.sanitizer.push(node);
-                } else if (node.type === 'sink') {
-                    nodesByType.sink.push(node);
-                }
-            });
-
-            // Assign grid positions
-            let colIndex = 0;
-            for (const type in nodesByType) {
-                let rowIndex = 0;
-                nodesByType[type].forEach(node => {
-                    node.x = colIndex * gridSize + gridSize * 2;
-                    node.y = rowIndex * gridSize + gridSize * 2;
-                    node.width = 100;
-                    node.height = 40;
-                    rowIndex++;
-                });
-                colIndex++;
-            }
-
-            // Set sensitive nodes (sanitizers in this case)
+            // Set sensitive nodes (nodes with high connectivity)
             pathwayData.sensitiveNodes = pathwayData.nodes
                 .filter(node => node.type === 'sanitizer')
                 .map(node => node.id);
@@ -584,57 +555,78 @@
         }
     }
 
-    // Parse GraphML data
+    // Classify nodes based on connectivity
+    function classifyNodes() {
+        // Count connections for each node
+        const connectionCounts = {};
+        pathwayData.nodes.forEach(node => {
+            connectionCounts[node.id] = 0;
+        });
+
+        pathwayData.edges.forEach(edge => {
+            connectionCounts[edge.source]++;
+            connectionCounts[edge.target]++;
+        });
+
+        // Classify nodes
+        pathwayData.nodes.forEach(node => {
+            const connections = connectionCounts[node.id];
+            
+            if (connections === 0) {
+                node.type = 'isolated';
+            } else if (connections > 20) { // Highly connected nodes as sanitizers
+                node.type = 'sanitizer';
+            } else {
+                // Check if it's a source (many outgoing, few incoming)
+                const outgoing = pathwayData.edges.filter(e => e.source === node.id).length;
+                const incoming = pathwayData.edges.filter(e => e.target === node.id).length;
+                
+                if (outgoing > 5 && incoming < 3) {
+                    node.type = 'source';
+                } else if (incoming > 5 && outgoing < 3) {
+                    node.type = 'sink';
+                } else {
+                    node.type = 'normal';
+                }
+            }
+        });
+    }
+
+    // Parse GraphML data (modified for colt.graphml)
     function parseGraphML(graphmlText) {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(graphmlText, "text/xml");
         const nodes = [];
         const edges = [];
-        const sensitiveNodes = [];
 
         // Parse nodes
         const nodeElements = xmlDoc.getElementsByTagName("node");
         for (let i = 0; i < nodeElements.length; i++) {
             const node = nodeElements[i];
             const id = node.getAttribute("id");
-            const dataElements = node.getElementsByTagName("data");
-            let type = "normal";
-            let name = id;
-            let keggid = "";
-
-            for (let j = 0; j < dataElements.length; j++) {
-                const data = dataElements[j];
-                const key = data.getAttribute("key");
-                if (key === "class") type = data.textContent;
-                else if (key === "name") name = data.textContent === "none" ? id : data.textContent;
-                else if (key === "keggid") keggid = data.textContent;
-            }
-
-            nodes.push({ id, name, type, keggid });
-            if (type === "sanitizer") sensitiveNodes.push(id);
+            
+            nodes.push({ 
+                id, 
+                name: `Node ${id}`, // Default name
+                type: null // Will be classified later
+            });
         }
 
         // Parse edges
         const edgeElements = xmlDoc.getElementsByTagName("edge");
         for (let i = 0; i < edgeElements.length; i++) {
             const edge = edgeElements[i];
-            const source = edge.getAttribute("source");
-            const target = edge.getAttribute("target");
-            const dataElements = edge.getElementsByTagName("data");
-            let label = "";
-
-            for (let j = 0; j < dataElements.length; j++) {
-                const data = dataElements[j];
-                if (data.getAttribute("key") === "label") label = data.textContent;
-            }
-
-            edges.push({ source, target, label });
+            edges.push({ 
+                source: edge.getAttribute("source"), 
+                target: edge.getAttribute("target"),
+                label: "interacts" // Default label
+            });
         }
 
-        return { nodes, edges, sensitiveNodes };
+        return { nodes, edges, sensitiveNodes: [] };
     }
 
-    // Create the pathway visualization using D3
+    // Create the pathway visualization using D3 with force-directed layout
     function createPathwayVisualization() {
         const container = document.getElementById('pathway-container');
         const width = container.clientWidth;
@@ -648,41 +640,14 @@
             .attr("id", "viz-group")
             .attr("transform", `scale(${zoomLevel})`);
 
-        // Draw grid background
-        const gridGroup = vizGroup.append("g");
-
-        // Draw horizontal grid lines
-        for (let y = 0; y < height * 2; y += gridSize) {
-            gridGroup.append("line")
-                .attr("class", "grid-lines")
-                .attr("x1", 0)
-                .attr("y1", y)
-                .attr("x2", width * 2)
-                .attr("y2", y);
-        }
-
-        // Draw vertical grid lines
-        for (let x = 0; x < width * 2; x += gridSize) {
-            gridGroup.append("line")
-                .attr("class", "grid-lines")
-                .attr("x1", x)
-                .attr("y1", 0)
-                .attr("x2", x)
-                .attr("y2", height * 2);
-        }
-
-        // Add arrowhead marker
-        svg.append("defs").append("marker")
-            .attr("id", "arrowhead")
-            .attr("viewBox", "0 -5 10 10")
-            .attr("refX", 9)
-            .attr("refY", 0)
-            .attr("markerWidth", 8)
-            .attr("markerHeight", 8)
-            .attr("orient", "auto")
-            .append("path")
-            .attr("d", "M0,-5L10,0L0,5")
-            .attr("fill", "#495057");
+        // Create a force simulation
+        simulation = d3.forceSimulation(pathwayData.nodes)
+            .force("link", d3.forceLink(pathwayData.edges).id(d => d.id).distance(100))
+            .force("charge", d3.forceManyBody().strength(-300))
+            .force("center", d3.forceCenter(width / 2, height / 2))
+            .force("x", d3.forceX(width / 2).strength(0.05))
+            .force("y", d3.forceY(height / 2).strength(0.05))
+            .force("collision", d3.forceCollide().radius(40));
 
         // Create edges
         const link = vizGroup.append("g")
@@ -693,15 +658,6 @@
             .attr("class", "pathway-edge")
             .attr("marker-end", "url(#arrowhead)");
 
-        // Create edge labels
-        const edgeLabels = vizGroup.append("g")
-            .attr("class", "edge-labels")
-            .selectAll("text")
-            .data(pathwayData.edges.filter(d => d.label))
-            .enter().append("text")
-            .attr("class", "pathway-edge-label")
-            .text(d => d.label);
-
         // Create nodes
         const node = vizGroup.append("g")
             .attr("class", "nodes")
@@ -709,7 +665,10 @@
             .data(pathwayData.nodes)
             .enter().append("g")
             .attr("class", d => `node-group ${shouldShowNode(d) ? '' : 'hidden'}`)
-            .attr("transform", d => `translate(${d.x - d.width/2},${d.y - d.height/2})`)
+            .call(d3.drag()
+                .on("start", dragstarted)
+                .on("drag", dragged)
+                .on("end", dragended))
             .on("click", function(event, d) {
                 showNodeDetails(d);
             });
@@ -722,8 +681,8 @@
                 if (pathwayData.sensitiveNodes.includes(d.id)) classes += " sensitive";
                 return classes;
             })
-            .attr("width", d => d.width)
-            .attr("height", d => d.height)
+            .attr("width", 80)
+            .attr("height", 40)
             .attr("rx", 6)
             .attr("ry", 6);
 
@@ -732,42 +691,41 @@
             .attr("class", "pathway-node-text")
             .attr("dy", "0.35em")
             .text(d => d.name)
-            .attr("x", d => d.width / 2)
-            .attr("y", d => d.height / 2);
+            .attr("x", 40)
+            .attr("y", 20);
 
-        // Position edges and labels
-        link
-            .attr("x1", d => {
-                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
-                return sourceNode ? sourceNode.x : 0;
-            })
-            .attr("y1", d => {
-                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
-                return sourceNode ? sourceNode.y : 0;
-            })
-            .attr("x2", d => {
-                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
-                return targetNode ? targetNode.x : 0;
-            })
-            .attr("y2", d => {
-                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
-                return targetNode ? targetNode.y : 0;
-            });
+        // Update positions on simulation tick
+        simulation.on("tick", () => {
+            link
+                .attr("x1", d => d.source.x)
+                .attr("y1", d => d.source.y)
+                .attr("x2", d => d.target.x)
+                .attr("y2", d => d.target.y);
 
-        edgeLabels
-            .attr("x", d => {
-                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
-                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
-                return sourceNode && targetNode ? (sourceNode.x + targetNode.x) / 2 : 0;
-            })
-            .attr("y", d => {
-                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
-                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
-                return sourceNode && targetNode ? (sourceNode.y + targetNode.y) / 2 : 0;
-            });
+            node
+                .attr("transform", d => `translate(${d.x - 40},${d.y - 20})`);
+        });
 
         // Update issues list
         updateIssuesList();
+    }
+
+    // Drag functions for force-directed layout
+    function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+    }
+
+    function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+    }
+
+    function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
     }
 
     // Determine if a node should be shown based on current filters

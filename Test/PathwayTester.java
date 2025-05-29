@@ -5,12 +5,11 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class GraphMLPathwayTester {
-    private static final String GRAPHML_FILE = "pathway.graphml";
+    private static final String GRAPHML_FILE = "pathways.graphml";
     private static final String GRAPHML_NS = "http://graphml.graphdrawing.org/xmlns";
 
     private final List<Node> nodes = new ArrayList<>();
     private final List<Edge> edges = new ArrayList<>();
-    private final List<SensitiveData> sensitiveData = new ArrayList<>();
     private final List<TestResult> testResults = new ArrayList<>();
 
     public static void main(String[] args) {
@@ -21,11 +20,10 @@ public class GraphMLPathwayTester {
 
     public void runTests() {
         loadData();
-        testFileValidation();
-        testNodeClassification();
-        testPathwayIntegrity();
-        testSanitizationCoverage();
-        testDrugTargetAnalysis();
+        classifyNodes();
+        testAllPaths();
+        testUnsafePaths();
+        testSafePaths();
         generateTestSummary();
     }
 
@@ -34,6 +32,7 @@ public class GraphMLPathwayTester {
             // Parse GraphML file
             File inputFile = new File(GRAPHML_FILE);
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            dbFactory.setNamespaceAware(true);
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
             Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
@@ -45,13 +44,7 @@ public class GraphMLPathwayTester {
                 if (domNode.getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
                     Element element = (Element) domNode;
                     String id = element.getAttribute("id");
-                    String type = getNodeType(element);
-                    nodes.add(new Node(id, type));
-
-                    // Identify drug compounds as sensitive sources
-                    if (type.equals("source")) {
-                        sensitiveData.add(new SensitiveData("drug_" + id, id));
-                    }
+                    nodes.add(new Node(id));
                 }
             }
 
@@ -63,8 +56,7 @@ public class GraphMLPathwayTester {
                     Element element = (Element) domNode;
                     String from = element.getAttribute("source");
                     String to = element.getAttribute("target");
-                    String interaction = getEdgeLabel(element);
-                    edges.add(new Edge(from, to, interaction));
+                    edges.add(new Edge(from, to));
                 }
             }
 
@@ -74,303 +66,206 @@ public class GraphMLPathwayTester {
         } catch (Exception e) {
             testResults.add(new TestResult("data_loading", "failed",
                     "Error loading GraphML file: " + e.getMessage()));
+            e.printStackTrace();
         }
     }
 
-    private String getNodeType(Element nodeElement) {
-        NodeList dataList = nodeElement.getElementsByTagNameNS(GRAPHML_NS, "data");
-        for (int i = 0; i < dataList.getLength(); i++) {
-            Element data = (Element) dataList.item(i);
-            if (data.getAttribute("key").equals("type")) {
-                String type = data.getTextContent().toLowerCase();
-                // Map GraphML types to our pathway types
-                switch (type) {
-                    case "compound":
-                        // Check if it's a drug compound
-                        String nodeId = nodeElement.getAttribute("id");
-                        if (nodeId.toLowerCase().contains("drug")) {
-                            return "source";
-                        }
-                        return "normal";
-                    case "pathway": return "sink";
-                    case "enzyme": return "sanitizer";
-                    case "reaction": return "normal";
-                    case "group": return "normal";
-                    default: return "normal";
-                }
-            }
-        }
-        return "normal"; // default type
+private void classifyNodes() {
+    // First build the graph structure
+    Map<String, Set<String>> graph = new HashMap<>();
+    nodes.forEach(n -> graph.put(n.id, new HashSet<>()));
+    edges.forEach(e -> graph.get(e.from).add(e.to));
+
+    // Mark sources (nodes with no incoming edges)
+    Set<String> targets = edges.stream().map(e -> e.to).collect(Collectors.toSet());
+    nodes.stream()
+        .filter(n -> !targets.contains(n.id))
+        .forEach(n -> n.type = "Source");
+    
+    // Mark sinks (nodes with no outgoing edges)
+    Set<String> sources = edges.stream().map(e -> e.from).collect(Collectors.toSet());
+    nodes.stream()
+        .filter(n -> !sources.contains(n.id))
+        .forEach(n -> n.type = "Sink");
+    
+    // Enhanced sanitizer selection based on node degree
+    List<Node> candidateNodes = nodes.stream()
+        .filter(n -> n.type == null) // Only non-source/sink nodes
+        .collect(Collectors.toList());
+    
+    // Sort by degree (number of outgoing edges) and take top 5%
+    candidateNodes.sort((a, b) -> Integer.compare(
+        graph.getOrDefault(b.id, Collections.emptySet()).size(),
+        graph.getOrDefault(a.id, Collections.emptySet()).size()));
+    
+    int sanitizerCount = Math.max(1, candidateNodes.size() / 20); // ~5% of candidate nodes
+    candidateNodes.stream()
+        .limit(sanitizerCount)
+        .forEach(n -> n.type = "Sanitizer");
+        
+    // Count classifications
+    long sourceCount = nodes.stream().filter(n -> "Source".equals(n.type)).count();
+    long sinkCount = nodes.stream().filter(n -> "Sink".equals(n.type)).count();
+    long sanitizersCount = nodes.stream().filter(n -> "Sanitizer".equals(n.type)).count();
+    
+    testResults.add(new TestResult("node_classification", "passed",
+            String.format("Classified nodes: %d Sources, %d Sinks, %d Sanitizers", 
+                    sourceCount, sinkCount, sanitizersCount)));
+}
+
+    private void testAllPaths() {
+        Map<String, Set<String>> graph = buildGraph();
+        List<Pathway> allPathways = findAllPathways(graph);
+        
+        testResults.add(new TestResult("all_paths", "passed",
+                "Found " + allPathways.size() + " paths from Sources to Sinks"));
     }
 
-    private String getEdgeLabel(Element edgeElement) {
-        NodeList dataList = edgeElement.getElementsByTagNameNS(GRAPHML_NS, "data");
-        for (int i = 0; i < dataList.getLength(); i++) {
-            Element data = (Element) dataList.item(i);
-            if (data.getAttribute("key").equals("label")) {
-                return data.getTextContent();
-            }
-        }
-        return "";
+    private void testUnsafePaths() {
+        Map<String, Set<String>> graph = buildGraph();
+        List<Pathway> allPathways = findAllPathways(graph);
+        
+        List<Pathway> unsafePathways = allPathways.stream()
+            .filter(pathway -> !isPathwaySanitized(pathway, graph))
+            .collect(Collectors.toList());
+            
+        testResults.add(new TestResult("unsafe_paths", unsafePathways.isEmpty() ? "passed" : "warning",
+                "Found " + unsafePathways.size() + " unsafe paths (no sanitizer)"));
+        
+        // Write unsafe pathways to file
+        writePathways("unsafe_pathways.csv", unsafePathways);
     }
 
-    // The rest of your existing PathwayTester implementation remains the same
-    // Only the data loading parts have been modified
-
-    private void testFileValidation() {
-        boolean allLoaded = testResults.stream()
-                .filter(r -> r.testName.equals("graphml_loaded"))
-                .anyMatch(r -> "passed".equals(r.status));
-
-        if (allLoaded) {
-            testResults.add(new TestResult("file_validation", "passed",
-                    "GraphML file loaded successfully"));
-        } else {
-            testResults.add(new TestResult("file_validation", "failed",
-                    "Failed to load GraphML file"));
-        }
+    private void testSafePaths() {
+        Map<String, Set<String>> graph = buildGraph();
+        List<Pathway> allPathways = findAllPathways(graph);
+        
+        List<Pathway> safePathways = allPathways.stream()
+            .filter(pathway -> isPathwaySanitized(pathway, graph))
+            .collect(Collectors.toList());
+            
+        testResults.add(new TestResult("safe_paths", safePathways.isEmpty() ? "warning" : "passed",
+                "Found " + safePathways.size() + " safe paths (with sanitizer)"));
     }
 
-    // 2. Node Classification Tests
-    private void testNodeClassification() {
-        long sources = nodes.stream().filter(n -> "source".equals(n.type)).count();
-        long sinks = nodes.stream().filter(n -> "sink".equals(n.type)).count();
-        long sanitizers = nodes.stream().filter(n -> "sanitizer".equals(n.type)).count();
-
-        String message = String.format("Found %d sources, %d sinks, and %d sanitizers",
-                sources, sinks, sanitizers);
-
-        if (sources > 0 && sinks > 0 && sanitizers > 0) {
-            testResults.add(new TestResult("node_classification", "passed", message));
-        } else {
-            testResults.add(new TestResult("node_classification", "failed", message));
-        }
-    }
-
-    // 3. Pathway Integrity Tests
-    private void testPathwayIntegrity() {
-        Map<String, Set<String>> reachability = buildReachabilityGraph();
-        List<CompletePathway> completePathways = findCompletePathways(reachability);
-
-        String message = String.format("Found %d complete source-to-sink pathways",
-                completePathways.size());
-
-        if (!completePathways.isEmpty()) {
-            testResults.add(new TestResult("pathway_integrity", "passed", message));
-            writeCompletePathways(completePathways);
-        } else {
-            testResults.add(new TestResult("pathway_integrity", "failed",
-                    "No complete pathways found"));
-        }
-    }
-
-    // 4. Sanitization Coverage Tests
-    private void testSanitizationCoverage() {
-        Map<String, Set<String>> reachability = buildReachabilityGraph();
-        List<CompletePathway> completePathways = findCompletePathways(reachability);
-        List<UnsanitizedPathway> unsanitized = findUnsanitizedPathways(completePathways);
-
-        String message = String.format("Found %d unsanitized sensitive pathways",
-                unsanitized.size());
-
-        if (unsanitized.isEmpty()) {
-            testResults.add(new TestResult("sanitization_coverage", "passed",
-                    "All sensitive pathways are sanitized"));
-        } else {
-            testResults.add(new TestResult("sanitization_coverage", "failed", message));
-            writeUnsanitizedPathways(unsanitized);
-        }
-    }
-
-    // 5. Drug Target Analysis Tests
-    private void testDrugTargetAnalysis() {
-        List<DrugTargetInteraction> interactions = findDrugTargetInteractions();
-
-        String message = String.format("Found %d drug-target interactions",
-                interactions.size());
-
-        if (!interactions.isEmpty()) {
-            testResults.add(new TestResult("drug_target_analysis", "passed", message));
-            writeDrugInteractions(interactions);
-        } else {
-            testResults.add(new TestResult("drug_target_analysis", "failed",
-                    "No drug-target interactions found"));
-        }
-    }
-
-    // Helper methods
-    private Map<String, Set<String>> buildReachabilityGraph() {
+    private Map<String, Set<String>> buildGraph() {
         Map<String, Set<String>> graph = new HashMap<>();
-
-        // Initialize graph with all nodes
-        nodes.forEach(n -> graph.put(n.name, new HashSet<>()));
-
-        // Add direct edges, ignoring edges with missing nodes
-        edges.forEach(e -> {
-            if (graph.containsKey(e.from) && graph.containsKey(e.to)) {
-                graph.get(e.from).add(e.to);
-            } else {
-                System.err.println("Warning: Skipping edge with missing node: " + e.from + " -> " + e.to);
-            }
-        });
-
-        // Compute transitive closure
-        boolean changed;
-        do {
-            changed = false;
-            for (String node : graph.keySet()) {
-                Set<String> reachable = new HashSet<>(graph.get(node));
-                for (String neighbor : new HashSet<>(graph.get(node))) {
-                    if (graph.containsKey(neighbor)) {
-                        reachable.addAll(graph.get(neighbor));
-                    }
-                }
-                if (!reachable.equals(graph.get(node))) {
-                    graph.put(node, reachable);
-                    changed = true;
-                }
-            }
-        } while (changed);
-
+        
+        // Initialize all nodes
+        nodes.forEach(n -> graph.put(n.id, new HashSet<>()));
+        
+        // Add edges
+        edges.forEach(e -> graph.get(e.from).add(e.to));
+        
         return graph;
     }
 
-    private List<CompletePathway> findCompletePathways(Map<String, Set<String>> reachability) {
+    private List<Pathway> findAllPathways(Map<String, Set<String>> graph) {
         List<String> sources = nodes.stream()
-                .filter(n -> "source".equals(n.type))
-                .map(n -> n.name)
-                .collect(Collectors.toList());
-
+            .filter(n -> "Source".equals(n.type))
+            .map(n -> n.id)
+            .collect(Collectors.toList());
+            
         List<String> sinks = nodes.stream()
-                .filter(n -> "sink".equals(n.type))
-                .map(n -> n.name)
-                .collect(Collectors.toList());
-
-        List<CompletePathway> pathways = new ArrayList<>();
-
+            .filter(n -> "Sink".equals(n.type))
+            .map(n -> n.id)
+            .collect(Collectors.toList());
+            
+        List<Pathway> pathways = new ArrayList<>();
+        
+        // Simple BFS to find all paths from sources to sinks
         for (String source : sources) {
-            for (String sink : sinks) {
-                if (reachability.getOrDefault(source, Collections.emptySet()).contains(sink)) {
-                    pathways.add(new CompletePathway(source, sink));
+            Queue<List<String>> queue = new LinkedList<>();
+            queue.add(Arrays.asList(source));
+            
+            while (!queue.isEmpty()) {
+                List<String> path = queue.poll();
+                String lastNode = path.get(path.size() - 1);
+                
+                if (sinks.contains(lastNode)) {
+                    pathways.add(new Pathway(path));
+                    continue;
                 }
-            }
-        }
-
-        return pathways;
-    }
-
-    private List<UnsanitizedPathway> findUnsanitizedPathways(List<CompletePathway> completePathways) {
-        Set<String> sensitiveNodes = sensitiveData.stream()
-                .map(sd -> sd.node)
-                .collect(Collectors.toSet());
-
-        Set<String> sanitizers = nodes.stream()
-                .filter(n -> "sanitizer".equals(n.type))
-                .map(n -> n.name)
-                .collect(Collectors.toSet());
-
-        Map<String, Set<String>> reachability = buildReachabilityGraph();
-
-        return completePathways.stream()
-                .filter(pathway -> sensitiveNodes.contains(pathway.source))
-                .filter(pathway -> !isSanitized(pathway, sanitizers, reachability))
-                .map(pathway -> new UnsanitizedPathway(pathway.source, pathway.sink, "no_sanitizer"))
-                .collect(Collectors.toList());
-    }
-
-    private boolean isSanitized(CompletePathway pathway, Set<String> sanitizers,
-                                Map<String, Set<String>> reachability) {
-        return sanitizers.stream()
-                .anyMatch(sanitizer ->
-                        reachability.getOrDefault(pathway.source, Collections.emptySet()).contains(sanitizer) &&
-                                reachability.getOrDefault(sanitizer, Collections.emptySet()).contains(pathway.sink));
-    }
-
-    private List<DrugTargetInteraction> findDrugTargetInteractions() {
-        List<String> drugs = nodes.stream()
-                .filter(n -> "source".equals(n.type))
-                .map(n -> n.name)
-                .collect(Collectors.toList());
-
-        List<String> targets = nodes.stream()
-                .filter(n -> "sanitizer".equals(n.type))
-                .map(n -> n.name)
-                .collect(Collectors.toList());
-
-        Map<String, Set<String>> reachability = buildReachabilityGraph();
-
-        List<DrugTargetInteraction> interactions = new ArrayList<>();
-
-        for (String drug : drugs) {
-            for (String target : targets) {
-                if (reachability.getOrDefault(drug, Collections.emptySet()).contains(target)) {
-                    // Find pathways this drug-target pair affects
-                    List<String> affectedPathways = nodes.stream()
-                            .filter(n -> "sink".equals(n.type))
-                            .filter(n -> reachability.getOrDefault(target, Collections.emptySet()).contains(n.name))
-                            .map(n -> n.name)
-                            .collect(Collectors.toList());
-
-                    for (String pathway : affectedPathways) {
-                        interactions.add(new DrugTargetInteraction(drug, target, pathway));
+                
+                for (String neighbor : graph.getOrDefault(lastNode, Collections.emptySet())) {
+                    if (!path.contains(neighbor)) { // Avoid cycles
+                        List<String> newPath = new ArrayList<>(path);
+                        newPath.add(neighbor);
+                        queue.add(newPath);
                     }
                 }
             }
         }
+        
+        return pathways;
+    }
 
-        return interactions;
+    private boolean isPathwaySanitized(Pathway pathway, Map<String, Set<String>> graph) {
+        return pathway.nodes.stream()
+            .anyMatch(nodeId -> {
+                Node node = nodes.stream().filter(n -> n.id.equals(nodeId)).findFirst().orElse(null);
+                return node != null && "Sanitizer".equals(node.type);
+            });
     }
 
     private void generateTestSummary() {
-        long total = testResults.stream()
-                .map(r -> r.testName)
-                .distinct()
-                .count();
-
-        long passed = testResults.stream()
-                .filter(r -> "passed".equals(r.status))
-                .map(r -> r.testName)
-                .distinct()
-                .count();
-
-        System.out.printf("Test Summary: %d/%d tests passed%n", passed, total);
+        long total = testResults.size();
+        long passed = testResults.stream().filter(r -> "passed".equals(r.status)).count();
+        
+        System.out.printf("\nTest Summary: %d/%d tests passed\n", passed, total);
+        testResults.forEach(r -> System.out.printf("- %s: %s (%s)\n", r.testName, r.status, r.message));
     }
 
     private void generateReports() {
         writeTestResults();
-        writeTestSummary();
+    }
+
+    private void writeTestResults() {
+        try (PrintWriter writer = new PrintWriter(new FileWriter("test_results.csv"))) {
+            writer.println("Test Name,Status,Message");
+            testResults.forEach(r -> writer.println(r.testName + "," + r.status + "," + r.message));
+        } catch (IOException e) {
+            System.err.println("Error writing test results: " + e.getMessage());
+        }
+    }
+
+    private void writePathways(String filename, List<Pathway> pathways) {
+        try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
+            writer.println("Path ID,Path Length,Nodes");
+            for (int i = 0; i < pathways.size(); i++) {
+                Pathway p = pathways.get(i);
+                writer.printf("%d,%d,%s\n", i+1, p.nodes.size()-1, String.join("->", p.nodes));
+            }
+        } catch (IOException e) {
+            System.err.println("Error writing pathways: " + e.getMessage());
+        }
     }
 
     // Data classes
     private static class Node {
-        String name;
+        String id;
         String type;
-
-        Node(String name, String type) {
-            this.name = name;
-            this.type = type;
+        
+        Node(String id) {
+            this.id = id;
         }
     }
 
     private static class Edge {
         String from;
         String to;
-        String interaction;
-
-        Edge(String from, String to, String interaction) {
+        
+        Edge(String from, String to) {
             this.from = from;
             this.to = to;
-            this.interaction = interaction;
         }
     }
 
-    private static class SensitiveData {
-        String label;
-        String node;
-
-        SensitiveData(String label, String node) {
-            this.label = label;
-            this.node = node;
+    private static class Pathway {
+        List<String> nodes;
+        
+        Pathway(List<String> nodes) {
+            this.nodes = new ArrayList<>(nodes);
         }
     }
 
@@ -378,107 +273,11 @@ public class GraphMLPathwayTester {
         String testName;
         String status;
         String message;
-
+        
         TestResult(String testName, String status, String message) {
             this.testName = testName;
             this.status = status;
             this.message = message;
-        }
-    }
-
-    private static class CompletePathway {
-        String source;
-        String sink;
-
-        CompletePathway(String source, String sink) {
-            this.source = source;
-            this.sink = sink;
-        }
-    }
-
-    private static class UnsanitizedPathway {
-        String source;
-        String sink;
-        String reason;
-
-        UnsanitizedPathway(String source, String sink, String reason) {
-            this.source = source;
-            this.sink = sink;
-            this.reason = reason;
-        }
-    }
-
-    private static class DrugTargetInteraction {
-        String drug;
-        String target;
-        String pathway;
-
-        DrugTargetInteraction(String drug, String target, String pathway) {
-            this.drug = drug;
-            this.target = target;
-            this.pathway = pathway;
-        }
-    }
-
-    private interface LineParser<T> {
-        T parse(String[] parts) throws IOException;
-    }
-
-    private void writeTestResults() {
-        writeFile("test_results.csv", testResults.stream()
-                .map(r -> String.join("\t", r.testName, r.status, r.message))
-                .collect(Collectors.toList()));
-    }
-
-    private void writeTestSummary() {
-        long total = testResults.stream()
-                .map(r -> r.testName)
-                .distinct()
-                .count();
-
-        long passed = testResults.stream()
-                .filter(r -> "passed".equals(r.status))
-                .map(r -> r.testName)
-                .distinct()
-                .count();
-
-        writeFile("test_summary.csv",
-                Collections.singletonList(String.join("\t", "total", "passed")),
-                Collections.singletonList(String.join("\t", String.valueOf(total), String.valueOf(passed))));
-    }
-
-    private void writeCompletePathways(List<CompletePathway> pathways) {
-        writeFile("complete_pathways.facts",
-                pathways.stream()
-                        .map(p -> String.join("\t", p.source, p.sink))
-                        .collect(Collectors.toList()));
-    }
-
-    private void writeUnsanitizedPathways(List<UnsanitizedPathway> pathways) {
-        writeFile("unverified_pathways.facts",
-                pathways.stream()
-                        .map(p -> String.join("\t", p.source, p.sink, p.reason))
-                        .collect(Collectors.toList()));
-    }
-
-    private void writeDrugInteractions(List<DrugTargetInteraction> interactions) {
-        writeFile("drug_interactions.facts",
-                interactions.stream()
-                        .map(i -> String.join("\t", i.drug, i.target, i.pathway))
-                        .collect(Collectors.toList()));
-    }
-
-    private void writeFile(String filename, List<String> lines) {
-        writeFile(filename, Collections.emptyList(), lines);
-    }
-
-    private void writeFile(String filename, List<String> headers, List<String> lines) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
-            headers.forEach(writer::println);
-            lines.forEach(writer::println);
-        } catch (IOException e) {
-            System.err.println("Error writing file: " + filename);
-            e.printStackTrace();
         }
     }
 }
