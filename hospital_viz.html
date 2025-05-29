@@ -1,283 +1,500 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEGG Pathway Visualizer</title>
-    <script src="https://cdn.jsdelivr.net/npm/panzoom@9.4.3/dist/panzoom.min.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            overflow: hidden;
-            background-color: #f0f0f0;
+            box-sizing: border-box;
         }
-        
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+            color: #333;
+            line-height: 1.6;
+            overflow: hidden;
+        }
+
         #header {
-            background-color: #2c3e50;
+            background: linear-gradient(to right, #2c3e50, #1a2a6c);
             color: white;
-            padding: 5px 10px;
+            padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            z-index: 100;
         }
-        
+
+        #header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #header h1 svg {
+            width: 30px;
+            height: 30px;
+            fill: #4CAF50;
+        }
+
         #main-container {
             display: flex;
-            height: calc(100vh - 30px);
+            height: calc(100vh - 68px);
+            padding: 15px;
+            gap: 20px;
         }
-        
+
         #pathway-container {
-            flex-grow: 1;
-            position: relative;
+            flex: 1;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
             overflow: hidden;
-            background-color: white;
-        }
-        
-        #pathway-svg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        #controls {
-            width: 280px;
-            background-color: #f8f8f8;
-            border-left: 1px solid #ddd;
-            overflow-y: auto;
-            padding: 8px;
-            font-size: 12px;
-        }
-        
-        .control-section {
-            margin-bottom: 12px;
-            border-bottom: 1px solid #e0e0e0;
-            padding-bottom: 8px;
-        }
-        
-        .control-section h3 {
-            margin: 5px 0;
-            color: #2c3e50;
-            font-size: 13px;
-            font-weight: bold;
-        }
-        
-        .checkbox-label {
-            display: block;
-            margin-bottom: 5px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-        
-        #node-info {
-            background-color: #f0f0f0;
-            padding: 6px;
-            border-radius: 2px;
-            font-family: Arial, sans-serif;
-            font-size: 12px;
-            line-height: 1.3;
-        }
-        
-        #zoom-controls {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            z-index: 100;
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-        
-        #zoom-controls button {
-            width: 26px;
-            height: 26px;
-            border: 1px solid #999;
-            background: #f8f8f8;
-            border-radius: 2px;
-            cursor: pointer;
-            font-size: 12px;
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
-        .pathway-node {
-            position: absolute;
-            border: 1px solid #333;
-            border-radius: 2px;
+
+        #pathway-svg {
+            width: 100%;
+            height: 100%;
+            background-color: #f8f9fa;
+        }
+
+        #controls {
+            width: 320px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            overflow-y: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .control-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .control-section h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+
+        .control-section h3 svg {
+            width: 20px;
+            height: 20px;
+            fill: #4CAF50;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
             cursor: pointer;
-            font-size: 11px;
-            padding: 1px 3px;
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            font-size: 15px;
+            padding: 8px;
+            border-radius: 6px;
+            transition: background 0.3s;
         }
-        
-        .pathway-node:hover {
-            border-color: #0066cc;
-            box-shadow: 0 0 3px rgba(0, 102, 204, 0.7);
-            z-index: 10;
+
+        .checkbox-label:hover {
+            background: #e9ecef;
         }
-        
+
+        .checkbox-label input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        #node-info {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            min-height: 150px;
+            border: 1px solid #dee2e6;
+            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+            white-space: pre-wrap;
+            overflow-y: auto;
+            max-height: 200px;
+        }
+
+        #zoom-controls {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            padding: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        #zoom-controls button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #4CAF50;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: all 0.2s;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+        }
+
+        #zoom-controls button:hover {
+            background: #3d8b40;
+            transform: translateY(-2px);
+        }
+
+        .pathway-node {
+            fill: #e9ecef;
+            stroke: #6c757d;
+            stroke-width: 1.5px;
+            cursor: pointer;
+            rx: 6;
+            ry: 6;
+            transition: all 0.3s ease;
+        }
+
         .pathway-node.source {
-            background-color: #ffdddd;
-            border-color: #cc0000;
+            fill: #ffcdd2;
+            stroke: #c62828;
         }
-        
+
         .pathway-node.sink {
-            background-color: #ddffdd;
-            border-color: #009900;
+            fill: #c8e6c9;
+            stroke: #2e7d32;
         }
-        
+
         .pathway-node.sanitizer {
-            background-color: #ddddff;
-            border-color: #0000cc;
+            fill: #d1c4e9;
+            stroke: #4527a0;
         }
-        
+
         .pathway-node.sensitive {
-            border-color: red !important;
-            border-style: dashed !important;
+            stroke: #d32f2f !important;
+            stroke-dasharray: 4,4;
+            stroke-width: 2px;
+            filter: drop-shadow(0 0 3px rgba(211, 47, 47, 0.5));
         }
-        
+
+        .pathway-node.highlighted {
+            stroke: #ff9800;
+            stroke-width: 3px;
+            filter: drop-shadow(0 0 8px rgba(255, 152, 0, 0.7));
+            transform: scale(1.05);
+        }
+
+        .pathway-node-text {
+            font-size: 12px;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+            fill: #212529;
+            font-weight: 500;
+        }
+
+        .pathway-edge {
+            stroke: #495057;
+            stroke-width: 2px;
+            fill: none;
+            marker-end: url(#arrowhead);
+        }
+
+        .pathway-edge-label {
+            font-size: 11px;
+            fill: #343a40;
+            text-anchor: middle;
+            dominant-baseline: middle;
+            pointer-events: none;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+
         #loading {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255,255,255,0.9);
+            background: rgba(255, 255, 255, 0.95);
             display: flex;
             justify-content: center;
             align-items: center;
             z-index: 1000;
-            font-size: 14px;
+            font-size: 18px;
+            flex-direction: column;
+            gap: 20px;
         }
-        
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(76, 175, 80, 0.3);
+            border-radius: 50%;
+            border-top-color: #4CAF50;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
         .suspicious-item {
-            background: #ffeeee;
-            padding: 6px;
-            margin-bottom: 5px;
-            border-radius: 2px;
-            border-left: 3px solid #ff6666;
-            font-size: 12px;
+            background: #fff3f3;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #ff6b6b;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s;
         }
-        
-        #pathway-selector {
-            padding: 3px;
-            border-radius: 2px;
-            border: 1px solid #999;
-            font-size: 12px;
-            width: 180px;
+
+        .suspicious-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        
+
+        .suspicious-item button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background 0.3s;
+        }
+
+        .suspicious-item button:hover {
+            background: #3d8b40;
+        }
+
         #search-box {
-            padding: 3px;
-            border-radius: 2px;
-            border: 1px solid #999;
-            font-size: 12px;
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid #ced4da;
+            font-size: 15px;
             width: 100%;
-            margin-bottom: 8px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            transition: all 0.3s;
         }
-        
+
+        #search-box:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+            background: white;
+        }
+
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
         .legend-item {
             display: flex;
             align-items: center;
-            margin-bottom: 4px;
-            font-size: 11px;
+            font-size: 13px;
+            background: #f8f9fa;
+            padding: 6px 10px;
+            border-radius: 20px;
         }
-        
+
         .legend-color {
-            width: 10px;
-            height: 10px;
-            border-radius: 1px;
-            margin-right: 4px;
-            border: 1px solid #999;
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+            margin-right: 8px;
+            border: 1px solid rgba(0,0,0,0.1);
         }
-        
-        .pathway-edge {
-            stroke: #666;
-            stroke-width: 1px;
-            marker-end: url(#arrowhead);
+
+        .grid-lines {
+            stroke: #dee2e6;
+            stroke-width: 1;
+            stroke-dasharray: 2,2;
         }
-        
-        .pathway-edge-label {
-            font-size: 10px;
-            fill: #333;
-            background-color: white;
-            padding: 0 2px;
+
+        .title-section {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a2a6c;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #adb5bd;
+        }
+
+        .path-group {
+            fill: none;
+            stroke: #4CAF50;
+            stroke-width: 2;
+            opacity: 0.7;
+        }
+
+        /* Zoom overlay indicator */
+        .zoom-indicator {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 10;
         }
     </style>
 </head>
 <body>
-    <div id="header">
-        <h1>KEGG Pathway Visualizer</h1>
-        <div>
-            <select id="pathway-selector">
-                <option value="metabolic">Metabolic pathways</option>
-            </select>
-        </div>
+<div id="header">
+    <h1>
+        <svg viewBox="0 0 24 24">
+            <path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V5C2,4.45 2.2,4 2.58,3.58C2.95,3.16 3.42,3 4,3H14L20,9M14,9V4H4V19H20V9H14Z"></path>
+        </svg>
+        KEGG Pathway Visualizer
+    </h1>
+    <div>
+        <select id="pathway-selector" style="padding: 8px 12px; border-radius: 6px; background: #f8f9fa; border: 1px solid #ced4da;">
+            <option value="metabolic">Metabolic pathways</option>
+            <option value="biosynthesis">Biosynthetic pathways</option>
+            <option value="degradation">Degradation pathways</option>
+        </select>
     </div>
-    
-    <div id="main-container">
-        <div id="pathway-container">
-            <svg id="pathway-svg" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
-                    refX="9" refY="3.5" orient="auto">
-                        <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
-                    </marker>
-                </defs>
-            </svg>
-            
-            <div id="zoom-controls">
-                <button id="zoom-in" title="Zoom in">+</button>
-                <button id="zoom-out" title="Zoom out">-</button>
-                <button id="reset-zoom" title="Reset zoom">↻</button>
-            </div>
+</div>
+
+<div id="main-container">
+    <div id="pathway-container">
+        <svg id="pathway-svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+                </marker>
+                <linearGradient id="node-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#e9ecef" />
+                    <stop offset="100%" stop-color="#dee2e6" />
+                </linearGradient>
+            </defs>
+        </svg>
+        <div id="zoom-controls">
+            <button id="zoom-in" title="Zoom in">+</button>
+            <button id="zoom-out" title="Zoom out">−</button>
+            <button id="reset-zoom" title="Reset zoom">↺</button>
         </div>
-        
-        <div id="controls">
-            <div class="control-section">
-                <h3>Search</h3>
-                <input type="text" id="search-box" placeholder="Search nodes...">
+        <div class="zoom-indicator">Zoom: 100%</div>
+    </div>
+
+    <div id="controls">
+        <div class="control-section">
+            <h3>
+                <svg viewBox="0 0 24 24">
+                    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                </svg>
+                Search & Filter
+            </h3>
+            <input type="text" id="search-box" placeholder="Search nodes...">
+            <div class="checkbox-label">
+                <input type="checkbox" id="show-sources" checked>
+                <span>Sources (Compounds)</span>
             </div>
-            
-            <div class="control-section">
-                <h3>Display Options</h3>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="show-sources" checked> Sources (Red)
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="show-sinks" checked> Sinks (Green)
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="show-sanitizers" checked> Sanitizers (Blue)
-                </label>
-                <label class="checkbox-label">
-                    <input type="checkbox" id="highlight-sensitive" checked> Highlight Sensitive
-                </label>
+            <div class="checkbox-label">
+                <input type="checkbox" id="show-sinks" checked>
+                <span>Sinks (Pathways)</span>
             </div>
-            
-            <div class="control-section">
-                <h3>Node Information</h3>
-                <div id="node-info">
-                    Click on any node to see details
+            <div class="checkbox-label">
+                <input type="checkbox" id="show-sanitizers" checked>
+                <span>Sanitizers (Enzymes)</span>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="highlight-sensitive" checked>
+                <span>Highlight Sensitive</span>
+            </div>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #ffcdd2;"></div>
+                    <span>Source</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #c8e6c9;"></div>
+                    <span>Sink</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #d1c4e9;"></div>
+                    <span>Sanitizer</span>
                 </div>
             </div>
-            
-            <div class="control-section">
-                <h3>Detected Issues</h3>
-                <div id="issues-list">
-                    Loading sensitive nodes...
-                </div>
+        </div>
+
+        <div class="control-section">
+            <h3>
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path>
+                </svg>
+                Node Information
+            </h3>
+            <div id="node-info">
+                Click on any node to see details
+            </div>
+        </div>
+
+        <div class="control-section">
+            <h3>
+                <svg viewBox="0 0 24 24">
+                    <path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"></path>
+                </svg>
+                Detected Issues
+            </h3>
+            <div id="issues-list">
+                Loading sensitive nodes...
             </div>
         </div>
     </div>
-    
-    <div id="loading">Loading pathway data...</div>
+</div>
+
+<div id="loading">
+    <div class="spinner"></div>
+    <div>Loading pathway data...</div>
+</div>
 
 <script>
     // Global variables
@@ -286,23 +503,26 @@
         edges: [],
         sensitiveNodes: []
     };
-    let panzoomInstance = null;
-    let currentPathway = 'metabolic';
-    let nodeElements = [];
-    let edgeElements = [];
-    
+    let svg = null;
+    let zoom = null;
+    let zoomLevel = 1;
+    const gridSize = 150; // Size of each grid cell
+
     // Initialize the application
     document.addEventListener('DOMContentLoaded', async () => {
         try {
             // Load pathway data
             await loadPathwayData();
-            
-            // Process and display the data
-            renderPathway();
-            
+
+            // Initialize SVG
+            svg = d3.select("#pathway-svg");
+
+            // Create the pathway visualization
+            createPathwayVisualization();
+
             // Setup event listeners
             setupEventListeners();
-            
+
             // Hide loading indicator
             document.getElementById('loading').style.display = 'none';
         } catch (error) {
@@ -310,426 +530,390 @@
             document.getElementById('loading').textContent = 'Error loading pathway data: ' + error.message;
         }
     });
-    
+
     // Load pathway data from GraphML
     async function loadPathwayData() {
         try {
             // Load the GraphML file
             const response = await fetch('pathways.graphml');
             if (!response.ok) throw new Error(`Failed to load GraphML: ${response.status}`);
-            
+
             const graphmlText = await response.text();
             pathwayData = parseGraphML(graphmlText);
-            
-            // Assign coordinates based on a metabolic pathway layout
-            assignMetabolicCoordinates();
-            
+
+            // Organize nodes by type for grid layout
+            const nodesByType = {
+                source: [],
+                sanitizer: [],
+                sink: []
+            };
+
+            // Categorize nodes
+            pathwayData.nodes.forEach(node => {
+                if (node.type === 'source') {
+                    nodesByType.source.push(node);
+                } else if (node.type === 'sanitizer') {
+                    nodesByType.sanitizer.push(node);
+                } else if (node.type === 'sink') {
+                    nodesByType.sink.push(node);
+                }
+            });
+
+            // Assign grid positions
+            let colIndex = 0;
+            for (const type in nodesByType) {
+                let rowIndex = 0;
+                nodesByType[type].forEach(node => {
+                    node.x = colIndex * gridSize + gridSize * 2;
+                    node.y = rowIndex * gridSize + gridSize * 2;
+                    node.width = 100;
+                    node.height = 40;
+                    rowIndex++;
+                });
+                colIndex++;
+            }
+
+            // Set sensitive nodes (sanitizers in this case)
+            pathwayData.sensitiveNodes = pathwayData.nodes
+                .filter(node => node.type === 'sanitizer')
+                .map(node => node.id);
+
         } catch (error) {
             console.error('Error loading pathway data:', error);
             throw error;
         }
     }
-    
+
     // Parse GraphML data
     function parseGraphML(graphmlText) {
         const parser = new DOMParser();
         const xmlDoc = parser.parseFromString(graphmlText, "text/xml");
-        
         const nodes = [];
         const edges = [];
         const sensitiveNodes = [];
-        
+
         // Parse nodes
         const nodeElements = xmlDoc.getElementsByTagName("node");
-        for (let node of nodeElements) {
+        for (let i = 0; i < nodeElements.length; i++) {
+            const node = nodeElements[i];
             const id = node.getAttribute("id");
             const dataElements = node.getElementsByTagName("data");
             let type = "normal";
             let name = id;
             let keggid = "";
-            
-            for (let data of dataElements) {
+
+            for (let j = 0; j < dataElements.length; j++) {
+                const data = dataElements[j];
                 const key = data.getAttribute("key");
-                if (key === "class") {
-                    type = data.textContent;
-                } else if (key === "name") {
-                    name = data.textContent === "none" ? id : data.textContent;
-                } else if (key === "keggid") {
-                    keggid = data.textContent;
-                }
+                if (key === "class") type = data.textContent;
+                else if (key === "name") name = data.textContent === "none" ? id : data.textContent;
+                else if (key === "keggid") keggid = data.textContent;
             }
-            
-            nodes.push({
-                id,
-                name,
-                type,
-                keggid,
-                x: 0,
-                y: 0,
-                width: 0,
-                height: 0
-            });
-            
-            if (type === "sanitizer") {
-                sensitiveNodes.push(id);
-            }
+
+            nodes.push({ id, name, type, keggid });
+            if (type === "sanitizer") sensitiveNodes.push(id);
         }
-        
+
         // Parse edges
         const edgeElements = xmlDoc.getElementsByTagName("edge");
-        for (let edge of edgeElements) {
+        for (let i = 0; i < edgeElements.length; i++) {
+            const edge = edgeElements[i];
             const source = edge.getAttribute("source");
             const target = edge.getAttribute("target");
             const dataElements = edge.getElementsByTagName("data");
             let label = "";
-            
-            for (let data of dataElements) {
-                const key = data.getAttribute("key");
-                if (key === "label") {
-                    label = data.textContent;
-                }
+
+            for (let j = 0; j < dataElements.length; j++) {
+                const data = dataElements[j];
+                if (data.getAttribute("key") === "label") label = data.textContent;
             }
-            
-            edges.push({
-                source,
-                target,
-                label
-            });
+
+            edges.push({ source, target, label });
         }
-        
+
         return { nodes, edges, sensitiveNodes };
     }
-    
-    // Assign coordinates based on a metabolic pathway layout
-    function assignMetabolicCoordinates() {
-        // This is a simplified metabolic pathway layout
-        // In a real application, you would use actual coordinates from your data
-        
-        // Central metabolic pathway nodes
-        const centralNodes = [
-            'Glucose', 'Glucose-6-phosphate', 'Fructose-6-phosphate', 
-            'Fructose-1,6-bisphosphate', 'Glyceraldehyde-3-phosphate',
-            'Pyruvate', 'Acetyl-CoA', 'Citrate', 'Isocitrate',
-            'α-Ketoglutarate', 'Succinyl-CoA', 'Succinate',
-            'Fumarate', 'Malate', 'Oxaloacetate'
-        ];
-        
-        // Position central pathway in a circular layout
-        const centerX = 500;
-        const centerY = 400;
-        const radius = 300;
-        const angleStep = (2 * Math.PI) / centralNodes.length;
-        
-        pathwayData.nodes.forEach(node => {
-            // Try to match node names with our central pathway list
-            const centralIndex = centralNodes.findIndex(name => 
-                node.name.toLowerCase().includes(name.toLowerCase()));
-            
-            if (centralIndex >= 0) {
-                // Position in circular layout
-                const angle = angleStep * centralIndex;
-                node.x = centerX + radius * Math.cos(angle);
-                node.y = centerY + radius * Math.sin(angle);
-                node.width = 100;
-                node.height = 30;
-            } else {
-                // Position other nodes in clusters around the central pathway
-                if (node.type === 'source') {
-                    // Sources on the left
-                    node.x = 100 + Math.random() * 150;
-                    node.y = 100 + Math.random() * 600;
-                } else if (node.type === 'sink') {
-                    // Sinks on the right
-                    node.x = 800 + Math.random() * 150;
-                    node.y = 100 + Math.random() * 600;
-                } else if (node.type === 'sanitizer') {
-                    // Sanitizers at the top
-                    node.x = 300 + Math.random() * 400;
-                    node.y = 50 + Math.random() * 50;
-                } else {
-                    // Normal nodes in the middle
-                    node.x = 300 + Math.random() * 400;
-                    node.y = 200 + Math.random() * 400;
-                }
-                
-                // Set size based on name length
-                node.width = Math.max(60, Math.min(120, node.name.length * 7));
-                node.height = 25;
-            }
-        });
-    }
-    
-    // Render the pathway using SVG
-    function renderPathway() {
-        const svg = document.getElementById('pathway-svg');
-        
+
+    // Create the pathway visualization using D3
+    function createPathwayVisualization() {
+        const container = document.getElementById('pathway-container');
+        const width = container.clientWidth;
+        const height = container.clientHeight;
+
         // Clear existing elements
-        svg.innerHTML = '<defs><marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto"><polygon points="0 0, 10 3.5, 0 7" fill="#666"/></marker></defs>';
-        nodeElements = [];
-        edgeElements = [];
-        
-        // Create edges first (so nodes appear on top)
-        pathwayData.edges.forEach(edge => {
-            const sourceNode = pathwayData.nodes.find(n => n.id === edge.source);
-            const targetNode = pathwayData.nodes.find(n => n.id === edge.target);
-            
-            if (sourceNode && targetNode) {
-                const edgeEl = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-                edgeEl.classList.add('pathway-edge');
-                edgeEl.setAttribute('x1', sourceNode.x + sourceNode.width/2);
-                edgeEl.setAttribute('y1', sourceNode.y + sourceNode.height/2);
-                edgeEl.setAttribute('x2', targetNode.x + targetNode.width/2);
-                edgeEl.setAttribute('y2', targetNode.y + targetNode.height/2);
-                edgeEl.setAttribute('marker-end', 'url(#arrowhead)');
-                
-                if (edge.label) {
-                    const labelX = (sourceNode.x + targetNode.x) / 2;
-                    const labelY = (sourceNode.y + targetNode.y) / 2;
-                    
-                    const labelEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-                    labelEl.classList.add('pathway-edge-label');
-                    labelEl.setAttribute('x', labelX);
-                    labelEl.setAttribute('y', labelY);
-                    labelEl.setAttribute('text-anchor', 'middle');
-                    labelEl.setAttribute('dominant-baseline', 'middle');
-                    labelEl.textContent = edge.label;
-                    
-                    svg.appendChild(labelEl);
-                    edgeElements.push(labelEl);
-                }
-                
-                svg.appendChild(edgeEl);
-                edgeElements.push(edgeEl);
-            }
-        });
-        
+        svg.selectAll("*").remove();
+
+        // Create a group for all visualization elements
+        const vizGroup = svg.append("g")
+            .attr("id", "viz-group")
+            .attr("transform", `scale(${zoomLevel})`);
+
+        // Draw grid background
+        const gridGroup = vizGroup.append("g");
+
+        // Draw horizontal grid lines
+        for (let y = 0; y < height * 2; y += gridSize) {
+            gridGroup.append("line")
+                .attr("class", "grid-lines")
+                .attr("x1", 0)
+                .attr("y1", y)
+                .attr("x2", width * 2)
+                .attr("y2", y);
+        }
+
+        // Draw vertical grid lines
+        for (let x = 0; x < width * 2; x += gridSize) {
+            gridGroup.append("line")
+                .attr("class", "grid-lines")
+                .attr("x1", x)
+                .attr("y1", 0)
+                .attr("x2", x)
+                .attr("y2", height * 2);
+        }
+
+        // Add arrowhead marker
+        svg.append("defs").append("marker")
+            .attr("id", "arrowhead")
+            .attr("viewBox", "0 -5 10 10")
+            .attr("refX", 9)
+            .attr("refY", 0)
+            .attr("markerWidth", 8)
+            .attr("markerHeight", 8)
+            .attr("orient", "auto")
+            .append("path")
+            .attr("d", "M0,-5L10,0L0,5")
+            .attr("fill", "#495057");
+
+        // Create edges
+        const link = vizGroup.append("g")
+            .attr("class", "links")
+            .selectAll("line")
+            .data(pathwayData.edges)
+            .enter().append("line")
+            .attr("class", "pathway-edge")
+            .attr("marker-end", "url(#arrowhead)");
+
+        // Create edge labels
+        const edgeLabels = vizGroup.append("g")
+            .attr("class", "edge-labels")
+            .selectAll("text")
+            .data(pathwayData.edges.filter(d => d.label))
+            .enter().append("text")
+            .attr("class", "pathway-edge-label")
+            .text(d => d.label);
+
         // Create nodes
-        pathwayData.nodes.forEach(node => {
-            if (!shouldShowNode(node)) return;
-            
-            const nodeEl = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-            nodeEl.classList.add('pathway-node', node.type);
-            nodeEl.setAttribute('x', node.x);
-            nodeEl.setAttribute('y', node.y);
-            nodeEl.setAttribute('width', node.width);
-            nodeEl.setAttribute('height', node.height);
-            nodeEl.setAttribute('rx', '3');
-            nodeEl.setAttribute('ry', '3');
-            
-            if (pathwayData.sensitiveNodes.includes(node.id)) {
-                nodeEl.classList.add('sensitive');
-            }
-            
-            // Add text label
-            const textEl = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-            textEl.setAttribute('x', node.x + node.width/2);
-            textEl.setAttribute('y', node.y + node.height/2);
-            textEl.setAttribute('text-anchor', 'middle');
-            textEl.setAttribute('dominant-baseline', 'middle');
-            textEl.setAttribute('font-size', '11px');
-            textEl.textContent = node.name;
-            
-            // Group for interactivity
-            const groupEl = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-            groupEl.appendChild(nodeEl);
-            groupEl.appendChild(textEl);
-            
-            // Add hover and click effects
-            groupEl.addEventListener('mouseenter', () => {
-                nodeEl.setAttribute('stroke', '#0066cc');
-                nodeEl.setAttribute('stroke-width', '2');
+        const node = vizGroup.append("g")
+            .attr("class", "nodes")
+            .selectAll("g")
+            .data(pathwayData.nodes)
+            .enter().append("g")
+            .attr("class", d => `node-group ${shouldShowNode(d) ? '' : 'hidden'}`)
+            .attr("transform", d => `translate(${d.x - d.width/2},${d.y - d.height/2})`)
+            .on("click", function(event, d) {
+                showNodeDetails(d);
             });
-            
-            groupEl.addEventListener('mouseleave', () => {
-                nodeEl.setAttribute('stroke', '#333');
-                nodeEl.setAttribute('stroke-width', '1');
+
+        // Create node rectangles
+        node.append("rect")
+            .attr("class", d => {
+                let classes = "pathway-node";
+                if (d.type) classes += ` ${d.type}`;
+                if (pathwayData.sensitiveNodes.includes(d.id)) classes += " sensitive";
+                return classes;
+            })
+            .attr("width", d => d.width)
+            .attr("height", d => d.height)
+            .attr("rx", 6)
+            .attr("ry", 6);
+
+        // Create node text
+        node.append("text")
+            .attr("class", "pathway-node-text")
+            .attr("dy", "0.35em")
+            .text(d => d.name)
+            .attr("x", d => d.width / 2)
+            .attr("y", d => d.height / 2);
+
+        // Position edges and labels
+        link
+            .attr("x1", d => {
+                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
+                return sourceNode ? sourceNode.x : 0;
+            })
+            .attr("y1", d => {
+                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
+                return sourceNode ? sourceNode.y : 0;
+            })
+            .attr("x2", d => {
+                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
+                return targetNode ? targetNode.x : 0;
+            })
+            .attr("y2", d => {
+                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
+                return targetNode ? targetNode.y : 0;
             });
-            
-            groupEl.addEventListener('click', () => showNodeDetails(node));
-            
-            svg.appendChild(groupEl);
-            nodeElements.push(groupEl);
-        });
-        
-        // Set SVG dimensions based on content
-        const bbox = svg.getBBox();
-        svg.setAttribute('width', Math.max(1000, bbox.width + 100));
-        svg.setAttribute('height', Math.max(800, bbox.height + 100));
-        
-        // Initialize panzoom
-        initPanzoom();
-        
+
+        edgeLabels
+            .attr("x", d => {
+                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
+                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
+                return sourceNode && targetNode ? (sourceNode.x + targetNode.x) / 2 : 0;
+            })
+            .attr("y", d => {
+                const sourceNode = pathwayData.nodes.find(n => n.id === d.source);
+                const targetNode = pathwayData.nodes.find(n => n.id === d.target);
+                return sourceNode && targetNode ? (sourceNode.y + targetNode.y) / 2 : 0;
+            });
+
         // Update issues list
         updateIssuesList();
     }
-    
+
     // Determine if a node should be shown based on current filters
     function shouldShowNode(node) {
         const showSources = document.getElementById('show-sources').checked;
         const showSinks = document.getElementById('show-sinks').checked;
         const showSanitizers = document.getElementById('show-sanitizers').checked;
-        const highlightSensitive = document.getElementById('highlight-sensitive').checked;
-        
+
         if (node.type === 'source' && !showSources) return false;
         if (node.type === 'sink' && !showSinks) return false;
         if (node.type === 'sanitizer' && !showSanitizers) return false;
-        if (highlightSensitive && pathwayData.sensitiveNodes.includes(node.id)) {
-            return true; // Always show sensitive nodes when highlighting is enabled
-        }
-        
+
         return true;
     }
-    
-    // Initialize panzoom functionality
-    function initPanzoom() {
-        const container = document.getElementById('pathway-container');
-        
-        // Remove previous instance if exists
-        if (panzoomInstance) {
-            panzoomInstance.dispose();
-        }
-        
-        panzoomInstance = panzoom(container, {
-            bounds: true,
-            boundsPadding: 0.1,
-            maxZoom: 5,
-            minZoom: 0.3
-        });
-    }
-    
+
     // Show node details in the info panel
     function showNodeDetails(node) {
         const infoPanel = document.getElementById('node-info');
         let details = `ID: ${node.id}\nName: ${node.name}\nType: ${node.type}`;
-        
+
         if (pathwayData.sensitiveNodes.includes(node.id)) {
             details += '\n\n⚠️ Sensitive compound';
         }
-        
+
         // Find connected edges
-        const connectedEdges = pathwayData.edges.filter(edge => 
+        const connectedEdges = pathwayData.edges.filter(edge =>
             edge.source === node.id || edge.target === node.id
         );
-        
+
         if (connectedEdges.length > 0) {
             details += '\n\nConnected to:';
             connectedEdges.forEach(edge => {
                 const otherNodeId = edge.source === node.id ? edge.target : edge.source;
                 const otherNode = pathwayData.nodes.find(n => n.id === otherNodeId);
                 const direction = edge.source === node.id ? '→' : '←';
-                
+
                 if (otherNode) {
                     details += `\n${direction} ${otherNode.name} (${edge.label || 'interaction'})`;
                 }
             });
         }
-        
+
         infoPanel.textContent = details;
-        
+
         // Highlight the clicked node
-        nodeElements.forEach(el => {
-            el.querySelector('rect').setAttribute('stroke', '#333');
-            el.querySelector('rect').setAttribute('stroke-width', '1');
-        });
-        
-        const nodeEl = nodeElements.find(el => 
-            el.querySelector('text').textContent === node.name
-        );
-        
-        if (nodeEl) {
-            const rect = nodeEl.querySelector('rect');
-            rect.setAttribute('stroke', '#ff6600');
-            rect.setAttribute('stroke-width', '2');
-            
-            // Center view on the node
-            const svg = document.getElementById('pathway-svg');
-            const bbox = nodeEl.getBBox();
-            const centerX = bbox.x + bbox.width/2;
-            const centerY = bbox.y + bbox.height/2;
-            
-            const container = document.getElementById('pathway-container');
-            const containerWidth = container.clientWidth;
-            const containerHeight = container.clientHeight;
-            
-            panzoomInstance.moveTo(
-                containerWidth/2 - centerX * panzoomInstance.getTransform().scale,
-                containerHeight/2 - centerY * panzoomInstance.getTransform().scale
-            );
-        }
+        d3.selectAll(".node-group").classed("highlighted", false);
+        d3.selectAll(".node-group").filter(d => d.id === node.id).classed("highlighted", true);
     }
-    
+
     // Update the issues list
     function updateIssuesList() {
         const issuesList = document.getElementById('issues-list');
-        const sensitiveNodes = pathwayData.nodes.filter(node => 
+        const sensitiveNodes = pathwayData.nodes.filter(node =>
             pathwayData.sensitiveNodes.includes(node.id)
         );
-        
+
         if (sensitiveNodes.length === 0) {
             issuesList.innerHTML = '<p>No sensitive nodes detected</p>';
             return;
         }
-        
+
         issuesList.innerHTML = `
-            <p>${sensitiveNodes.length} sensitive nodes detected:</p>
-            <div>
-                ${sensitiveNodes.map(node => `
-                    <div class="suspicious-item">
-                        <strong>${node.name}</strong> (${node.id})
-                        <button onclick="highlightNode('${node.id}')" style="float:right; font-size:11px; padding:1px 4px;">Show</button>
-                    </div>
-                `).join('')}
-            </div>
-        `;
+                <p>${sensitiveNodes.length} sensitive nodes detected:</p>
+                <div>
+                    ${sensitiveNodes.map(node => `
+                        <div class="suspicious-item">
+                            <strong>${node.name}</strong> (${node.id})
+                            <button onclick="highlightNode('${node.id}')">Show</button>
+                        </div>
+                    `).join('')}
+                </div>
+            `;
     }
-    
+
     // Setup event listeners
     function setupEventListeners() {
         // Display options
-        document.getElementById('show-sources').addEventListener('change', () => renderPathway());
-        document.getElementById('show-sinks').addEventListener('change', () => renderPathway());
-        document.getElementById('show-sanitizers').addEventListener('change', () => renderPathway());
-        document.getElementById('highlight-sensitive').addEventListener('change', () => renderPathway());
-        
+        document.getElementById('show-sources').addEventListener('change', () => {
+            d3.selectAll(".node-group")
+                .classed("hidden", d => !shouldShowNode(d));
+        });
+
+        document.getElementById('show-sinks').addEventListener('change', () => {
+            d3.selectAll(".node-group")
+                .classed("hidden", d => !shouldShowNode(d));
+        });
+
+        document.getElementById('show-sanitizers').addEventListener('change', () => {
+            d3.selectAll(".node-group")
+                .classed("hidden", d => !shouldShowNode(d));
+        });
+
+        document.getElementById('highlight-sensitive').addEventListener('change', () => {
+            createPathwayVisualization();
+        });
+
         // Search functionality
         document.getElementById('search-box').addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
             if (!searchTerm) {
-                nodeElements.forEach(el => el.style.display = '');
+                d3.selectAll(".node-group").classed("hidden", false);
                 return;
             }
-            
-            nodeElements.forEach(el => {
-                const nodeText = el.querySelector('text').textContent.toLowerCase();
-                el.style.display = nodeText.includes(searchTerm) ? '' : 'none';
-            });
+
+            d3.selectAll(".node-group")
+                .classed("hidden", d => !d.name.toLowerCase().includes(searchTerm));
         });
-        
+
         // Zoom controls
         document.getElementById('zoom-in').addEventListener('click', () => {
-            if (panzoomInstance) panzoomInstance.smoothZoom(0, 0, 1.3);
+            zoomLevel = Math.min(zoomLevel + 0.2, 3);
+            updateZoom();
         });
-        
+
         document.getElementById('zoom-out').addEventListener('click', () => {
-            if (panzoomInstance) panzoomInstance.smoothZoom(0, 0, 0.7);
+            zoomLevel = Math.max(zoomLevel - 0.2, 0.5);
+            updateZoom();
         });
-        
+
         document.getElementById('reset-zoom').addEventListener('click', () => {
-            if (panzoomInstance) {
-                panzoomInstance.moveTo(0, 0);
-                panzoomInstance.zoomAbs(0, 0, 1);
-            }
+            zoomLevel = 1;
+            updateZoom();
         });
     }
-    
+
+    // Update zoom level
+    function updateZoom() {
+        const vizGroup = d3.select("#viz-group");
+        vizGroup.attr("transform", `scale(${zoomLevel})`);
+
+        // Update zoom indicator
+        document.querySelector('.zoom-indicator').textContent = `Zoom: ${Math.round(zoomLevel * 100)}%`;
+    }
+
     // Highlight a specific node
     function highlightNode(nodeId) {
         const node = pathwayData.nodes.find(n => n.id === nodeId);
         if (node) {
             showNodeDetails(node);
+
+            // Zoom in on the node
+            zoomLevel = 1.8;
+            updateZoom();
         }
     }
-    
+
     // Expose highlightNode to global scope for button clicks
     window.highlightNode = highlightNode;
 </script>
