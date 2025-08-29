@@ -1,110 +1,125 @@
-// hospital_flow.dl - Fixed version with proper type declarations
+// -----------------------------
+// SECTION 1: Data Input (EDB) with Provenance IDs
+// -----------------------------
 
-/********************
- * Data Loading Section
- ********************/
+// Each fact now has an ID column for provenance tracking
+.decl Node(id: symbol, node: symbol, type: symbol)
+.input Node(filename="facts/nodes.facts", delimiter="\t")
 
-// Test verification
-.decl TestsPassed(test_name: symbol)
-.input TestsPassed(filename="Facts/TestsPassed.facts", delimiter="\t")
+.decl Edge(id: symbol, from: symbol, to: symbol, interaction: symbol)
+.input Edge(filename="facts/edges.facts", delimiter="\t")
 
-.decl AllTestsPassed()
-AllTestsPassed() :-
-    TestsPassed("nodes_file_exists"),
-    TestsPassed("edges_file_exists"),
-    TestsPassed("sensitive_file_exists").
+.decl SensitiveType(id: symbol, n: symbol, tag: symbol)
+.input SensitiveType(filename="facts/sensitive.facts", delimiter="\t")
 
-// Unified input relations
-.decl input_node(name: symbol, type: symbol)
-.input input_node(filename="output/kegg_nodes.facts", delimiter="\t")
+// Derived sensitive nodes with provenance IDs
+.decl Sensitive(id: symbol, n: symbol)
+Sensitive(cat("SensFromType[", id, "]"), n) :-
+    SensitiveType(id, n, "pii_compound").
+Sensitive(cat("SensFromType[", id, "]"), n) :-
+    SensitiveType(id, n, "drug_target").
 
-.decl input_edge(from: symbol, to: symbol, interaction: symbol)
-.input input_edge(filename="output/kegg_edges.facts", delimiter="\t")
+// -----------------------------
+// SECTION 2: Reachability (manual provenance)
+// -----------------------------
 
-.decl input_sensitive(label: symbol, node: symbol)
-.input input_sensitive(filename="sensitive.facts", delimiter=" ")
+.decl Reach(id: symbol, from: symbol, to: symbol)
 
-/********************
- * Core Data Structures
- ********************/
+// Base case: direct edge
+Reach(cat("Reach[", eId, "]"), x, y) :-
+    Edge(eId, x, y, _),
+    x != y.
 
-// Node classification
-.decl Node(name: symbol, type: symbol)
-Node(n, t) :- input_node(n, t), AllTestsPassed().
+// Recursive case: chain two reaches
+Reach(cat("Reach[", id1, ",", id2, "]"), x, z) :-
+    Reach(id1, x, y),
+    Edge(id2, y, z, _),
+    x != z, y != z, x != y.
 
-.decl Edge(from: symbol, to: symbol, interaction: symbol)
-Edge(f, t, i) :- input_edge(f, t, i), AllTestsPassed().
+// ReachPath now also stores provenance ID
+.decl ReachPath(id: symbol, from: symbol, to: symbol, path_str: symbol, visited: symbol)
+.output ReachPath(filename="reach_paths.tsv", delimiter="\t")
 
-.decl SensitiveNode(label: symbol, node: symbol)
-SensitiveNode(l, n) :- input_sensitive(l, n), AllTestsPassed().
+// Base case
+ReachPath(cat("ReachPath[", eId, "]"), x, y, cat(x, "->", y), cat(",", x, ",", y, ",")) :-
+    Edge(eId, x, y, _),
+    x != y.
 
-/********************
- * Pathway Analysis Logic
- ********************/
+// Recursive case
+ReachPath(cat("ReachPath[", id1, ",", eId, "]"), x, z, cat(path_str, "->", z), cat(visited, z, ",")) :-
+    ReachPath(id1, x, y, path_str, visited),
+    Edge(eId, y, z, _),
+    !contains(visited, cat(",", z, ",")),
+    x != z, y != z, x != y.
 
-// Reachability - finds all connected nodes
-.decl Reach(from: symbol, to: symbol)
-Reach(x, y) :- Edge(x, y, _).
-Reach(x, z) :- Reach(x, y), Edge(y, z, _).
+// Debug relation for a specific query (example)
+.decl DebugReachPath(id: symbol, from: symbol, to: symbol, path_str: symbol, visited: symbol)
+DebugReachPath(id, x, y, p, v) :-
+    ReachPath(id, x, y, p, v),
+    x = "Chorismate",
+    y = "Melatonin".
 
-// KEGG-specific rules
-.decl SourceCompound(compound: symbol)
-SourceCompound(c) :- Node(c, "source").
+// -----------------------------
+// SECTION 3: Node classifications (manual provenance IDs)
+// -----------------------------
 
-.decl PathwaySink(sink: symbol)
-PathwaySink(p) :- Node(p, "sink").
+.decl Source(id: symbol, node: symbol)
+Source(cat("Source[", nId, "]"), n) :- Node(nId, n, "source").
 
-.decl BiologicalSanitizer(enzyme: symbol)
-BiologicalSanitizer(e) :- Node(e, "sanitizer").
+.decl Sink(id: symbol, node: symbol)
+Sink(cat("Sink[", nId, "]"), n) :- Node(nId, n, "sink").
 
-// Complete pathway detection
-.decl CompletePathway(source: symbol, sink: symbol)
-CompletePathway(s, t) :-
-    SourceCompound(s),
-    PathwaySink(t),
-    Reach(s, t).
+.decl Sanitizer(id: symbol, node: symbol)
+Sanitizer(cat("Sanitizer[", nId, "]"), n) :- Node(nId, n, "sanitizer").
 
-// Sanitized pathway detection
-.decl SanitizedPathway(source: symbol, sink: symbol, sanitizer: symbol)
-SanitizedPathway(s, t, e) :-
-    CompletePathway(s, t),
-    BiologicalSanitizer(e),
-    Reach(s, e),
-    Reach(e, t).
+// -----------------------------
+// SECTION 4: Path Queries
+// -----------------------------
 
-// Unsanitized flows (potential issues)
-.decl UnsanitizedPathway(source: symbol, sink: symbol, reason: symbol)
-UnsanitizedPathway(s, t, "no_sanitizer") :-
-    CompletePathway(s, t),
-    SensitiveNode(_, s),
-    !SanitizedPathway(s, t, _).
+.decl CompletePath(id: symbol, source: symbol, sink: symbol)
+CompletePath(cat("Complete[", sId, ",", tId, ",", rId, "]"), s, t) :-
+    Source(sId, s), Sink(tId, t), Reach(rId, s, t).
 
-// Drug-target interactions
-.decl DrugTargetInteraction(drug: symbol, target: symbol, pathway: symbol)
-DrugTargetInteraction(d, e, p) :-
-    SourceCompound(d),
-    BiologicalSanitizer(e),
-    PathwaySink(p),
-    Reach(d, e),
-    Reach(e, p).
+.decl SanitizedPath(id: symbol, source: symbol, sink: symbol, sanitizer: symbol)
+SanitizedPath(cat("Sanitized[", cId, ",", zId, ",", r1Id, ",", r2Id, "]"), s, t, z) :-
+    CompletePath(cId, s, t),
+    Sanitizer(zId, z),
+    Reach(r1Id, s, z),
+    Reach(r2Id, z, t).
 
-/********************
- * Output Relations
- ********************/
+.decl SensitiveOnPath(id: symbol, source: symbol, sink: symbol, node: symbol)
+SensitiveOnPath(cat("SensitiveOnPath[", cId, ",", sensId, ",", r1Id, ",", r2Id, "]"), s, t, n) :-
+    CompletePath(cId, s, t),
+    Reach(r1Id, s, n),
+    Reach(r2Id, n, t),
+    Sensitive(sensId, n).
 
-// Primary outputs
-.output CompletePathway(filename="complete_pathways.facts")
-.output SanitizedPathway(filename="sanitized_pathways.facts")
-.output UnsanitizedPathway(filename="unverified_pathways.facts")
-.output DrugTargetInteraction(filename="drug_interactions.facts")
+.decl SanitizerBeforeSensitive(id: symbol, source: symbol, sink: symbol, sensitive: symbol)
+SanitizerBeforeSensitive(cat("SanBeforeSens[", cId, ",", sensId, ",", zId, ",", r1Id, ",", r2Id, ",", r3Id, "]"), s, t, n) :-
+    CompletePath(cId, s, t),
+    Sensitive(sensId, n),
+    Sanitizer(zId, z),
+    Reach(r1Id, s, z),
+    Reach(r2Id, z, n),
+    Reach(r3Id, n, t).
 
-// Fixed NodeDegree implementation
-.type Degree = number  // Explicit type definition
+.decl UnsanitizedPath(id: symbol, source: symbol, sink: symbol, reason: symbol)
+UnsanitizedPath(cat("Unsanitized[", sopId, "]"), s, t, "no_sanitizer") :-
+    SensitiveOnPath(sopId, s, t, n),
+    !SanitizerBeforeSensitive(_, s, t, n).
 
-.decl NodeDegree(node: symbol, out_degree: Degree, in_degree: Degree)
-NodeDegree(n, out, in) :-
-    Node(n, _),
-    out = count : { Edge(n, _, _) },
-    in = count : { Edge(_, n, _) }.
+// -----------------------------
+// SECTION 5: Outputs
+// -----------------------------
 
-.output NodeDegree(filename="node_degrees.facts")
+.decl PathSummary(id: symbol, source: symbol, sink: symbol, sanitizer: symbol, type: symbol)
+.output PathSummary(filename="path_summary.tsv", delimiter="\t")
+
+PathSummary(cat("CompleteSummary[", id, "]"), s, t, "-", "complete") :-
+    CompletePath(id, s, t).
+
+PathSummary(cat("SanitizedSummary[", id, "]"), s, t, z, "sanitized") :-
+    SanitizedPath(id, s, t, z).
+
+PathSummary(cat("UnsanitizedSummary[", id, "]"), s, t, "-", "unsanitized") :-
+    UnsanitizedPath(id, s, t, _).

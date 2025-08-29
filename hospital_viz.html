@@ -180,9 +180,8 @@
         }
 
         .pathway-node {
-            fill: black;
+            fill: white;
             stroke: #6c757d;
-            color: burlywood;
             stroke-width: 1.5px;
             cursor: pointer;
             rx: 6;
@@ -191,27 +190,23 @@
         }
 
         .pathway-node.source {
-            fill: #ffcdd2;
-            stroke: #c62828;
-            color: wheat;
+            fill: #d1c4e9;   /* purple */
+            stroke: #4527a0; /* deep purple */
         }
-
+        
         .pathway-node.sink {
-            fill: #c8e6c9;
-            stroke: #2e7d32;
-            color: wheat;
+            fill: #c8e6c9;   /* green */
+            stroke: #2e7d32; /* deep green */
         }
 
         .pathway-node.sanitizer {
-            fill: #d1c4e9;
-            stroke: #4527a0;
-            color: wheat;
+            fill: #bbdefb;   /* blue */
+            stroke: #1565c0;
         }
 
         .pathway-node.sensitive {
             stroke: #d32f2f !important;
             stroke-dasharray: 4,4;
-            color: wheat;
             stroke-width: 2px;
             filter: drop-shadow(0 0 3px rgba(211, 47, 47, 0.5));
         }
@@ -220,7 +215,6 @@
             stroke: #ff9800;
             stroke-width: 3px;
             filter: drop-shadow(0 0 8px rgba(255, 152, 0, 0.7));
-            transform: scale(1.05);
         }
 
         .pathway-node-text {
@@ -228,15 +222,21 @@
             text-anchor: middle;
             dominant-baseline: middle;
             pointer-events: none;
-            fill: #212529;
+            fill: #333;
             font-weight: 500;
         }
 
         .pathway-edge {
-            stroke: #495057;
+            stroke: #adb5bd;
             stroke-width: 2px;
             fill: none;
             marker-end: url(#arrowhead);
+        }
+        
+        .pathway-edge.unsafe {
+            stroke: #d32f2f;
+            stroke-width: 3px;
+            marker-end: url(#arrowhead-unsafe);
         }
 
         .pathway-edge-label {
@@ -389,6 +389,25 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             z-index: 10;
         }
+        
+        #next-path-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            background: white;
+            color: purple;
+            font-weight: bold;
+            cursor: pointer;
+            border: 2px solid purple;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            width: 100%;
+        }
+        
+        #next-path-btn:hover {
+            background: purple;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -414,6 +433,9 @@
             <defs>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                     <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
+                </marker>
+                <marker id="arrowhead-unsafe" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                    <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
                 </marker>
                 <linearGradient id="node-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
                     <stop offset="0%" stop-color="#e9ecef" />
@@ -456,7 +478,7 @@
             </div>
             <div class="legend">
                 <div class="legend-item">
-                    <div class="legend-color" style="background-color: #ffcdd2;"></div>
+                    <div class="legend-color" style="background-color: #d1c4e9;"></div>
                     <span>Source</span>
                 </div>
                 <div class="legend-item">
@@ -464,8 +486,12 @@
                     <span>Sink</span>
                 </div>
                 <div class="legend-item">
-                    <div class="legend-color" style="background-color: #d1c4e9;"></div>
+                    <div class="legend-color" style="background-color: #bbdefb;"></div>
                     <span>Sanitizer</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background-color: #d32f2f;"></div>
+                    <span>Unsafe Path</span>
                 </div>
             </div>
         </div>
@@ -483,6 +509,7 @@
         </div>
 
         <div class="control-section">
+            <button id="next-path-btn">Next Path</button>
             <h3>
                 <svg viewBox="0 0 24 24">
                     <path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"></path>
@@ -500,135 +527,200 @@
     <div class="spinner"></div>
     <div>Loading pathway data...</div>
 </div>
-
 <script>
     // Global variables
-    let pathwayData = {
-        nodes: [],
-        edges: [],
-        sensitiveNodes: []
-    };
+    let pathwayData = { nodes: [], edges: [] };
     let svg = null;
     let zoomLevel = 1;
-    const gridSize = 150;
     let simulation = null;
 
-    // Initialize the application
+    // Path cycling state
+    let unsafePaths = [];
+    let currentPathIndex = -1;
+
     document.addEventListener('DOMContentLoaded', async () => {
         try {
-            // Load pathway data
             await loadPathwayData();
-
-            // Initialize SVG
             svg = d3.select("#pathway-svg");
-
-            // Create the pathway visualization
             createPathwayVisualization();
-
-            // Setup event listeners
             setupEventListeners();
-
-            // Hide loading indicator
             document.getElementById('loading').style.display = 'none';
         } catch (error) {
             console.error('Initialization error:', error);
-            document.getElementById('loading').textContent = 'Error loading pathway data: ' + error.message;
+            document.getElementById('loading').textContent =
+                'Error loading pathway data: ' + error.message;
         }
     });
 
-    // Load pathway data from GraphML
-    async function loadPathwayData() {
-        try {
-            // Load the GraphML file
-            const response = await fetch('pathways.graphml');
-            if (!response.ok) throw new Error(`Failed to load GraphML: ${response.status}`);
-
-            const graphmlText = await response.text();
-            pathwayData = parseGraphML(graphmlText);
-
-            // Classify nodes based on connectivity (similar to your test results)
-            classifyNodes();
-
-            // Set sensitive nodes (nodes with high connectivity)
-            pathwayData.sensitiveNodes = pathwayData.nodes
-                .filter(node => node.type === 'sanitizer')
-                .map(node => node.id);
-
-        } catch (error) {
-            console.error('Error loading pathway data:', error);
-            throw error;
-        }
-    }
-
-    // Classify nodes based on connectivity
-    function classifyNodes() {
-        // Count connections for each node
-        const connectionCounts = {};
-        pathwayData.nodes.forEach(node => {
-            connectionCounts[node.id] = 0;
-        });
-
-        pathwayData.edges.forEach(edge => {
-            connectionCounts[edge.source]++;
-            connectionCounts[edge.target]++;
-        });
-
-        // Classify nodes
-        pathwayData.nodes.forEach(node => {
-            const connections = connectionCounts[node.id];
+async function loadPathwayData() {
+    try {
+        // Load the GraphML file
+        const response = await fetch("output/pathways.graphml");
+        if (!response.ok) throw new Error("Failed to load pathways.graphml: " + response.statusText);
+        const graphmlText = await response.text();
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(graphmlText, "application/xml");
+        
+        // Extract nodes
+        const nodeElements = xmlDoc.getElementsByTagName("node");
+        const nodes = Array.from(nodeElements).map(n => ({
+            id: n.getAttribute("id"),
+            label: n.getAttribute("id"),
+            type: "normal" // Default type
+        }));
+        
+        // Extract edges
+        const edgeElements = xmlDoc.getElementsByTagName("edge");
+        const edges = Array.from(edgeElements).map(e => ({
+            id: e.getAttribute("id"),
+            source: e.getAttribute("source"),
+            target: e.getAttribute("target"),
+            label: e.getAttribute("label"),
+            type: e.getAttribute("label") === "unsanitized" ? "unsafe" : "normal"
+        }));
+        
+        // Find unsafe paths from the edges
+        const unsafeEdges = edges.filter(e => e.type === "unsafe");
+        const unsafePaths = [];
+        
+        // Group edges by their source paths
+        const pathGroups = {};
+        unsafeEdges.forEach(edge => {
+            // Extract path information from edge ID (e.g., e86, e87, etc.)
+            const pathId = edge.id.replace(/\D/g, ''); // Extract numbers only
+            const basePathId = Math.floor(parseInt(pathId) / 10); // Group by tens
             
-            if (connections === 0) {
-                node.type = 'isolated';
-            } else if (connections > 20) { // Highly connected nodes as sanitizers
+            if (!pathGroups[basePathId]) {
+                pathGroups[basePathId] = [];
+            }
+            pathGroups[basePathId].push(edge);
+        });
+        
+        // Create paths from edge groups
+        for (const pathId in pathGroups) {
+            const pathEdges = pathGroups[pathId];
+            
+            // Sort edges by their ID to maintain order
+            pathEdges.sort((a, b) => parseInt(a.id.replace(/\D/g, '')) - parseInt(b.id.replace(/\D/g, '')));
+            
+            // Extract the path nodes
+            const pathNodes = [];
+            
+            // Start with the source of the first edge
+            if (pathEdges.length > 0) {
+                pathNodes.push(pathEdges[0].source);
+            }
+            
+            // Add all targets
+            pathEdges.forEach(edge => {
+                pathNodes.push(edge.target);
+            });
+            
+            // Remove duplicates while preserving order
+            const uniquePathNodes = [...new Set(pathNodes)];
+            
+            if (uniquePathNodes.length >= 2) {
+                unsafePaths.push({
+                    path: uniquePathNodes,
+                    label: `Unsafe path: ${uniquePathNodes[0]} → ${uniquePathNodes[uniquePathNodes.length - 1]}`
+                });
+            }
+        }
+        
+        // Classify nodes based on their role
+        const sources = new Set();
+        const sinks = new Set();
+        
+        // Find sources (nodes that are only sources, not targets)
+        edges.forEach(edge => {
+            sources.add(edge.source);
+        });
+        
+        // Find sinks (nodes that are only targets, not sources)
+        edges.forEach(edge => {
+            sinks.add(edge.target);
+        });
+        
+        // Remove nodes that appear as both sources and targets
+        edges.forEach(edge => {
+            if (sinks.has(edge.source)) sinks.delete(edge.source);
+            if (sources.has(edge.target)) sources.delete(edge.target);
+        });
+        
+        // Update node types
+        nodes.forEach(node => {
+            if (sources.has(node.id)) {
+                node.type = 'source';
+            } else if (sinks.has(node.id)) {
+                node.type = 'sink';
+            } else if (node.id === 'N5') {
                 node.type = 'sanitizer';
-            } else {
-                // Check if it's a source (many outgoing, few incoming)
-                const outgoing = pathwayData.edges.filter(e => e.source === node.id).length;
-                const incoming = pathwayData.edges.filter(e => e.target === node.id).length;
-                
-                if (outgoing > 5 && incoming < 3) {
-                    node.type = 'source';
-                } else if (incoming > 5 && outgoing < 3) {
-                    node.type = 'sink';
-                } else {
-                    node.type = 'normal';
-                }
+            } else if (node.id.startsWith('S')) {
+                node.type = 'sensitive';
             }
         });
+        
+        // Set global data
+        pathwayData.nodes = nodes;
+        pathwayData.edges = edges;
+        window.unsafePaths = unsafePaths;
+        
+        // Populate issues list
+        const issuesList = document.getElementById("issues-list");
+        if (unsafePaths.length === 0) {
+            issuesList.innerHTML = "<p>No unsafe paths detected ✅</p>";
+        } else {
+            issuesList.innerHTML = "";
+            unsafePaths.forEach((p, idx) => {
+                const div = document.createElement("div");
+                div.className = "suspicious-item";
+                div.innerHTML = `
+                    <span>${p.label}</span>
+                    <button data-index="${idx}">Highlight</button>
+                `;
+                div.querySelector("button").addEventListener("click", () => {
+                    currentPathIndex = idx;
+                    highlightPath(p.path);
+                    highlightIssueInPanel(idx);
+                });
+                issuesList.appendChild(div);
+            });
+        }
+    } catch (error) {
+        console.error("Error loading pathway data:", error);
+        document.getElementById("issues-list").innerHTML = 
+            `<p>Error loading data: ${error.message}</p>`;
     }
+}
 
-    // Parse GraphML data (modified for colt.graphml)
-    function parseGraphML(graphmlText) {
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(graphmlText, "text/xml");
-        const nodes = [];
-        const edges = [];
 
-        // Parse nodes
-        const nodeElements = xmlDoc.getElementsByTagName("node");
-        for (let i = 0; i < nodeElements.length; i++) {
-            const node = nodeElements[i];
-            const id = node.getAttribute("id");
-            
-            nodes.push({ 
-                id, 
-                name: `Node ${id}`, // Default name
-                type: null // Will be classified later
-            });
-        }
-
-        // Parse edges
-        const edgeElements = xmlDoc.getElementsByTagName("edge");
-        for (let i = 0; i < edgeElements.length; i++) {
-            const edge = edgeElements[i];
-            edges.push({ 
-                source: edge.getAttribute("source"), 
-                target: edge.getAttribute("target"),
-                label: "interacts" // Default label
-            });
-        }
-
-        return { nodes, edges, sensitiveNodes: [] };
+    // Classify nodes based on connectivity and type
+    function classifyNodes() {
+        // First, identify sources and sinks
+        const sources = new Set();
+        const sinks = new Set();
+        const sanitizers = new Set();
+        
+        // Find all nodes that appear as sources in any path
+        unsafePaths.forEach(pathObj => {
+            if (pathObj.path.length > 0) {
+                sources.add(pathObj.path[0]); // First node is source
+                sinks.add(pathObj.path[pathObj.path.length - 1]); // Last node is sink
+            }
+        });
+        
+        // Update node types
+        pathwayData.nodes.forEach(node => {
+            if (sources.has(node.id)) {
+                node.type = 'source';
+            } else if (sinks.has(node.id)) {
+                node.type = 'sink';
+            } else if (node.id.startsWith('S')) {
+                node.type = 'sensitive';
+            } else if (node.id === 'N5') { // Based on the sanitized paths
+                node.type = 'sanitizer';
+            }
+        });
     }
 
     // Create the pathway visualization using D3 with force-directed layout
@@ -637,69 +729,55 @@
         const width = container.clientWidth;
         const height = container.clientHeight;
 
-        // Clear existing elements
         svg.selectAll("*").remove();
 
-        // Create a group for all visualization elements
         const vizGroup = svg.append("g")
             .attr("id", "viz-group")
             .attr("transform", `scale(${zoomLevel})`);
 
-        // Create a force simulation
+        // Create force simulation
         simulation = d3.forceSimulation(pathwayData.nodes)
             .force("link", d3.forceLink(pathwayData.edges).id(d => d.id).distance(100))
             .force("charge", d3.forceManyBody().strength(-300))
             .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("x", d3.forceX(width / 2).strength(0.05))
-            .force("y", d3.forceY(height / 2).strength(0.05))
             .force("collision", d3.forceCollide().radius(40));
 
-        // Create edges
+        // Draw edges
         const link = vizGroup.append("g")
-            .attr("class", "links")
+            .attr("class", "edges")
             .selectAll("line")
             .data(pathwayData.edges)
-            .enter().append("line")
-            .attr("class", "pathway-edge")
-            .attr("marker-end", "url(#arrowhead)");
+            .enter()
+            .append("line")
+            .attr("class", d => `pathway-edge ${d.type === 'unsafe' ? 'unsafe' : ''}`)
+            .attr("stroke-width", 2);
 
-        // Create nodes
+        // Draw nodes
         const node = vizGroup.append("g")
             .attr("class", "nodes")
             .selectAll("g")
             .data(pathwayData.nodes)
-            .enter().append("g")
-            .attr("class", d => `node-group ${shouldShowNode(d) ? '' : 'hidden'}`)
-            .call(d3.drag()
-                .on("start", dragstarted)
-                .on("drag", dragged)
-                .on("end", dragended))
-            .on("click", function(event, d) {
-                showNodeDetails(d);
-            });
+            .enter()
+            .append("g")
+            .attr("id", d => `node-${d.id}`)
+            .attr("class", d => `pathway-node ${d.type}`);
 
-        // Create node rectangles
-        node.append("rect")
-            .attr("class", d => {
-                let classes = "pathway-node";
-                if (d.type) classes += ` ${d.type}`;
-                if (pathwayData.sensitiveNodes.includes(d.id)) classes += " sensitive";
-                return classes;
-            })
-            .attr("width", 80)
-            .attr("height", 40)
-            .attr("rx", 6)
-            .attr("ry", 6);
+        node.append("circle")
+            .attr("r", 20)
+            .attr("class", d => `pathway-node ${d.type}`);
 
-        // Create node text
         node.append("text")
             .attr("class", "pathway-node-text")
-            .attr("dy", "0.35em")
-            .text(d => d.name)
-            .attr("x", 40)
-            .attr("y", 20);
+            .attr("dy", ".35em")
+            .text(d => d.label);
 
-        // Update positions on simulation tick
+        // Node click → show info
+        node.on("click", (event, d) => {
+            document.getElementById("node-info").innerText =
+                `ID: ${d.id}\nType: ${d.type}\nLabel: ${d.label}`;
+        });
+
+        // Simulation tick function
         simulation.on("tick", () => {
             link
                 .attr("x1", d => d.source.x)
@@ -707,136 +785,62 @@
                 .attr("x2", d => d.target.x)
                 .attr("y2", d => d.target.y);
 
-            node
-                .attr("transform", d => `translate(${d.x - 40},${d.y - 20})`);
+            node.attr("transform", d => `translate(${d.x},${d.y})`);
         });
 
-        // Update issues list
-        updateIssuesList();
+        simulation.force("link").links(pathwayData.edges);
     }
 
-    // Drag functions for force-directed layout
-    function dragstarted(event, d) {
-        if (!event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x;
-        d.fy = d.y;
-    }
+    function highlightPath(path) {
+        // Reset highlights
+        d3.selectAll(".pathway-node").classed("highlighted", false);
+        d3.selectAll(".pathway-edge").classed("highlighted", false);
 
-    function dragged(event, d) {
-        d.fx = event.x;
-        d.fy = event.y;
-    }
+        // Highlight nodes in the path
+        path.forEach(nodeId => {
+            d3.select(`#node-${CSS.escape(nodeId)}`).classed("highlighted", true);
+        });
 
-    function dragended(event, d) {
-        if (!event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
-    }
-
-    // Determine if a node should be shown based on current filters
-    function shouldShowNode(node) {
-        const showSources = document.getElementById('show-sources').checked;
-        const showSinks = document.getElementById('show-sinks').checked;
-        const showSanitizers = document.getElementById('show-sanitizers').checked;
-
-        if (node.type === 'source' && !showSources) return false;
-        if (node.type === 'sink' && !showSinks) return false;
-        if (node.type === 'sanitizer' && !showSanitizers) return false;
-
-        return true;
-    }
-
-    // Show node details in the info panel
-    function showNodeDetails(node) {
-        const infoPanel = document.getElementById('node-info');
-        let details = `ID: ${node.id}\nName: ${node.name}\nType: ${node.type}`;
-
-        if (pathwayData.sensitiveNodes.includes(node.id)) {
-            details += '\n\n⚠️ Sensitive compound';
+        // Highlight edges in the path
+        for (let i = 0; i < path.length - 1; i++) {
+            d3.selectAll(".pathway-edge")
+                .filter(d => d.source.id === path[i] && d.target.id === path[i+1])
+                .classed("highlighted", true);
         }
+    }
 
-        // Find connected edges
-        const connectedEdges = pathwayData.edges.filter(edge =>
-            edge.source === node.id || edge.target === node.id
-        );
-
-        if (connectedEdges.length > 0) {
-            details += '\n\nConnected to:';
-            connectedEdges.forEach(edge => {
-                const otherNodeId = edge.source === node.id ? edge.target : edge.source;
-                const otherNode = pathwayData.nodes.find(n => n.id === otherNodeId);
-                const direction = edge.source === node.id ? '→' : '←';
-
-                if (otherNode) {
-                    details += `\n${direction} ${otherNode.name} (${edge.label || 'interaction'})`;
-                }
+    function highlightIssueInPanel(index) {
+        document.querySelectorAll("#issues-list .suspicious-item")
+            .forEach((item, i) => {
+                item.style.borderLeftColor = i === index ? "purple" : "#ff6b6b";
+                item.style.background = i === index ? "#f3e5f5" : "#fff3f3";
             });
-        }
-
-        infoPanel.textContent = details;
-
-        // Highlight the clicked node
-        d3.selectAll(".node-group").classed("highlighted", false);
-        d3.selectAll(".node-group").filter(d => d.id === node.id).classed("highlighted", true);
-    }
-
-    // Update the issues list
-    function updateIssuesList() {
-        const issuesList = document.getElementById('issues-list');
-        const sensitiveNodes = pathwayData.nodes.filter(node =>
-            pathwayData.sensitiveNodes.includes(node.id)
-        );
-
-        if (sensitiveNodes.length === 0) {
-            issuesList.innerHTML = '<p>No sensitive nodes detected</p>';
-            return;
-        }
-
-        issuesList.innerHTML = `
-                <p>${sensitiveNodes.length} sensitive nodes detected:</p>
-                <div>
-                    ${sensitiveNodes.map(node => `
-                        <div class="suspicious-item">
-                            <strong>${node.name}</strong> (${node.id})
-                            <button onclick="highlightNode('${node.id}')">Show</button>
-                        </div>
-                    `).join('')}
-                </div>
-            `;
     }
 
     // Setup event listeners
     function setupEventListeners() {
+        // Next path button
+        document.getElementById("next-path-btn").addEventListener("click", () => {
+            if (unsafePaths.length === 0) return;
+            currentPathIndex = (currentPathIndex + 1) % unsafePaths.length;
+            highlightPath(unsafePaths[currentPathIndex].path);
+            highlightIssueInPanel(currentPathIndex);
+        });
+
         // Display options
-        document.getElementById('show-sources').addEventListener('change', () => {
-            d3.selectAll(".node-group")
-                .classed("hidden", d => !shouldShowNode(d));
-        });
-
-        document.getElementById('show-sinks').addEventListener('change', () => {
-            d3.selectAll(".node-group")
-                .classed("hidden", d => !shouldShowNode(d));
-        });
-
-        document.getElementById('show-sanitizers').addEventListener('change', () => {
-            d3.selectAll(".node-group")
-                .classed("hidden", d => !shouldShowNode(d));
-        });
-
-        document.getElementById('highlight-sensitive').addEventListener('change', () => {
-            createPathwayVisualization();
-        });
+        document.getElementById('show-sources').addEventListener('change', updateNodeVisibility);
+        document.getElementById('show-sinks').addEventListener('change', updateNodeVisibility);
+        document.getElementById('show-sanitizers').addEventListener('change', updateNodeVisibility);
+        document.getElementById('highlight-sensitive').addEventListener('change', updateNodeVisibility);
 
         // Search functionality
         document.getElementById('search-box').addEventListener('input', (e) => {
             const searchTerm = e.target.value.toLowerCase();
-            if (!searchTerm) {
-                d3.selectAll(".node-group").classed("hidden", false);
-                return;
-            }
-
-            d3.selectAll(".node-group")
-                .classed("hidden", d => !d.name.toLowerCase().includes(searchTerm));
+            d3.selectAll(".nodes g")
+                .style("display", d => 
+                    d.id.toLowerCase().includes(searchTerm) || 
+                    d.label.toLowerCase().includes(searchTerm) ? null : "none"
+                );
         });
 
         // Zoom controls
@@ -856,6 +860,30 @@
         });
     }
 
+    function updateNodeVisibility() {
+        const showSources = document.getElementById('show-sources').checked;
+        const showSinks = document.getElementById('show-sinks').checked;
+        const showSanitizers = document.getElementById('show-sanitizers').checked;
+        const highlightSensitive = document.getElementById('highlight-sensitive').checked;
+
+        d3.selectAll(".nodes g").each(function(d) {
+            const node = d3.select(this);
+            const shouldShow = 
+                (d.type === 'source' && showSources) ||
+                (d.type === 'sink' && showSinks) ||
+                (d.type === 'sanitizer' && showSanitizers) ||
+                (d.type !== 'source' && d.type !== 'sink' && d.type !== 'sanitizer');
+                
+            node.style("display", shouldShow ? null : "none");
+            
+            // Update sensitive highlighting
+            if (d.type === 'sensitive') {
+                node.select("circle")
+                    .classed("sensitive", highlightSensitive);
+            }
+        });
+    }
+
     // Update zoom level
     function updateZoom() {
         const vizGroup = d3.select("#viz-group");
@@ -864,21 +892,6 @@
         // Update zoom indicator
         document.querySelector('.zoom-indicator').textContent = `Zoom: ${Math.round(zoomLevel * 100)}%`;
     }
-
-    // Highlight a specific node
-    function highlightNode(nodeId) {
-        const node = pathwayData.nodes.find(n => n.id === nodeId);
-        if (node) {
-            showNodeDetails(node);
-
-            // Zoom in on the node
-            zoomLevel = 1.8;
-            updateZoom();
-        }
-    }
-
-    // Expose highlightNode to global scope for button clicks
-    window.highlightNode = highlightNode;
 </script>
 </body>
 </html>
