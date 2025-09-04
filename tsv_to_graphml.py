@@ -80,4 +80,4 @@ def create_graphml(path_summary_file, output_graphml):
 
 
 if __name__ == "__main__":
-    create_graphml("path_summary.tsv", "output/pathways.graphml")
+    create_graphml("path_summary.tsv", "pathways.graphml")

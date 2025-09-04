@@ -4,13 +4,13 @@
 
 // Each fact now has an ID column for provenance tracking
 .decl Node(id: symbol, node: symbol, type: symbol)
-.input Node(filename="facts/nodes.facts", delimiter="\t")
+.input Node(filename="watts_nodes.facts", delimiter="\t")
 
 .decl Edge(id: symbol, from: symbol, to: symbol, interaction: symbol)
-.input Edge(filename="facts/edges.facts", delimiter="\t")
+.input Edge(filename="watts_edges.facts", delimiter="\t")
 
 .decl SensitiveType(id: symbol, n: symbol, tag: symbol)
-.input SensitiveType(filename="facts/sensitive.facts", delimiter="\t")
+.input SensitiveType(filename="watts_sensitive.facts", delimiter="\t")
 
 // Derived sensitive nodes with provenance IDs
 .decl Sensitive(id: symbol, n: symbol)

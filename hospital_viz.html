@@ -555,7 +555,7 @@
 async function loadPathwayData() {
     try {
         // Load the GraphML file
-        const response = await fetch("output/pathways.graphml");
+        const response = await fetch("pathways.graphml");
         if (!response.ok) throw new Error("Failed to load pathways.graphml: " + response.statusText);
         const graphmlText = await response.text();
         const parser = new DOMParser();
