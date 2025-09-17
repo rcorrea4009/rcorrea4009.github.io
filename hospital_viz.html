@@ -418,11 +418,10 @@
         </svg>
         KEGG Pathway Visualizer
     </h1>
-    <div>
-        <select id="pathway-selector" style="padding: 8px 12px; border-radius: 6px; background: #f8f9fa; border: 1px solid #ced4da;">
-            <option value="metabolic">Metabolic pathways</option>
-            <option value="biosynthesis">Biosynthetic pathways</option>
-            <option value="degradation">Degradation pathways</option>
+        <select id="graphml-selector" style="padding: 8px 12px; border-radius: 6px; background: #f8f9fa; border: 1px solid #ced4da;">
+            <option value="30nodes.graphml">small graph</option>
+            <option value="100nodes.graphml">Medium graph</option>
+            <option value="1000nodes.graphml">Large graph</option>
         </select>
     </div>
 </div>
@@ -540,7 +539,9 @@
 
     document.addEventListener('DOMContentLoaded', async () => {
         try {
-            await loadPathwayData();
+            // Get the initial GraphML file from the selector
+            const graphmlFile = document.getElementById('graphml-selector').value;
+            await loadPathwayData(graphmlFile);
             svg = d3.select("#pathway-svg");
             createPathwayVisualization();
             setupEventListeners();
@@ -552,175 +553,147 @@
         }
     });
 
-async function loadPathwayData() {
-    try {
-        // Load the GraphML file
-        const response = await fetch("pathways.graphml");
-        if (!response.ok) throw new Error("Failed to load pathways.graphml: " + response.statusText);
-        const graphmlText = await response.text();
-        const parser = new DOMParser();
-        const xmlDoc = parser.parseFromString(graphmlText, "application/xml");
-        
-        // Extract nodes
-        const nodeElements = xmlDoc.getElementsByTagName("node");
-        const nodes = Array.from(nodeElements).map(n => ({
-            id: n.getAttribute("id"),
-            label: n.getAttribute("id"),
-            type: "normal" // Default type
-        }));
-        
-        // Extract edges
-        const edgeElements = xmlDoc.getElementsByTagName("edge");
-        const edges = Array.from(edgeElements).map(e => ({
-            id: e.getAttribute("id"),
-            source: e.getAttribute("source"),
-            target: e.getAttribute("target"),
-            label: e.getAttribute("label"),
-            type: e.getAttribute("label") === "unsanitized" ? "unsafe" : "normal"
-        }));
-        
-        // Find unsafe paths from the edges
-        const unsafeEdges = edges.filter(e => e.type === "unsafe");
-        const unsafePaths = [];
-        
-        // Group edges by their source paths
-        const pathGroups = {};
-        unsafeEdges.forEach(edge => {
-            // Extract path information from edge ID (e.g., e86, e87, etc.)
-            const pathId = edge.id.replace(/\D/g, ''); // Extract numbers only
-            const basePathId = Math.floor(parseInt(pathId) / 10); // Group by tens
+ async function loadPathwayData(filename = "path_graph.graphml") {
+        try {
+            // Load the GraphML file
+            const response = await fetch(filename);
+            if (!response.ok) throw new Error("Failed to load " + filename + ": " + response.statusText);
             
-            if (!pathGroups[basePathId]) {
-                pathGroups[basePathId] = [];
-            }
-            pathGroups[basePathId].push(edge);
-        });
-        
-        // Create paths from edge groups
-        for (const pathId in pathGroups) {
-            const pathEdges = pathGroups[pathId];
+            // The rest of your loadPathwayData function remains the same...
+            const graphmlText = await response.text();
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(graphmlText, "application/xml");
             
-            // Sort edges by their ID to maintain order
-            pathEdges.sort((a, b) => parseInt(a.id.replace(/\D/g, '')) - parseInt(b.id.replace(/\D/g, '')));
+            // Extract nodes
+            const nodeElements = xmlDoc.getElementsByTagName("node");
+            const nodes = Array.from(nodeElements).map(n => ({
+                id: n.getAttribute("id"),
+                label: n.getAttribute("id"),
+                type: "normal" // Default type
+            }));
             
-            // Extract the path nodes
-            const pathNodes = [];
+            // Extract edges
+            const edgeElements = xmlDoc.getElementsByTagName("edge");
+            const edges = Array.from(edgeElements).map(e => ({
+                id: e.getAttribute("id"),
+                source: e.getAttribute("source"),
+                target: e.getAttribute("target"),
+                label: e.getAttribute("label"),
+                type: e.getAttribute("label") === "unsanitized" ? "unsafe" : "normal"
+            }));
             
-            // Start with the source of the first edge
-            if (pathEdges.length > 0) {
-                pathNodes.push(pathEdges[0].source);
-            }
+            // Find unsafe paths from the edges
+            const unsafeEdges = edges.filter(e => e.type === "unsafe");
+            const unsafePaths = [];
             
-            // Add all targets
-            pathEdges.forEach(edge => {
-                pathNodes.push(edge.target);
+            // Group edges by their source paths
+            const pathGroups = {};
+            unsafeEdges.forEach(edge => {
+                // Extract path information from edge ID (e.g., e86, e87, etc.)
+                const pathId = edge.id.replace(/\D/g, ''); // Extract numbers only
+                const basePathId = Math.floor(parseInt(pathId) / 10); // Group by tens
+                
+                if (!pathGroups[basePathId]) {
+                    pathGroups[basePathId] = [];
+                }
+                pathGroups[basePathId].push(edge);
             });
             
-            // Remove duplicates while preserving order
-            const uniquePathNodes = [...new Set(pathNodes)];
+            // Create paths from edge groups
+            for (const pathId in pathGroups) {
+                const pathEdges = pathGroups[pathId];
+                
+                // Sort edges by their ID to maintain order
+                pathEdges.sort((a, b) => parseInt(a.id.replace(/\D/g, '')) - parseInt(b.id.replace(/\D/g, '')));
+                
+                // Extract the path nodes
+                const pathNodes = [];
+                
+                // Start with the source of the first edge
+                if (pathEdges.length > 0) {
+                    pathNodes.push(pathEdges[0].source);
+                }
+                
+                // Add all targets
+                pathEdges.forEach(edge => {
+                    pathNodes.push(edge.target);
+                });
+                
+                // Remove duplicates while preserving order
+                const uniquePathNodes = [...new Set(pathNodes)];
+                
+                if (uniquePathNodes.length >= 2) {
+                    unsafePaths.push({
+                        path: uniquePathNodes,
+                        label: `Unsafe path: ${uniquePathNodes[0]} → ${uniquePathNodes[uniquePathNodes.length - 1]}`
+                    });
+                }
+            }
             
-            if (uniquePathNodes.length >= 2) {
-                unsafePaths.push({
-                    path: uniquePathNodes,
-                    label: `Unsafe path: ${uniquePathNodes[0]} → ${uniquePathNodes[uniquePathNodes.length - 1]}`
-                });
-            }
-        }
-        
-        // Classify nodes based on their role
-        const sources = new Set();
-        const sinks = new Set();
-        
-        // Find sources (nodes that are only sources, not targets)
-        edges.forEach(edge => {
-            sources.add(edge.source);
-        });
-        
-        // Find sinks (nodes that are only targets, not sources)
-        edges.forEach(edge => {
-            sinks.add(edge.target);
-        });
-        
-        // Remove nodes that appear as both sources and targets
-        edges.forEach(edge => {
-            if (sinks.has(edge.source)) sinks.delete(edge.source);
-            if (sources.has(edge.target)) sources.delete(edge.target);
-        });
-        
-        // Update node types
-        nodes.forEach(node => {
-            if (sources.has(node.id)) {
-                node.type = 'source';
-            } else if (sinks.has(node.id)) {
-                node.type = 'sink';
-            } else if (node.id === 'N5') {
-                node.type = 'sanitizer';
-            } else if (node.id.startsWith('S')) {
-                node.type = 'sensitive';
-            }
-        });
-        
-        // Set global data
-        pathwayData.nodes = nodes;
-        pathwayData.edges = edges;
-        window.unsafePaths = unsafePaths;
-        
-        // Populate issues list
-        const issuesList = document.getElementById("issues-list");
-        if (unsafePaths.length === 0) {
-            issuesList.innerHTML = "<p>No unsafe paths detected ✅</p>";
-        } else {
-            issuesList.innerHTML = "";
-            unsafePaths.forEach((p, idx) => {
-                const div = document.createElement("div");
-                div.className = "suspicious-item";
-                div.innerHTML = `
-                    <span>${p.label}</span>
-                    <button data-index="${idx}">Highlight</button>
-                `;
-                div.querySelector("button").addEventListener("click", () => {
-                    currentPathIndex = idx;
-                    highlightPath(p.path);
-                    highlightIssueInPanel(idx);
-                });
-                issuesList.appendChild(div);
+            // Classify nodes based on their role
+            const sources = new Set();
+            const sinks = new Set();
+            
+            // Find sources (nodes that are only sources, not targets)
+            edges.forEach(edge => {
+                sources.add(edge.source);
             });
+            
+            // Find sinks (nodes that are only targets, not sources)
+            edges.forEach(edge => {
+                sinks.add(edge.target);
+            });
+            
+            // Remove nodes that appear as both sources and targets
+            edges.forEach(edge => {
+                if (sinks.has(edge.source)) sinks.delete(edge.source);
+                if (sources.has(edge.target)) sources.delete(edge.target);
+            });
+            
+            // Update node types
+            nodes.forEach(node => {
+                if (sources.has(node.id)) {
+                    node.type = 'source';
+                } else if (sinks.has(node.id)) {
+                    node.type = 'sink';
+                } else if (node.id === 'N5') {
+                    node.type = 'sanitizer';
+                } else if (node.id.startsWith('S')) {
+                    node.type = 'sensitive';
+                }
+            });
+            
+            // Set global data
+            pathwayData.nodes = nodes;
+            pathwayData.edges = edges;
+            window.unsafePaths = unsafePaths;
+            
+            // Populate issues list
+            const issuesList = document.getElementById("issues-list");
+            if (unsafePaths.length === 0) {
+                issuesList.innerHTML = "<p>No unsafe paths detected ✅</p>";
+            } else {
+                issuesList.innerHTML = "";
+                unsafePaths.forEach((p, idx) => {
+                    const div = document.createElement("div");
+                    div.className = "suspicious-item";
+                    div.innerHTML = `
+                        <span>${p.label}</span>
+                        <button data-index="${idx}">Highlight</button>
+                    `;
+                    div.querySelector("button").addEventListener("click", () => {
+                        currentPathIndex = idx;
+                        highlightPath(p.path);
+                        highlightIssueInPanel(idx);
+                    });
+                    issuesList.appendChild(div);
+                });
+            }
+        } catch (error) {
+            console.error("Error loading pathway data:", error);
+            document.getElementById("issues-list").innerHTML = 
+                `<p>Error loading data: ${error.message}</p>`;
         }
-    } catch (error) {
-        console.error("Error loading pathway data:", error);
-        document.getElementById("issues-list").innerHTML = 
-            `<p>Error loading data: ${error.message}</p>`;
-    }
-}
-
-
-    // Classify nodes based on connectivity and type
-    function classifyNodes() {
-        // First, identify sources and sinks
-        const sources = new Set();
-        const sinks = new Set();
-        const sanitizers = new Set();
-        
-        // Find all nodes that appear as sources in any path
-        unsafePaths.forEach(pathObj => {
-            if (pathObj.path.length > 0) {
-                sources.add(pathObj.path[0]); // First node is source
-                sinks.add(pathObj.path[pathObj.path.length - 1]); // Last node is sink
-            }
-        });
-        
-        // Update node types
-        pathwayData.nodes.forEach(node => {
-            if (sources.has(node.id)) {
-                node.type = 'source';
-            } else if (sinks.has(node.id)) {
-                node.type = 'sink';
-            } else if (node.id.startsWith('S')) {
-                node.type = 'sensitive';
-            } else if (node.id === 'N5') { // Based on the sanitized paths
-                node.type = 'sanitizer';
-            }
-        });
     }
 
     // Create the pathway visualization using D3 with force-directed layout
@@ -819,6 +792,23 @@ async function loadPathwayData() {
 
     // Setup event listeners
     function setupEventListeners() {
+        // GraphML file selector change
+        document.getElementById('graphml-selector').addEventListener('change', async (e) => {
+            const graphmlFile = e.target.value;
+            try {
+                document.getElementById('loading').style.display = 'flex';
+                await loadPathwayData(graphmlFile);
+                
+                // Recreate visualization with new data
+                createPathwayVisualization();
+                document.getElementById('loading').style.display = 'none';
+            } catch (error) {
+                console.error('Error loading GraphML file:', error);
+                document.getElementById('loading').textContent =
+                    'Error loading pathway data: ' + error.message;
+            }
+        });
+        
         // Next path button
         document.getElementById("next-path-btn").addEventListener("click", () => {
             if (unsafePaths.length === 0) return;

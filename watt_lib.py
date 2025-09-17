@@ -3,7 +3,7 @@ import random
 import networkx as nx
 from pathlib import Path
 
-def generate_watts_strogatz_facts(n=30, k=4, p=0.15, out_dir="facts", seed=42):
+def generate_watts_strogatz_facts(n=100, k=4, p=0.15, out_dir="facts", seed=42):
     """
     Build a Watts–Strogatz graph and write Soufflé .facts:
       - nodes.facts     (id, node, type)
@@ -61,4 +61,4 @@ def generate_watts_strogatz_facts(n=30, k=4, p=0.15, out_dir="facts", seed=42):
 
 if __name__ == "__main__":
     # tweak n,k,p as you like
-    generate_watts_strogatz_facts(n=30, k=4, p=0.15, out_dir="facts", seed=42)
+    generate_watts_strogatz_facts(n=100, k=4, p=0.15, out_dir="facts", seed=42)
