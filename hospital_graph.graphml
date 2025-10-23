@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d3" for="edge" attr.name="interaction" attr.type="string" />
+  <key id="d2" for="edge" attr.name="id" attr.type="string" />
+  <key id="d1" for="node" attr.name="type" attr.type="string" />
+  <key id="d0" for="node" attr.name="name" attr.type="string" />
+  <key id="d4" for="node" attr.name="risk_level" attr.type="string" />
+  <key id="d5" for="edge" attr.name="path_type" attr.type="string" />
+  
+  <graph edgedefault="directed">
+    <!-- Source Nodes -->
+    <node id="N0">
+      <data key="d0">source-node-0</data>
+      <data key="d1">source</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N15">
+      <data key="d0">source-node-15</data>
+      <data key="d1">source</data>
+      <data key="d4">high</data>
+    </node>
+    
+    <!-- Sink Nodes -->
+    <node id="N10">
+      <data key="d0">sink-node-10</data>
+      <data key="d1">sink</data>
+      <data key="d4">critical</data>
+    </node>
+    <node id="N29">
+      <data key="d0">sink-node-29</data>
+      <data key="d1">sink</data>
+      <data key="d4">critical</data>
+    </node>
+    
+    <!-- Sensitive Nodes -->
+    <node id="N3">
+      <data key="d0">email-notification-dispatcher-3</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N6">
+      <data key="d0">event-handler-6</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N9">
+      <data key="d0">shipping-calculator-engine-9</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N12">
+      <data key="d0">authentication-service-12</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N18">
+      <data key="d0">order-processor-18</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N21">
+      <data key="d0">event-broker-21</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N24">
+      <data key="d0">order-processor-24</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    <node id="N27">
+      <data key="d0">business-logic-facade-27</data>
+      <data key="d1">sensitive</data>
+      <data key="d4">high</data>
+    </node>
+    
+    <!-- Intermediate Nodes in Unsafe Paths -->
+    <node id="N1">
+      <data key="d0">auth-service-1</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N2">
+      <data key="d0">user-profile-service-2</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N4">
+      <data key="d0">business-logic-facade-4</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N5">
+      <data key="d0">business-logic-facade-5</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N8">
+      <data key="d0">auth-service-8</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N13">
+      <data key="d0">shared-logging-service-13</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N14">
+      <data key="d0">user-controller-14</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N16">
+      <data key="d0">user-profile-service-16</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N17">
+      <data key="d0">inventory-management-service-17</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N19">
+      <data key="d0">business-logic-facade-19</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N20">
+      <data key="d0">data-transfer-object-20</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N22">
+      <data key="d0">user-profile-service-22</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N23">
+      <data key="d0">shipping-calculator-engine-23</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N25">
+      <data key="d0">shipping-calculator-engine-25</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N26">
+      <data key="d0">shared-logging-service-26</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    <node id="N28">
+      <data key="d0">service-registry-28</data>
+      <data key="d1">internal</data>
+      <data key="d4">medium</data>
+    </node>
+    
+    <!-- Unsafe Path 1: N0 → N1 → N3 → N21 → N23 → N12 → N10 -->
+    <edge source="N0" target="N1">
+      <data key="d2">UP1-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N1" target="N3">
+      <data key="d2">UP1-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N3" target="N21">
+      <data key="d2">UP1-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N21" target="N23">
+      <data key="d2">UP1-E4</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N23" target="N12">
+      <data key="d2">UP1-E5</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N12" target="N10">
+      <data key="d2">UP1-E6</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 2: N0 → N2 → N3 → N5 → N6 → N10 -->
+    <edge source="N0" target="N2">
+      <data key="d2">UP2-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N2" target="N3">
+      <data key="d2">UP2-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N3" target="N5">
+      <data key="d2">UP2-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N5" target="N6">
+      <data key="d2">UP2-E4</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N6" target="N10">
+      <data key="d2">UP2-E5</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 3: N0 → N2 → N4 → N6 → N10 -->
+    <edge source="N0" target="N2">
+      <data key="d2">UP3-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N2" target="N4">
+      <data key="d2">UP3-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N4" target="N6">
+      <data key="d2">UP3-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N6" target="N10">
+      <data key="d2">UP3-E4</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 4: N15 → N13 → N12 → N10 -->
+    <edge source="N15" target="N13">
+      <data key="d2">UP4-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N13" target="N12">
+      <data key="d2">UP4-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N12" target="N10">
+      <data key="d2">UP4-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 5: N15 → N14 → N12 → N10 -->
+    <edge source="N15" target="N14">
+      <data key="d2">UP5-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N14" target="N12">
+      <data key="d2">UP5-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N12" target="N10">
+      <data key="d2">UP5-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 6: N15 → N16 → N18 → N24 → N27 → N29 -->
+    <edge source="N15" target="N16">
+      <data key="d2">UP6-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N16" target="N18">
+      <data key="d2">UP6-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N18" target="N24">
+      <data key="d2">UP6-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N24" target="N27">
+      <data key="d2">UP6-E4</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N27" target="N29">
+      <data key="d2">UP6-E5</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 7: N15 → N17 → N18 → N20 → N21 → N23 → N25 → N27 → N29 -->
+    <edge source="N15" target="N17">
+      <data key="d2">UP7-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N17" target="N18">
+      <data key="d2">UP7-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N18" target="N20">
+      <data key="d2">UP7-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N20" target="N21">
+      <data key="d2">UP7-E4</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N21" target="N23">
+      <data key="d2">UP7-E5</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N23" target="N25">
+      <data key="d2">UP7-E6</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N25" target="N27">
+      <data key="d2">UP7-E7</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N27" target="N29">
+      <data key="d2">UP7-E8</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 8: N0 → N28 → N26 → N29 -->
+    <edge source="N0" target="N28">
+      <data key="d2">UP8-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N28" target="N26">
+      <data key="d2">UP8-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N26" target="N29">
+      <data key="d2">UP8-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 9: N0 → N29 (direct) -->
+    <edge source="N0" target="N29">
+      <data key="d2">UP9-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    
+    <!-- Unsafe Path 10: N15 → N14 → N27 → N29 -->
+    <edge source="N15" target="N14">
+      <data key="d2">UP10-E1</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N14" target="N27">
+      <data key="d2">UP10-E2</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+    <edge source="N27" target="N29">
+      <data key="d2">UP10-E3</data>
+      <data key="d3">interacts</data>
+      <data key="d5">unsafe</data>
+    </edge>
+  </graph>
+</graphml>

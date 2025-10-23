@@ -1,887 +1,628 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KEGG Pathway Visualizer</title>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Graph - Unsafe Paths</title>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.6.1/dist/mermaid.min.js"></script>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin:0; display:flex; height:100vh; background:#f0f2f5; }
+    #sidebar { width:320px; background:#fff; padding:20px; overflow-y:auto; box-shadow:2px 0 10px rgba(0,0,0,0.1); display:flex; flex-direction:column; }
+    #main { flex:1; padding:20px; overflow:auto; display:flex; flex-direction:column; }
+    h2 { margin-top:0; color:#333; }
+    .suspicious-item { padding:12px; margin-bottom:10px; background:#ffeaea; border-left:5px solid #ff6b6b; border-radius:6px; display:flex; justify-content:space-between; align-items:center; transition: all 0.2s; }
+    .suspicious-item:hover { background:#ffdada; transform: scale(1.02); }
+    .btn { padding:6px 12px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; transition: all 0.2s; }
+    .btn-view { background:#4CAF50; color:white; }
+    .btn-view:hover { background:#45a049; }
+    .btn-back { background:#2196F3; color:white; margin-bottom:20px; }
+    .btn-back:hover { background:#1e88e5; }
+    .btn-full { background:#ff9800; color:white; margin-top:10px; }
+    .btn-full:hover { background:#fb8c00; }
+    #mermaid-graph { background:white; padding:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1); min-height:400px; margin-bottom:10px; overflow:auto; position: relative; }
+    .path-info { margin-top: 10px; font-size: 0.9em; color: #666; background: #f5f5f5; padding: 10px; border-radius: 5px; }
+    .loading { text-align: center; padding: 20px; color: #666; }
+    .error { text-align: center; padding: 20px; color: #d32f2f; background: #ffebee; border-radius: 5px; }
+    #graph-container { width: 100%; height: 100%; min-height: 500px; }
+    
+    /* Node info tooltip */
+    .node-tooltip {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      max-width: 300px;
+      z-index: 1000;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    
+    .node-tooltip.visible {
+      opacity: 1;
+    }
+    
+    .node-tooltip strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #4CAF50;
+    }
+    
+    .node-tooltip .node-type {
+      color: #ff9800;
+      font-weight: bold;
+    }
+    
+    .node-tooltip .node-id {
+      color: #2196F3;
+      font-family: monospace;
+    }
+  </style>
+  </head>
+  <body>
 
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a2a6c, #2c3e50);
-            color: #333;
-            line-height: 1.6;
-            overflow: hidden;
-        }
+  <div id="sidebar">
+    <h2>Suspicious Paths</h2>
+    <div id="issues-list" class="loading">Loading paths...</div>
+  </div>
 
-        #header {
-            background: linear-gradient(to right, #2c3e50, #1a2a6c);
-            color: white;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            z-index: 100;
-        }
-
-        #header h1 {
-            font-size: 24px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        #header h1 svg {
-            width: 30px;
-            height: 30px;
-            fill: #4CAF50;
-        }
-
-        #main-container {
-            display: flex;
-            height: calc(100vh - 68px);
-            padding: 15px;
-            gap: 20px;
-        }
-
-        #pathway-container {
-            flex: 1;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
-            overflow: hidden;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #pathway-svg {
-            width: 100%;
-            height: 100%;
-            background-color: #f8f9fa;
-        }
-
-        #controls {
-            width: 320px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-            overflow-y: auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-        }
-
-        .control-section {
-            background: #f8f9fa;
-            border-radius: 10px;
-            padding: 18px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-        }
-
-        .control-section h3 {
-            margin-bottom: 15px;
-            color: #2c3e50;
-            font-size: 18px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 10px;
-        }
-
-        .control-section h3 svg {
-            width: 20px;
-            height: 20px;
-            fill: #4CAF50;
-        }
-
-        .checkbox-label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            cursor: pointer;
-            font-size: 15px;
-            padding: 8px;
-            border-radius: 6px;
-            transition: background 0.3s;
-        }
-
-        .checkbox-label:hover {
-            background: #e9ecef;
-        }
-
-        .checkbox-label input {
-            margin-right: 10px;
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-        }
-
-        #node-info {
-            background: #fff;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: monospace;
-            font-size: 14px;
-            line-height: 1.6;
-            min-height: 150px;
-            border: 1px solid #dee2e6;
-            box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
-            white-space: pre-wrap;
-            overflow-y: auto;
-            max-height: 200px;
-        }
-
-        #zoom-controls {
-            position: absolute;
-            bottom: 25px;
-            right: 25px;
-            z-index: 100;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-            padding: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        #zoom-controls button {
-            width: 40px;
-            height: 40px;
-            border: none;
-            background: #4CAF50;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            transition: all 0.2s;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-        }
-
-        #zoom-controls button:hover {
-            background: #3d8b40;
-            transform: translateY(-2px);
-        }
-
-        .pathway-node {
-            fill: white;
-            stroke: #6c757d;
-            stroke-width: 1.5px;
-            cursor: pointer;
-            rx: 6;
-            ry: 6;
-            transition: all 0.3s ease;
-        }
-
-        .pathway-node.source {
-            fill: #d1c4e9;   /* purple */
-            stroke: #4527a0; /* deep purple */
-        }
-        
-        .pathway-node.sink {
-            fill: #c8e6c9;   /* green */
-            stroke: #2e7d32; /* deep green */
-        }
-
-        .pathway-node.sanitizer {
-            fill: #bbdefb;   /* blue */
-            stroke: #1565c0;
-        }
-
-        .pathway-node.sensitive {
-            stroke: #d32f2f !important;
-            stroke-dasharray: 4,4;
-            stroke-width: 2px;
-            filter: drop-shadow(0 0 3px rgba(211, 47, 47, 0.5));
-        }
-
-        .pathway-node.highlighted {
-            stroke: #ff9800;
-            stroke-width: 3px;
-            filter: drop-shadow(0 0 8px rgba(255, 152, 0, 0.7));
-        }
-
-        .pathway-node-text {
-            font-size: 12px;
-            text-anchor: middle;
-            dominant-baseline: middle;
-            pointer-events: none;
-            fill: #333;
-            font-weight: 500;
-        }
-
-        .pathway-edge {
-            stroke: #adb5bd;
-            stroke-width: 2px;
-            fill: none;
-            marker-end: url(#arrowhead);
-        }
-        
-        .pathway-edge.unsafe {
-            stroke: #d32f2f;
-            stroke-width: 3px;
-            marker-end: url(#arrowhead-unsafe);
-        }
-
-        .pathway-edge-label {
-            font-size: 11px;
-            fill: #343a40;
-            text-anchor: middle;
-            dominant-baseline: middle;
-            pointer-events: none;
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.7);
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-
-        #loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(255, 255, 255, 0.95);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-            font-size: 18px;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .spinner {
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(76, 175, 80, 0.3);
-            border-radius: 50%;
-            border-top-color: #4CAF50;
-            animation: spin 1s ease-in-out infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .suspicious-item {
-            background: #fff3f3;
-            padding: 12px;
-            margin-bottom: 10px;
-            border-radius: 8px;
-            border-left: 4px solid #ff6b6b;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            transition: all 0.3s;
-        }
-
-        .suspicious-item:hover {
-            transform: translateX(5px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .suspicious-item button {
-            background: #4CAF50;
-            color: white;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 12px;
-            transition: background 0.3s;
-        }
-
-        .suspicious-item button:hover {
-            background: #3d8b40;
-        }
-
-        #search-box {
-            padding: 12px 15px;
-            border-radius: 8px;
-            border: 1px solid #ced4da;
-            font-size: 15px;
-            width: 100%;
-            margin-bottom: 15px;
-            background: #f8f9fa;
-            transition: all 0.3s;
-        }
-
-        #search-box:focus {
-            outline: none;
-            border-color: #4CAF50;
-            box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
-            background: white;
-        }
-
-        .legend {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 15px;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            font-size: 13px;
-            background: #f8f9fa;
-            padding: 6px 10px;
-            border-radius: 20px;
-        }
-
-        .legend-color {
-            width: 16px;
-            height: 16px;
-            border-radius: 4px;
-            margin-right: 8px;
-            border: 1px solid rgba(0,0,0,0.1);
-        }
-
-        .grid-lines {
-            stroke: #dee2e6;
-            stroke-width: 1;
-            stroke-dasharray: 2,2;
-        }
-
-        .title-section {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #1a2a6c;
-            padding-bottom: 5px;
-            border-bottom: 1px dashed #adb5bd;
-        }
-
-        .path-group {
-            fill: none;
-            stroke: #4CAF50;
-            stroke-width: 2;
-            opacity: 0.7;
-        }
-
-        /* Zoom overlay indicator */
-        .zoom-indicator {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-size: 14px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 10;
-        }
-        
-        #next-path-btn {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 6px;
-            background: white;
-            color: purple;
-            font-weight: bold;
-            cursor: pointer;
-            border: 2px solid purple;
-            margin-bottom: 15px;
-            transition: all 0.3s;
-            width: 100%;
-        }
-        
-        #next-path-btn:hover {
-            background: purple;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-<div id="header">
-    <h1>
-        <svg viewBox="0 0 24 24">
-            <path d="M20,6C20.58,6 21.05,6.2 21.42,6.59C21.8,7 22,7.45 22,8V19C22,19.55 21.8,20 21.42,20.41C21.05,20.8 20.58,21 20,21H4C3.42,21 2.95,20.8 2.58,20.41C2.2,20 2,19.55 2,19V5C2,4.45 2.2,4 2.58,3.58C2.95,3.16 3.42,3 4,3H14L20,9M14,9V4H4V19H20V9H14Z"></path>
-        </svg>
-        KEGG Pathway Visualizer
-    </h1>
-        <select id="graphml-selector" style="padding: 8px 12px; border-radius: 6px; background: #f8f9fa; border: 1px solid #ced4da;">
-            <option value="30nodes.graphml">small graph</option>
-            <option value="100nodes.graphml">Medium graph</option>
-            <option value="1000nodes.graphml">Large graph</option>
-        </select>
+  <div id="main">
+    <div id="graph-container">
+      <div id="mermaid-graph" class="loading">Graph will render here...</div>
+      <div id="node-tooltip" class="node-tooltip"></div>
     </div>
-</div>
+    <button class="btn btn-full" id="btnFullGraph" onclick="renderFullGraph()" style="display:none;">Show Full Graph</button>
+    <button class="btn btn-back" id="btnBackFull" style="display:none;" onclick="renderFullGraph()">← Back to Full Graph</button>
+  </div>
 
-<div id="main-container">
-    <div id="pathway-container">
-        <svg id="pathway-svg" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#495057"/>
-                </marker>
-                <marker id="arrowhead-unsafe" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                    <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f"/>
-                </marker>
-                <linearGradient id="node-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#e9ecef" />
-                    <stop offset="100%" stop-color="#dee2e6" />
-                </linearGradient>
-            </defs>
-        </svg>
-        <div id="zoom-controls">
-            <button id="zoom-in" title="Zoom in">+</button>
-            <button id="zoom-out" title="Zoom out">−</button>
-            <button id="reset-zoom" title="Reset zoom">↺</button>
-        </div>
-        <div class="zoom-indicator">Zoom: 100%</div>
-    </div>
+  <script>
+  // Global variables
+  let fullGraphCode = '';
+  let unsafePaths = [];
+  let graphData = { nodes: {}, edges: [] };
+  let currentView = 'full';
 
-    <div id="controls">
-        <div class="control-section">
-            <h3>
-                <svg viewBox="0 0 24 24">
-                    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
-                </svg>
-                Search & Filter
-            </h3>
-            <input type="text" id="search-box" placeholder="Search nodes...">
-            <div class="checkbox-label">
-                <input type="checkbox" id="show-sources" checked>
-                <span>Sources (Compounds)</span>
-            </div>
-            <div class="checkbox-label">
-                <input type="checkbox" id="show-sinks" checked>
-                <span>Sinks (Pathways)</span>
-            </div>
-            <div class="checkbox-label">
-                <input type="checkbox" id="show-sanitizers" checked>
-                <span>Sanitizers (Enzymes)</span>
-            </div>
-            <div class="checkbox-label">
-                <input type="checkbox" id="highlight-sensitive" checked>
-                <span>Highlight Sensitive</span>
-            </div>
-            <div class="legend">
-                <div class="legend-item">
-                    <div class="legend-color" style="background-color: #d1c4e9;"></div>
-                    <span>Source</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background-color: #c8e6c9;"></div>
-                    <span>Sink</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background-color: #bbdefb;"></div>
-                    <span>Sanitizer</span>
-                </div>
-                <div class="legend-item">
-                    <div class="legend-color" style="background-color: #d32f2f;"></div>
-                    <span>Unsafe Path</span>
-                </div>
-            </div>
-        </div>
+  // Predefined unsafe paths based on your analysis
+  const predefinedUnsafePaths = [
+    {
+      id: 1,
+      name: "Path 1: Source to Sink via Email & Auth",
+      nodes: ['N0', 'N1', 'N3', 'N21', 'N23', 'N12', 'N10'],
+      description: "Source → Auth Service → Email Dispatcher → Event Broker → Shipping Engine → Auth Service → Sink"
+    },
+    {
+      id: 2,
+      name: "Path 2: Source to Sink via Business Logic",
+      nodes: ['N0', 'N2', 'N3', 'N5', 'N6', 'N10'],
+      description: "Source → User Profile → Email Dispatcher → Business Logic → Event Handler → Sink"
+    },
+    {
+      id: 3,
+      name: "Path 3: Alternative Business Logic Path",
+      nodes: ['N0', 'N2', 'N4', 'N6', 'N10'],
+      description: "Source → User Profile → Business Logic → Event Handler → Sink"
+    },
+    {
+      id: 4,
+      name: "Path 4: Second Source to Sink via Logging",
+      nodes: ['N15', 'N13', 'N12', 'N10'],
+      description: "Source → Shared Logging → Auth Service → Sink"
+    },
+    {
+      id: 5,
+      name: "Path 5: Second Source via User Controller",
+      nodes: ['N15', 'N14', 'N12', 'N10'],
+      description: "Source → User Controller → Auth Service → Sink"
+    },
+    {
+      id: 6,
+      name: "Path 6: Order Processing Path",
+      nodes: ['N15', 'N16', 'N18', 'N24', 'N27', 'N29'],
+      description: "Source → User Profile → Order Processor → Order Processor → Business Logic → Sink"
+    },
+    {
+      id: 7,
+      name: "Path 7: Complex Event Processing",
+      nodes: ['N15', 'N17', 'N18', 'N20', 'N21', 'N23', 'N25', 'N27', 'N29'],
+      description: "Source → Inventory → Order Processor → DTO → Event Broker → Shipping Engine → Shipping Engine → Business Logic → Sink"
+    },
+    {
+      id: 8,
+      name: "Path 8: Service Registry Path",
+      nodes: ['N0', 'N28', 'N26', 'N29'],
+      description: "Source → Service Registry → Shared Logging → Sink"
+    },
+    {
+      id: 9,
+      name: "Path 9: Direct Source to Sink",
+      nodes: ['N0', 'N29'],
+      description: "Source → Sink (Direct Connection)"
+    },
+    {
+      id: 10,
+      name: "Path 10: User Controller to Business Logic",
+      nodes: ['N15', 'N14', 'N27', 'N29'],
+      description: "Source → User Controller → Business Logic → Sink"
+    }
+  ];
 
-        <div class="control-section">
-            <h3>
-                <svg viewBox="0 0 24 24">
-                    <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path>
-                </svg>
-                Node Information
-            </h3>
-            <div id="node-info">
-                Click on any node to see details
-            </div>
-        </div>
+  // Initialize Mermaid
+  function initializeMermaid() {
+    if (typeof mermaid !== 'undefined') {
+      try {
+        mermaid.initialize({
+          startOnLoad: false,
+          theme: 'default',
+          securityLevel: 'loose',
+          flowchart: {
+            useMaxWidth: true,
+            htmlLabels: true,
+            curve: 'basis'
+          }
+        });
+        console.log('Mermaid initialized successfully');
+        return true;
+      } catch (error) {
+        console.error('Mermaid initialization failed:', error);
+        return false;
+      }
+    } else {
+      console.error('Mermaid library not loaded');
+      return false;
+    }
+  }
 
-        <div class="control-section">
-            <button id="next-path-btn">Next Path</button>
-            <h3>
-                <svg viewBox="0 0 24 24">
-                    <path d="M12,2L1,21H23M12,6L19.53,19H4.47M11,10V14H13V10M11,16V18H13V16"></path>
-                </svg>
-                Detected Issues
-            </h3>
-            <div id="issues-list">
-                Loading sensitive nodes...
-            </div>
-        </div>
-    </div>
-</div>
+  // Load GraphML file
+  async function loadGraphML(url) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to load GraphML file: ${response.status}`);
+      }
+      const text = await response.text();
+      const parser = new DOMParser();
+      return parser.parseFromString(text, "application/xml");
+    } catch (error) {
+      console.error('Error loading GraphML:', error);
+      showError(`Error loading graph: ${error.message}`);
+      return null;
+    }
+  }
 
-<div id="loading">
-    <div class="spinner"></div>
-    <div>Loading pathway data...</div>
-</div>
-<script>
-    // Global variables
-    let pathwayData = { nodes: [], edges: [] };
-    let svg = null;
-    let zoomLevel = 1;
-    let simulation = null;
-
-    // Path cycling state
-    let unsafePaths = [];
-    let currentPathIndex = -1;
-
-    document.addEventListener('DOMContentLoaded', async () => {
-        try {
-            // Get the initial GraphML file from the selector
-            const graphmlFile = document.getElementById('graphml-selector').value;
-            await loadPathwayData(graphmlFile);
-            svg = d3.select("#pathway-svg");
-            createPathwayVisualization();
-            setupEventListeners();
-            document.getElementById('loading').style.display = 'none';
-        } catch (error) {
-            console.error('Initialization error:', error);
-            document.getElementById('loading').textContent =
-                'Error loading pathway data: ' + error.message;
-        }
+  // Parse GraphML data
+  function parseGraphML(xml) {
+    const nodes = {};
+    const edges = [];
+    
+    // Parse nodes
+    xml.querySelectorAll('node').forEach(node => {
+      const id = node.getAttribute('id');
+      const nameNode = node.querySelector('data[key="d0"]');
+      const typeNode = node.querySelector('data[key="d1"]');
+      
+      if (nameNode && typeNode) {
+        nodes[id] = {
+          name: nameNode.textContent,
+          type: typeNode.textContent,
+          displayName: `${nameNode.textContent}`,
+          id: id
+        };
+      }
     });
 
- async function loadPathwayData(filename = "path_graph.graphml") {
-        try {
-            // Load the GraphML file
-            const response = await fetch(filename);
-            if (!response.ok) throw new Error("Failed to load " + filename + ": " + response.statusText);
-            
-            // The rest of your loadPathwayData function remains the same...
-            const graphmlText = await response.text();
-            const parser = new DOMParser();
-            const xmlDoc = parser.parseFromString(graphmlText, "application/xml");
-            
-            // Extract nodes
-            const nodeElements = xmlDoc.getElementsByTagName("node");
-            const nodes = Array.from(nodeElements).map(n => ({
-                id: n.getAttribute("id"),
-                label: n.getAttribute("id"),
-                type: "normal" // Default type
-            }));
-            
-            // Extract edges
-            const edgeElements = xmlDoc.getElementsByTagName("edge");
-            const edges = Array.from(edgeElements).map(e => ({
-                id: e.getAttribute("id"),
-                source: e.getAttribute("source"),
-                target: e.getAttribute("target"),
-                label: e.getAttribute("label"),
-                type: e.getAttribute("label") === "unsanitized" ? "unsafe" : "normal"
-            }));
-            
-            // Find unsafe paths from the edges
-            const unsafeEdges = edges.filter(e => e.type === "unsafe");
-            const unsafePaths = [];
-            
-            // Group edges by their source paths
-            const pathGroups = {};
-            unsafeEdges.forEach(edge => {
-                // Extract path information from edge ID (e.g., e86, e87, etc.)
-                const pathId = edge.id.replace(/\D/g, ''); // Extract numbers only
-                const basePathId = Math.floor(parseInt(pathId) / 10); // Group by tens
-                
-                if (!pathGroups[basePathId]) {
-                    pathGroups[basePathId] = [];
-                }
-                pathGroups[basePathId].push(edge);
-            });
-            
-            // Create paths from edge groups
-            for (const pathId in pathGroups) {
-                const pathEdges = pathGroups[pathId];
-                
-                // Sort edges by their ID to maintain order
-                pathEdges.sort((a, b) => parseInt(a.id.replace(/\D/g, '')) - parseInt(b.id.replace(/\D/g, '')));
-                
-                // Extract the path nodes
-                const pathNodes = [];
-                
-                // Start with the source of the first edge
-                if (pathEdges.length > 0) {
-                    pathNodes.push(pathEdges[0].source);
-                }
-                
-                // Add all targets
-                pathEdges.forEach(edge => {
-                    pathNodes.push(edge.target);
-                });
-                
-                // Remove duplicates while preserving order
-                const uniquePathNodes = [...new Set(pathNodes)];
-                
-                if (uniquePathNodes.length >= 2) {
-                    unsafePaths.push({
-                        path: uniquePathNodes,
-                        label: `Unsafe path: ${uniquePathNodes[0]} → ${uniquePathNodes[uniquePathNodes.length - 1]}`
-                    });
-                }
-            }
-            
-            // Classify nodes based on their role
-            const sources = new Set();
-            const sinks = new Set();
-            
-            // Find sources (nodes that are only sources, not targets)
-            edges.forEach(edge => {
-                sources.add(edge.source);
-            });
-            
-            // Find sinks (nodes that are only targets, not sources)
-            edges.forEach(edge => {
-                sinks.add(edge.target);
-            });
-            
-            // Remove nodes that appear as both sources and targets
-            edges.forEach(edge => {
-                if (sinks.has(edge.source)) sinks.delete(edge.source);
-                if (sources.has(edge.target)) sources.delete(edge.target);
-            });
-            
-            // Update node types
-            nodes.forEach(node => {
-                if (sources.has(node.id)) {
-                    node.type = 'source';
-                } else if (sinks.has(node.id)) {
-                    node.type = 'sink';
-                } else if (node.id === 'N5') {
-                    node.type = 'sanitizer';
-                } else if (node.id.startsWith('S')) {
-                    node.type = 'sensitive';
-                }
-            });
-            
-            // Set global data
-            pathwayData.nodes = nodes;
-            pathwayData.edges = edges;
-            window.unsafePaths = unsafePaths;
-            
-            // Populate issues list
-            const issuesList = document.getElementById("issues-list");
-            if (unsafePaths.length === 0) {
-                issuesList.innerHTML = "<p>No unsafe paths detected ✅</p>";
-            } else {
-                issuesList.innerHTML = "";
-                unsafePaths.forEach((p, idx) => {
-                    const div = document.createElement("div");
-                    div.className = "suspicious-item";
-                    div.innerHTML = `
-                        <span>${p.label}</span>
-                        <button data-index="${idx}">Highlight</button>
-                    `;
-                    div.querySelector("button").addEventListener("click", () => {
-                        currentPathIndex = idx;
-                        highlightPath(p.path);
-                        highlightIssueInPanel(idx);
-                    });
-                    issuesList.appendChild(div);
-                });
-            }
-        } catch (error) {
-            console.error("Error loading pathway data:", error);
-            document.getElementById("issues-list").innerHTML = 
-                `<p>Error loading data: ${error.message}</p>`;
-        }
-    }
-
-    // Create the pathway visualization using D3 with force-directed layout
-    function createPathwayVisualization() {
-        const container = document.getElementById('pathway-container');
-        const width = container.clientWidth;
-        const height = container.clientHeight;
-
-        svg.selectAll("*").remove();
-
-        const vizGroup = svg.append("g")
-            .attr("id", "viz-group")
-            .attr("transform", `scale(${zoomLevel})`);
-
-        // Create force simulation
-        simulation = d3.forceSimulation(pathwayData.nodes)
-            .force("link", d3.forceLink(pathwayData.edges).id(d => d.id).distance(100))
-            .force("charge", d3.forceManyBody().strength(-300))
-            .force("center", d3.forceCenter(width / 2, height / 2))
-            .force("collision", d3.forceCollide().radius(40));
-
-        // Draw edges
-        const link = vizGroup.append("g")
-            .attr("class", "edges")
-            .selectAll("line")
-            .data(pathwayData.edges)
-            .enter()
-            .append("line")
-            .attr("class", d => `pathway-edge ${d.type === 'unsafe' ? 'unsafe' : ''}`)
-            .attr("stroke-width", 2);
-
-        // Draw nodes
-        const node = vizGroup.append("g")
-            .attr("class", "nodes")
-            .selectAll("g")
-            .data(pathwayData.nodes)
-            .enter()
-            .append("g")
-            .attr("id", d => `node-${d.id}`)
-            .attr("class", d => `pathway-node ${d.type}`);
-
-        node.append("circle")
-            .attr("r", 20)
-            .attr("class", d => `pathway-node ${d.type}`);
-
-        node.append("text")
-            .attr("class", "pathway-node-text")
-            .attr("dy", ".35em")
-            .text(d => d.label);
-
-        // Node click → show info
-        node.on("click", (event, d) => {
-            document.getElementById("node-info").innerText =
-                `ID: ${d.id}\nType: ${d.type}\nLabel: ${d.label}`;
+    // Parse edges
+    xml.querySelectorAll('edge').forEach(edge => {
+      const source = edge.getAttribute('source');
+      const target = edge.getAttribute('target');
+      const idNode = edge.querySelector('data[key="d2"]');
+      const interactionNode = edge.querySelector('data[key="d3"]');
+      
+      if (source && target && nodes[source] && nodes[target]) {
+        edges.push({
+          source,
+          target,
+          id: idNode ? idNode.textContent : '',
+          interaction: interactionNode ? interactionNode.textContent : 'interacts'
         });
+      }
+    });
 
-        // Simulation tick function
-        simulation.on("tick", () => {
-            link
-                .attr("x1", d => d.source.x)
-                .attr("y1", d => d.source.y)
-                .attr("x2", d => d.target.x)
-                .attr("y2", d => d.target.y);
+    return { nodes, edges };
+  }
 
-            node.attr("transform", d => `translate(${d.x},${d.y})`);
-        });
+  // Convert GraphML to Mermaid code for full graph
+  function graphToMermaidFull(graphData) {
+    let mermaidStr = 'graph TB\n';
+    
+    // Define all nodes with their types
+    Object.entries(graphData.nodes).forEach(([id, node]) => {
+      let style = 'internal';
+      if (node.type === 'source') style = 'source';
+      else if (node.type === 'sink') style = 'sink';
+      else if (node.type === 'sanitizer') style = 'sanitizer';
+      
+      // Check if it's a sensitive node (from your list)
+      const sensitiveNodes = ['N3', 'N6', 'N9', 'N12', 'N18', 'N21', 'N24', 'N27'];
+      if (sensitiveNodes.includes(id)) {
+        style = 'sensitive';
+      }
+      
+      mermaidStr += `    ${id}["${node.displayName}"]:::${style}\n`;
+    });
+    
+    // Add all edges
+    graphData.edges.forEach(edge => {
+      mermaidStr += `    ${edge.source} --> ${edge.target}\n`;
+    });
+    
+    // Add styling
+    mermaidStr += `\n    classDef source fill:#ff9800,stroke:#e68900,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sink fill:#f44336,stroke:#d32f2f,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sensitive fill:#ffeb3b,stroke:#fbc02d,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sanitizer fill:#4caf50,stroke:#388e3c,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef internal fill:#2196f3,stroke:#1976d2,stroke-width:2px,color:#fff;\n`;
+    
+    return mermaidStr;
+  }
 
-        simulation.force("link").links(pathwayData.edges);
-    }
-
-    function highlightPath(path) {
-        // Reset highlights
-        d3.selectAll(".pathway-node").classed("highlighted", false);
-        d3.selectAll(".pathway-edge").classed("highlighted", false);
-
-        // Highlight nodes in the path
-        path.forEach(nodeId => {
-            d3.select(`#node-${CSS.escape(nodeId)}`).classed("highlighted", true);
-        });
-
-        // Highlight edges in the path
-        for (let i = 0; i < path.length - 1; i++) {
-            d3.selectAll(".pathway-edge")
-                .filter(d => d.source.id === path[i] && d.target.id === path[i+1])
-                .classed("highlighted", true);
-        }
-    }
-
-    function highlightIssueInPanel(index) {
-        document.querySelectorAll("#issues-list .suspicious-item")
-            .forEach((item, i) => {
-                item.style.borderLeftColor = i === index ? "purple" : "#ff6b6b";
-                item.style.background = i === index ? "#f3e5f5" : "#fff3f3";
-            });
-    }
-
-    // Setup event listeners
-    function setupEventListeners() {
-        // GraphML file selector change
-        document.getElementById('graphml-selector').addEventListener('change', async (e) => {
-            const graphmlFile = e.target.value;
-            try {
-                document.getElementById('loading').style.display = 'flex';
-                await loadPathwayData(graphmlFile);
-                
-                // Recreate visualization with new data
-                createPathwayVisualization();
-                document.getElementById('loading').style.display = 'none';
-            } catch (error) {
-                console.error('Error loading GraphML file:', error);
-                document.getElementById('loading').textContent =
-                    'Error loading pathway data: ' + error.message;
-            }
-        });
+  // Convert path to Mermaid code with highlighting
+  function pathToMermaid(graphData, path) {
+    let mermaidStr = 'graph TB\n';
+    
+    // Add nodes in the path with highlighting
+    path.nodes.forEach(nodeId => {
+      const node = graphData.nodes[nodeId];
+      if (node) {
+        let style = 'internal';
+        if (node.type === 'source') style = 'source';
+        else if (node.type === 'sink') style = 'sink';
+        else if (node.type === 'sanitizer') style = 'sanitizer';
         
-        // Next path button
-        document.getElementById("next-path-btn").addEventListener("click", () => {
-            if (unsafePaths.length === 0) return;
-            currentPathIndex = (currentPathIndex + 1) % unsafePaths.length;
-            highlightPath(unsafePaths[currentPathIndex].path);
-            highlightIssueInPanel(currentPathIndex);
-        });
-
-        // Display options
-        document.getElementById('show-sources').addEventListener('change', updateNodeVisibility);
-        document.getElementById('show-sinks').addEventListener('change', updateNodeVisibility);
-        document.getElementById('show-sanitizers').addEventListener('change', updateNodeVisibility);
-        document.getElementById('highlight-sensitive').addEventListener('change', updateNodeVisibility);
-
-        // Search functionality
-        document.getElementById('search-box').addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            d3.selectAll(".nodes g")
-                .style("display", d => 
-                    d.id.toLowerCase().includes(searchTerm) || 
-                    d.label.toLowerCase().includes(searchTerm) ? null : "none"
-                );
-        });
-
-        // Zoom controls
-        document.getElementById('zoom-in').addEventListener('click', () => {
-            zoomLevel = Math.min(zoomLevel + 0.2, 3);
-            updateZoom();
-        });
-
-        document.getElementById('zoom-out').addEventListener('click', () => {
-            zoomLevel = Math.max(zoomLevel - 0.2, 0.5);
-            updateZoom();
-        });
-
-        document.getElementById('reset-zoom').addEventListener('click', () => {
-            zoomLevel = 1;
-            updateZoom();
-        });
+        const sensitiveNodes = ['N3', 'N6', 'N9', 'N12', 'N18', 'N21', 'N24', 'N27'];
+        if (sensitiveNodes.includes(nodeId)) {
+          style = 'sensitive';
+        }
+        
+        // Add highlight class to all nodes in the path
+        mermaidStr += `    ${nodeId}["${node.displayName}"]:::${style}:::highlightPath\n`;
+      }
+    });
+    
+    // Add edges in the path with highlighting
+    for (let i = 0; i < path.nodes.length - 1; i++) {
+      const source = path.nodes[i];
+      const target = path.nodes[i + 1];
+      
+      // Use dotted line for path edges
+      mermaidStr += `    ${source} -.-> ${target}\n`;
     }
+    
+    // Add styling with highlight
+    mermaidStr += `\n    classDef source fill:#ff9800,stroke:#e68900,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sink fill:#f44336,stroke:#d32f2f,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sensitive fill:#ffeb3b,stroke:#fbc02d,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef sanitizer fill:#4caf50,stroke:#388e3c,stroke-width:2px,color:#000;\n`;
+    mermaidStr += `    classDef internal fill:#2196f3,stroke:#1976d2,stroke-width:2px,color:#fff;\n`;
+    mermaidStr += `    classDef highlightPath fill:#ffcccc,stroke:#ff4d4d,stroke-width:3px,color:#000;\n`;
+    
+    return mermaidStr;
+  }
 
-    function updateNodeVisibility() {
-        const showSources = document.getElementById('show-sources').checked;
-        const showSinks = document.getElementById('show-sinks').checked;
-        const showSanitizers = document.getElementById('show-sanitizers').checked;
-        const highlightSensitive = document.getElementById('highlight-sensitive').checked;
+  // Setup node hover interactions
+  function setupNodeHover() {
+    const graphElement = document.getElementById('mermaid-graph');
+    const tooltip = document.getElementById('node-tooltip');
+    
+    if (!graphElement || !tooltip) return;
+    
+    // Remove existing event listeners
+    graphElement.removeEventListener('mouseover', handleNodeMouseOver);
+    graphElement.removeEventListener('mouseout', handleNodeMouseOut);
+    graphElement.removeEventListener('mousemove', handleNodeMouseMove);
+    
+    // Add new event listeners
+    graphElement.addEventListener('mouseover', handleNodeMouseOver);
+    graphElement.addEventListener('mouseout', handleNodeMouseOut);
+    graphElement.addEventListener('mousemove', handleNodeMouseMove);
+  }
 
-        d3.selectAll(".nodes g").each(function(d) {
-            const node = d3.select(this);
-            const shouldShow = 
-                (d.type === 'source' && showSources) ||
-                (d.type === 'sink' && showSinks) ||
-                (d.type === 'sanitizer' && showSanitizers) ||
-                (d.type !== 'source' && d.type !== 'sink' && d.type !== 'sanitizer');
-                
-            node.style("display", shouldShow ? null : "none");
-            
-            // Update sensitive highlighting
-            if (d.type === 'sensitive') {
-                node.select("circle")
-                    .classed("sensitive", highlightSensitive);
-            }
+  function handleNodeMouseOver(event) {
+    const target = event.target;
+    if (target.classList.contains('node') || target.closest('.node')) {
+      const nodeElement = target.classList.contains('node') ? target : target.closest('.node');
+      const nodeId = getNodeIdFromElement(nodeElement);
+      
+      if (nodeId && graphData.nodes[nodeId]) {
+        showNodeTooltip(nodeId, event.clientX, event.clientY);
+      }
+    }
+  }
+
+  function handleNodeMouseOut(event) {
+    const target = event.target;
+    if (target.classList.contains('node') || target.closest('.node')) {
+      hideNodeTooltip();
+    }
+  }
+
+  function handleNodeMouseMove(event) {
+    const tooltip = document.getElementById('node-tooltip');
+    if (tooltip.classList.contains('visible')) {
+      tooltip.style.left = (event.clientX + 15) + 'px';
+      tooltip.style.top = (event.clientY + 15) + 'px';
+    }
+  }
+
+  function getNodeIdFromElement(nodeElement) {
+    // Try to find the node ID from various possible locations in the Mermaid SVG
+    const label = nodeElement.querySelector('.label');
+    if (label) {
+      const textContent = label.textContent || '';
+      // Look for node ID in the text content or try to match with known nodes
+      for (const nodeId in graphData.nodes) {
+        if (textContent.includes(graphData.nodes[nodeId].displayName)) {
+          return nodeId;
+        }
+      }
+    }
+    
+    // Alternative: try to get from the parent group ID or data attributes
+    const parentGroup = nodeElement.closest('g');
+    if (parentGroup && parentGroup.id) {
+      const match = parentGroup.id.match(/flowchart-(.+?)-/);
+      if (match && match[1]) {
+        return match[1];
+      }
+    }
+    
+    return null;
+  }
+
+  function showNodeTooltip(nodeId, x, y) {
+    const tooltip = document.getElementById('node-tooltip');
+    const node = graphData.nodes[nodeId];
+    
+    if (!node) return;
+    
+    // Determine node type with description
+    let typeDescription = node.type;
+    const sensitiveNodes = ['N3', 'N6', 'N9', 'N12', 'N18', 'N21', 'N24', 'N27'];
+    if (sensitiveNodes.includes(nodeId)) {
+      typeDescription = 'Sensitive Node';
+    } else if (node.type === 'source') {
+      typeDescription = 'Source Node';
+    } else if (node.type === 'sink') {
+      typeDescription = 'Sink Node';
+    } else if (node.type === 'sanitizer') {
+      typeDescription = 'PII Sanitizer';
+    } else if (node.type === 'internal') {
+      typeDescription = 'Internal Service';
+    }
+    
+    // Find connected edges
+    const incomingEdges = graphData.edges.filter(edge => edge.target === nodeId);
+    const outgoingEdges = graphData.edges.filter(edge => edge.source === nodeId);
+    
+    tooltip.innerHTML = `
+      <strong>${node.displayName}</strong>
+      <div class="node-id">ID: ${nodeId}</div>
+      <div class="node-type">Type: ${typeDescription}</div>
+      <div>Incoming: ${incomingEdges.length} connections</div>
+      <div>Outgoing: ${outgoingEdges.length} connections</div>
+      ${sensitiveNodes.includes(nodeId) ? '<div style="color: #ffeb3b; margin-top: 5px;">⚠️ Contains sensitive data</div>' : ''}
+      ${node.type === 'source' ? '<div style="color: #ff9800; margin-top: 5px;">📥 Data entry point</div>' : ''}
+      ${node.type === 'sink' ? '<div style="color: #f44336; margin-top: 5px;">📤 Data exit point</div>' : ''}
+      ${node.type === 'sanitizer' ? '<div style="color: #4caf50; margin-top: 5px;">🛡️ Data protection</div>' : ''}
+    `;
+    
+    tooltip.style.left = (x + 15) + 'px';
+    tooltip.style.top = (y + 15) + 'px';
+    tooltip.classList.add('visible');
+  }
+
+  function hideNodeTooltip() {
+    const tooltip = document.getElementById('node-tooltip');
+    tooltip.classList.remove('visible');
+  }
+
+  // Render the list of suspicious paths
+  function renderSuspiciousPaths() {
+    const container = document.getElementById('issues-list');
+    
+    if (unsafePaths.length === 0) {
+      container.innerHTML = '<div class="loading">No unsafe paths found</div>';
+      return;
+    }
+    
+    container.innerHTML = '<h3>Found ' + unsafePaths.length + ' unsafe paths</h3>';
+    unsafePaths.forEach(path => {
+      const div = document.createElement('div');
+      div.className = 'suspicious-item';
+      div.innerHTML = `
+        <div style="flex: 1;">
+          <strong>${path.name}</strong><br>
+          <small style="font-size: 0.8em; color: #666;">${path.description}</small>
+        </div>
+        <button class="btn btn-view" onclick="viewPath(${path.id})">View</button>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  // Properly render Mermaid diagram
+  function renderMermaid(code) {
+    const container = document.getElementById('mermaid-graph');
+    
+    try {
+      console.log('Rendering Mermaid code:', code);
+      
+      // Clear previous content
+      container.innerHTML = '<div class="mermaid">' + code + '</div>';
+      
+      // Re-initialize mermaid for the new content
+      if (typeof mermaid !== 'undefined') {
+        mermaid.init(undefined, container.querySelectorAll('.mermaid')).then(() => {
+          // Setup hover interactions after Mermaid renders
+          setTimeout(setupNodeHover, 100);
         });
+      } else {
+        console.error('Mermaid not available for rendering');
+        container.innerHTML = '<div class="error">Mermaid library not loaded</div>';
+      }
+    } catch (error) {
+      console.error('Error rendering Mermaid:', error);
+      container.innerHTML = '<div class="error">Error rendering graph: ' + error.message + '<br><br>Mermaid Code:<br><pre>' + code + '</pre></div>';
     }
+  }
 
-    // Update zoom level
-    function updateZoom() {
-        const vizGroup = d3.select("#viz-group");
-        vizGroup.attr("transform", `scale(${zoomLevel})`);
+  // Show error message
+  function showError(message) {
+    const container = document.getElementById('mermaid-graph');
+    container.innerHTML = '<div class="error">' + message + '</div>';
+  }
 
-        // Update zoom indicator
-        document.querySelector('.zoom-indicator').textContent = `Zoom: ${Math.round(zoomLevel * 100)}%`;
+  // Render full graph
+  function renderFullGraph() {
+    document.getElementById('btnBackFull').style.display = 'none';
+    document.getElementById('btnFullGraph').style.display = 'inline-block';
+    currentView = 'full';
+    
+    if (fullGraphCode) {
+      renderMermaid(fullGraphCode);
+    } else {
+      showError('Full graph not available');
     }
-</script>
-</body>
-</html>
+  }
+
+  // View single path
+  function viewPath(pathId) {
+    const path = unsafePaths.find(p => p.id === pathId);
+    if (!path) {
+      showError('Path not found');
+      return;
+    }
+    
+    const pathCode = pathToMermaid(graphData, path);
+    renderMermaid(pathCode);
+    
+    // Show back button, hide full graph button
+    document.getElementById('btnBackFull').style.display = 'inline-block';
+    document.getElementById('btnFullGraph').style.display = 'none';
+    currentView = 'path';
+    
+    // Add path info
+    const container = document.getElementById('mermaid-graph');
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'path-info';
+    
+    const sensitiveNodesInPath = path.nodes.filter(id => 
+      ['N3', 'N6', 'N9', 'N12', 'N18', 'N21', 'N24', 'N27'].includes(id)
+    ).map(id => graphData.nodes[id].name);
+    
+    infoDiv.innerHTML = `
+      <strong>${path.name}</strong><br>
+      <strong>Path:</strong> ${path.nodes.join(' → ')}<br>
+      <strong>Description:</strong> ${path.description}<br>
+      <strong>Path Length:</strong> ${path.nodes.length} nodes<br>
+      <strong>Sensitive Nodes:</strong> ${sensitiveNodesInPath.join(', ')}
+    `;
+    
+    container.appendChild(infoDiv);
+  }
+
+  // Initialize the application
+  async function initialize() {
+    console.log('Initializing application...');
+    
+    // Initialize Mermaid first
+    if (!initializeMermaid()) {
+      showError('Failed to initialize Mermaid diagram library');
+      return;
+    }
+    
+    // Show loading state
+    document.getElementById('mermaid-graph').innerHTML = '<div class="loading">Loading graph data...</div>';
+    
+    // Use predefined unsafe paths for now
+    unsafePaths = predefinedUnsafePaths;
+    
+    // Load the GraphML file to get the full graph structure
+    const xml = await loadGraphML('hospital_graph.graphml');
+    if (!xml) {
+      showError('Failed to load GraphML file. Using predefined paths only.');
+      // Still render the UI with predefined paths
+      renderSuspiciousPaths();
+      renderPredefinedFullGraph();
+      return;
+    }
+    
+    // Parse the GraphML data
+    graphData = parseGraphML(xml);
+    console.log('Parsed graph data:', graphData);
+    
+    // Generate full graph
+    fullGraphCode = graphToMermaidFull(graphData);
+    console.log('Generated Mermaid code for full graph');
+    
+    // Render the UI
+    renderSuspiciousPaths();
+    renderFullGraph();
+    
+    document.getElementById('btnFullGraph').style.display = 'inline-block';
+  }
+
+  // Fallback if GraphML loading fails
+  function renderPredefinedFullGraph() {
+    const fallbackCode = `graph TB
+      N0["source-node-0"]:::source
+      N15["source-node-15"]:::source
+      N10["sink-node-10"]:::sink
+      N29["sink-node-29"]:::sink
+      N3["email-notification-dispatcher-3"]:::sensitive
+      N6["event-handler-6"]:::sensitive
+      N9["shipping-calculator-engine-9"]:::sensitive
+      N12["authentication-service-12"]:::sensitive
+      N18["order-processor-18"]:::sensitive
+      N21["event-broker-21"]:::sensitive
+      N24["order-processor-24"]:::sensitive
+      N27["business-logic-facade-27"]:::sensitive
+      N1["auth-service-1"]:::internal
+      N2["user-profile-service-2"]:::internal
+      N4["business-logic-facade-4"]:::internal
+      N5["business-logic-facade-5"]:::internal
+      N7["pii-scrubber-7"]:::sanitizer
+      N8["auth-service-8"]:::internal
+      N13["shared-logging-service-13"]:::internal
+      N14["user-controller-14"]:::internal
+      N16["user-profile-service-16"]:::internal
+      N17["inventory-management-service-17"]:::internal
+      N19["business-logic-facade-19"]:::internal
+      N20["data-transfer-object-20"]:::internal
+      N22["user-profile-service-22"]:::internal
+      N23["shipping-calculator-engine-23"]:::internal
+      N25["shipping-calculator-engine-25"]:::internal
+      N26["shared-logging-service-26"]:::internal
+      N28["service-registry-28"]:::internal
+      
+      classDef source fill:#ff9800,stroke:#e68900,stroke-width:2px,color:#000
+      classDef sink fill:#f44336,stroke:#d32f2f,stroke-width:2px,color:#000
+      classDef sensitive fill:#ffeb3b,stroke:#fbc02d,stroke-width:2px,color:#000
+      classDef sanitizer fill:#4caf50,stroke:#388e3c,stroke-width:2px,color:#000
+      classDef internal fill:#2196f3,stroke:#1976d2,stroke-width:2px,color:#fff`;
+    
+    fullGraphCode = fallbackCode;
+    renderMermaid(fallbackCode);
+  }
+
+  // Start the application when page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM loaded, starting initialization...');
+    initialize();
+  });
+  </script>
+
+  </body>
+  </html>
